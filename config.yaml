@@ -1,0 +1,8 @@
+input_data:
+  file1: "../data/clean/customers.csv"
+  file2: "../data/clean/products.csv"
+  file3: "../data/clean/rentals.csv"
+  file4: "../data/clean/categories.csv"
+  file5: "../data/clean/inventory_events.csv"
+  file6: "../data/clean/pricing_rules.csv"
+  file7: "../data/clean/return_conditions.csv"

@@ -1,0 +1,1845 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='customers.csv+ (Multiple Connections)' inline='true' name='federated.0kscwiv1i5vovt1e3oc5i1is2tql' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='categories' name='textscan.043ctn31wvjywf1eqhdyb0lymx0n'>
+            <connection class='textscan' directory='C:/Users/Beatriz Fernandes/Desktop/IronHack/Week by Week/W8/Final Project/finalproject/data/clean/csv_sql' filename='categories.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='inventory_events' name='textscan.1xccq7m1u7rk5812ckz2i1tgljqc'>
+            <connection class='textscan' directory='C:/Users/Beatriz Fernandes/Desktop/IronHack/Week by Week/W8/Final Project/finalproject/data/clean/csv_sql' filename='inventory_events.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='pricing_rules' name='textscan.1v2w3970s181ue174gboc0x9izxs'>
+            <connection class='textscan' directory='C:/Users/Beatriz Fernandes/Desktop/IronHack/Week by Week/W8/Final Project/finalproject/data/clean/csv_sql' filename='pricing_rules.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='products' name='textscan.1tg5j3j15bqtix14n2qah1553qki'>
+            <connection class='textscan' directory='C:/Users/Beatriz Fernandes/Desktop/IronHack/Week by Week/W8/Final Project/finalproject/data/clean/csv_sql' filename='products.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='rentals' name='textscan.1md1g0708l8byk0zwma930o9a4mt'>
+            <connection class='textscan' directory='C:/Users/Beatriz Fernandes/Desktop/IronHack/Week by Week/W8/Final Project/finalproject/data/clean/csv_sql' filename='rentals.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='return_conditions' name='textscan.02871lv17pb8zz1evlpx31en6xe8'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/Beatriz Fernandes/Desktop/IronHack/Week by Week/W8/Final Project/finalproject/data/clean/csv_sql/return_conditions.csv' dataRefreshTime='' directory='C:/Users/Beatriz Fernandes/Desktop/IronHack/Week by Week/W8/Final Project/finalproject/data/clean/csv_sql' filename='C:/Users/BEATRI~1/AppData/Local/Temp/TableauTemp/13ryvkt1hiuxdv10seywz1b6w13h/return_conditions.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='customers (2)' name='textscan.0titut61d9mty611dztm80esw69r'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:\Users\Beatriz Fernandes\Desktop\IronHack\Week by Week\W8\Final Project\finalproject\data\clean\customers.csv' dataRefreshTime='' directory='C:/Users/Beatriz Fernandes/Desktop/IronHack/Week by Week/W8/Final Project/finalproject/data/clean' filename='C:/Users/BEATRI~1/AppData/Local/Temp/TableauTemp/0vyzstn06njnh214hsad91o58887/customers.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='products (2)' name='textscan.0f3wem51bwcood16im8ds15cgfwf'>
+            <connection class='textscan' directory='C:/Users/Beatriz Fernandes/Desktop/IronHack/Week by Week/W8/Final Project/finalproject/data/clean' filename='products.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='rentals (2)' name='textscan.1hft9eh1uyj32c1bbco6p1yzm5m4'>
+            <connection class='textscan' directory='C:/Users/Beatriz Fernandes/Desktop/IronHack/Week by Week/W8/Final Project/finalproject/data/clean' filename='rentals.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.1hft9eh1uyj32c1bbco6p1yzm5m4' name='rentals.csv' table='[C:\Users\Beatriz Fernandes\Desktop\IronHack\Week by Week\W8\Final Project\finalproject\data\clean\csv_sql\rentals#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='pt_PT'>
+              <column datatype='integer' name='rental_id' ordinal='0' />
+              <column datatype='integer' name='product_id' ordinal='1' />
+              <column datatype='integer' name='customer_id' ordinal='2' />
+              <column datatype='date' name='rental_start' ordinal='3' />
+              <column datatype='date' name='rental_due' ordinal='4' />
+              <column datatype='date' name='rental_returned' ordinal='5' />
+              <column datatype='real' name='daily_rate_eur' ordinal='6' />
+              <column datatype='real' name='deposit_eur' ordinal='7' />
+              <column datatype='integer' name='days_held' ordinal='8' />
+              <column datatype='real' name='total_charged' ordinal='9' />
+              <column datatype='string' name='status' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1hft9eh1uyj32c1bbco6p1yzm5m4' name='customers.csv' table='[C:\Users\Beatriz Fernandes\Desktop\IronHack\Week by Week\W8\Final Project\finalproject\data\clean\csv_sql\customers#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='pt_PT'>
+              <column datatype='integer' name='customer_id' ordinal='0' />
+              <column datatype='string' name='full_name' ordinal='1' />
+              <column datatype='string' name='email' ordinal='2' />
+              <column datatype='integer' name='nif' ordinal='3' />
+              <column datatype='string' name='phone' ordinal='4' />
+              <column datatype='string' name='address' ordinal='5' />
+              <column datatype='integer' name='id_verified' ordinal='6' />
+              <column datatype='integer' name='total_rentals' ordinal='7' />
+              <column datatype='integer' name='late_returns' ordinal='8' />
+              <column datatype='real' name='avg_return_days' ordinal='9' />
+              <column datatype='real' name='churn_risk_score' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1hft9eh1uyj32c1bbco6p1yzm5m4' name='products.csv' table='[C:\Users\Beatriz Fernandes\Desktop\IronHack\Week by Week\W8\Final Project\finalproject\data\clean\csv_sql\products#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='pt_PT'>
+              <column datatype='integer' name='product_id' ordinal='0' />
+              <column datatype='integer' name='category_id' ordinal='1' />
+              <column datatype='string' name='sku' ordinal='2' />
+              <column datatype='string' name='name' ordinal='3' />
+              <column datatype='string' name='brand' ordinal='4' />
+              <column datatype='integer' name='retail_price_eur' ordinal='5' />
+              <column datatype='date' name='release_date' ordinal='6' />
+              <column datatype='date' name='listed_date' ordinal='7' />
+              <column datatype='string' name='condition' ordinal='8' />
+              <column datatype='string' name='status' ordinal='9' />
+              <column datatype='integer' name='days_on_shelf' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.02871lv17pb8zz1evlpx31en6xe8' name='pricing_rules.csv' table='[pricing_rules#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='pt_PT' separator='_'>
+              <column datatype='string' name='rule' ordinal='0' />
+              <column datatype='string' name='id,category' ordinal='1' />
+              <column datatype='string' name='id,age' ordinal='2' />
+              <column datatype='string' name='min' ordinal='3' />
+              <column datatype='string' name='days,age' ordinal='4' />
+              <column datatype='string' name='max' ordinal='5' />
+              <column datatype='string' name='days,base' ordinal='6' />
+              <column datatype='string' name='daily' ordinal='7' />
+              <column datatype='string' name='rate' ordinal='8' />
+              <column datatype='string' name='pct,deposit' ordinal='9' />
+              <column datatype='string' name='pct,late' ordinal='10' />
+              <column datatype='string' name='fee' ordinal='11' />
+              <column datatype='string' name='daily,active' ordinal='12' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[address]' value='[customers.csv].[address]' />
+          <map key='[avg_return_days]' value='[customers.csv].[avg_return_days]' />
+          <map key='[brand]' value='[products.csv].[brand]' />
+          <map key='[category_id]' value='[products.csv].[category_id]' />
+          <map key='[churn_risk_score]' value='[customers.csv].[churn_risk_score]' />
+          <map key='[condition]' value='[products.csv].[condition]' />
+          <map key='[customer_id (customers.csv)]' value='[customers.csv].[customer_id]' />
+          <map key='[customer_id]' value='[rentals.csv].[customer_id]' />
+          <map key='[daily,active]' value='[pricing_rules.csv].[daily,active]' />
+          <map key='[daily]' value='[pricing_rules.csv].[daily]' />
+          <map key='[daily_rate_eur]' value='[rentals.csv].[daily_rate_eur]' />
+          <map key='[days,age]' value='[pricing_rules.csv].[days,age]' />
+          <map key='[days,base]' value='[pricing_rules.csv].[days,base]' />
+          <map key='[days_held]' value='[rentals.csv].[days_held]' />
+          <map key='[days_on_shelf]' value='[products.csv].[days_on_shelf]' />
+          <map key='[deposit_eur]' value='[rentals.csv].[deposit_eur]' />
+          <map key='[email]' value='[customers.csv].[email]' />
+          <map key='[fee]' value='[pricing_rules.csv].[fee]' />
+          <map key='[full_name]' value='[customers.csv].[full_name]' />
+          <map key='[id,age]' value='[pricing_rules.csv].[id,age]' />
+          <map key='[id,category]' value='[pricing_rules.csv].[id,category]' />
+          <map key='[id_verified]' value='[customers.csv].[id_verified]' />
+          <map key='[late_returns]' value='[customers.csv].[late_returns]' />
+          <map key='[listed_date]' value='[products.csv].[listed_date]' />
+          <map key='[max]' value='[pricing_rules.csv].[max]' />
+          <map key='[min]' value='[pricing_rules.csv].[min]' />
+          <map key='[name]' value='[products.csv].[name]' />
+          <map key='[nif]' value='[customers.csv].[nif]' />
+          <map key='[pct,deposit]' value='[pricing_rules.csv].[pct,deposit]' />
+          <map key='[pct,late]' value='[pricing_rules.csv].[pct,late]' />
+          <map key='[phone]' value='[customers.csv].[phone]' />
+          <map key='[product_id (products.csv)]' value='[products.csv].[product_id]' />
+          <map key='[product_id]' value='[rentals.csv].[product_id]' />
+          <map key='[rate]' value='[pricing_rules.csv].[rate]' />
+          <map key='[release_date]' value='[products.csv].[release_date]' />
+          <map key='[rental_due]' value='[rentals.csv].[rental_due]' />
+          <map key='[rental_id]' value='[rentals.csv].[rental_id]' />
+          <map key='[rental_returned]' value='[rentals.csv].[rental_returned]' />
+          <map key='[rental_start]' value='[rentals.csv].[rental_start]' />
+          <map key='[retail_price_eur]' value='[products.csv].[retail_price_eur]' />
+          <map key='[rule]' value='[pricing_rules.csv].[rule]' />
+          <map key='[sku]' value='[products.csv].[sku]' />
+          <map key='[status (products.csv)]' value='[products.csv].[status]' />
+          <map key='[status]' value='[rentals.csv].[status]' />
+          <map key='[total_charged]' value='[rentals.csv].[total_charged]' />
+          <map key='[total_rentals]' value='[customers.csv].[total_rentals]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[rentals.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_PT&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_PT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[customers.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_PT&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_PT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[products.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_PT&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_PT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_PT&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;_&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_PT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rental_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rental_id]</local-name>
+            <parent-name>[rentals.csv]</parent-name>
+            <remote-alias>rental_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rentals.csv_66D1B80C77D545258DC8E18697FA4FF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[product_id]</local-name>
+            <parent-name>[rentals.csv]</parent-name>
+            <remote-alias>product_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rentals.csv_66D1B80C77D545258DC8E18697FA4FF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[rentals.csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rentals.csv_66D1B80C77D545258DC8E18697FA4FF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rental_start</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[rental_start]</local-name>
+            <parent-name>[rentals.csv]</parent-name>
+            <remote-alias>rental_start</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rentals.csv_66D1B80C77D545258DC8E18697FA4FF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rental_due</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[rental_due]</local-name>
+            <parent-name>[rentals.csv]</parent-name>
+            <remote-alias>rental_due</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rentals.csv_66D1B80C77D545258DC8E18697FA4FF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rental_returned</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[rental_returned]</local-name>
+            <parent-name>[rentals.csv]</parent-name>
+            <remote-alias>rental_returned</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rentals.csv_66D1B80C77D545258DC8E18697FA4FF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_rate_eur</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_rate_eur]</local-name>
+            <parent-name>[rentals.csv]</parent-name>
+            <remote-alias>daily_rate_eur</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rentals.csv_66D1B80C77D545258DC8E18697FA4FF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deposit_eur</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[deposit_eur]</local-name>
+            <parent-name>[rentals.csv]</parent-name>
+            <remote-alias>deposit_eur</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rentals.csv_66D1B80C77D545258DC8E18697FA4FF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days_held</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[days_held]</local-name>
+            <parent-name>[rentals.csv]</parent-name>
+            <remote-alias>days_held</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rentals.csv_66D1B80C77D545258DC8E18697FA4FF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_charged</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_charged]</local-name>
+            <parent-name>[rentals.csv]</parent-name>
+            <remote-alias>total_charged</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rentals.csv_66D1B80C77D545258DC8E18697FA4FF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[rentals.csv]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[rentals.csv_66D1B80C77D545258DC8E18697FA4FF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_id (customers.csv)]</local-name>
+            <parent-name>[customers.csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customers.csv_66235448F75C4B4582C176E7F09D07F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>full_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[full_name]</local-name>
+            <parent-name>[customers.csv]</parent-name>
+            <remote-alias>full_name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[customers.csv_66235448F75C4B4582C176E7F09D07F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>email</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[email]</local-name>
+            <parent-name>[customers.csv]</parent-name>
+            <remote-alias>email</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[customers.csv_66235448F75C4B4582C176E7F09D07F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nif</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nif]</local-name>
+            <parent-name>[customers.csv]</parent-name>
+            <remote-alias>nif</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customers.csv_66235448F75C4B4582C176E7F09D07F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>phone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[phone]</local-name>
+            <parent-name>[customers.csv]</parent-name>
+            <remote-alias>phone</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[customers.csv_66235448F75C4B4582C176E7F09D07F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[customers.csv]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[customers.csv_66235448F75C4B4582C176E7F09D07F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id_verified</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id_verified]</local-name>
+            <parent-name>[customers.csv]</parent-name>
+            <remote-alias>id_verified</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customers.csv_66235448F75C4B4582C176E7F09D07F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_rentals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_rentals]</local-name>
+            <parent-name>[customers.csv]</parent-name>
+            <remote-alias>total_rentals</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customers.csv_66235448F75C4B4582C176E7F09D07F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>late_returns</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[late_returns]</local-name>
+            <parent-name>[customers.csv]</parent-name>
+            <remote-alias>late_returns</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customers.csv_66235448F75C4B4582C176E7F09D07F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_return_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_return_days]</local-name>
+            <parent-name>[customers.csv]</parent-name>
+            <remote-alias>avg_return_days</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customers.csv_66235448F75C4B4582C176E7F09D07F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>churn_risk_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[churn_risk_score]</local-name>
+            <parent-name>[customers.csv]</parent-name>
+            <remote-alias>churn_risk_score</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customers.csv_66235448F75C4B4582C176E7F09D07F8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[product_id (products.csv)]</local-name>
+            <parent-name>[products.csv]</parent-name>
+            <remote-alias>product_id</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[category_id]</local-name>
+            <parent-name>[products.csv]</parent-name>
+            <remote-alias>category_id</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sku</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sku]</local-name>
+            <parent-name>[products.csv]</parent-name>
+            <remote-alias>sku</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[products.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[brand]</local-name>
+            <parent-name>[products.csv]</parent-name>
+            <remote-alias>brand</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retail_price_eur</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retail_price_eur]</local-name>
+            <parent-name>[products.csv]</parent-name>
+            <remote-alias>retail_price_eur</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[release_date]</local-name>
+            <parent-name>[products.csv]</parent-name>
+            <remote-alias>release_date</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listed_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[listed_date]</local-name>
+            <parent-name>[products.csv]</parent-name>
+            <remote-alias>listed_date</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[condition]</local-name>
+            <parent-name>[products.csv]</parent-name>
+            <remote-alias>condition</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[status (products.csv)]</local-name>
+            <parent-name>[products.csv]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days_on_shelf</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[days_on_shelf]</local-name>
+            <parent-name>[products.csv]</parent-name>
+            <remote-alias>days_on_shelf</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rule</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rule]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>rule</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id,category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id,category]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>id,category</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id,age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id,age]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>id,age</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>min</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[min]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>min</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days,age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[days,age]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>days,age</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[max]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>max</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days,base</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[days,base]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>days,base</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[daily]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>daily</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rate]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>rate</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct,deposit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pct,deposit]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>pct,deposit</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct,late</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pct,late]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>pct,late</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fee</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fee]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>fee</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily,active</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[daily,active]</local-name>
+            <parent-name>[pricing_rules.csv]</parent-name>
+            <remote-alias>daily,active</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RPT' />
+            <object-id>[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='customers.csv' datatype='table' name='[__tableau_internal_object_id__].[customers.csv_66235448F75C4B4582C176E7F09D07F8]' role='measure' type='quantitative' />
+      <column caption='pricing_rules.csv' datatype='table' name='[__tableau_internal_object_id__].[pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37]' role='measure' type='quantitative' />
+      <column caption='products.csv' datatype='table' name='[__tableau_internal_object_id__].[products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8]' role='measure' type='quantitative' />
+      <column caption='rentals.csv' datatype='table' name='[__tableau_internal_object_id__].[rentals.csv_66D1B80C77D545258DC8E18697FA4FF5]' role='measure' type='quantitative' />
+      <column caption='Address (Customers.Csv1)' datatype='string' hidden='true' name='[address (customers.csv1)]' role='dimension' type='nominal' />
+      <column caption='Address' datatype='string' hidden='true' name='[address]' role='dimension' type='nominal' />
+      <column caption='Avg Return Days' datatype='real' name='[avg_return_days]' role='measure' type='quantitative' />
+      <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+      <column caption='Category Id' datatype='integer' name='[category_id]' role='dimension' type='ordinal' />
+      <column caption='Churn Risk Score' datatype='real' name='[churn_risk_score]' role='measure' type='quantitative' />
+      <column caption='Condition' datatype='string' name='[condition]' role='dimension' type='nominal' />
+      <column caption='Customer Id (Customers.Csv)' datatype='integer' name='[customer_id (customers.csv)]' role='dimension' type='ordinal' />
+      <column caption='Customer Id' datatype='integer' name='[customer_id]' role='dimension' type='ordinal' />
+      <column caption='Daily,Active' datatype='string' name='[daily,active]' role='dimension' type='nominal' />
+      <column caption='Daily' datatype='string' name='[daily]' role='dimension' type='nominal' />
+      <column caption='Daily Rate Eur' datatype='real' name='[daily_rate_eur]' role='measure' type='quantitative' />
+      <column caption='Days,Age' datatype='string' name='[days,age]' role='dimension' type='nominal' />
+      <column caption='Days,Base' datatype='string' name='[days,base]' role='dimension' type='nominal' />
+      <column caption='Days Held' datatype='integer' name='[days_held]' role='measure' type='quantitative' />
+      <column caption='Days On Shelf' datatype='integer' name='[days_on_shelf]' role='measure' type='quantitative' />
+      <column caption='Deposit Eur' datatype='real' name='[deposit_eur]' role='measure' type='quantitative' />
+      <column caption='Email (Customers.Csv1)' datatype='string' hidden='true' name='[email (customers.csv1)]' role='dimension' type='nominal' />
+      <column caption='Email' datatype='string' hidden='true' name='[email]' role='dimension' type='nominal' />
+      <column caption='Fee' datatype='string' name='[fee]' role='dimension' type='nominal' />
+      <column caption='Full Name' datatype='string' name='[full_name]' role='dimension' type='nominal' />
+      <column caption='Id,Age' datatype='string' name='[id,age]' role='dimension' type='nominal' />
+      <column caption='Id,Category' datatype='string' name='[id,category]' role='dimension' type='nominal' />
+      <column caption='Id Verified' datatype='integer' name='[id_verified]' role='dimension' type='ordinal' />
+      <column caption='Late Returns' datatype='integer' name='[late_returns]' role='measure' type='quantitative' />
+      <column caption='Listed Date' datatype='date' name='[listed_date]' role='dimension' type='ordinal' />
+      <column caption='Max' datatype='string' name='[max]' role='dimension' type='nominal' />
+      <column caption='Min' datatype='string' name='[min]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Nif (Customers.Csv1)' datatype='integer' hidden='true' name='[nif (customers.csv1)]' role='measure' type='quantitative' />
+      <column caption='Nif' datatype='integer' name='[nif]' role='measure' type='quantitative' />
+      <column caption='Pct,Deposit' datatype='string' name='[pct,deposit]' role='dimension' type='nominal' />
+      <column caption='Pct,Late' datatype='string' name='[pct,late]' role='dimension' type='nominal' />
+      <column caption='Phone (Customers.Csv1)' datatype='string' hidden='true' name='[phone (customers.csv1)]' role='dimension' type='nominal' />
+      <column caption='Phone' datatype='string' hidden='true' name='[phone]' role='dimension' type='nominal' />
+      <column caption='Product Id (Products.Csv)' datatype='integer' name='[product_id (products.csv)]' role='dimension' type='ordinal' />
+      <column caption='Product Id' datatype='integer' name='[product_id]' role='dimension' type='ordinal' />
+      <column caption='Rate' datatype='string' name='[rate]' role='dimension' type='nominal' />
+      <column caption='Release Date' datatype='date' name='[release_date]' role='dimension' type='ordinal' />
+      <column caption='Rental Due' datatype='date' name='[rental_due]' role='dimension' type='ordinal' />
+      <column caption='Rental Id' datatype='integer' name='[rental_id]' role='dimension' type='ordinal' />
+      <column caption='Rental Returned' datatype='date' name='[rental_returned]' role='dimension' type='ordinal' />
+      <column caption='Rental Start' datatype='date' name='[rental_start]' role='dimension' type='ordinal' />
+      <column caption='Retail Price Eur' datatype='integer' name='[retail_price_eur]' role='measure' type='quantitative' />
+      <column caption='Rule' datatype='string' name='[rule]' role='dimension' type='nominal' />
+      <column caption='Sku' datatype='string' name='[sku]' role='dimension' type='nominal' />
+      <column caption='Status (Products.Csv)' datatype='string' name='[status (products.csv)]' role='dimension' type='nominal' />
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+      <column caption='Total Charged' datatype='real' name='[total_charged]' role='measure' type='quantitative' />
+      <column caption='Total Rentals (Customers.Csv1)' datatype='integer' name='[total_rentals (customers.csv1)]' role='measure' type='quantitative' />
+      <column caption='Total Rentals' datatype='integer' name='[total_rentals]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/BEATRI~1/AppData/Local/Temp/TableauTemp/#TableauTemp_0wlor7b16monma1engets1qw38p1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/07/2026 11:03:55 AM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='customers.csv_E8F203CA145A45D39F4634E7C3CC0700' table='[Extract].[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]' type='table' />
+            <relation name='customers.csv_3F5520ED01A947999BA2CF04A886EC13' table='[Extract].[customers.csv_3F5520ED01A947999BA2CF04A886EC13]' type='table' />
+            <relation name='rentals.csv_33D100C37F9C43D4ACD92205927FD3BF' table='[Extract].[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]' type='table' />
+            <relation name='products.csv_495834F641884365A341A09216ED4835' table='[Extract].[products.csv_495834F641884365A341A09216ED4835]' type='table' />
+          </relation>
+          <cols>
+            <map key='[address (customers.csv1)]' value='[customers.csv_3F5520ED01A947999BA2CF04A886EC13].[address]' />
+            <map key='[address]' value='[customers.csv_E8F203CA145A45D39F4634E7C3CC0700].[address]' />
+            <map key='[avg_return_days (customers.csv1)]' value='[customers.csv_3F5520ED01A947999BA2CF04A886EC13].[avg_return_days]' />
+            <map key='[avg_return_days]' value='[customers.csv_E8F203CA145A45D39F4634E7C3CC0700].[avg_return_days]' />
+            <map key='[brand]' value='[products.csv_495834F641884365A341A09216ED4835].[brand]' />
+            <map key='[category_id]' value='[products.csv_495834F641884365A341A09216ED4835].[category_id]' />
+            <map key='[churn_risk_score (customers.csv1)]' value='[customers.csv_3F5520ED01A947999BA2CF04A886EC13].[churn_risk_score]' />
+            <map key='[churn_risk_score]' value='[customers.csv_E8F203CA145A45D39F4634E7C3CC0700].[churn_risk_score]' />
+            <map key='[condition]' value='[products.csv_495834F641884365A341A09216ED4835].[condition]' />
+            <map key='[customer_id (customers.csv1)]' value='[customers.csv_3F5520ED01A947999BA2CF04A886EC13].[customer_id]' />
+            <map key='[customer_id (rentals.csv)]' value='[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF].[customer_id]' />
+            <map key='[customer_id]' value='[customers.csv_E8F203CA145A45D39F4634E7C3CC0700].[customer_id]' />
+            <map key='[daily_rate_eur]' value='[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF].[daily_rate_eur]' />
+            <map key='[days_held]' value='[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF].[days_held]' />
+            <map key='[days_on_shelf]' value='[products.csv_495834F641884365A341A09216ED4835].[days_on_shelf]' />
+            <map key='[deposit_eur]' value='[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF].[deposit_eur]' />
+            <map key='[email (customers.csv1)]' value='[customers.csv_3F5520ED01A947999BA2CF04A886EC13].[email]' />
+            <map key='[email]' value='[customers.csv_E8F203CA145A45D39F4634E7C3CC0700].[email]' />
+            <map key='[full_name (customers.csv1)]' value='[customers.csv_3F5520ED01A947999BA2CF04A886EC13].[full_name]' />
+            <map key='[full_name]' value='[customers.csv_E8F203CA145A45D39F4634E7C3CC0700].[full_name]' />
+            <map key='[id_verified (customers.csv1)]' value='[customers.csv_3F5520ED01A947999BA2CF04A886EC13].[id_verified]' />
+            <map key='[id_verified]' value='[customers.csv_E8F203CA145A45D39F4634E7C3CC0700].[id_verified]' />
+            <map key='[late_returns (customers.csv1)]' value='[customers.csv_3F5520ED01A947999BA2CF04A886EC13].[late_returns]' />
+            <map key='[late_returns]' value='[customers.csv_E8F203CA145A45D39F4634E7C3CC0700].[late_returns]' />
+            <map key='[listed_date]' value='[products.csv_495834F641884365A341A09216ED4835].[listed_date]' />
+            <map key='[name]' value='[products.csv_495834F641884365A341A09216ED4835].[name]' />
+            <map key='[nif (customers.csv1)]' value='[customers.csv_3F5520ED01A947999BA2CF04A886EC13].[nif]' />
+            <map key='[nif]' value='[customers.csv_E8F203CA145A45D39F4634E7C3CC0700].[nif]' />
+            <map key='[phone (customers.csv1)]' value='[customers.csv_3F5520ED01A947999BA2CF04A886EC13].[phone]' />
+            <map key='[phone]' value='[customers.csv_E8F203CA145A45D39F4634E7C3CC0700].[phone]' />
+            <map key='[product_id (products.csv)]' value='[products.csv_495834F641884365A341A09216ED4835].[product_id]' />
+            <map key='[product_id]' value='[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF].[product_id]' />
+            <map key='[release_date]' value='[products.csv_495834F641884365A341A09216ED4835].[release_date]' />
+            <map key='[rental_due]' value='[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF].[rental_due]' />
+            <map key='[rental_id]' value='[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF].[rental_id]' />
+            <map key='[rental_returned]' value='[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF].[rental_returned]' />
+            <map key='[rental_start]' value='[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF].[rental_start]' />
+            <map key='[retail_price_eur]' value='[products.csv_495834F641884365A341A09216ED4835].[retail_price_eur]' />
+            <map key='[sku]' value='[products.csv_495834F641884365A341A09216ED4835].[sku]' />
+            <map key='[status (products.csv)]' value='[products.csv_495834F641884365A341A09216ED4835].[status]' />
+            <map key='[status]' value='[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF].[status]' />
+            <map key='[total_charged]' value='[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF].[total_charged]' />
+            <map key='[total_rentals (customers.csv1)]' value='[customers.csv_3F5520ED01A947999BA2CF04A886EC13].[total_rentals]' />
+            <map key='[total_rentals]' value='[customers.csv_E8F203CA145A45D39F4634E7C3CC0700].[total_rentals]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customer_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[customer_id]</local-name>
+              <parent-name>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</parent-name>
+              <remote-alias>customer_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>customers.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>800</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>full_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[full_name]</local-name>
+              <parent-name>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</parent-name>
+              <remote-alias>full_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>customers.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>790</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>email</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[email]</local-name>
+              <parent-name>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</parent-name>
+              <remote-alias>email</remote-alias>
+              <ordinal>2</ordinal>
+              <family>customers.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>795</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nif</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[nif]</local-name>
+              <parent-name>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</parent-name>
+              <remote-alias>nif</remote-alias>
+              <ordinal>3</ordinal>
+              <family>customers.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>800</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>phone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[phone]</local-name>
+              <parent-name>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</parent-name>
+              <remote-alias>phone</remote-alias>
+              <ordinal>4</ordinal>
+              <family>customers.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>800</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[address]</local-name>
+              <parent-name>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</parent-name>
+              <remote-alias>address</remote-alias>
+              <ordinal>5</ordinal>
+              <family>customers.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>800</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id_verified</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id_verified]</local-name>
+              <parent-name>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</parent-name>
+              <remote-alias>id_verified</remote-alias>
+              <ordinal>6</ordinal>
+              <family>customers.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_rentals</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_rentals]</local-name>
+              <parent-name>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</parent-name>
+              <remote-alias>total_rentals</remote-alias>
+              <ordinal>7</ordinal>
+              <family>customers.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>late_returns</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[late_returns]</local-name>
+              <parent-name>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</parent-name>
+              <remote-alias>late_returns</remote-alias>
+              <ordinal>8</ordinal>
+              <family>customers.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_return_days</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_return_days]</local-name>
+              <parent-name>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</parent-name>
+              <remote-alias>avg_return_days</remote-alias>
+              <ordinal>9</ordinal>
+              <family>customers.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>170</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churn_risk_score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[churn_risk_score]</local-name>
+              <parent-name>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</parent-name>
+              <remote-alias>churn_risk_score</remote-alias>
+              <ordinal>10</ordinal>
+              <family>customers.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>417</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[customer_id (customers.csv1)]</local-name>
+              <parent-name>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</parent-name>
+              <remote-alias>customer_id</remote-alias>
+              <ordinal>11</ordinal>
+              <family>customers.csv1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>800</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>full_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[full_name (customers.csv1)]</local-name>
+              <parent-name>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</parent-name>
+              <remote-alias>full_name</remote-alias>
+              <ordinal>12</ordinal>
+              <family>customers.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>790</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>email</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[email (customers.csv1)]</local-name>
+              <parent-name>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</parent-name>
+              <remote-alias>email</remote-alias>
+              <ordinal>13</ordinal>
+              <family>customers.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>795</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nif</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[nif (customers.csv1)]</local-name>
+              <parent-name>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</parent-name>
+              <remote-alias>nif</remote-alias>
+              <ordinal>14</ordinal>
+              <family>customers.csv1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>800</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>phone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[phone (customers.csv1)]</local-name>
+              <parent-name>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</parent-name>
+              <remote-alias>phone</remote-alias>
+              <ordinal>15</ordinal>
+              <family>customers.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>800</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[address (customers.csv1)]</local-name>
+              <parent-name>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</parent-name>
+              <remote-alias>address</remote-alias>
+              <ordinal>16</ordinal>
+              <family>customers.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>800</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id_verified</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id_verified (customers.csv1)]</local-name>
+              <parent-name>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</parent-name>
+              <remote-alias>id_verified</remote-alias>
+              <ordinal>17</ordinal>
+              <family>customers.csv1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_rentals</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_rentals (customers.csv1)]</local-name>
+              <parent-name>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</parent-name>
+              <remote-alias>total_rentals</remote-alias>
+              <ordinal>18</ordinal>
+              <family>customers.csv1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>late_returns</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[late_returns (customers.csv1)]</local-name>
+              <parent-name>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</parent-name>
+              <remote-alias>late_returns</remote-alias>
+              <ordinal>19</ordinal>
+              <family>customers.csv1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_return_days</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_return_days (customers.csv1)]</local-name>
+              <parent-name>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</parent-name>
+              <remote-alias>avg_return_days</remote-alias>
+              <ordinal>20</ordinal>
+              <family>customers.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>170</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churn_risk_score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[churn_risk_score (customers.csv1)]</local-name>
+              <parent-name>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</parent-name>
+              <remote-alias>churn_risk_score</remote-alias>
+              <ordinal>21</ordinal>
+              <family>customers.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>417</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[customers.csv_3F5520ED01A947999BA2CF04A886EC13]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rental_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rental_id]</local-name>
+              <parent-name>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</parent-name>
+              <remote-alias>rental_id</remote-alias>
+              <ordinal>22</ordinal>
+              <family>rentals.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3500</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[product_id]</local-name>
+              <parent-name>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</parent-name>
+              <remote-alias>product_id</remote-alias>
+              <ordinal>23</ordinal>
+              <family>rentals.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1083</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[customer_id (rentals.csv)]</local-name>
+              <parent-name>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</parent-name>
+              <remote-alias>customer_id</remote-alias>
+              <ordinal>24</ordinal>
+              <family>rentals.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>820</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rental_start</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[rental_start]</local-name>
+              <parent-name>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</parent-name>
+              <remote-alias>rental_start</remote-alias>
+              <ordinal>25</ordinal>
+              <family>rentals.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>978</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rental_due</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[rental_due]</local-name>
+              <parent-name>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</parent-name>
+              <remote-alias>rental_due</remote-alias>
+              <ordinal>26</ordinal>
+              <family>rentals.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1025</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rental_returned</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[rental_returned]</local-name>
+              <parent-name>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</parent-name>
+              <remote-alias>rental_returned</remote-alias>
+              <ordinal>27</ordinal>
+              <family>rentals.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>983</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>daily_rate_eur</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[daily_rate_eur]</local-name>
+              <parent-name>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</parent-name>
+              <remote-alias>daily_rate_eur</remote-alias>
+              <ordinal>28</ordinal>
+              <family>rentals.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>726</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deposit_eur</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[deposit_eur]</local-name>
+              <parent-name>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</parent-name>
+              <remote-alias>deposit_eur</remote-alias>
+              <ordinal>29</ordinal>
+              <family>rentals.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>709</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>days_held</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[days_held]</local-name>
+              <parent-name>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</parent-name>
+              <remote-alias>days_held</remote-alias>
+              <ordinal>30</ordinal>
+              <family>rentals.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>217</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_charged</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_charged]</local-name>
+              <parent-name>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</parent-name>
+              <remote-alias>total_charged</remote-alias>
+              <ordinal>31</ordinal>
+              <family>rentals.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1750</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</parent-name>
+              <remote-alias>status</remote-alias>
+              <ordinal>32</ordinal>
+              <family>rentals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[product_id (products.csv)]</local-name>
+              <parent-name>[products.csv_495834F641884365A341A09216ED4835]</parent-name>
+              <remote-alias>product_id</remote-alias>
+              <ordinal>33</ordinal>
+              <family>products.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1880</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[products.csv_495834F641884365A341A09216ED4835]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[category_id]</local-name>
+              <parent-name>[products.csv_495834F641884365A341A09216ED4835]</parent-name>
+              <remote-alias>category_id</remote-alias>
+              <ordinal>34</ordinal>
+              <family>products.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[products.csv_495834F641884365A341A09216ED4835]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sku</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sku]</local-name>
+              <parent-name>[products.csv_495834F641884365A341A09216ED4835]</parent-name>
+              <remote-alias>sku</remote-alias>
+              <ordinal>35</ordinal>
+              <family>products.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1880</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[products.csv_495834F641884365A341A09216ED4835]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[products.csv_495834F641884365A341A09216ED4835]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>36</ordinal>
+              <family>products.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1265</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[products.csv_495834F641884365A341A09216ED4835]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>brand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[brand]</local-name>
+              <parent-name>[products.csv_495834F641884365A341A09216ED4835]</parent-name>
+              <remote-alias>brand</remote-alias>
+              <ordinal>37</ordinal>
+              <family>products.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[products.csv_495834F641884365A341A09216ED4835]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retail_price_eur</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[retail_price_eur]</local-name>
+              <parent-name>[products.csv_495834F641884365A341A09216ED4835]</parent-name>
+              <remote-alias>retail_price_eur</remote-alias>
+              <ordinal>38</ordinal>
+              <family>products.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>569</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[products.csv_495834F641884365A341A09216ED4835]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[release_date]</local-name>
+              <parent-name>[products.csv_495834F641884365A341A09216ED4835]</parent-name>
+              <remote-alias>release_date</remote-alias>
+              <ordinal>39</ordinal>
+              <family>products.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>830</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[products.csv_495834F641884365A341A09216ED4835]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>listed_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[listed_date]</local-name>
+              <parent-name>[products.csv_495834F641884365A341A09216ED4835]</parent-name>
+              <remote-alias>listed_date</remote-alias>
+              <ordinal>40</ordinal>
+              <family>products.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>778</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[products.csv_495834F641884365A341A09216ED4835]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>condition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[condition]</local-name>
+              <parent-name>[products.csv_495834F641884365A341A09216ED4835]</parent-name>
+              <remote-alias>condition</remote-alias>
+              <ordinal>41</ordinal>
+              <family>products.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[products.csv_495834F641884365A341A09216ED4835]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status (products.csv)]</local-name>
+              <parent-name>[products.csv_495834F641884365A341A09216ED4835]</parent-name>
+              <remote-alias>status</remote-alias>
+              <ordinal>42</ordinal>
+              <family>products.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RPT_S2' />
+              <object-id>[products.csv_495834F641884365A341A09216ED4835]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>days_on_shelf</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[days_on_shelf]</local-name>
+              <parent-name>[products.csv_495834F641884365A341A09216ED4835]</parent-name>
+              <remote-alias>days_on_shelf</remote-alias>
+              <ordinal>43</ordinal>
+              <family>products.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>778</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[products.csv_495834F641884365A341A09216ED4835]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Portugal&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='customers.csv1' id='customers.csv_3F5520ED01A947999BA2CF04A886EC13'>
+            <properties context='extract'>
+              <relation name='customers.csv_3F5520ED01A947999BA2CF04A886EC13' table='[Extract].[customers.csv_3F5520ED01A947999BA2CF04A886EC13]' type='table' />
+            </properties>
+          </object>
+          <object caption='customers.csv' id='customers.csv_66235448F75C4B4582C176E7F09D07F8'>
+            <properties context=''>
+              <relation connection='textscan.1hft9eh1uyj32c1bbco6p1yzm5m4' name='customers.csv' table='[C:\Users\Beatriz Fernandes\Desktop\IronHack\Week by Week\W8\Final Project\finalproject\data\clean\csv_sql\customers#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pt_PT'>
+                  <column datatype='integer' name='customer_id' ordinal='0' />
+                  <column datatype='string' name='full_name' ordinal='1' />
+                  <column datatype='string' name='email' ordinal='2' />
+                  <column datatype='integer' name='nif' ordinal='3' />
+                  <column datatype='string' name='phone' ordinal='4' />
+                  <column datatype='string' name='address' ordinal='5' />
+                  <column datatype='integer' name='id_verified' ordinal='6' />
+                  <column datatype='integer' name='total_rentals' ordinal='7' />
+                  <column datatype='integer' name='late_returns' ordinal='8' />
+                  <column datatype='real' name='avg_return_days' ordinal='9' />
+                  <column datatype='real' name='churn_risk_score' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='customers.csv' id='customers.csv_E8F203CA145A45D39F4634E7C3CC0700'>
+            <properties context='extract'>
+              <relation name='customers.csv_E8F203CA145A45D39F4634E7C3CC0700' table='[Extract].[customers.csv_E8F203CA145A45D39F4634E7C3CC0700]' type='table' />
+            </properties>
+          </object>
+          <object caption='pricing_rules.csv' id='pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37'>
+            <properties context=''>
+              <relation connection='textscan.02871lv17pb8zz1evlpx31en6xe8' name='pricing_rules.csv' table='[pricing_rules#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pt_PT' separator='_'>
+                  <column datatype='string' name='rule' ordinal='0' />
+                  <column datatype='string' name='id,category' ordinal='1' />
+                  <column datatype='string' name='id,age' ordinal='2' />
+                  <column datatype='string' name='min' ordinal='3' />
+                  <column datatype='string' name='days,age' ordinal='4' />
+                  <column datatype='string' name='max' ordinal='5' />
+                  <column datatype='string' name='days,base' ordinal='6' />
+                  <column datatype='string' name='daily' ordinal='7' />
+                  <column datatype='string' name='rate' ordinal='8' />
+                  <column datatype='string' name='pct,deposit' ordinal='9' />
+                  <column datatype='string' name='pct,late' ordinal='10' />
+                  <column datatype='string' name='fee' ordinal='11' />
+                  <column datatype='string' name='daily,active' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='products.csv' id='products.csv_495834F641884365A341A09216ED4835'>
+            <properties context='extract'>
+              <relation name='products.csv_495834F641884365A341A09216ED4835' table='[Extract].[products.csv_495834F641884365A341A09216ED4835]' type='table' />
+            </properties>
+          </object>
+          <object caption='products.csv' id='products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8'>
+            <properties context=''>
+              <relation connection='textscan.1hft9eh1uyj32c1bbco6p1yzm5m4' name='products.csv' table='[C:\Users\Beatriz Fernandes\Desktop\IronHack\Week by Week\W8\Final Project\finalproject\data\clean\csv_sql\products#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pt_PT'>
+                  <column datatype='integer' name='product_id' ordinal='0' />
+                  <column datatype='integer' name='category_id' ordinal='1' />
+                  <column datatype='string' name='sku' ordinal='2' />
+                  <column datatype='string' name='name' ordinal='3' />
+                  <column datatype='string' name='brand' ordinal='4' />
+                  <column datatype='integer' name='retail_price_eur' ordinal='5' />
+                  <column datatype='date' name='release_date' ordinal='6' />
+                  <column datatype='date' name='listed_date' ordinal='7' />
+                  <column datatype='string' name='condition' ordinal='8' />
+                  <column datatype='string' name='status' ordinal='9' />
+                  <column datatype='integer' name='days_on_shelf' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='rentals.csv' id='rentals.csv_33D100C37F9C43D4ACD92205927FD3BF'>
+            <properties context='extract'>
+              <relation name='rentals.csv_33D100C37F9C43D4ACD92205927FD3BF' table='[Extract].[rentals.csv_33D100C37F9C43D4ACD92205927FD3BF]' type='table' />
+            </properties>
+          </object>
+          <object caption='rentals.csv' id='rentals.csv_66D1B80C77D545258DC8E18697FA4FF5'>
+            <properties context=''>
+              <relation connection='textscan.1hft9eh1uyj32c1bbco6p1yzm5m4' name='rentals.csv' table='[C:\Users\Beatriz Fernandes\Desktop\IronHack\Week by Week\W8\Final Project\finalproject\data\clean\csv_sql\rentals#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pt_PT'>
+                  <column datatype='integer' name='rental_id' ordinal='0' />
+                  <column datatype='integer' name='product_id' ordinal='1' />
+                  <column datatype='integer' name='customer_id' ordinal='2' />
+                  <column datatype='date' name='rental_start' ordinal='3' />
+                  <column datatype='date' name='rental_due' ordinal='4' />
+                  <column datatype='date' name='rental_returned' ordinal='5' />
+                  <column datatype='real' name='daily_rate_eur' ordinal='6' />
+                  <column datatype='real' name='deposit_eur' ordinal='7' />
+                  <column datatype='integer' name='days_held' ordinal='8' />
+                  <column datatype='real' name='total_charged' ordinal='9' />
+                  <column datatype='string' name='status' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[customer_id]' />
+              <expression op='[customer_id (customers.csv1)]' />
+            </expression>
+            <first-end-point object-id='customers.csv_E8F203CA145A45D39F4634E7C3CC0700' />
+            <second-end-point object-id='customers.csv_3F5520ED01A947999BA2CF04A886EC13' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[customer_id]' />
+              <expression op='[customer_id (customers.csv)]' />
+            </expression>
+            <first-end-point object-id='rentals.csv_66D1B80C77D545258DC8E18697FA4FF5' />
+            <second-end-point object-id='customers.csv_66235448F75C4B4582C176E7F09D07F8' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[category_id]' />
+              <expression op='[id,category]' />
+            </expression>
+            <first-end-point object-id='products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8' />
+            <second-end-point object-id='pricing_rules.csv_8544E1800E4F43808094BAA57FD6FB37' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[product_id]' />
+              <expression op='[product_id (products.csv)]' />
+            </expression>
+            <first-end-point object-id='rentals.csv_33D100C37F9C43D4ACD92205927FD3BF' />
+            <second-end-point object-id='products.csv_495834F641884365A341A09216ED4835' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[product_id]' />
+              <expression op='[product_id (products.csv)]' />
+            </expression>
+            <first-end-point object-id='rentals.csv_66D1B80C77D545258DC8E18697FA4FF5' />
+            <second-end-point object-id='products.csv_DDAD7AE3516B40CFBB3BA5B69B41A3B8' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[customer_id (customers.csv1)]' />
+              <expression op='[customer_id (rentals.csv)]' />
+            </expression>
+            <first-end-point object-id='customers.csv_3F5520ED01A947999BA2CF04A886EC13' />
+            <second-end-point object-id='rentals.csv_33D100C37F9C43D4ACD92205927FD3BF' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customers.csv+ (Multiple Connections)' name='federated.0kscwiv1i5vovt1e3oc5i1is2tql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kscwiv1i5vovt1e3oc5i1is2tql'>
+            <column caption='Avg Return Days' datatype='real' name='[avg_return_days]' role='measure' type='quantitative' />
+            <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+            <column-instance column='[total_rentals (customers.csv1)]' derivation='Count' name='[cnt:total_rentals (customers.csv1):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_return_days]' derivation='CountD' name='[ctd:avg_return_days:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+            <column caption='Retail Price Eur' datatype='integer' name='[retail_price_eur]' role='measure' type='quantitative' />
+            <column-instance column='[retail_price_eur]' derivation='Sum' name='[sum:retail_price_eur:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_charged]' derivation='Sum' name='[sum:total_charged:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Charged' datatype='real' name='[total_charged]' role='measure' type='quantitative' />
+            <column caption='Total Rentals (Customers.Csv1)' datatype='integer' name='[total_rentals (customers.csv1)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0kscwiv1i5vovt1e3oc5i1is2tql].[sum:total_charged:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0kscwiv1i5vovt1e3oc5i1is2tql].[sum:total_charged:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0kscwiv1i5vovt1e3oc5i1is2tql].[sum:total_charged:qk]' />
+              <lod column='[federated.0kscwiv1i5vovt1e3oc5i1is2tql].[ctd:avg_return_days:qk]' />
+              <lod column='[federated.0kscwiv1i5vovt1e3oc5i1is2tql].[sum:retail_price_eur:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0kscwiv1i5vovt1e3oc5i1is2tql].[none:brand:nk]</rows>
+        <cols>[federated.0kscwiv1i5vovt1e3oc5i1is2tql].[cnt:total_rentals (customers.csv1):qk]</cols>
+      </table>
+      <simple-id uuid='{066B18B7-A8F2-47E1-8126-60907743FC40}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='229'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{478AB181-6C00-48A3-A595-6C6541F2C57A}' />
+    </window>
+  </windows>
+</workbook>

@@ -1,0 +1,801 @@
+customer_id,full_name,nif,phone,address,id_verified,total_rentals,avg_return_days,late_returns,churn_risk_score,join_date,still_active
+1,Isabela do Figueiredo,350947651,+351911559842,"Rua de Ramalde, 767, 5059-903 Porto",1,2,19.5,1,0.49,2024-02-15,1
+2,Ariana-Carminho Vicente,861564099,(351) 917915927,"Alameda dos Escaleres, 218, 9937-757 Freamunde",1,2,47.0,0,0.153,2022-02-21,1
+3,Vasco de Gaspar,475398913,279036555,"Alameda do Dr. Antunes Guimarães, 52, 1363-577 Coimbra",1,2,12.0,0,0.2,2023-03-01,1
+4,Erika Figueiredo,542451908,(351) 927 855 090,"Av Débora Garcia, 91, 8278-049 Almeirim",1,4,15.5,1,0.299,2022-12-25,1
+5,Lucas Pires,261103565,(351) 279830641,"Rua Mauro Sá, 42, 4777-164 Costa da Caparica",1,3,41.7,0,0.39,2023-02-13,1
+6,Joel Fernandes-Henriques,299202376,(351) 294879965,"Rua de Ribeiro, 130, 8729-559 Reguengos de Monsaraz",1,4,10.8,0,0.143,2024-03-23,1
+7,Kévim Coelho-Pires,696922953,923188211,"Avenida de Antunes, 6, 1526-309 Lagoa",1,0,,0,0.177,2024-11-10,1
+8,Rúben Brito,619411839,+351921485003,"Praça do Varejão, 1, 6316-039 Sintra",1,3,27.0,1,0.209,2023-04-29,1
+9,Samuel do Nunes,934242406,291570279,"Alameda Vaz, 8, 1455-951 Gandra",1,3,18.0,0,0.27,2024-07-08,1
+10,Débora Paiva,283463348,920393728,"Alameda Sérgio Loureiro, S/N, 3662-380 Porto Santo",1,2,16.0,0,0.336,2023-11-12,1
+11,Marta Faria,334375186,(351) 216799253,"Alameda de Pinto, 288, 9275-907 São Mamede de Infesta",1,4,18.0,1,0.212,2023-05-17,1
+12,Marco Domingues,940865424,+351933735328,"Av Kelly Correia, 86, 1108-473 Gouveia",1,4,14.8,2,0.643,2023-02-01,1
+13,Alexandra de Antunes,826928550,960695759,"Av Sara Correia, 83, 7945-838 Vendas Novas",1,2,11.0,0,0.235,2022-08-03,1
+14,Emma Ramos,350952889,(351) 242913909,"R. Lourenço, 4, 3174-973 Costa da Caparica",1,7,14.6,4,0.578,2022-04-19,1
+15,Petra Silva,947039696,914730933,"Avenida Magalhães, 82, 5479-931 Santo Tirso",1,2,50.5,0,0.209,2022-10-17,1
+16,Simão da Teixeira,359176504,966 599 115,"Av Luciana Pereira, 418, 5584-594 Guimarães",1,2,1.5,0,0.368,2024-07-10,1
+17,Tiago Soares,883009954,(351) 927 425 042,"Praça Rui Loureiro, 43, 6004-756 Cantanhede",1,2,7.5,0,0.223,2022-07-23,1
+18,Eduarda Barros,873449668,925 263 511,"Alameda Silva, 65, 2230-161 Marco de Canaveses",1,2,13.5,0,0.387,2022-09-05,1
+19,José Azevedo,679899470,+351297945281,"Avenida do Seminário, 3, 2540-777 Viana do Castelo",1,0,,0,0.384,2023-06-05,1
+20,Márcio Pires,170690149,251 048 270,"R. Yasmin Soares, 56, 8398-925 Lagos",1,2,51.0,0,0.381,2022-12-07,1
+21,Flor Vaz,110384715,(351) 911654555,"R. da Conceição, 21, 9458-154 Pombal",1,3,7.7,0,0.083,2022-11-29,1
+22,Alícia Gonçalves,566505188,939 969 801,"Av Inês Castro, 92, 9372-397 Évora",1,2,5.5,0,0.187,2023-09-10,1
+23,Mafalda Fernandes,016744923,203536056,"Largo Benedita Loureiro, 658, 3799-645 Guarda",1,1,9.0,0,0.33,2024-01-11,1
+24,Benedita de Oliveira,359698504,960 367 745,"Av Wilson Leite, S/N, 8805-659 Entroncamento",1,2,17.0,0,0.219,2023-05-16,1
+25,Ângelo Baptista,056693754,(351) 220329324,"Alameda de Ribeiro, 914, 6226-994 Figueira da Foz",0,0,,0,0.085,2023-08-23,1
+26,Sara Macedo,428617892,(351) 936332917,"Praça Marta Branco, 48, 3920-655 Almeirim",1,2,90.0,0,0.149,2024-04-12,1
+27,Vítor Sousa,714025038,(351) 917460395,"Alameda de Fernandes, 7, 4407-749 Almada",1,3,12.3,1,0.557,2023-10-07,1
+28,José Borges,762648163,+351928501076,"Travessa Baptista, 7, 2033-275 Póvoa de Varzim",1,4,35.8,1,0.428,2024-03-04,1
+29,Madalena Nascimento,493680635,+351968445825,"Av Ana Oliveira, 36, 3169-358 Tomar",1,0,,0,0.211,2023-07-24,1
+30,Jéssica de Soares,301012789,+351918264840,"Av de Lima, 82, 5088-234 Vila Nova de Foz Côa",1,1,90.0,0,0.393,2024-03-29,1
+31,Raquel Esteves,519304852,226136525,"Avenida de Gaspar, 71, 2870-103 Paços de Ferreira",1,0,,0,0.195,2024-02-17,1
+32,Nicole do Torres,775867036,(351) 960 365 357,"Avenida de José Régio, 6, 2157-670 Oliveira de Azeméis",1,1,13.0,1,0.739,2023-11-29,1
+33,Paulo Matias,203634443,(351) 913128133,"Praça Pacheco, 91, 3084-289 Sintra",1,3,25.0,1,0.596,2022-10-29,1
+34,Margarida Neves,468963318,(351) 929718247,"R. Mendes, S/N, 9100-907 Vila Nova de Gaia",0,2,12.5,0,0.182,2022-07-31,1
+35,Valentina de Carneiro,233576170,(351) 911 743 720,"Alameda Ducla Soares, 1, 5061-328 Vizela",1,2,49.5,0,0.124,2023-03-22,1
+36,Diogo Machado,317445776,+351967124261,"Largo de Correia, 7, 1633-390 Vila Nova de Santo André",1,2,13.5,0,0.357,2023-12-04,1
+37,Beatriz Valente,626367850,(351) 924 284 153,"Travessa Carminho Abreu, S/N, 3342-775 Elvas",1,6,22.2,0,0.111,2022-01-26,1
+38,Miriam Magalhães,897747594,(351) 931 062 331,"Avenida de Gustavo Eiffel, 11, 5804-950 Tarouca",1,0,,0,0.353,2024-05-08,1
+39,Lúcia Ferreira,348529537,(351) 962542069,"Rua Vera Barros, S/N, 7297-146 Porto Santo",1,2,18.5,1,0.699,2024-02-01,1
+40,Rafaela Pires,403767687,968281587,"Travessa Guerreiro, 16, 9309-389 Aveiro",1,1,13.0,1,0.784,2024-11-05,1
+41,Ângela Magalhães-Lopes,420767514,(351) 969256867,"Av de Pinto, 8, 6820-774 Évora",1,7,12.7,1,0.401,2022-04-24,1
+42,Matilde Vieira-Miranda,534115733,931910576,"Praça Mário Ruivo, S/N, 3755-978 Tomar",0,4,11.2,0,0.355,2023-04-02,1
+43,Renata Correia,900094065,(351) 925 554 209,"R. de Moradias Populares do Eng.º Machado Vaz, 52, 7486-550 Vale de Cambra",1,1,6.0,0,0.171,2023-03-23,1
+44,Amélia Torres,823445385,927 884 373,"R. do Báltico, 54, 5919-010 Fundão",1,1,13.0,0,0.196,2023-11-23,1
+45,Frederico Sá,653523266,(351) 917 480 699,"Av dos Pinheiros, 6, 7264-475 Abrantes",1,2,12.0,0,0.304,2024-09-16,1
+46,Xavier da Moura,004709110,(351) 920 727 151,"Travessa Leite, 61, 5059-790 Faro",1,3,11.7,0,0.347,2022-12-24,1
+47,Débora Matias,495611998,+351294590908,"Largo Gaspar Abreu, 44, 2204-030 Lourosa",1,2,15.0,0,0.177,2022-12-02,1
+48,Letícia Brito,651181583,(351) 931 317 015,"Largo Azevedo, S/N, 7626-054 Quarteira",1,1,90.0,0,0.176,2022-06-08,1
+49,Núria da Matias,746614477,(351) 969744890,"Rua do Regado, 6, 4627-891 Gondomar",1,3,36.0,0,0.179,2022-04-20,1
+50,Ariana Teixeira-Batista,186870479,(351) 911692213,"Travessa do Borratém, 3, 7896-191 Cantanhede",1,2,2.5,0,0.331,2023-10-09,1
+51,Vítor Reis,682905256,(351) 934 193 755,"Largo Sofia Faria, 25, 2120-325 Castelo Branco",1,1,2.0,0,0.383,2023-12-01,1
+52,Gaspar Nunes,995089142,(351) 962 223 067,"Alameda de Valente, 53, 2647-953 Aveiro",1,5,12.2,1,0.242,2022-06-18,1
+53,Anita Esteves,302927640,925461245,"Alameda David Amorim, 34, 6922-870 Almeirim",1,1,26.0,0,0.04,2023-12-11,1
+54,Adriana Rodrigues,739862214,930 738 876,"Praça de Valente, 980, 1163-402 Santarém",0,1,18.0,0,0.037,2023-07-26,1
+55,Beatriz Neto,131866047,(351) 915386259,"Rua Tristão da Silva, 90, 4823-519 Anadia",1,1,18.0,0,0.323,2024-10-04,1
+56,Gabriel do Oliveira,338914785,(351) 231869025,"Rua Ramos, 3, 4320-727 Ponte de Sor",1,2,15.5,0,0.385,2023-11-02,1
+57,Filipa Miranda,744203594,(351) 922 394 423,"Travessa Vera Mendes, S/N, 5945-955 Fiães",1,1,7.0,0,0.192,2024-04-24,1
+58,Andreia Moreira-Cardoso,023873518,(351) 911307226,"R. Alves, S/N, 6636-365 São Salvador de Lordelo",1,2,11.0,0,0.049,2023-09-01,1
+59,Tatiana Maia,664774131,(351) 969 044 398,"Travessa de Campos, 17, 2846-232 Sintra",1,3,11.3,0,0.319,2022-07-28,1
+60,Bianca de Borges,518302585,(351) 279 078 757,"Travessa das Carquejeiras, 461, 4001-062 Esposende",1,2,16.5,1,0.624,2023-01-26,1
+61,Salomé-Patrícia Lopes,658153988,927 686 929,"Largo de Henriques, 73, 8663-558 Vila Real de Santo António",1,2,55.5,0,0.134,2023-07-10,1
+62,Raquel Cruz,217895599,963 054 117,"R. de Luiz I, 54, 8672-552 Esposende",0,3,36.3,0,0.21,2022-11-14,1
+63,Rui Carvalho,984128655,960 014 005,"Largo de Baptista, 30, 5521-261 Esposende",1,4,16.5,0,0.217,2023-09-01,1
+64,Nuno Pinto,167592383,(351) 910 900 921,"R. Alexandra Baptista, 50, 4899-801 Peso da Régua",1,2,7.0,1,0.355,2023-11-16,1
+65,Tiago Simões,193489180,966957481,"Largo Alice Monteiro, 72, 2242-210 Amarante",1,2,38.5,1,0.384,2023-07-24,1
+66,Matilde Nogueira,381463429,+351930530005,"Avenida Mário Anjos, 2, 6156-717 Alverca do Ribatejo",1,4,33.0,1,0.442,2022-12-20,1
+67,Artur Barros,242195973,(351) 245 929 398,"Travessa de Alves, 7, 3486-583 Ermesinde",1,2,5.0,0,0.324,2022-03-11,1
+68,Carolina Mota,091218527,(351) 962592475,"Travessa Maia, 8, 7139-208 Penafiel",1,4,38.5,1,0.185,2022-01-20,1
+69,Raquel Ramos-Vaz,411461331,(351) 935397545,"Alameda de Moreira, 5, 1245-541 Silves",1,1,16.0,0,0.187,2023-08-30,1
+70,Manuel do Faria,553015303,(351) 965 483 102,"Largo Sebastião Gaspar, S/N, 9050-082 Montemor-o-Novo",0,1,40.0,1,0.62,2023-07-10,1
+71,Nelson Miranda,440778110,(351) 927 088 281,"Avenida do Conselho da Europa, S/N, 5604-764 Rebordosa",1,0,,0,0.018,2023-08-03,1
+72,César do Barbosa,659845576,(351) 967595854,"Praça Lucas Loureiro, 75, 1229-520 Covilhã",1,2,18.5,1,0.318,2024-05-21,1
+73,Camila Pires,634541829,(351) 912252038,"R. das Necessidades, 715, 5613-750 Ponta Delgada",1,1,4.0,0,0.016,2023-01-31,1
+74,Gabriela Gomes-Teixeira,269945206,(351) 967 172 499,"Travessa Martim Barbosa, 3, 8818-709 Viana do Castelo",1,2,19.5,1,0.678,2022-11-07,1
+75,Andreia Magalhães-Cardoso,191061669,(351) 227644457,"Travessa do Bicalho, 51, 7139-484 Fiães",0,3,37.7,1,0.439,2023-03-03,1
+76,Igor Lopes,082242168,932 912 123,"Rua de Assunção, 19, 6460-392 Agualva-Cacém",1,1,10.0,0,0.369,2024-07-23,1
+77,Luísa Torres-Correia,822175626,(351) 235 554 485,"Largo de Ulisses, 59, 2998-122 Guimarães",1,1,9.0,0,0.202,2024-09-12,1
+78,Bryan Anjos,962083479,(351) 249 542 518,"Av Araújo, 6, 1422-692 Gafanha da Nazaré",1,0,,0,0.121,2024-01-19,1
+79,Ricardo Lopes,100593257,938 534 894,"Largo de Sousa, 28, 6161-884 Tavira",1,4,10.8,0,0.258,2022-11-25,1
+80,Victória Matos,287032200,930537695,"Praça de Matos, 68, 7388-217 Guimarães",1,4,14.2,1,0.424,2022-12-10,1
+81,Ema Simões,748597243,(351) 926 401 981,"Praça Jorge Luis Borges, 8, 2434-108 Miranda do Douro",1,0,,0,0.318,2024-10-31,1
+82,Sara de Pinto,129514520,(351) 969 420 551,"Av Leonardo Rodrigues, 32, 7133-460 Valongo",1,3,27.3,1,0.261,2023-08-10,1
+83,Renato Ramos-Barros,802860604,(351) 917 727 172,"Largo Leandro Ribeiro, 95, 6316-213 Trancoso",1,2,38.5,0,0.08,2023-04-08,1
+84,Rodrigo de Tavares,224065474,(351) 925621523,"Av de Ulisses, 6, 2206-559 Moura",1,2,12.5,0,0.052,2024-08-29,1
+85,Diego Vicente,695090418,(351) 932 975 461,"Praça de Matias, 579, 7108-743 Valongo",1,3,34.7,0,0.077,2023-03-27,1
+86,Júlia Cardoso,985664301,225089455,"Praça Edgar Borges, 84, 8109-517 Covilhã",1,2,13.0,0,0.336,2023-02-17,1
+87,Emma Reis,556238878,(351) 286 433 064,"Largo Barros, 35, 4117-678 Esposende",1,5,19.6,0,0.251,2023-06-17,1
+88,Emma-Mafalda Fonseca,876569931,(351) 203 505 518,"Alameda de Azevedo, 60, 7081-072 Paredes",1,2,14.0,0,0.305,2022-08-17,1
+89,Jaime Santos,062290113,(351) 966632600,"Praça da Feiteira, 6, 3355-109 Cartaxo",1,1,2.0,0,0.185,2024-01-15,1
+90,Kévim Antunes,047947199,(351) 911290941,"Alameda de Silva, 3, 3841-276 Porto",0,1,22.0,0,0.245,2022-08-25,1
+91,Álvaro Cunha,803514895,(351) 917 348 652,"Av de Macedo, 8, 8303-062 Esposende",1,1,22.0,0,0.193,2023-09-15,1
+92,Miguel Anjos,829441914,(351) 258386609,"Largo Isabela Magalhães, 4, 1572-073 Castelo Branco",1,3,8.3,2,0.511,2022-07-21,1
+93,Soraia Carneiro,905347283,(351) 918 731 788,"Largo Garcia, 15, 9810-306 Matosinhos",1,2,9.5,1,0.519,2022-10-28,1
+94,Maria Moura,167309532,925423998,"Av Neto, 62, 6182-505 Albufeira",1,2,7.5,0,0.167,2023-09-10,1
+95,Bruna Nunes,670848868,(351) 924719866,"Avenida de Miranda, 50, 4150-774 Porto Santo",1,1,5.0,0,0.213,2023-09-06,1
+96,Lucas Freitas-Alves,656292582,+351913743301,"Alameda de Matos, 94, 9901-193 Câmara de Lobos",1,2,73.5,0,0.177,2024-04-22,1
+97,Afonso Coelho,282801832,913383297,"Alameda da Fonte da Moura, 85, 9830-337 Mangualde",1,1,6.0,0,0.195,2024-06-13,1
+98,Ismael Campos,306885684,(351) 912805805,"Alameda de Azevedo, S/N, 5304-628 Paredes",1,1,7.0,0,0.245,2023-01-17,1
+99,Mara Loureiro,676780964,961085625,"Largo Ana Anjos, 17, 8047-550 Miranda do Douro",1,3,1.7,0,0.024,2022-07-11,1
+100,Mara Pires,837449597,(351) 924136806,"Travessa Miriam Figueiredo, S/N, 4707-572 Elvas",1,1,6.0,0,0.178,2024-06-09,1
+101,Denis Magalhães,135317555,(351) 922 649 746,"R. Coelho, 40, 6487-596 Esposende",1,0,,0,0.036,2023-01-04,1
+102,Rafael Baptista,289748741,(351) 912 397 453,"Largo Constança Araújo, S/N, 8445-991 Montemor-o-Novo",1,2,26.5,0,0.053,2022-01-16,1
+103,Lisandro Paiva,148626751,(351) 924 220 260,"Avenida Novo (à Travessa das Águas Boas), 71, 6259-399 Caniço",1,5,14.0,1,0.246,2022-07-22,1
+104,Gabriela Assunção,199764534,+351967016695,"R. Soares, 67, 8655-376 Marinha Grande",1,1,12.0,0,0.372,2024-10-21,1
+105,Eduarda-Bruna Leal,551564196,282 555 385,"R. Carvalho, 58, 1368-376 Peniche",1,4,13.8,2,0.576,2022-11-04,1
+106,Renata Guerreiro,963009358,(351) 216 853 041,"Avenida Teófilo Ferreira, 84, 1896-948 Matosinhos",1,3,10.3,0,0.3,2022-07-21,1
+107,Teresa Simões,016301597,(351) 939 701 800,"R. Francisco Oliveira, 71, 4831-639 Alcobaça",1,2,13.5,0,0.355,2024-03-02,1
+108,Kyara Correia,224228483,+351936133837,"Av das Antas, 44, 5634-956 Montijo",1,4,16.5,0,0.09,2023-02-04,1
+109,Alexandra Vieira-Campos,927668098,912 153 945,"Travessa Esteves, 6, 4118-626 Sintra",1,1,90.0,0,0.221,2024-01-24,1
+110,Benedita Andrade,601804033,(351) 910 557 247,"Largo de Nascimento, 45, 7449-182 Aveiro",1,1,1.0,0,0.367,2022-06-03,1
+111,Isabela Amorim,801537358,(351) 933 632 000,"Travessa Nogueira, 2, 6986-259 Maia",1,1,9.0,0,0.279,2023-12-14,1
+112,Hugo Pinto,715544605,+351271223048,"Largo Cardoso, S/N, 2000-095 Barreiro",1,1,10.0,0,0.136,2023-07-19,1
+113,Lorena Soares,260967462,+351932994957,"Av das Olaias, S/N, 1159-627 Amadora",1,1,90.0,0,0.276,2022-05-16,1
+114,Lourenço Campos,053649911,+351961961975,"R. de Fonseca, 27, 5092-595 Caniço",1,1,12.0,0,0.21,2024-07-07,1
+115,Sofia Miranda,285672850,(351) 917 142 867,"R. de Esteves, 1, 1944-823 Covilhã",1,3,15.7,1,0.255,2022-11-15,1
+116,Gustavo Costa-Domingues,155383077,(351) 933704202,"Largo Alfredo Keil, 77, 1571-492 Portalegre",1,5,30.8,1,0.46,2022-03-14,1
+117,Luciana Pinho-Teixeira,582126264,(351) 913 758 036,"Travessa Pupilos do Exército, 28, 8826-906 Vila do Conde",1,1,14.0,0,0.173,2024-05-17,1
+118,Daniel Baptista,956784460,226595426,"Av Dinis Ferreira, 13, 1334-185 Braga",1,1,9.0,0,0.186,2024-04-08,1
+119,Henrique de Assunção,907519919,+351960083102,"Rua Pires, 92, 8332-379 Maia",1,1,12.0,0,0.122,2022-09-09,1
+120,Emma Moura,775512944,932485381,"Alameda de S. Macário, 667, 2791-569 Esmoriz",0,4,5.2,1,0.527,2023-04-11,1
+121,Nelson Mendes,492531649,(351) 910 715 868,"Alameda de Moreira, 44, 8465-173 Caniço",1,3,14.7,0,0.296,2023-06-15,1
+122,Rafaela Ribeiro,838597477,(351) 917 245 740,"R. Luís Mota, S/N, 1948-765 Felgueiras",1,0,,0,0.134,2023-05-30,1
+123,Márcio Cardoso,659070554,(351) 927 264 603,"Avenida das Naus, S/N, 3024-624 Póvoa de Varzim",1,0,,0,0.115,2023-09-24,1
+124,Alice Pinho,434368771,932250175,"Avenida do Sapal, S/N, 1834-557 Chaves",1,3,31.3,0,0.262,2022-02-17,1
+125,Alexandra Santos-Pinto,692209490,927493221,"R. de Barbosa, 35, 6464-553 Loulé",1,2,51.5,0,0.149,2024-04-07,1
+126,Íris Domingues,341535977,(351) 916 463 391,"Travessa Afonso de Albuquerque, 14, 3375-501 Vila Real",1,5,44.2,1,0.457,2022-09-07,1
+127,Rita Vaz,001154773,(351) 918267633,"Travessa de Barbosa, 33, 6107-811 Oliveira de Azeméis",1,1,6.0,1,0.701,2023-03-13,1
+128,Wilson Fernandes,943148722,(351) 926 399 289,"Largo de Ferreira, 6, 6039-797 Lagos",1,2,45.5,0,0.117,2022-08-03,1
+129,Helena da Oliveira,578564135,(351) 247803025,"Largo Escuro, 19, 8374-222 Quarteira",1,5,26.6,1,0.517,2022-12-13,1
+130,Martim Martins,741685573,(351) 960 950 562,"Praça de Torres, 80, 2241-230 Alcácer do Sal",1,1,12.0,0,0.4,2023-07-14,1
+131,Filipe Moura,523285558,(351) 229 834 442,"Av das Naus, S/N, 6578-178 Paredes",0,0,,0,0.339,2022-06-22,1
+132,Helena de Costa,957947581,(351) 916879661,"Travessa de Abreu, 3, 1947-425 Barreiro",1,3,7.3,0,0.31,2022-11-23,1
+133,Ana Melo,602841362,(351) 936870155,"R. de Alves, S/N, 1636-583 Montemor-o-Novo",1,4,21.8,1,0.337,2023-05-16,1
+134,Caetana Marques,470407146,+351200161285,"Avenida Jaime Andrade, 21, 5722-897 Bragança",1,2,18.0,0,0.106,2023-10-23,1
+135,Brian Campos,714797341,(351) 922645989,"Av de Correia, S/N, 9753-134 Seixal",1,2,18.5,0,0.191,2022-08-12,1
+136,Kévim Azevedo,595083745,(351) 930673571,"Travessa Martins, 6, 1701-464 Barreiro",1,1,1.0,0,0.232,2024-05-21,1
+137,Ema Abreu,601703961,931097983,"Praça de Antunes, 584, 2277-594 Torres Novas",0,2,12.0,1,0.575,2024-05-08,1
+138,Eduarda Matias-Simões,759001706,(351) 968 193 282,"Praça Paulo Ferreira, S/N, 1468-368 Tomar",1,0,,0,0.308,2023-04-12,1
+139,Iara-Maria Gaspar,490786928,(351) 965266734,"Travessa de Coelho, 26, 5223-541 Figueira da Foz",1,2,45.5,0,0.022,2023-01-02,1
+140,Martim Pereira,162159389,(351) 913140703,"Alameda Leonardo Simões, 744, 1154-395 Vale de Cambra",1,2,12.0,0,0.377,2024-02-14,1
+141,Hugo Reis,635367355,+351281172117,"Travessa Neto, 8, 6452-444 Marco de Canaveses",1,2,19.0,0,0.376,2023-04-16,1
+142,Isabel Barbosa,960707228,(351) 967395341,"Rua Rodrigues, 13, 6698-989 Trancoso",1,5,15.0,1,0.362,2022-07-15,1
+143,Bianca Vieira-Marques,413351390,915 648 234,"Largo Álvaro Almeida, S/N, 2112-973 Alcácer do Sal",0,3,9.3,1,0.498,2023-05-27,1
+144,Sérgio Teixeira,309742749,(351) 969 100 211,"Travessa Kevin Alves, 278, 1796-918 Amarante",1,3,15.7,1,0.209,2023-01-20,1
+145,Fabiana de Simões,635796714,+351939296238,"Travessa Gaspar, 67, 2884-503 Vila Real",1,4,13.5,0,0.107,2023-01-08,1
+146,Irina Pereira,030073565,914 664 805,"Travessa Francisca Gomes, 729, 5161-945 Amora",1,4,19.0,1,0.244,2022-08-24,1
+147,Emília Teixeira-Baptista,260825263,(351) 968 673 346,"Alameda Artur Monteiro, 74, 3535-300 Portimão",1,3,38.7,0,0.086,2022-05-07,1
+148,Camila Campos,794128866,+351967424425,"R. do Penalva, 11, 6137-541 Montijo",1,1,20.0,0,0.137,2024-03-12,1
+149,Daniela Oliveira,112232142,+351965081241,"Largo do Preto, 288, 9390-721 Penafiel",1,3,13.0,0,0.115,2022-06-06,1
+150,Laura Ramos,261197892,+351917532973,"R. Oliveira, 6, 8978-792 Ourém",1,3,5.7,0,0.018,2023-06-03,1
+151,Vera-Andreia Mota,946574465,+351291540893,"Praça de Teixeira, 515, 7669-931 Vale de Cambra",1,3,18.0,0,0.249,2022-05-27,1
+152,Gil da Abreu,255441181,(351) 968 063 659,"Av Castro, 136, 7904-507 Silves",1,2,11.0,0,0.137,2022-08-17,1
+153,Bernardo Gonçalves,851367380,(351) 934 212 000,"R. de Araújo, 880, 5341-565 Marinha Grande",1,2,21.5,1,0.392,2024-06-21,1
+154,Joana Matias-Oliveira,203881937,(351) 917169637,"R. Vieira, 173, 2778-467 Sines",1,1,7.0,0,0.285,2022-11-20,1
+155,Leonardo Pinho,684184714,+351245386052,"R. Abreu, 47, 6184-739 Paços de Ferreira",1,0,,0,0.08,2023-01-15,1
+156,Lucas Magalhães,220148333,(351) 294 100 699,"Rua Costa, 56, 9672-097 Reguengos de Monsaraz",1,4,23.5,1,0.225,2024-01-17,1
+157,Flor Rodrigues,011272836,(351) 223 126 981,"Avenida Alexandre Cardoso, 4, 1973-951 Silves",0,2,26.5,1,0.605,2024-02-05,1
+158,Gaspar Henriques,087647709,(351) 261316412,"Rua dos Corvos, 10, 2159-238 Marinha Grande",0,0,,0,0.012,2024-11-07,1
+159,Daniel Carneiro,676183762,(351) 969 168 789,"Avenida do Almirante Gago Coutinho, 306, 4714-890 Santana",1,2,55.5,0,0.212,2024-05-23,1
+160,Ema Domingues,507671621,(351) 248563830,"Travessa de Branco, 34, 9708-426 Matosinhos",1,1,7.0,0,0.244,2024-05-20,1
+161,Mia Cunha,048886804,922940229,"Praça de Moura, S/N, 6793-350 Viana do Castelo",1,3,8.3,0,0.166,2023-05-28,1
+162,Salvador Gonçalves,693032645,932774673,"Largo de S. João da Foz, 511, 2864-775 Agualva-Cacém",1,2,9.0,0,0.241,2024-01-17,1
+163,Mauro de Pinheiro,496741991,+351966277985,"Rua dos Cruzados, 6, 9182-126 Oliveira do Hospital",1,3,40.3,1,0.35,2023-11-07,1
+164,Paulo Faria,539064909,(351) 230092044,"Alameda de Carneiro, 69, 5002-062 Almeirim",1,3,10.3,1,0.402,2022-08-22,1
+165,Gabriel Monteiro,703425197,(351) 964520615,"R. de Jesus, 987, 8682-285 Esposende",1,3,14.3,1,0.512,2024-03-31,1
+166,Patrícia Valente,181589136,921 134 572,"Alameda Alves, 617, 2216-405 Seia",1,1,14.0,0,0.287,2023-07-14,1
+167,Patrícia-Flor Ribeiro,296707421,(351) 270316102,"Rua de Rocha, 51, 2648-903 Caniço",1,4,6.8,0,0.34,2024-01-09,1
+168,Fabiana-Tatiana Teixeira,319362526,+351913512284,"Travessa Enzo Maia, 136, 3171-043 Esmoriz",1,3,14.7,1,0.521,2023-02-16,1
+169,Inês Campos-Lopes,221690887,(351) 939 751 286,"Av Tomé Batista, 750, 5585-415 Loulé",1,3,5.3,0,0.226,2023-03-01,1
+170,Emma Sousa,480293358,+351919064717,"Av de Guerreiro, 48, 7714-931 Amadora",1,3,39.0,1,0.466,2023-09-28,1
+171,Catarina Figueiredo,843910657,(351) 927 723 152,"Travessa de Silva, 342, 2228-968 Lamego",1,1,9.0,0,0.027,2024-02-06,1
+172,Diogo Brito,517454693,(351) 964 195 158,"Travessa de Leite, 4, 7417-880 Bragança",1,3,18.0,1,0.398,2022-06-01,1
+173,Márcio Sá,510214012,934 794 395,"Avenida Pinho, 75, 1190-786 Cantanhede",1,0,,0,0.055,2022-05-18,1
+174,Constança da Lourenço,331955897,+351932176770,"Largo Ariana Pereira, 110, 1791-231 Ourém",1,1,47.0,0,0.387,2023-12-20,1
+175,Tiago Pereira,035971771,(351) 933715462,"Largo de Colares, 5, 7253-043 Valbom",1,5,26.0,1,0.461,2022-10-29,1
+176,Emanuel Barbosa,030568709,+351287271357,"Alameda do Adamastor, S/N, 8452-825 Vila Nova de Gaia",1,3,21.3,2,0.713,2022-08-21,1
+177,Eva Andrade,246051648,(351) 926 075 809,"Alameda Mélanie Ribeiro, 2, 2999-285 Vila Nova de Gaia",1,0,,0,0.083,2022-06-30,1
+178,Madalena-Bruna Simões,895337684,917 038 632,"Av de Garcia, 7, 2188-749 Chaves",1,5,12.2,3,0.689,2022-09-06,1
+179,Beatriz Henriques,876776006,917 609 959,"Travessa da Boa Viagem, 69, 3508-146 Valongo",1,1,16.0,1,0.869,2023-09-14,1
+180,Jéssica Andrade-Rocha,459731730,913915163,"Avenida República Argentina, 109, 8061-489 São João da Madeira",1,1,26.0,0,0.342,2024-11-13,1
+181,Gaspar do Araújo,249675745,963868289,"R. de S. Brás, 8, 1381-647 Ovar",1,5,25.4,1,0.232,2023-01-08,1
+182,Mara Amorim,048480947,(351) 933045086,"Alameda Padre Álvaro Proença, 61, 8537-012 Montijo",1,2,16.0,0,0.002,2023-04-12,1
+183,Erica Gaspar,318156054,(351) 962224412,"Avenida Silva Porto, 46, 5025-788 Santo Tirso",1,1,1.0,0,0.127,2024-11-06,1
+184,Valentim Barros,079959476,935032168,"Travessa Soares, 74, 3052-509 Santa Comba Dão",1,6,7.3,1,0.314,2022-09-16,1
+185,Flor Rocha,110797647,(351) 913197330,"Largo de Rodrigues, 16, 2509-384 Odivelas",1,1,1.0,0,0.145,2023-01-19,1
+186,Frederico Magalhães,565728972,(351) 914433921,"Alameda de Baptista, 701, 5576-425 São Mamede de Infesta",1,0,,0,0.033,2023-05-11,1
+187,Ariana Guerreiro,934854039,(351) 922 258 157,"R. de Rodrigues, 54, 1904-670 Póvoa de Varzim",0,3,36.3,0,0.345,2024-03-17,1
+188,Mariana Araújo,846856066,+351939220382,"Rua de Azevedo, 1, 1104-671 Gandra",1,1,25.0,1,0.743,2023-07-31,1
+189,Noa Faria,926138268,+351916609077,"Alameda dos Fenícios, 26, 2236-811 Serpa",1,3,9.0,1,0.487,2023-09-25,1
+190,Leonor Nunes,977779570,(351) 216 264 622,"Av do Outeiro, 45, 2576-412 Sines",1,1,90.0,0,0.301,2023-10-23,1
+191,Beatriz do Antunes,399626377,(351) 960 834 659,"Travessa de Guerreiro, 96, 8377-520 Oliveira do Hospital",1,1,12.0,1,0.997,2024-08-31,1
+192,Wilson Abreu,711073512,(351) 960820285,"R. Alves, 8, 6198-114 Alverca do Ribatejo",1,3,19.7,1,0.29,2023-04-01,1
+193,Sebastião Ribeiro,622068243,966639336,"Praça Vicente Ramos, 4, 5122-902 Viseu",1,0,,0,0.241,2024-06-28,1
+194,Rita do Reis,330239934,961409090,"Travessa Luca Martins, 37, 2975-293 Sintra",1,1,2.0,0,0.271,2024-05-16,1
+195,Íris Antunes,060694306,(351) 938409557,"Praça Jesus, 28, 9029-038 Reguengos de Monsaraz",1,1,2.0,0,0.077,2024-01-30,1
+196,Violeta Miranda-Castro,235786529,(351) 964436837,"R. de Oliveira, 75, 2662-327 Vila Nova de Foz Côa",1,2,16.0,0,0.327,2023-03-15,1
+197,Tiago Almeida,285370064,(351) 926 615 106,"Rua do Ouro, 43, 6913-894 Amora",1,1,4.0,0,0.261,2023-11-22,1
+198,Maria-Letícia Assunção,854875311,(351) 913 108 292,"Alameda Nacional 209, 187, 3693-942 Rebordosa",1,4,12.0,0,0.255,2022-08-26,1
+199,Raquel Araújo,804255428,965877062,"Alameda de Sousa, 46, 3756-547 Amadora",1,4,32.0,0,0.34,2022-09-02,1
+200,Renato Gomes,537642550,(351) 963 352 535,"Alameda Branco, 14, 4885-481 Cantanhede",1,1,1.0,0,0.39,2022-04-21,1
+201,Teresa Gaspar,688786020,965469800,"Rua Oliveira, 39, 7445-536 Moura",1,1,1.0,0,0.273,2023-04-02,1
+202,Alícia Mota,922131701,925 069 931,"Rua Anjos, 717, 1896-989 Mangualde",1,1,10.0,1,0.941,2024-03-11,1
+203,Diego Nascimento,586639928,936742395,"Travessa de João Chagas, 93, 8915-072 Barcelos",1,0,,0,0.366,2022-09-18,1
+204,Amélia Batista,987287314,968 783 825,"Alameda do Calhau, 87, 7906-254 São Salvador de Lordelo",1,1,3.0,0,0.053,2024-04-06,1
+205,Ismael Leite,495629179,+351936207589,"Travessa dos Corvos, 359, 7005-059 Valpaços",1,2,16.0,0,0.2,2023-10-19,1
+206,Maria Matias,416033288,925 440 523,"R. Diego Batista, 310, 5162-249 Rio Tinto",1,3,15.7,2,0.71,2022-08-28,1
+207,Constança Neves,700510287,(351) 910 522 061,"Avenida Moreira, 7, 3838-960 Fafe",1,2,18.0,0,0.201,2022-11-09,1
+208,Joana-Naiara Almeida,120220175,(351) 961882781,"Av do Arboreto, S/N, 2868-963 Rio Maior",1,2,25.0,0,0.033,2023-07-12,1
+209,Lucas Esteves,416487921,(351) 232138765,"Alameda de Vaz, 809, 6808-935 Ermesinde",0,2,19.0,1,0.399,2024-04-28,1
+210,Luana Santos,466275015,(351) 967 023 944,"Alameda Vieira, 16, 2122-709 Silves",1,3,36.0,1,0.532,2023-11-15,1
+211,Eduarda Costa,974420360,923509941,"R. de Monchique, 62, 2805-569 Mêda",1,2,28.5,1,0.509,2023-08-31,1
+212,Diego Leal,548330958,(351) 919048751,"R. Silva Porto, 33, 5705-365 Costa da Caparica",1,3,14.7,1,0.42,2023-06-30,1
+213,Vicente Gaspar,238368060,927711595,"R. de Santana, 4, 7598-030 Sintra",1,1,90.0,0,0.151,2024-10-16,1
+214,Frederico Nunes,457923267,(351) 913815888,"Av de Pereira, 10, 6388-071 Santana",0,2,6.5,0,0.091,2023-10-27,1
+215,Kyara Gomes,858197015,911 300 238,"Largo de Gonçalves, 60, 5296-708 Sacavém",0,1,10.0,1,0.836,2023-01-22,1
+216,Bianca do Pinho,196797209,926867202,"Travessa Simão Mendes, 45, 7151-875 Tarouca",1,1,22.0,0,0.085,2022-07-09,1
+217,Rafael Pinho,192018285,220508827,"Travessa de Antero de Quental, 1, 5748-858 Santa Comba Dão",1,1,11.0,0,0.265,2024-08-31,1
+218,Luísa Pinheiro,329704937,232 030 043,"Travessa de Baptista, 18, 1927-339 São João da Madeira",1,3,3.0,0,0.128,2023-04-19,1
+219,Maria Brito-Tavares,829158551,(351) 962 967 059,"Avenida Emanuel Carvalho, 40, 2348-282 Guarda",0,2,10.0,0,0.182,2023-12-10,1
+220,Isabela de Vicente,397149207,(351) 912908151,"R. Matias, 78, 1039-923 Funchal",1,2,23.0,1,0.535,2023-02-13,1
+221,Samuel Domingues,741424873,203949521,"Praça da Aldeia, 46, 8012-096 Lisboa",1,3,39.7,0,0.38,2023-07-14,1
+222,Maria do Pinto,262591883,210208852,"Alameda de Araújo, 40, 6016-261 Silves",1,5,15.4,1,0.458,2023-07-14,1
+223,Sofia Matos,249773677,+351235745871,"Av Pacheco, 57, 1181-316 Mealhada",1,1,12.0,1,0.939,2022-05-21,1
+224,Rafaela do Simões,443435497,(351) 273 566 323,"Rua da Companhia, 55, 2964-590 Vale de Cambra",1,3,32.3,1,0.382,2023-11-02,1
+225,Clara-Alice Valente,296571564,916 772 275,"R. Gabriela Miranda, 278, 5929-500 São Salvador de Lordelo",1,1,10.0,1,0.913,2024-01-30,1
+226,Mafalda Silva,802990348,939 032 315,"R. de Coelho, 3, 2408-863 Oliveira de Azeméis",1,3,6.3,0,0.287,2024-02-10,1
+227,Nelson Borges,424796000,234865784,"Alameda de Maria Pia, 9, 8796-224 Lixa",1,4,13.2,0,0.222,2023-03-01,1
+228,Renato Mendes,091657376,+351931141139,"Av de Azevedo, 83, 4541-386 Bragança",1,1,8.0,1,0.885,2022-07-30,1
+229,Noa Melo-Jesus,266225492,911 295 056,"Avenida Figueiredo, 70, 8434-966 Esposende",1,1,19.0,0,0.259,2023-03-09,1
+230,Kévim Esteves,369309140,(351) 965 240 269,"Alameda Arquitecto Carlos Ramos, 54, 3129-091 Oliveira do Bairro",1,1,90.0,0,0.206,2023-01-07,1
+231,Teresa Ramos,527311722,+351236132935,"Praça Cunha, 7, 3659-721 Póvoa de Varzim",1,2,5.5,0,0.332,2023-01-01,1
+232,Ricardo Rocha,147569001,938 239 078,"Rua Mélanie Lopes, 85, 4455-244 Loures",1,3,10.3,1,0.347,2023-10-20,1
+233,Letícia Morais,293359847,(351) 965 828 179,"Largo Santos, 633, 1070-741 Guimarães",1,2,2.5,1,0.606,2022-11-30,1
+234,Eduarda Pires,229835966,(351) 931 048 764,"Rua Neves, 21, 8663-351 Alcobaça",1,1,7.0,0,0.164,2024-06-01,1
+235,Afonso Gonçalves-Ribeiro,771539022,914303736,"Travessa de Santo António dos Capuchos, 48, 7251-944 Fundão",1,2,12.0,0,0.385,2022-04-19,1
+236,Paulo Fonseca,247365003,+351961297687,"Rua Enzo Neto, 37, 4646-617 Sabugal",1,1,7.0,0,0.067,2024-11-13,1
+237,Nuno Martins,909006476,934734062,"Praça João Vaz, S/N, 5108-399 Amora",0,3,37.3,1,0.513,2022-01-07,1
+238,Juliana Silva,442787355,963 822 811,"Avenida da Banda de Ramalde, 330, 5200-338 Sintra",1,2,23.5,0,0.007,2023-09-05,1
+239,Flor Azevedo,042316979,(351) 911 716 250,"Largo Bárbara Oliveira, 27, 2163-276 Fiães",1,1,90.0,0,0.102,2024-04-26,1
+240,Bruna Cunha,067549393,(351) 285432442,"Praça de Campos, S/N, 2617-342 Matosinhos",1,4,7.8,1,0.438,2023-12-14,1
+241,Nair Abreu,396904539,(351) 911 107 300,"Av Leandro Castro, 12, 9818-541 Montijo",1,1,12.0,0,0.045,2023-08-28,1
+242,Enzo Domingues,528783573,(351) 966 424 271,"Travessa Brito, 2, 9711-057 Pombal",1,3,12.3,0,0.362,2024-02-14,1
+243,Lisandro Freitas-Campos,813307345,(351) 913 875 177,"Largo Gabriel Magalhães, 82, 1929-781 Miranda do Douro",1,4,25.0,0,0.031,2023-06-30,1
+244,Tatiana Sousa-Figueiredo,302364122,+351910100616,"R. de Silva, 7, 1663-051 Funchal",1,0,,0,0.259,2023-07-11,1
+245,Núria Torres,740985372,(351) 961871252,"Travessa dos Pinheiros, 6, 6820-577 Caldas da Rainha",0,3,20.0,1,0.317,2023-12-17,1
+246,Eduardo Sá,350516023,+351914958717,"Praça de Ferreira, 104, 1206-155 Valbom",1,6,28.8,1,0.414,2023-04-08,1
+247,Daniela Pereira,510715558,910963562,"R. de Leal, S/N, 7452-190 Ourém",1,2,23.0,1,0.527,2022-03-26,1
+248,Renata da Magalhães,094042245,(351) 967 228 559,"Alameda de Bonjóia, 69, 3656-074 Albufeira",1,1,13.0,0,0.091,2024-04-20,1
+249,Mário Gaspar,119925512,+351960420874,"Praça dos Aliados, 464, 7894-974 Reguengos de Monsaraz",1,4,37.0,1,0.48,2022-06-04,1
+250,Mário do Cruz,807819135,(351) 968022802,"Avenida do Prof. Egas Moniz, S/N, 4786-826 Santa Maria da Feira",1,3,9.7,1,0.235,2024-08-24,1
+251,Sebastião Oliveira,534941971,(351) 919 911 874,"Alameda Tomé Costa, S/N, 8870-916 Alcobaça",1,1,7.0,0,0.242,2023-12-28,1
+252,Joel Sousa,755716632,926 121 833,"Praça da Póvoa, S/N, 1973-845 Fiães",1,1,23.0,0,0.274,2024-07-12,1
+253,Renato Neves,246306162,(351) 929 290 527,"Praça Mateus Simões, 9, 9726-115 Oliveira do Bairro",1,5,13.2,0,0.107,2023-06-07,1
+254,Mélanie Pinho,185635200,969187907,"Avenida de Cláudio Carneiro, 28, 2280-562 Mêda",1,3,17.3,1,0.485,2022-12-24,1
+255,Tomé Correia,150420598,938699714,"Rua Gabriela Faria, 957, 3771-064 Gandra",1,2,14.5,0,0.235,2023-05-20,1
+256,Igor Leal,856977143,(351) 967886402,"Alameda Torres, 13, 7465-611 Cartaxo",1,3,15.3,1,0.465,2023-10-12,1
+257,Leonardo Almeida,608090101,(351) 969 724 822,"Praça Sebastião Garcia, 21, 5771-722 Ermesinde",1,0,,0,0.25,2023-07-26,1
+258,Joana Lopes,610392788,(351) 230 460 779,"Rua de Costa, S/N, 6756-638 Rio Tinto",1,0,,0,0.085,2024-10-06,1
+259,Caetana Esteves,189304616,+351966630809,"Alameda Yasmin Vaz, S/N, 2016-146 Marinha Grande",1,5,28.2,1,0.27,2022-12-19,1
+260,Joel Alves,881687851,(351) 964026111,"R. de Gaspar, S/N, 8163-002 Porto",1,1,90.0,0,0.263,2023-08-17,1
+261,Carlos do Maia,569050965,(351) 960041785,"Largo Herculano, 16, 5099-506 Santa Cruz",1,5,9.8,1,0.432,2022-12-30,1
+262,Erika de Batista,882672800,(351) 933875766,"Largo da Quinta de São João Baptista, 33, 6595-111 Montemor-o-Novo",1,2,8.5,0,0.225,2023-01-18,1
+263,David Araújo,272081472,(351) 938 815 102,"Praça Lourenço, 4, 7898-248 Valbom",1,2,11.0,0,0.38,2023-10-05,1
+264,Yasmin Costa,735640783,917 467 293,"Rua de Campos, S/N, 5767-689 Montijo",1,1,90.0,0,0.328,2023-01-06,1
+265,Madalena-Emma Neto,083069789,(351) 936950957,"Rua de Antero de Quental, 25, 3601-484 Fátima",1,2,53.0,0,0.083,2022-07-17,1
+266,Alexandra Cunha,951454983,(351) 298 877 165,"Alameda do Cantábrico, S/N, 6888-092 Freamunde",1,3,18.7,1,0.556,2022-06-22,1
+267,Eduarda Carvalho,146749066,(351) 914593646,"Travessa Renata Simões, S/N, 5339-023 Vale de Cambra",1,4,42.2,1,0.377,2023-01-22,1
+268,Eduarda Machado,675185711,(351) 968514320,"Largo do Tejo, 467, 9063-429 Estremoz",1,3,16.7,0,0.395,2022-07-22,1
+269,Carlota-Eva Pereira,560595634,(351) 910 395 269,"Travessa de Paiva, 23, 1617-365 Sintra",1,4,13.5,1,0.502,2023-10-29,1
+270,Vasco Lima,180739200,(351) 962918069,"Avenida Flor Guerreiro, 511, 6574-172 Marinha Grande",1,3,5.3,0,0.369,2022-06-18,1
+271,Lia-Ana Assunção,856533777,(351) 915802048,"Av da Torrinha, 697, 8356-257 Tomar",1,3,7.3,1,0.267,2022-05-27,1
+272,Hugo Loureiro,031678719,+351910394814,"Rua Neto, 74, 6742-466 Vila Real de Santo António",1,4,17.0,0,0.212,2022-02-06,1
+273,Mélanie Mota-Faria,615487201,(351) 960 258 687,"Alameda de Maceda, 954, 2583-737 Gouveia",1,3,32.7,1,0.517,2023-12-03,1
+274,Duarte Leite,025455005,(351) 932481517,"Avenida Rodrigues, S/N, 8210-520 Cartaxo",1,3,5.7,0,0.039,2023-07-15,1
+275,Álvaro Maia,080998397,924 178 534,"Praça Azevedo, 12, 1821-120 Ovar",1,2,57.5,0,0.31,2023-06-15,1
+276,Kévim Lourenço,738872461,(351) 930 086 794,"Rua do Paço, 35, 9778-267 Rio Maior",1,0,,0,0.2,2022-11-18,1
+277,Gabriel Ferreira,034383000,(351) 916 143 680,"Praça de Neptuno, 7, 2898-729 Marinha Grande",1,3,7.7,1,0.34,2022-09-15,1
+278,Vera-Maria Matias,435294930,+351285541368,"Praça Morais, S/N, 4999-454 Vila Nova de Santo André",1,3,14.0,0,0.016,2023-07-17,1
+279,Miriam Pires,417996546,(351) 914768207,"Praça de Pires, 2, 1639-804 Oliveira de Azeméis",1,2,12.5,1,0.575,2023-04-14,1
+280,José de Almeida,289735189,926 679 398,"Praça de Pinho, 72, 4353-779 Cantanhede",1,3,4.3,1,0.419,2023-06-05,1
+281,Renato Neto,225275600,(351) 968335389,"Largo de Baptista, S/N, 8033-354 Setúbal",1,0,,0,0.12,2024-07-26,1
+282,Núria Silva,302340567,(351) 927088667,"Praça de Vieira, 8, 4299-190 Leiria",1,3,32.3,0,0.244,2023-01-07,1
+283,Diogo Baptista,125158904,+351932607307,"Rua de Cláudio Carneiro, 74, 4469-787 Coimbra",1,3,13.3,0,0.327,2022-06-21,1
+284,Raquel da Baptista,828051666,285 583 604,"Rua de Alves, S/N, 4032-557 Torres Novas",0,1,18.0,0,0.112,2023-01-27,1
+285,Eva Castro,812392788,(351) 933 550 588,"Travessa Margarida Nogueira, 828, 2068-650 Oliveira de Azeméis",1,3,6.3,0,0.394,2023-10-20,1
+286,Catarina Ribeiro,479098636,(351) 927 086 121,"R. Ivan Valente, S/N, 5588-924 Vila Nova de Santo André",0,3,11.3,1,0.263,2023-06-21,1
+287,Amélia Silva,276958444,291 382 357,"Rua Grande de Cima, 23, 9258-403 Torres Vedras",1,3,6.7,0,0.146,2022-08-12,1
+288,Alexandre de Borges,224824886,(351) 936198413,"Largo Beatriz Oliveira, 7, 7639-516 Valongo",1,6,19.0,1,0.261,2022-11-12,1
+289,André Maia,137371450,+351960060456,"Rua de Godim, 19, 1430-886 Horta",1,2,10.0,0,0.084,2022-03-02,1
+290,Igor Faria,118026691,+351291077069,"Avenida de Palma de Cima, 48, 6710-663 Alverca do Ribatejo",1,4,16.0,1,0.353,2023-08-09,1
+291,Manuel Santos,193960610,911712708,"Avenida Isabel Ferreira, 63, 9158-914 Ribeira Grande",1,2,20.0,1,0.559,2023-10-01,1
+292,Paulo Leite,189119925,919726029,"Av do Cidral de Baixo, 49, 4645-050 Santo Tirso",1,5,17.4,2,0.407,2023-03-14,1
+293,Mélanie Fonseca,692476883,+351964748056,"R. da Póvoa, S/N, 5197-152 Covilhã",1,4,20.5,0,0.09,2023-07-19,1
+294,Leonor Pacheco-Azevedo,034141318,(351) 960236862,"Largo de Pereira, 53, 6287-103 Almeirim",1,2,11.5,0,0.382,2023-12-24,1
+295,Lara-Alexandra Lourenço,814051325,(351) 229978344,"Av do Seabra, 90, 9043-944 Seixal",1,0,,0,0.218,2023-10-27,1
+296,Débora Torres-Antunes,790447085,936 104 818,"Praça Francisca Campos, S/N, 6217-139 Mêda",1,0,,0,0.038,2022-07-09,1
+297,Matilde Gonçalves-Alves,940671487,(351) 965430214,"R. Jesus, 97, 8171-900 Macedo de Cavaleiros",1,2,19.0,0,0.184,2022-10-12,1
+298,Salvador Leite-Mendes,103145645,918812459,"Praça Assunção, 84, 8830-523 Santana",1,2,9.0,0,0.046,2024-07-07,1
+299,Ângela Machado-Pacheco,275794074,(351) 935 974 312,"Alameda de Maia, 30, 5805-075 Tarouca",0,1,5.0,0,0.126,2023-06-10,1
+300,Lia Paiva,374499987,(351) 920 983 083,"Largo Matilde Abreu, 426, 7718-532 Angra do Heroísmo",0,3,13.7,2,0.412,2023-04-08,1
+301,Soraia de Costa,339136941,(351) 932 906 581,"R. do Pinzaleiro, S/N, 2328-558 São Salvador de Lordelo",1,1,90.0,0,0.195,2022-07-28,1
+302,Gonçalo Machado,641060326,(351) 938177322,"Largo de Anjos, 4, 6898-650 Alcobaça",1,1,27.0,0,0.321,2024-07-07,1
+303,Valentim Coelho-Cunha,753180576,(351) 932000409,"R. Freitas, S/N, 3547-636 Reguengos de Monsaraz",1,1,3.0,0,0.35,2024-04-02,1
+304,Caetana Pinho,010896546,921 855 740,"Rua Nacional 108, 840, 6762-374 Miranda do Douro",1,5,12.2,2,0.592,2022-05-27,1
+305,Salvador Marques,253606400,920178617,"Largo Barbosa, S/N, 5147-224 Anadia",1,3,32.0,2,0.613,2023-07-27,1
+306,Hugo do Pacheco,486794869,279 199 255,"Rua Iara Cunha, 48, 1158-231 Lourosa",1,4,28.8,2,0.591,2022-07-09,1
+307,Tomás Pinto,948481703,(351) 933703686,"Av dos Olivais, 92, 8466-418 Angra do Heroísmo",1,2,11.5,1,0.327,2022-02-14,1
+308,Ivo da Tavares,100770177,(351) 960 672 360,"Travessa de Vaz, 62, 8272-592 Vila Nova de Gaia",1,5,12.8,2,0.257,2022-06-16,1
+309,Xavier Vieira,375949330,915070832,"Av Correia, 697, 8262-786 Viana do Castelo",1,1,90.0,0,0.187,2023-12-02,1
+310,Ivo Castro,111719600,(351) 933 832 767,"Avenida Neto, S/N, 4160-533 Vila Franca de Xira",1,3,23.7,1,0.49,2023-07-29,1
+311,Pedro Almeida,021444155,(351) 964 156 121,"Travessa de Cruz, 8, 3312-006 Mêda",1,3,18.3,2,0.637,2023-07-13,1
+312,Irina Lourenço,674333849,215 214 970,"Avenida dos Argonautas, 94, 5218-647 Sintra",1,1,24.0,0,0.273,2023-08-25,1
+313,Benjamim Pinto,552391703,914 348 788,"Travessa Flor da Rosa, 58, 2720-681 Amarante",1,3,16.7,2,0.625,2022-06-20,1
+314,Júlia Carvalho,530049992,931997154,"Travessa da Vitória, 43, 6722-757 Queluz",1,1,12.0,0,0.035,2022-12-10,1
+315,Jaime Campos,653619773,(351) 257 755 267,"Rua de Assunção, 8, 6647-581 Elvas",1,2,29.0,1,0.53,2023-10-02,1
+316,Artur Santos-Esteves,739462487,(351) 250347379,"Alameda Tomás Torres, 382, 3423-069 Sacavém",1,2,51.5,0,0.155,2024-09-06,1
+317,Isaac Campos,238586539,(351) 964 825 495,"R. Baptista, 8, 6879-361 Praia da Vitória",1,1,13.0,0,0.292,2024-08-01,1
+318,Débora Ferreira-Macedo,768714134,(351) 962 920 454,"Largo Esteves, S/N, 7122-079 Seixal",1,0,,0,0.097,2023-06-30,1
+319,Rita-Mariana Pires,179670605,(351) 924 944 933,"Av de Pires, 86, 8680-679 Barcelos",1,1,3.0,0,0.083,2023-05-13,1
+320,Rita Nunes,173579211,+351937065141,"Praça Fernando Figueiredo, 63, 8610-375 Loulé",1,1,15.0,0,0.373,2023-06-01,1
+321,Guilherme de Henriques,506989354,(351) 936 098 836,"Largo Baptista, 23, 9941-732 Gafanha da Nazaré",1,3,37.0,0,0.306,2024-05-24,1
+322,Miriam Tavares,639897014,+351934711035,"Largo de Silva, S/N, 7310-966 Braga",1,6,15.7,3,0.575,2023-04-25,1
+323,Caetana Costa,557039342,+351935881120,"Praça Grande de Cima, S/N, 9534-099 Amora",1,3,7.7,0,0.103,2023-07-28,1
+324,Rafaela Pinto,186692552,259 150 918,"Praça Ana Antunes, S/N, 8734-344 Ourém",1,2,55.0,0,0.372,2023-06-19,1
+325,Benedita Araújo,050926000,+351969865829,"Av de Pinto, 5, 8302-529 Estarreja",1,3,30.0,0,0.022,2024-02-06,1
+326,Carlota Araújo,101561619,(351) 965 243 877,"Alameda de Lopes, 4, 8821-481 Valpaços",1,1,50.0,1,0.955,2023-10-07,1
+327,Gaspar Antunes,844981213,230983544,"Praça Tavares, S/N, 6411-411 Paredes",0,4,52.8,1,0.383,2023-03-28,1
+328,Inês Brito,882384699,(351) 935 784 400,"Alameda Panorâmica, 4, 7607-748 Cartaxo",0,2,12.0,0,0.118,2022-05-19,1
+329,Denis Nunes,867233104,(351) 962 183 237,"Rua de Gaspar, S/N, 6537-157 Rio Maior",1,2,48.5,0,0.021,2023-06-07,1
+330,Rafaela Amaral,817736556,(351) 938118208,"Avenida Oliveira, 90, 4781-788 Tarouca",0,5,29.0,0,0.1,2023-01-24,1
+331,Mafalda Torres,221882206,964870426,"Av Benjamim Silva, 45, 7197-631 Esmoriz",1,3,14.7,1,0.289,2022-08-15,1
+332,Lúcia Vicente,186417613,220235293,"R. Pereira, 65, 7673-190 Gafanha da Nazaré",1,4,24.0,1,0.355,2022-09-02,1
+333,César Leite,236416936,+351921248103,"Avenida de Neto, 15, 5977-166 Olhão",1,3,6.3,0,0.078,2023-11-29,1
+334,Amélia Oliveira-Cruz,599167640,+351964377321,"Travessa de Marques, 96, 9735-519 Coimbra",1,1,37.0,1,0.937,2024-07-05,1
+335,Alice Soares,239193252,(351) 918 767 715,"Avenida Álvaro Neves, 70, 3407-314 Barcelos",1,3,10.3,0,0.134,2022-09-21,1
+336,Carlos Almeida,826712693,(351) 238291614,"Travessa de Neptuno, 46, 2829-756 Angra do Heroísmo",1,2,6.5,0,0.392,2023-08-29,1
+337,Guilherme Silva,499952252,+351917630929,"Travessa Carlos Moreira, 48, 6540-936 Valpaços",1,3,37.7,3,0.782,2023-04-27,1
+338,Tomás Simões,644484368,+351276960837,"Av Correia, 76, 8121-142 Valpaços",1,3,6.3,0,0.187,2022-12-12,1
+339,Lara Nascimento,111433064,911246239,"Alameda de Carneiro, 905, 4883-282 Angra do Heroísmo",0,1,90.0,0,0.249,2024-09-11,1
+340,Kévim Moura,805877155,(351) 925 237 021,"Alameda Lourenço, 17, 3731-497 Viana do Castelo",1,2,13.0,0,0.015,2023-07-29,1
+341,Nair Morais,906278790,926837524,"Alameda de Cardoso, 215, 3941-548 Gondomar",1,3,37.3,0,0.172,2022-12-17,1
+342,Dinis da Simões,591204637,(351) 960 272 123,"Alameda de Alves, 98, 6955-246 Fafe",1,4,32.8,1,0.422,2022-12-02,1
+343,Sérgio Neto-Leite,626603235,280 267 917,"Alameda Pinheiro, S/N, 4974-954 Caniço",1,1,3.0,0,0.395,2023-10-14,1
+344,Noa Cunha-Antunes,180295599,(351) 294 672 800,"Alameda Tristão da Silva, 1, 1620-219 Sintra",1,4,8.2,0,0.118,2021-12-18,1
+345,Tiago Valente,773793957,+351245204344,"Rua de Neto, 8, 6086-400 Elvas",1,0,,0,0.388,2023-09-06,1
+346,Frederico Oliveira-Rodrigues,551924741,911443849,"Av Juliana Paiva, 5, 8766-785 Esmoriz",0,2,19.0,1,0.576,2023-08-21,1
+347,Beatriz Neto,736703862,(351) 929 299 612,"Rua do Monte dos Judeus, S/N, 3469-204 Pombal",1,3,6.7,0,0.217,2023-07-03,1
+348,Denis Jesus-Cunha,676112584,914929970,"Rua Vaz, 54, 7896-307 Porto Santo",1,3,50.0,0,0.138,2023-04-09,1
+349,Beatriz Moreira,233008056,(351) 961078497,"Praça de D. João II, 65, 8623-250 Serpa",1,1,17.0,0,0.114,2024-05-16,1
+350,Filipe Araújo,082924828,(351) 934 119 169,"Av Wilson Miranda, 740, 6544-966 Faro",1,2,5.0,0,0.035,2023-06-18,1
+351,Kyara Castro,210788312,+351918279139,"Alameda de Coelho, 40, 2570-339 Viseu",1,1,16.0,0,0.103,2023-05-14,1
+352,Paulo Sá-Barbosa,365485220,(351) 934374301,"Travessa de Araújo, 3, 8393-069 Póvoa de Santa Iria",1,2,19.0,0,0.233,2022-07-29,1
+353,William Moreira,019708428,(351) 930 047 803,"Travessa de Barbosa, S/N, 9252-520 Ílhavo",1,2,55.5,0,0.276,2023-08-23,1
+354,Noah Magalhães,162796365,268088971,"Praça Cruz, S/N, 8312-529 Peso da Régua",0,1,16.0,0,0.146,2024-08-22,1
+355,Caetana Amorim,955510051,(351) 924 237 536,"Largo de Silva, 13, 3714-550 São João da Madeira",0,1,9.0,0,0.251,2024-08-25,1
+356,Daniela Mendes,194842262,(351) 963 596 083,"Rua Eduardo Prado Coelho, 8, 8205-664 Lourosa",1,1,11.0,0,0.242,2023-03-07,1
+357,Tomé Silva,003607223,(351) 920 923 199,"Largo do Brasil (Porto), 44, 8864-052 Figueira da Foz",1,3,13.0,0,0.231,2024-05-28,1
+358,Lara do Machado,283034243,227 324 826,"R. Carneiro, 24, 2473-636 Ponte de Sor",1,6,16.0,4,0.607,2022-09-24,1
+359,Cláudio Faria,539169280,962568724,"Avenida dos Heróis do Mar, 68, 6793-273 Vizela",1,2,12.5,0,0.321,2023-03-29,1
+360,Alícia Pinto,166316696,925 022 026,"Praça Neto, 77, 8256-041 Serpa",1,3,18.7,1,0.484,2024-01-26,1
+361,Vera Melo,740330454,(351) 931473917,"Largo Kelly Magalhães, 63, 3546-831 Oliveira do Bairro",1,2,11.5,1,0.544,2022-03-10,1
+362,Paulo Moreira,106166497,235944666,"Av Sousa, S/N, 1975-541 Santa Comba Dão",0,2,3.5,0,0.066,2024-03-24,1
+363,Xavier Macedo,844580151,(351) 967475425,"Travessa Correia, S/N, 6151-105 Odivelas",1,3,5.7,0,0.228,2023-02-25,1
+364,Clara Vaz,429628092,(351) 256 884 363,"Alameda Marques, 25, 2973-351 Peso da Régua",1,4,30.2,1,0.27,2022-06-29,1
+365,Ema Figueiredo,150509699,(351) 965546534,"Alameda Marta Batista, 33, 9707-636 Santa Cruz",1,2,8.0,0,0.278,2023-07-21,1
+366,Irina Pinheiro,613152552,(351) 232 585 630,"Avenida Bianca Pinto, 36, 9530-649 Amadora",1,0,,0,0.072,2024-12-21,1
+367,Eva Alves,228058837,+351963931903,"Travessa Hugo Carneiro, 84, 2278-944 Albufeira",1,2,45.5,0,0.31,2024-02-09,1
+368,Bianca do Ferreira,435404762,(351) 916039243,"Largo de Sidónio Pais, 78, 1416-099 Marinha Grande",1,1,24.0,0,0.176,2023-11-18,1
+369,Carminho Abreu,395011152,922 453 471,"Av de Torres, 815, 5413-893 Estarreja",1,3,15.7,0,0.143,2022-12-28,1
+370,Duarte Esteves,586277888,933409147,"Alameda Ribeiro, 722, 4413-014 Porto Santo",1,5,12.0,0,0.023,2023-01-11,1
+371,Fernando Coelho,031748903,(351) 927510340,"Praça Silva, 32, 7419-530 Entroncamento",0,3,39.7,1,0.338,2023-05-07,1
+372,Renata Figueiredo,588097186,(351) 962 273 626,"Av Leandro Melo, 35, 4223-454 Barcelos",0,4,13.5,1,0.327,2022-12-21,1
+373,Luana-Adriana Gomes,422935545,(351) 933214237,"R. Vieira, 733, 1500-433 Lagos",1,3,23.3,2,0.437,2023-07-25,1
+374,Vicente Teixeira,205596757,(351) 937786187,"Praça de Domingues, S/N, 7733-502 Alcácer do Sal",1,4,30.8,1,0.322,2022-12-08,1
+375,Vasco de Fernandes,911379830,(351) 297341105,"R. Moura, 54, 3418-547 Rio Maior",1,3,5.7,1,0.23,2023-02-02,1
+376,Catarina Figueiredo,576274511,939317054,"Praça de Antero de Figueiredo, 48, 7618-034 Barcelos",1,0,,0,0.124,2023-09-19,1
+377,Constança-Gabriela Azevedo,089589701,+351207690739,"R. de Rodrigues, S/N, 1214-282 Póvoa de Varzim",1,3,9.7,2,0.418,2022-11-04,1
+378,Mariana Almeida,221336896,(351) 920 345 206,"Praça Raquel Garcia, 38, 7676-073 Coimbra",0,1,7.0,0,0.144,2023-12-17,1
+379,Joel Ribeiro,834761289,(351) 965109628,"Largo do Sapal, 4, 4556-115 Quarteira",1,2,2.5,0,0.305,2023-05-17,1
+380,Luís Pinho,993074611,234483137,"Alameda Anita Gomes, 50, 5254-532 Fundão",1,4,10.5,1,0.502,2023-11-28,1
+381,David Leal-Amaral,997992715,(351) 932648786,"Alameda da Lingueta, S/N, 3256-760 Coimbra",1,1,9.0,1,0.764,2024-01-04,1
+382,Flor Henriques-Barbosa,033878852,259 826 253,"Rua do Sobreirinho, 9, 5693-691 Entroncamento",1,3,8.0,1,0.217,2024-03-28,1
+383,Bruno Abreu,898681843,(351) 281712296,"Avenida Joaquim Machado, S/N, 2880-147 Fiães",1,1,28.0,1,0.973,2024-04-03,1
+384,Erica Loureiro,763090073,+351253616656,"Largo de Leite, S/N, 2800-475 Estremoz",1,0,,0,0.127,2022-02-10,1
+385,Ana Fonseca,499944574,(351) 920 723 651,"Rua da Feiteira, 46, 8346-405 Aveiro",1,2,16.5,0,0.06,2023-02-14,1
+386,Tiago Nunes,441076926,(351) 962385893,"Av de Morais, 8, 6117-428 Anadia",1,2,11.5,0,0.213,2023-12-16,1
+387,Iara-Eva Costa,543475916,+351911407894,"Avenida Eva Vicente, 44, 9794-172 Cartaxo",0,0,,0,0.373,2022-01-11,1
+388,Martim Martins,435983985,(351) 927 194 253,"Rua de Ferreira, 20, 5787-633 Esposende",1,5,8.4,1,0.227,2022-03-09,1
+389,Sara de Campos,907996585,(351) 938 571 812,"Rua de Fernão de Magalhães, 98, 1926-567 Mealhada",1,3,5.3,0,0.119,2024-01-04,1
+390,Mafalda Amaral,375681678,+351934602778,"Largo de Moradias Populares do Eng.º Machado Vaz, 231, 3359-179 Silves",1,2,6.0,0,0.077,2023-07-22,1
+391,Mariana Gonçalves,340730717,(351) 910170769,"Travessa Matos, 70, 1088-172 Ponte de Sor",1,3,2.3,0,0.128,2022-11-23,1
+392,Salvador Coelho,613500788,(351) 919228833,"Largo Pereira, 14, 1662-016 Rio Tinto",1,2,46.5,0,0.391,2024-04-16,1
+393,Gabriela Magalhães-Brito,922338540,+351961139740,"Praça do Almirante Gago Coutinho, S/N, 6394-683 Moura",1,3,11.7,0,0.008,2022-05-13,1
+394,Sandro da Nogueira,369995285,(351) 280 264 172,"Alameda Ângelo Matos, 69, 2495-420 Penafiel",1,0,,0,0.003,2023-09-26,1
+395,Petra Valente-Brito,023126532,(351) 240837096,"Rua do Alto de São João, 307, 5690-764 Quarteira",1,0,,0,0.228,2024-02-27,1
+396,Ismael Castro,551497249,(351) 261 957 340,"Rua da Igreja, 1, 3190-901 Santa Comba Dão",1,3,19.0,3,0.607,2022-10-08,1
+397,Joaquim Santos,322347714,+351913393354,"R. Enzo Moreira, 57, 1749-655 Covilhã",1,6,21.5,0,0.11,2023-01-27,1
+398,Diego Azevedo-Nogueira,950935555,930 239 437,"Avenida Carolina Michaelis de Vasconcelos, 4, 8081-320 Montijo",1,4,17.5,0,0.28,2023-03-12,1
+399,Yasmin Antunes,020061741,(351) 931 430 372,"Praça da Encarnação, 491, 8756-747 Portimão",1,8,10.5,0,0.114,2022-04-02,1
+400,Bryan Assunção,445947612,916507208,"Alameda Esteves, 61, 5331-311 Vila Real de Santo António",1,3,16.7,1,0.213,2023-01-16,1
+401,Jorge Ferreira-Reis,939127065,+351243540949,"Av de Maria Pia, 26, 5757-166 Oliveira de Azeméis",0,2,13.0,0,0.111,2023-07-24,1
+402,Mélanie Pinheiro-Faria,612228305,(351) 919892337,"Praça de Macedo, 69, 8119-367 Oliveira do Hospital",1,5,16.6,3,0.753,2022-08-15,1
+403,Bruna Brito,468530455,(351) 965077964,"Rua Tiago Nunes, 56, 4056-807 Gandra",1,0,,0,0.344,2023-11-27,1
+404,Mara Leite,595026356,(351) 913377576,"Travessa de Pires, 58, 1018-831 Amora",0,1,90.0,0,0.035,2024-11-28,1
+405,Joaquim Azevedo,778943327,(351) 925 735 462,"Rua de Pinheiro, 317, 3694-468 Almeirim",1,1,10.0,0,0.335,2023-05-03,1
+406,Jorge de Machado,399046008,(351) 965553286,"Travessa Roentgen, S/N, 8080-517 Vale de Cambra",1,2,11.5,0,0.396,2023-03-30,1
+407,Gonçalo Lopes-Marques,369626902,929526009,"Avenida de Gaspar, 96, 5707-780 Pinhel",1,2,13.0,0,0.363,2023-02-15,1
+408,Valentina Batista,220975506,(351) 933797671,"Alameda de Tavares, S/N, 8410-017 Viseu",1,2,11.0,1,0.456,2023-08-30,1
+409,Diogo Gaspar,906701512,+351965857680,"Alameda Torres, S/N, 1611-926 Cartaxo",0,4,16.0,1,0.324,2024-02-09,1
+410,Lisandro Figueiredo,393449076,926 674 302,"Praça de Basílio Teles, 661, 9096-940 Portimão",1,4,9.2,1,0.363,2023-02-02,1
+411,Ismael Sá,216218333,962631370,"Avenida de José Serra, 4, 5962-197 Montijo",1,3,8.3,0,0.271,2023-03-01,1
+412,Frederico Gaspar,192969210,(351) 962665707,"Praça Bárbara Freitas, S/N, 1469-443 Évora",1,2,3.0,0,0.138,2024-04-29,1
+413,Jaime Correia,307122600,(351) 225559722,"Av do Trancão, 261, 5119-520 Fiães",1,2,19.5,0,0.308,2023-11-25,1
+414,Mário Brito,228377427,(351) 911394344,"Largo do Almirante Gago Coutinho, 42, 5546-298 Aveiro",1,3,10.7,1,0.214,2023-02-14,1
+415,Jéssica Faria,549857887,930 135 582,"Praça de Vandoma, 35, 7324-490 Trancoso",1,3,18.3,1,0.52,2022-03-19,1
+416,Carolina do Baptista,820632280,+351969854350,"Largo Marques, 33, 5450-756 Barcelos",1,3,15.0,0,0.175,2024-06-10,1
+417,Petra Pacheco,269804466,+351930738247,"Alameda Enzo Teixeira, 18, 7950-808 Fundão",1,6,6.0,0,0.072,2023-07-08,1
+418,Núria Amaral,952476096,(351) 252 941 283,"Travessa de Carneiro, 16, 8976-349 Sintra",1,0,,0,0.171,2023-06-07,1
+419,Emília Mendes,064724525,(351) 294676490,"Rua João Glama, S/N, 3736-604 Loulé",1,1,1.0,0,0.144,2024-01-20,1
+420,Alice Rodrigues,787477884,(351) 263 264 135,"R. Ricardo Martins, 70, 1038-014 Praia da Vitória",0,4,14.8,0,0.398,2024-01-02,1
+421,Alexandra Marques,094657770,963 459 158,"Avenida de Belém, 30, 8581-070 Vila do Conde",1,0,,0,0.289,2024-04-09,1
+422,Madalena Mota-Pacheco,129889728,937818878,"Av de Torres, 52, 8373-745 Silves",1,2,10.0,0,0.247,2023-04-19,1
+423,Alexandra Brito,680928261,920209257,"Rua Nair Cunha, 53, 6135-325 Abrantes",1,3,45.3,0,0.016,2023-07-24,1
+424,Eva Guerreiro,641700537,961 459 274,"R. dos Aventureiros, 14, 9899-514 Torres Novas",0,3,7.0,0,0.309,2023-03-30,1
+425,Renata Maia,860566880,(351) 935645643,"Av de Andrade, 87, 3006-942 Vila Nova de Foz Côa",1,3,8.7,0,0.076,2024-06-07,1
+426,Victória Lourenço-Gaspar,166479512,(351) 252 664 617,"Largo João Garcia, 61, 5209-599 Estremoz",1,1,34.0,0,0.356,2023-03-06,1
+427,Valentim da Coelho,831242853,(351) 228 594 761,"Avenida de Macedo, 545, 5261-406 Barcelos",1,3,19.7,0,0.018,2024-03-02,1
+428,Afonso do Vicente,416019919,297 491 532,"Avenida de Leal, S/N, 7860-843 Póvoa de Varzim",1,1,10.0,0,0.014,2024-03-21,1
+429,Enzo Faria,480870170,920 362 130,"Av de Leite, 48, 6876-899 Ponte de Sor",1,3,24.3,1,0.524,2022-07-27,1
+430,Daniela Castro,671520771,927 825 574,"Praça de São João de Deus, 61, 3785-664 Marco de Canaveses",1,3,4.0,0,0.38,2022-11-15,1
+431,Luciana Figueiredo,074043368,(351) 923109320,"R. Lima, 392, 4175-415 Rio Maior",1,3,35.3,0,0.005,2023-11-15,1
+432,Yasmin Paiva,796724610,966906969,"Praça Dom Afonso Henriques, 1, 7485-425 Santana",1,3,14.7,1,0.452,2022-11-04,1
+433,Pedro Esteves,110900701,+351938982316,"Rua Erica Magalhães, 27, 4951-814 Amarante",1,3,6.3,0,0.344,2023-01-26,1
+434,Luca de Tavares,502050254,921465401,"Travessa de Tavares, 43, 9561-518 Caldas da Rainha",1,3,32.7,0,0.049,2022-11-07,1
+435,Ariana Nogueira,239201029,(351) 918 954 161,"R. Alexandre Pinto, 85, 2647-902 Ponta Delgada",1,6,31.8,2,0.5,2023-02-10,1
+436,Micael Gomes-Simões,759974753,+351937797042,"Avenida Lúcia Lourenço, 722, 1016-484 Torres Vedras",1,1,6.0,0,0.071,2022-12-12,1
+437,César do Paiva,659744252,223026156,"Alameda de Ferreira, 47, 5722-560 Caniço",1,3,25.3,1,0.297,2023-03-03,1
+438,João Alves,942041641,(351) 967528351,"Alameda Vicente, 1, 5074-358 Mealhada",1,2,6.0,0,0.243,2022-10-10,1
+439,Bernardo Leite,374051337,913192906,"Rua Antunes, 48, 5298-970 Vila Nova de Santo André",1,5,51.0,0,0.219,2022-07-21,1
+440,Kévim Lourenço,937669976,939 352 446,"R. Fernandes, S/N, 8467-016 Câmara de Lobos",1,4,32.5,0,0.244,2022-08-08,1
+441,Flor Amorim,608557174,+351204792797,"Av de Pacheco, 725, 7336-008 Vendas Novas",1,4,8.5,0,0.014,2022-10-26,1
+442,Renato Soares,058496881,(351) 965576983,"Praça Ferreira, 64, 1772-440 Amora",1,4,11.5,0,0.4,2022-10-30,1
+443,Luísa Paiva,990803586,203132257,"Largo do Olival, 10, 3329-185 Elvas",1,2,11.5,1,0.672,2024-02-17,1
+444,Letícia Guerreiro,057445099,+351273436680,"Av Vieira, S/N, 7002-170 Silves",1,2,16.0,1,0.672,2024-08-17,1
+445,Guilherme Azevedo-Rocha,632453527,(351) 912 508 640,"Praça de São Pedro, 6, 6187-631 Barreiro",1,3,24.0,1,0.519,2023-05-23,1
+446,Tatiana Pires,111108518,(351) 923 725 463,"Av Valente, 63, 6271-761 Portalegre",1,3,44.7,0,0.216,2023-02-20,1
+447,Gabriel Alves,689859321,204 785 619,"Praça Ângelo Jesus, 47, 4913-085 Sines",1,5,6.4,0,0.15,2022-12-01,1
+448,Marta Guerreiro-Soares,961830734,(351) 220574802,"Alameda Castro, 80, 2904-991 Vila Nova de Foz Côa",1,4,32.8,1,0.394,2022-03-28,1
+449,Ema Domingues,800226425,(351) 938 537 214,"Praça Gerais, 967, 2881-622 Sintra",1,2,28.5,1,0.683,2024-07-22,1
+450,Lúcia-Camila Moura,720554829,915 501 665,"Avenida de Barros, 61, 4796-106 Praia da Vitória",1,1,1.0,0,0.197,2023-01-17,1
+451,Isabel Henriques,781921474,260511072,"Largo Borges, 40, 3621-541 Abrantes",1,5,13.0,0,0.184,2023-01-21,1
+452,Tomás Faria,847460429,(351) 925341635,"Avenida de Santos, S/N, 7318-929 Oliveira do Hospital",1,4,51.8,0,0.137,2022-11-03,1
+453,Fábio Barbosa,717847214,(351) 916 080 902,"R. de Vaz, 60, 9922-144 Ovar",1,3,8.7,0,0.2,2022-02-07,1
+454,Edgar Melo-Jesus,727580452,(351) 270 418 891,"Travessa de Machado, 222, 6436-472 Esposende",1,3,18.0,0,0.317,2022-05-12,1
+455,Renato Rodrigues,267698897,(351) 964 640 615,"R. Costa, 730, 4992-564 Cantanhede",1,1,23.0,0,0.095,2023-09-21,1
+456,Mia Valente,887754458,(351) 967352712,"Praça de Freitas, 3, 1518-386 Guarda",1,5,10.2,1,0.179,2023-02-13,1
+457,Paulo Leal,741340192,(351) 962580961,"Alameda Nádia Monteiro, 936, 4427-554 Sintra",1,1,18.0,1,0.976,2024-07-02,1
+458,Martim Correia,936059627,(351) 231136426,"Travessa William Torres, S/N, 2316-302 Costa da Caparica",1,1,25.0,0,0.392,2023-04-20,1
+459,Carlos Coelho,193463890,(351) 259 650 437,"Av Kévim Rocha, 50, 2390-588 Elvas",1,1,24.0,1,0.925,2024-06-04,1
+460,David Domingues,484479365,(351) 240 851 581,"R. de Domingues, S/N, 4628-335 Santa Cruz",1,3,16.7,1,0.469,2023-09-06,1
+461,Tiago Pinheiro,156862230,+351910145471,"Avenida das Pedras, 87, 7376-004 Elvas",1,1,30.0,0,0.16,2024-07-27,1
+462,Mário Batista,706594805,926764573,"Rua Brito, 953, 1938-678 Porto Santo",1,4,15.8,2,0.679,2023-07-08,1
+463,Duarte da Vicente,160227433,(351) 925 393 938,"Rua Cruz, 69, 4924-797 Miranda do Douro",0,3,31.7,0,0.02,2022-11-17,1
+464,Pedro Vieira,727186244,(351) 928323305,"Rua Figueiredo, 32, 6122-090 Tomar",1,3,42.3,1,0.533,2023-05-08,1
+465,Lisandro Nogueira,563112138,(351) 924415056,"Alameda Pereira, 84, 5784-528 Mirandela",1,1,1.0,0,0.228,2022-08-10,1
+466,António Vaz,782878066,+351283971637,"R. Flor Figueiredo, S/N, 4841-748 Rio Maior",0,1,14.0,0,0.102,2024-11-01,1
+467,Marco Barros,459858663,(351) 922888825,"Rua Rita Assunção, 67, 2266-507 Montemor-o-Novo",1,2,7.5,0,0.056,2023-10-20,1
+468,Anita Almeida,541802882,(351) 921 161 062,"R. Mota, 65, 5654-980 Covilhã",1,3,15.3,0,0.192,2024-02-14,1
+469,Bryan Melo,128866905,+351261460219,"Travessa do Lagarteiro, 6, 4375-967 Torres Novas",1,1,1.0,0,0.063,2023-12-04,1
+470,Margarida Neves,946998428,(351) 910586701,"Largo Panorâmica, 17, 9736-675 Tondela",1,6,17.5,1,0.173,2023-08-12,1
+471,José Mota-Baptista,284705203,(351) 924682057,"Avenida João Magalhães, 30, 4724-995 Anadia",0,4,6.0,0,0.221,2022-06-12,1
+472,Eduardo Neto-Fernandes,329887123,(351) 921126552,"Praça de Costa, 57, 6216-182 Loulé",1,3,42.3,0,0.004,2023-12-06,1
+473,António Amaral,036686427,+351921064991,"Rua Artur Oliveira, 2, 8912-052 Mealhada",1,4,38.5,1,0.365,2023-05-27,1
+474,Leonor Fonseca,786268527,(351) 966369233,"Largo Miguel Torres, 471, 5392-814 Santana",1,3,4.7,1,0.337,2023-09-17,1
+475,Ivan Esteves,760320877,(351) 925 079 251,"Alameda Patrícia Nascimento, S/N, 4782-970 Albufeira",1,1,9.0,0,0.094,2024-07-09,1
+476,Alice Batista-Brito,471062833,(351) 234 776 897,"Av das Gáveas ao Parque das Nações, 30, 7097-978 Porto",1,4,7.0,0,0.023,2023-02-26,1
+477,Ema-Victória Coelho,557356232,927 141 949,"Rua Adolfo Ayala, 917, 6882-847 Agualva-Cacém",1,1,20.0,0,0.369,2023-12-28,1
+478,Tomás Machado,770045358,967936169,"Travessa do Calvário, 4, 3141-262 Santa Cruz",1,2,22.0,0,0.211,2023-06-27,1
+479,Jaime Marques,973027322,965 763 131,"R. Pilar Moura, 79, 3900-765 Setúbal",1,2,16.0,1,0.594,2022-03-08,1
+480,Noah Lopes,704240255,(351) 938479511,"Alameda de Henriques, 956, 9011-578 Ponta Delgada",1,2,9.5,1,0.446,2022-02-17,1
+481,Yara Lourenço,689397704,(351) 245991269,"Largo de Pinto, 95, 8812-579 Trancoso",1,3,39.3,0,0.199,2023-11-30,1
+482,Luca Morais,678815964,(351) 242565781,"Praça dos Armazéns, 294, 7493-653 Sabugal",1,2,46.0,0,0.019,2023-02-27,1
+483,Ricardo Neves,738656904,961528755,"Praça Marques, 7, 8814-577 Bragança",1,3,5.3,1,0.321,2023-03-12,1
+484,Gaspar Leite,484673322,938 710 711,"Largo do Maestro Afonso Valentim, 42, 5717-956 Santarém",1,4,13.0,2,0.695,2022-05-20,1
+485,Carminho Borges,124895587,(351) 910 395 563,"R. Kyara Marques, 59, 2210-546 Montijo",1,2,20.5,0,0.088,2022-09-14,1
+486,César Moura,700623945,(351) 926 179 423,"Travessa Francisca Lima, 50, 3500-580 Angra do Heroísmo",1,3,8.3,0,0.264,2023-03-04,1
+487,Alícia Anjos,942640760,(351) 960 463 754,"R. Sophia de Mello Breyner Andresen, 9, 2622-105 Porto",1,2,32.5,1,0.365,2023-09-16,1
+488,Luís Pinto,953012033,919 708 539,"Avenida Pereira, S/N, 8749-852 Esmoriz",1,1,12.0,0,0.083,2024-08-30,1
+489,Alícia Barros,013871628,(351) 968 435 951,"Praça de Pereira, 1, 1230-679 Trofa",1,3,11.7,2,0.593,2023-12-12,1
+490,Catarina Miranda-Nunes,568905810,(351) 912131267,"Largo Sara Soares, 75, 1071-214 Oliveira do Hospital",1,2,6.5,0,0.008,2023-03-25,1
+491,Noa de Matias,015337435,(351) 254470381,"Largo Benedita Correia, 29, 9965-598 Loures",1,4,8.8,1,0.32,2023-12-10,1
+492,Mário Sá,027728715,938633650,"Travessa Eva Antunes, 516, 2047-980 Esposende",1,5,27.0,0,0.262,2023-03-06,1
+493,Victória de Lourenço,596957945,(351) 931 066 106,"Largo de Almeida, 52, 6600-079 Almeirim",1,2,56.5,1,0.461,2023-09-13,1
+494,Emma Freitas,595995505,(351) 911 944 171,"Travessa Abreu, 59, 9181-690 Paredes",1,2,20.5,0,0.222,2023-09-10,1
+495,Soraia Macedo,362917148,(351) 913 944 974,"Largo de Tavares, 919, 3001-833 Elvas",1,2,8.0,0,0.147,2022-04-06,1
+496,Leonardo Ramos,418395252,(351) 925884545,"Largo Patrícia Esteves, 772, 9506-107 Esposende",1,3,33.3,0,0.32,2023-04-14,1
+497,Inês Santos,520788216,(351) 293431512,"Rua de Paiva Couceiro, 87, 1878-590 Vizela",1,4,4.5,1,0.154,2022-07-14,1
+498,Márcio Carneiro,119214574,(351) 930778931,"Av de Assunção, 434, 5148-305 Póvoa de Varzim",1,3,37.3,0,0.161,2023-03-17,1
+499,Sara Carvalho,520302769,(351) 929 700 929,"Praça Costa, 6, 5396-066 Felgueiras",1,1,11.0,0,0.364,2024-06-02,1
+500,Iara do Valente,730882403,(351) 930 348 006,"Alameda Ângelo Carvalho, 16, 8968-585 Vila Nova de Santo André",1,5,49.0,1,0.474,2023-06-12,1
+501,Sebastião Mendes,532124402,(351) 966 976 697,"Rua Gomes, 20, 5199-434 Costa da Caparica",1,3,34.3,1,0.566,2022-07-21,1
+502,Helena Batista,634094121,(351) 259 447 943,"Largo Diogo Pinho, 9, 9779-016 Amadora",1,2,7.0,0,0.333,2022-03-14,1
+503,Alexandre Campos,052579599,249 688 188,"Rua Cunha, 17, 4192-966 Alcobaça",0,2,2.5,1,0.659,2023-12-12,1
+504,Isaac Pacheco,047941232,+351920830225,"Av Reis, 38, 5582-748 Odivelas",1,3,16.0,0,0.132,2024-04-11,1
+505,Emília Miranda,601891134,266117405,"R. de Rodrigues de Freitas, 49, 8067-161 Seia",1,2,8.0,0,0.328,2023-10-25,1
+506,Amélia Magalhães,348571339,(351) 968093429,"Praça Arquitecto Carlos Ramos, S/N, 8992-841 Angra do Heroísmo",1,2,7.5,0,0.169,2022-07-30,1
+507,Benjamim Azevedo,962768612,(351) 930 805 023,"Largo Torres, S/N, 5672-466 Reguengos de Monsaraz",1,4,9.5,0,0.187,2023-06-18,1
+508,Vasco de Carneiro,421120291,(351) 915473212,"Av Luísa Loureiro, 25, 4455-799 Bragança",1,3,9.0,0,0.18,2022-05-23,1
+509,Raquel Nogueira,381301494,(351) 223 285 462,"Praça Campos, 29, 2798-376 Ílhavo",1,2,4.0,1,0.688,2024-01-08,1
+510,Samuel da Nogueira,298908881,(351) 968975317,"Av Ariana Marques, 2, 6316-273 Santa Cruz",1,1,11.0,0,0.347,2023-01-12,1
+511,Joaquim Maia,645231919,965 417 936,"Rua de Simões, 6, 3406-493 Fundão",1,5,7.4,0,0.049,2023-09-23,1
+512,Kévim Gaspar,082133568,(351) 224376276,"Avenida Vicente, 58, 8360-681 Tomar",1,4,13.8,0,0.075,2022-10-22,1
+513,Igor Anjos,317236670,(351) 237 455 593,"Travessa Sandro Sousa, 73, 5229-437 São Mamede de Infesta",1,2,13.0,1,0.465,2024-05-15,1
+514,Noa Fonseca,171038919,(351) 288 264 058,"Av de Belém, 84, 2367-351 Porto Santo",1,3,7.0,0,0.266,2023-07-01,1
+515,António Carneiro,874050133,+351969099471,"Alameda do Almirante Gago Coutinho, 920, 6463-717 Olhão",1,4,13.0,0,0.159,2024-01-23,1
+516,Mauro Moreira,034495607,(351) 217 399 978,"Avenida Isaac Rocha, 785, 3794-583 São Mamede de Infesta",0,2,53.0,0,0.163,2023-05-10,1
+517,Micael Pires-Figueiredo,876507752,(351) 929 052 348,"Alameda Pereira, S/N, 6516-593 Albufeira",1,1,30.0,0,0.302,2023-10-29,1
+518,Carlos Tavares,723163160,(351) 965136191,"Rua Alice Batista, 59, 3146-473 Santarém",1,3,10.7,1,0.585,2023-08-23,1
+519,Lourenço Monteiro,781105703,(351) 256682447,"Av Marcos Nascimento, 67, 6700-072 Amora",1,1,52.0,1,0.961,2023-10-06,1
+520,Bryan da Campos,996306670,(351) 914675942,"Alameda do Dr. Nuno Pinheiro Torres, 9, 7325-178 Valbom",0,1,23.0,1,0.855,2023-12-20,1
+521,Benjamim Rodrigues,994696693,(351) 919386494,"Largo de Henriques, 94, 5297-985 Aveiro",1,3,36.3,0,0.226,2023-01-29,1
+522,Juliana Castro,233700715,+351932948106,"Largo do Freixo, 3, 7893-195 Setúbal",1,8,8.0,2,0.452,2023-03-10,1
+523,Fábio Torres,009714086,262 277 380,"Travessa de Ramos, 245, 1050-611 Vendas Novas",1,2,46.5,0,0.051,2024-04-28,1
+524,Lúcia Baptista,234306587,+351916299018,"Avenida Gonçalves, 39, 1274-235 Ovar",1,3,8.7,1,0.26,2022-01-24,1
+525,Luís Pinho,888392375,(351) 926956160,"Alameda das Conchas, S/N, 2630-449 Trofa",1,2,49.0,1,0.422,2023-09-26,1
+526,Lúcia Amaral,097228582,934 152 969,"R. Neves, 47, 7615-800 Alcobaça",1,2,16.5,0,0.137,2021-12-09,1
+527,Santiago Fernandes-Gaspar,854551391,(351) 923 039 169,"R. Almirante Pinheiro de Azevedo, 11, 9990-320 Fiães",1,1,9.0,0,0.257,2024-07-01,1
+528,Sandro do Leal,603482367,(351) 923 490 886,"Travessa Nuno Pinto, S/N, 7816-947 Póvoa de Santa Iria",1,4,9.0,1,0.221,2022-08-11,1
+529,Enzo Reis,387369323,(351) 930 193 717,"Praça do Carvalhido, 30, 6387-588 Câmara de Lobos",1,3,38.7,0,0.096,2023-05-05,1
+530,Érica Marques,043647584,(351) 935911835,"R. Lima, 61, 2737-886 Santarém",1,5,23.8,0,0.211,2022-05-02,1
+531,Letícia Nogueira,486741637,969 398 695,"Largo da Sé, 683, 9353-625 Mirandela",1,1,4.0,0,0.074,2024-06-08,1
+532,Xavier Pereira,206317552,(351) 915480517,"Av de Carvalho, 70, 4703-157 Sabugal",1,0,,0,0.06,2023-04-26,1
+533,Matilde da Machado,760145840,921 662 634,"Alameda Pinheiro, 75, 1059-675 Porto Santo",1,0,,0,0.228,2022-11-13,1
+534,Joaquim Machado,144157281,912809969,"Travessa de Mota, S/N, 6072-842 Oliveira do Hospital",1,2,13.5,0,0.234,2022-03-26,1
+535,Patrícia Amaral,361168611,931383285,"Largo Faria, 75, 3775-554 Seia",1,0,,0,0.146,2023-08-16,1
+536,Eduardo do Teixeira,036118926,246090720,"R. Esteves, S/N, 2882-244 Albufeira",1,1,1.0,0,0.293,2023-07-22,1
+537,Lúcia Sousa,055546542,(351) 298937512,"Travessa Tiago Fonseca, 1, 9822-768 Mangualde",1,4,17.8,1,0.369,2023-07-21,1
+538,Pilar Cruz,836843771,+351912791009,"Praça Pinheiro, 631, 6890-030 Freamunde",1,1,13.0,0,0.07,2024-11-02,1
+539,Daniela Gaspar,034454595,(351) 922 464 330,"Avenida Teixeira, 16, 1516-166 Barcelos",1,4,16.5,1,0.392,2023-01-25,1
+540,Bruna Rodrigues,600301196,912419422,"R. de Vieira, 8, 6548-087 Leiria",1,2,7.0,1,0.394,2023-01-13,1
+541,Carlos Correia,227238697,(351) 230 156 875,"Praça de Mota, 62, 1217-112 Estremoz",1,5,33.2,0,0.313,2023-07-11,1
+542,Enzo Vicente-Mota,217368385,916 629 760,"Avenida dos Estorninhos, S/N, 6338-300 São Mamede de Infesta",1,5,20.8,1,0.38,2023-03-08,1
+543,Ariana Andrade-Assunção,095709340,(351) 917 884 444,"Largo de Leite, 74, 5425-793 Fiães",1,2,23.0,1,0.5,2024-02-11,1
+544,Violeta Anjos,991650811,+351930299715,"Alameda de Pereira, S/N, 2866-513 Évora",1,5,62.4,0,0.231,2023-06-05,1
+545,Valentina de Brito,403484843,(351) 969565828,"Praça de Nascimento, 33, 4114-287 Seia",1,2,12.0,0,0.153,2023-11-06,1
+546,Carlota Brito-Branco,770062795,(351) 938197126,"Av Carneiro, 406, 3047-433 Macedo de Cavaleiros",1,3,53.3,2,0.694,2022-09-17,1
+547,Vítor Sá,951429544,932 662 920,"Rua Escuro, 41, 1220-354 Matosinhos",1,1,5.0,0,0.202,2024-08-10,1
+548,Francisco de Ferreira,669542175,(351) 932818325,"Avenida de Nascimento, 59, 7444-393 Odivelas",1,4,10.2,0,0.212,2023-01-08,1
+549,Lara Carneiro,275280016,(351) 916 464 435,"Avenida de Vímara Peres, 91, 4073-333 Montijo",1,0,,0,0.206,2024-10-27,1
+550,Diogo Vieira,173447945,(351) 213746883,"Alameda Denis Gaspar, S/N, 1643-081 Mangualde",1,0,,0,0.077,2024-10-09,1
+551,Bruna-Gabriela Sousa,351638326,(351) 915 628 891,"Rua de Carrilho Videira, 4, 9094-064 Sabugal",1,6,15.0,1,0.407,2023-11-04,1
+552,Sofia Brito,897100170,(351) 931 119 174,"Av de Oliveira, 44, 1073-147 Amarante",1,1,5.0,0,0.176,2024-02-16,1
+553,Luís Ferreira,129457613,(351) 931199988,"Avenida Yara Sousa, S/N, 9622-220 Vizela",0,2,16.0,0,0.155,2023-11-10,1
+554,Leandro Ferreira,494841423,(351) 916333455,"R. Vaz, 97, 5594-412 Santana",1,1,90.0,0,0.386,2023-03-12,1
+555,Gustavo Guerreiro,528337287,(351) 922 230 883,"Praça Neto, 409, 4536-484 Vila Nova de Santo André",1,0,,0,0.234,2022-02-07,1
+556,Dinis Teixeira,679813026,937 205 774,"Largo de Moreira, 5, 3253-611 Loulé",1,1,24.0,1,0.838,2024-10-04,1
+557,Vera da Loureiro,647711588,(351) 916424262,"Travessa Patrícia Reis, 85, 6552-842 São Salvador de Lordelo",1,3,4.3,0,0.055,2022-09-07,1
+558,Bianca do Campos,187089410,(351) 212 871 761,"R. António Soares, 2, 9814-929 Miranda do Douro",1,3,8.7,1,0.361,2022-07-09,1
+559,Manuel Vaz,911611464,(351) 968 288 117,"Av Nair Pereira, 90, 9376-516 Ponta Delgada",1,1,3.0,0,0.037,2024-10-17,1
+560,Valentim Ribeiro,119830975,212 955 175,"Alameda Vieira, 471, 8026-084 Macedo de Cavaleiros",1,3,22.0,2,0.556,2024-03-19,1
+561,Pedro Sá,247388523,(351) 962085261,"Rua Igor Campos, 85, 5937-711 Lourosa",1,3,11.7,1,0.411,2023-04-26,1
+562,Soraia Batista-Valente,748770078,(351) 923849079,"Avenida de Figueiredo, S/N, 7716-767 Trofa",1,3,21.0,0,0.214,2023-03-16,1
+563,Eduarda Barbosa,125325121,925389231,"Travessa Gabriela Nascimento, 9, 5622-068 Sabugal",1,2,15.5,1,0.321,2023-04-25,1
+564,Fábio Carneiro,808226799,(351) 921 158 986,"Rua Márcio Pacheco, 64, 5940-135 Gafanha da Nazaré",0,2,9.0,0,0.393,2023-06-03,1
+565,Luca Reis-Santos,666028653,(351) 937659557,"Avenida de Borges, 551, 9195-743 Fátima",1,2,10.0,0,0.276,2024-01-17,1
+566,José Garcia,395716468,283387353,"Av de Vandoma, 40, 1630-954 Matosinhos",1,3,9.7,0,0.304,2022-06-06,1
+567,Sofia Matos,100370907,(351) 967108068,"R. de Castro, 8, 7018-788 Vila do Conde",0,1,6.0,1,0.668,2023-06-23,1
+568,Emma Miranda-Borges,378088669,920842981,"Rua de Branco, 18, 8659-136 Caniço",1,0,,0,0.122,2024-09-03,1
+569,Bianca Garcia,070983484,+351265318342,"Travessa Sophia de Mello Breyner Andresen, 3, 7290-905 Vila Nova de Gaia",1,0,,0,0.066,2023-05-15,1
+570,Amélia Borges,674876296,241 335 843,"Largo do Rego Lameiro, 921, 8167-524 Lisboa",1,1,3.0,0,0.386,2024-10-02,1
+571,Mariana-Renata Martins,744565726,+351937847023,"Avenida de Caselas, 418, 2444-863 Seia",1,0,,0,0.01,2024-09-06,1
+572,Sandro Antunes,541982817,(351) 938 823 364,"Alameda de Neto, 61, 2507-120 Sintra",1,4,11.0,0,0.234,2023-12-29,1
+573,Leonor Melo-Correia,477950034,925 253 152,"Praça de Valente, S/N, 4936-672 Ponte de Sor",1,6,19.8,0,0.287,2022-10-07,1
+574,Valentim Machado,220262693,(351) 965147405,"R. Manuel Simões, 37, 3782-655 Castelo Branco",0,2,12.0,0,0.204,2022-11-15,1
+575,Renato Garcia,264525733,+351924890274,"Praça Araújo, S/N, 3870-388 Aveiro",0,5,32.2,0,0.33,2023-04-27,1
+576,Naiara da Matias,074063516,(351) 927 866 323,"Alameda Eva Simões, 57, 4920-624 Setúbal",1,1,19.0,0,0.306,2023-03-12,1
+577,Rodrigo Batista,224767512,928745016,"R. Ribeiro, 58, 2722-990 Santo Tirso",1,1,24.0,0,0.149,2024-09-26,1
+578,Kyara Machado,837990053,966 332 778,"Rua de Guerreiro, 9, 8259-963 Sacavém",1,5,9.6,1,0.172,2023-02-25,1
+579,Miguel Branco,693327633,+351929969042,"R. de Luiz I, 54, 2168-734 Ílhavo",1,2,45.5,0,0.07,2022-08-26,1
+580,Eduardo Sousa,228562837,+351929249202,"Travessa Leite, 144, 7551-833 Santa Cruz",1,3,26.3,1,0.31,2023-10-20,1
+581,Helena Moreira,372259310,+351916136438,"R. Amaral, 85, 7229-799 Ribeira Grande",1,3,22.0,0,0.004,2024-07-12,1
+582,Valentina Fonseca-Oliveira,370089423,968 491 884,"Largo de S. Marçal, 817, 7505-676 Póvoa de Varzim",1,1,90.0,0,0.206,2024-01-02,1
+583,José Henriques,037043333,968 366 453,"R. Lia Pereira, 6, 2220-822 Olhão",1,6,12.8,0,0.023,2022-10-22,1
+584,Nair Sousa,883845612,+351925636942,"Av Maia, 282, 6696-554 Odivelas",1,4,5.2,1,0.317,2022-09-17,1
+585,Inês Ramos,780473719,(351) 966356625,"Largo Ribeiro, 60, 7038-855 Valongo",1,1,19.0,0,0.037,2022-11-22,1
+586,Naiara-Jéssica Almeida,517696806,911040553,"Alameda de Barros, 70, 6995-991 Vila Real",1,2,52.5,0,0.297,2023-09-22,1
+587,Helena Coelho,544215783,(351) 929774559,"Av Pedro Mota, S/N, 5346-357 Vila Nova de Santo André",1,2,14.0,1,0.662,2022-08-15,1
+588,Miriam Neto,264053273,(351) 935 898 915,"Praça Santos, S/N, 4422-812 Odivelas",1,1,12.0,0,0.228,2024-05-01,1
+589,Mauro Neves,968859342,(351) 209 593 951,"R. Nascimento, 186, 1121-440 São Mamede de Infesta",1,6,9.0,0,0.023,2022-08-24,1
+590,Mário de Abreu,839039799,+351912325044,"Praça de Rodrigues, S/N, 6195-871 Fafe",1,3,16.7,0,0.023,2023-09-05,1
+591,César Carvalho,833150321,(351) 293 540 068,"Travessa Assunção, 27, 4671-609 Setúbal",1,2,2.0,0,0.013,2024-05-28,1
+592,Larissa Abreu,596551025,267 054 405,"R. Joaquim Campos, 29, 4077-006 Santa Cruz",0,4,12.5,2,0.518,2023-09-16,1
+593,Kyara Nogueira,668606734,(351) 911 581 015,"Praça Pinheiro, 6, 3407-870 Santiago do Cacém",1,4,6.8,0,0.033,2022-08-15,1
+594,Gabriela do Valente,714998632,(351) 964507192,"Travessa Gomes, 835, 7571-493 Abrantes",1,2,18.0,0,0.07,2022-04-12,1
+595,Samuel da Alves,591038524,(351) 964 106 065,"Rua de Adelino Amaro da Costa, 32, 4379-057 Espinho",1,1,2.0,0,0.104,2024-06-13,1
+596,Mário Lima,762215596,960966871,"Alameda Paulo Silva, 84, 2747-969 Estremoz",1,1,10.0,0,0.283,2022-09-19,1
+597,Edgar Ribeiro,743963994,(351) 910972060,"Avenida de Figueiredo, 9, 3489-393 Esmoriz",1,6,12.3,3,0.512,2022-07-20,1
+598,Jorge da Marques,940389554,966458981,"Av do Prof. Ruy Luís Gomes, 54, 7789-844 Penafiel",1,4,33.8,0,0.358,2022-10-11,1
+599,Emanuel Matias,653170873,(351) 969 911 208,"Largo Carneiro, 48, 4043-066 Setúbal",0,4,8.5,1,0.488,2023-02-21,1
+600,Anita Mendes,210273663,+351968200225,"Rua do Bom Sucesso, 816, 9146-164 Tarouca",1,1,24.0,0,0.345,2024-06-30,1
+601,Patrícia-Luísa Amaral,256732234,+351939652527,"Praça Leal, 946, 4148-017 Funchal",1,4,7.8,1,0.18,2023-03-17,1
+602,Ângela da Andrade,749391660,+351914639282,"Alameda de Lourenço, S/N, 6206-904 Amarante",1,2,7.5,0,0.236,2022-12-22,1
+603,Ana Castro,910904886,(351) 240813534,"R. Ana Fernandes, 3, 6961-996 Santa Cruz",1,3,9.7,0,0.19,2022-08-08,1
+604,Carlota Machado,073264478,(351) 961 718 121,"R. do Carregal, 4, 8110-353 Ponta Delgada",1,2,18.0,1,0.303,2024-04-01,1
+605,Ismael Vieira,378595417,279 725 625,"Av Noah Lourenço, 9, 4941-141 Praia da Vitória",1,2,45.5,0,0.064,2023-09-22,1
+606,Vítor Costa,090937164,(351) 918356721,"R. de Teixeira, 61, 7599-828 Odivelas",1,2,46.0,0,0.16,2023-10-13,1
+607,Sara Amorim,581045734,+351915029924,"Praça de Vicente, 81, 9427-765 Porto Santo",1,4,10.8,0,0.205,2022-03-29,1
+608,Guilherme Barros,944733878,(351) 921583420,"Av Borges, 512, 5868-885 Amarante",1,6,18.2,2,0.312,2023-04-29,1
+609,Carlos Maia,528905665,(351) 930 692 194,"Rua de Castro, 2, 8564-316 Gafanha da Nazaré",1,3,14.3,1,0.341,2023-06-10,1
+610,Bianca Mendes,183784771,(351) 279 070 170,"Travessa de Paiva Couceiro, 70, 7595-680 Montijo",1,5,12.2,0,0.199,2023-01-30,1
+611,Marcos Cardoso,883743450,(351) 299 324 823,"R. de Reis, 614, 4519-312 Torres Vedras",1,5,11.8,0,0.052,2023-08-27,1
+612,Samuel Cruz,685938062,(351) 920631038,"Rua de Assunção, 51, 5251-772 Mêda",1,1,90.0,0,0.171,2024-07-31,1
+613,Lorena da Borges,023089964,914 389 153,"Av Loureiro, 997, 5975-103 Oliveira do Hospital",1,2,20.0,0,0.136,2023-11-22,1
+614,Eva Lopes-Gaspar,924343548,(351) 915 198 720,"Largo Paris (Poente), 6, 7294-624 Câmara de Lobos",1,2,50.0,0,0.373,2024-01-19,1
+615,Mateus do Gonçalves,521215603,+351935607145,"Praça de Estêvão Vasconcelos, S/N, 1943-654 Valpaços",1,2,13.5,0,0.142,2024-02-23,1
+616,Sebastião Paiva,108803546,(351) 937 429 816,"Largo de Fonseca, 739, 2469-506 Trofa",1,5,7.2,1,0.299,2022-03-18,1
+617,Júlia Rocha,660490376,964 743 539,"Rua de Santos, 59, 4127-442 Rio Tinto",1,1,17.0,0,0.364,2022-02-18,1
+618,Mateus Mendes,476911612,(351) 929 989 473,"Travessa Henriques, 8, 3608-750 Miranda do Douro",1,0,,0,0.097,2024-03-24,1
+619,Alice Figueiredo-Macedo,503965586,(351) 911 452 689,"Rua de Araújo, 10, 4382-337 Caniço",1,1,27.0,0,0.155,2023-04-14,1
+620,Rita Antunes-Maia,190041589,259 666 431,"Largo Iara Gomes, 53, 6231-087 Chaves",1,1,15.0,0,0.098,2024-08-02,1
+621,Rodrigo Azevedo-Simões,352866013,(351) 912310745,"Avenida da Figueira, 7, 1742-133 Matosinhos",1,1,12.0,0,0.054,2024-05-25,1
+622,Vera Nogueira,500295738,923 035 679,"Avenida Castro, 4, 9949-835 Gondomar",0,2,16.0,1,0.517,2022-11-29,1
+623,Naiara-Lúcia Antunes,012457181,(351) 267470173,"Travessa Enzo Loureiro, 36, 5639-300 Portimão",1,2,12.0,0,0.131,2023-05-15,1
+624,Helena Coelho,806194999,964 774 021,"Largo dos Anjos, 24, 1599-196 Gondomar",1,0,,0,0.292,2024-09-04,1
+625,Érica Teixeira-Amaral,650551919,(351) 937691757,"R. do Buraco, 147, 2202-053 Odivelas",1,1,14.0,0,0.159,2023-07-03,1
+626,Luís Figueiredo,968718671,967 897 919,"Avenida de Pinheiro, 84, 9135-406 Rio Tinto",1,3,8.0,2,0.776,2022-02-02,1
+627,Simão Nascimento,804929328,(351) 931 810 492,"Rua Leal, 34, 2642-410 Elvas",1,4,11.0,2,0.603,2022-12-26,1
+628,Mafalda Moreira,507196129,965 562 771,"Alameda de Augusto Gomes, 85, 7163-716 Vila Real de Santo António",1,4,19.5,2,0.662,2022-03-02,1
+629,César Borges,213495220,910596410,"Rua Adriana Valente, 99, 1482-707 Felgueiras",1,7,13.1,0,0.165,2023-01-02,1
+630,Vicente Fernandes,400371775,(351) 276 654 972,"Largo Rafael Carvalho, 47, 7582-163 Tavira",1,3,13.3,0,0.171,2022-02-10,1
+631,Duarte Figueiredo-Almeida,562748066,917660993,"Praça das Naus, 62, 9742-401 Alverca do Ribatejo",1,5,10.4,1,0.229,2023-01-23,1
+632,Carlota Lopes,262030695,(351) 920517960,"Alameda Moura, 94, 5161-712 Vale de Cambra",1,3,15.3,1,0.595,2022-01-27,1
+633,Artur Neves-Oliveira,657121186,(351) 933562127,"Praça de Matias, 667, 4693-766 São Mamede de Infesta",0,2,4.0,0,0.143,2023-05-06,1
+634,Yasmin Torres,181123993,+351922539144,"R. do Carrasco, S/N, 9325-055 Montijo",1,4,9.8,1,0.205,2023-06-08,1
+635,Brian Fonseca-Pinto,255987920,(351) 966496413,"R. Nuno Faria, 28, 8336-011 Freamunde",1,3,17.7,1,0.378,2023-07-29,1
+636,Mateus Castro,231459688,(351) 910539653,"Travessa de Reis, 68, 2576-093 Felgueiras",1,3,12.7,0,0.017,2022-04-23,1
+637,Yara Lourenço,109619680,(351) 232 930 443,"Largo Castro, 82, 3123-603 Penafiel",1,2,17.5,0,0.389,2024-02-29,1
+638,Diana Mota,505211203,+351963574163,"R. de Araújo, S/N, 2315-568 Oliveira do Bairro",1,4,23.8,0,0.049,2023-06-20,1
+639,Eva Moreira,081641804,(351) 916 348 293,"Praça Leal, 71, 3203-596 Câmara de Lobos",1,3,26.0,1,0.518,2022-08-20,1
+640,Kévim Soares,608197140,(351) 287306167,"Travessa Bernardo Lourenço, 67, 3889-219 Amadora",1,3,7.7,0,0.172,2022-12-16,1
+641,Soraia do Oliveira,834695449,933319303,"Rua de Batista, 53, 2828-248 Mangualde",1,2,5.5,0,0.086,2023-05-30,1
+642,Leandro Araújo,060958062,(351) 207243106,"Travessa de Nun'Álvares Pereira, S/N, 2260-227 Ermesinde",1,3,41.7,1,0.362,2022-12-21,1
+643,Emma Soares,745669839,+351922933142,"Largo Castro, 88, 3858-009 Gouveia",1,2,50.5,0,0.066,2024-07-25,1
+644,António Faria-Assunção,590742941,(351) 275807675,"Rua de Campolide, 16, 8357-837 Santana",1,3,18.0,0,0.333,2022-09-11,1
+645,Francisco Costa,904957762,920188151,"Praça Maria da Luz Ponces de Carvalho, 25, 5565-537 Seia",1,3,33.0,0,0.02,2023-06-05,1
+646,Diego Costa,384766919,924951381,"Largo Fernandes, 4, 9954-065 Vila Nova de Foz Côa",1,2,27.5,0,0.146,2023-07-22,1
+647,Yasmin Gomes,301647286,+351968210648,"R. de Gaspar, 83, 1158-247 Penafiel",1,3,12.3,0,0.086,2022-02-21,1
+648,Débora Cardoso,468590262,(351) 926 890 082,"Avenida de Pina Manique, 98, 9580-044 Sintra",1,0,,0,0.2,2024-05-06,1
+649,Matilde Brito,761166286,(351) 914 732 628,"Avenida de Correia, 187, 9204-654 Espinho",1,3,11.3,0,0.116,2023-07-15,1
+650,Samuel Neto,349824689,(351) 270 933 661,"Alameda de Fernandes, 23, 6278-780 Olhão",1,3,14.7,1,0.267,2022-12-07,1
+651,Álvaro Nogueira,670165627,(351) 939759662,"Av de Rocha, 49, 8585-634 Vila Nova de Santo André",1,4,8.5,0,0.163,2022-07-05,1
+652,Marco Freitas,402157231,913413484,"Praça de Brito, 42, 8302-623 Seia",1,5,49.0,1,0.348,2023-09-24,1
+653,Mauro Monteiro,252423525,(351) 923 372 157,"Av de Antunes, 15, 7951-986 Póvoa de Santa Iria",1,6,11.3,0,0.006,2022-08-28,1
+654,Lisandro Matias,600858949,+351961152769,"Av de Pereira, 43, 6669-598 Ponte de Sor",1,2,19.5,1,0.664,2024-02-11,1
+655,Cristiano Mota-Alves,172150520,+351933002829,"Travessa de Matias, 63, 3005-320 Santa Cruz",1,1,18.0,0,0.203,2023-07-18,1
+656,Alícia Neves,353131845,(351) 962069568,"Largo Antunes, S/N, 8259-291 Coimbra",1,2,30.5,1,0.321,2023-08-07,1
+657,Adriana Amorim,059934232,(351) 915 177 699,"Praça Pulido Garcia, 78, 3309-727 Caniço",1,4,32.2,1,0.55,2022-06-15,1
+658,Artur do Esteves,109129443,(351) 917951051,"Av de Anjos, 3, 9924-270 Guarda",1,1,14.0,0,0.073,2024-11-03,1
+659,Jéssica Sá,414087834,(351) 914949549,"Avenida Yara Pinto, 55, 2629-757 Coimbra",1,5,17.8,1,0.495,2023-02-22,1
+660,Manuel Simões-Costa,377982402,(351) 927069630,"Av Anita Baptista, 61, 9225-170 Rio Tinto",0,2,7.0,0,0.338,2023-07-12,1
+661,Luís da Moreira,168231379,(351) 915 916 402,"R. Andreia Carvalho, 28, 6930-003 Câmara de Lobos",1,1,13.0,0,0.337,2023-06-29,1
+662,Adriana Lourenço,818100962,+351912342942,"Travessa de Mendes, 59, 6433-582 Leiria",1,2,17.0,1,0.654,2024-02-22,1
+663,Igor Miranda,265789635,914 268 308,"Avenida de Tavares, 89, 4633-170 Estremoz",1,0,,0,0.274,2023-06-06,1
+664,Constança Gaspar,774526348,(351) 925 054 347,"Rua da Igreja, S/N, 1754-757 Portalegre",1,1,17.0,0,0.392,2023-09-07,1
+665,Cristiano Morais-Silva,823725442,(351) 917597882,"Av de Valente, 91, 4889-334 Queluz",1,4,13.0,1,0.42,2022-06-16,1
+666,Joel Paiva,535117882,(351) 936 057 241,"Travessa do Regado, 22, 2504-996 São Salvador de Lordelo",1,5,31.4,0,0.191,2022-05-19,1
+667,Violeta Costa,503455388,963306815,"Praça Monteiro, 3, 1193-675 Caniço",1,5,10.4,0,0.186,2022-12-07,1
+668,Isabela Simões,720476766,(351) 222733859,"Travessa de Viterbo de Campos, S/N, 1012-449 Almada",1,3,19.3,2,0.756,2024-04-16,1
+669,Valentina Simões,082887458,(351) 923 027 627,"R. dos Pinheiros, 86, 2728-622 Viseu",1,2,21.5,1,0.575,2022-10-03,1
+670,Nádia Martins,207531368,+351922923613,"Praça Sousa, 8, 2998-184 Vila Real",1,1,2.0,0,0.002,2023-12-05,1
+671,Alexandra Monteiro,315262107,921089671,"R. Alice Rocha, 57, 9527-572 Valongo",1,0,,0,0.285,2024-08-20,1
+672,Tatiana Cunha,144301061,(351) 935274430,"Alameda de Pinto, S/N, 6841-152 Sines",1,3,7.3,1,0.257,2023-05-22,1
+673,Lúcia Cruz,452996457,929630553,"Largo Jesus, 90, 4996-231 São Salvador de Lordelo",1,2,47.5,0,0.254,2023-12-20,1
+674,Leonardo Andrade,331997115,(351) 919752593,"Rua Figueiredo, 25, 2746-862 Olhão",1,1,90.0,0,0.045,2023-01-12,1
+675,André Vaz-Lourenço,349729697,(351) 939 546 219,"Praça de Caselas, 327, 5356-355 Póvoa de Santa Iria",0,1,15.0,0,0.118,2024-01-29,1
+676,Miguel Correia,003434499,937 818 954,"Alameda de Jesus, 36, 8156-704 Rebordosa",1,1,7.0,0,0.007,2023-01-09,1
+677,Carolina Antunes,858618881,241434127,"Travessa da Quinta de Santo António, S/N, 3932-301 Tondela",1,3,15.7,1,0.576,2022-11-03,1
+678,Ana da Andrade,786021599,(351) 935 516 168,"Av de Carvalho, 64, 5436-630 Porto",1,6,10.3,0,0.102,2022-05-16,1
+679,Lia Reis,943763827,(351) 960071077,"Alameda do Bicalho, 4, 9239-425 Tomar",1,4,7.8,0,0.302,2023-02-16,1
+680,Bruno Baptista,903312223,(351) 938 362 583,"Alameda Matias, 9, 7249-774 Loulé",1,1,90.0,0,0.181,2023-08-23,1
+681,André Esteves,548070473,+351960941079,"Praça de Fernandes, 557, 3688-253 Loulé",1,3,11.0,1,0.591,2024-02-06,1
+682,Lucas Tavares,483687477,967 298 753,"Travessa de Neves, 2, 2434-821 Loulé",1,4,9.0,1,0.476,2023-01-26,1
+683,Mariana Miranda,740703666,(351) 964 393 262,"Largo Eduarda Ramos, 1, 3345-828 Ourém",1,0,,0,0.389,2023-02-26,1
+684,Salomé Santos,560076228,245636574,"Travessa das Amoreiras, 37, 1928-091 Câmara de Lobos",1,3,8.7,0,0.098,2022-04-29,1
+685,Sandro Paiva,128219386,964734335,"Rua António Sérgio, 66, 2293-089 Câmara de Lobos",1,2,3.5,0,0.072,2022-11-07,1
+686,David Branco,827847264,(351) 918 761 457,"Avenida Batista, 4, 8919-634 Santiago do Cacém",1,3,8.7,0,0.241,2022-03-26,1
+687,Fábio Leal,393304596,+351964506539,"Travessa da Rainha D. Leonor, S/N, 9782-679 Miranda do Douro",1,1,2.0,0,0.181,2024-03-03,1
+688,Sandro da Reis,066604853,(351) 924388292,"Alameda Lourenço, S/N, 8879-103 Montemor-o-Novo",0,2,11.5,1,0.638,2023-09-03,1
+689,Leonardo Ribeiro,344358498,+351929488542,"Rua Cunha, 31, 6657-265 Vila Nova de Gaia",0,0,,0,0.035,2024-07-16,1
+690,Tatiana Loureiro,846512421,+351935088183,"Largo de Carvalho, 93, 7363-776 Viseu",0,1,16.0,0,0.157,2024-10-04,1
+691,Erica Branco,637817048,(351) 922870944,"Alameda do Sobreirinho, 62, 1723-137 Leiria",1,4,23.8,0,0.09,2024-01-30,1
+692,Eva Nascimento,364811659,(351) 913354163,"Travessa de Vandoma, S/N, 9954-983 Felgueiras",1,1,90.0,0,0.097,2024-04-13,1
+693,Bárbara Torres,585942193,(351) 911 906 486,"Rua de Teixeira, 82, 1737-970 Ribeira Grande",1,5,27.6,1,0.505,2022-04-29,1
+694,Erika Pinho,313636597,(351) 930 174 864,"R. Melo, 43, 7004-430 Santiago do Cacém",1,1,4.0,0,0.139,2023-07-30,1
+695,Helena Andrade,676877759,918859589,"Travessa de Baptista, S/N, 6387-770 Cartaxo",1,5,20.4,0,0.203,2022-11-19,1
+696,Kévim da Almeida,861341749,(351) 967434589,"Av Barbosa, 515, 1844-064 Valpaços",0,2,20.0,2,0.795,2022-12-08,1
+697,Soraia Pinto,538088426,929766033,"Rua de Gomes, S/N, 9658-107 Moura",1,3,44.7,0,0.327,2023-01-09,1
+698,David Reis-Moreira,233990761,(351) 926392753,"R. Amnistia Internacional, S/N, 4112-297 Vila Nova de Foz Côa",1,2,49.5,1,0.495,2022-08-05,1
+699,Fabiana Alves,001113915,969570921,"Largo do Levante, S/N, 1605-076 Mirandela",1,1,3.0,0,0.317,2024-08-06,1
+700,Beatriz Fonseca,044236479,207893242,"Rua Barros, 13, 4049-634 Peso da Régua",1,1,3.0,0,0.157,2023-08-18,1
+701,Frederico Martins-Cruz,149901086,(351) 963 505 496,"Rua Frederico Pires, 848, 8067-678 Viseu",0,2,8.0,0,0.29,2022-10-25,1
+702,André Loureiro,647904991,(351) 922 902 587,"Praça de Dom Fradique, 545, 4662-133 Montemor-o-Novo",1,4,8.2,1,0.174,2022-08-10,1
+703,Filipe Coelho,738067996,(351) 964332222,"Praça dos Rouxinóis, 29, 5377-715 Macedo de Cavaleiros",1,5,14.6,0,0.367,2023-05-02,1
+704,Débora Guerreiro,367209610,(351) 926943203,"Praça de Melo, 44, 1341-559 Braga",1,2,48.5,0,0.192,2024-02-15,1
+705,Andreia Andrade,372643205,+351963884192,"Av Anjos, 49, 1431-168 Paredes",1,2,8.0,0,0.265,2022-08-15,1
+706,Benedita Moreira-Almeida,699724597,(351) 965463797,"Praça de Monteiro, 50, 4873-853 São João da Madeira",1,1,19.0,0,0.002,2024-11-24,1
+707,Mariana Reis,557932770,(351) 928 305 356,"Rua do Báltico, 21, 5929-191 Alcácer do Sal",1,4,32.8,0,0.175,2023-03-24,1
+708,Vasco Amorim,549177326,(351) 918 641 629,"Av de Neto, 95, 5873-501 Loures",0,2,6.5,0,0.157,2023-10-05,1
+709,Cláudio Vieira,968568888,249 225 311,"R. Valente, 887, 5620-598 São Salvador de Lordelo",1,1,5.0,0,0.295,2024-03-26,1
+710,Nelson Andrade,108597358,(351) 937 551 753,"Praça do Brasil (Porto), 77, 2367-170 Portimão",1,7,15.9,2,0.261,2022-02-09,1
+711,Yara-Camila Alves,794336447,910 415 755,"Alameda do Carvão, 32, 5439-618 Maia",0,2,22.5,1,0.556,2023-04-24,1
+712,Ângela Jesus,632767659,293907171,"Av Íris Macedo, 25, 7187-320 Porto Santo",1,3,6.0,0,0.077,2022-07-20,1
+713,Rita Figueiredo,458766949,932313231,"Travessa de Garcia, 7, 2162-696 Viana do Castelo",1,1,22.0,0,0.24,2024-09-09,1
+714,Santiago Domingues-Sá,715534745,(351) 927 150 784,"Praça Brito, 308, 2605-880 Coimbra",1,1,1.0,0,0.242,2023-01-01,1
+715,Rodrigo Leite,240537729,(351) 935 632 172,"Rua Joel Vieira, S/N, 9477-224 Castelo Branco",1,2,7.0,1,0.676,2022-11-18,1
+716,Ismael Jesus-Ramos,848965394,215 135 612,"Av de Simões, 8, 7790-219 Maia",1,1,28.0,0,0.128,2023-01-21,1
+717,César Castro,037548078,+351932649864,"Avenida Campolide, S/N, 2144-389 Santa Maria da Feira",0,2,5.5,0,0.301,2023-05-10,1
+718,Núria Matias,383385693,932 443 978,"Rua de Barros, 77, 5585-403 Covilhã",1,0,,0,0.344,2024-12-23,1
+719,Renata Sousa,913696480,(351) 968 655 518,"Av Petra Sá, 50, 3933-193 Montemor-o-Novo",1,4,13.5,0,0.385,2023-04-03,1
+720,Violeta Vieira,407373041,(351) 960 065 168,"Largo Mara Vaz, 28, 2897-399 Ponte de Sor",1,0,,0,0.005,2022-04-03,1
+721,Carolina Nogueira,632405102,(351) 916177346,"Travessa Carlos Sousa, 24, 9306-827 Odivelas",1,5,5.0,0,0.095,2023-04-16,1
+722,Mara Leite,838796334,(351) 922949653,"R. do Seabra, 68, 3828-730 Amora",1,4,15.2,1,0.546,2022-08-02,1
+723,Mário Abreu,746466033,+351920062045,"Praça dos Heróis do Mar, 94, 3169-025 Ovar",1,6,27.2,2,0.385,2022-06-30,1
+724,Carlota Antunes,273997415,(351) 911 143 968,"Alameda do Colégio, 389, 9776-800 Funchal",1,1,12.0,0,0.369,2022-10-14,1
+725,João da Soares,094101027,(351) 212678393,"Travessa Moreira, 34, 9647-296 Anadia",1,0,,0,0.068,2023-10-21,1
+726,Constança Marques,781951648,(351) 911872282,"Av de Nascimento, 31, 5306-062 Sabugal",1,2,12.5,1,0.541,2023-07-02,1
+727,Salomé Castro,779738330,(351) 929909266,"Rua do Rosário, S/N, 1085-755 Fafe",1,3,7.3,0,0.34,2022-06-08,1
+728,Mário Simões,443575478,924080497,"Rua da Banda de Ramalde, S/N, 3477-115 Gouveia",1,4,12.5,2,0.417,2022-04-22,1
+729,Petra Guerreiro,505260270,267967213,"Alameda Bruna Paiva, 56, 9378-293 Santana",1,6,28.2,0,0.114,2022-10-18,1
+730,Joana Nascimento,875670718,(351) 923094094,"Av Carlota Alves, 31, 7791-149 Valpaços",1,4,14.5,0,0.228,2023-10-25,1
+731,Nelson Amaral,129236139,+351929087470,"R. Reis, S/N, 2107-277 Sacavém",1,3,26.7,2,0.513,2023-04-25,1
+732,Emília Moura,377459984,+351920121071,"Alameda dos Oceanos, 64, 1685-182 Setúbal",1,3,9.7,0,0.113,2022-09-17,1
+733,Joaquim Soares,133768705,(351) 962602501,"Largo do Rego Lameiro, 39, 2575-353 Ílhavo",1,1,3.0,0,0.249,2023-06-03,1
+734,Constança do Anjos,807910651,(351) 936 836 633,"Rua Alice Teixeira, 67, 8845-494 Tarouca",1,1,5.0,0,0.227,2022-11-15,1
+735,Renata Silva,640707838,(351) 928 778 136,"Travessa Anjos, 33, 1914-940 Valpaços",1,3,8.7,0,0.164,2022-05-31,1
+736,Andreia Nogueira,478483034,252 832 219,"Rua de Anjos, S/N, 2519-650 Pinhel",1,5,25.4,1,0.348,2023-10-15,1
+737,Salomé Macedo,573654044,+351929737532,"Av de Eça de Queirós, 60, 3657-909 Odivelas",1,2,52.5,0,0.137,2023-08-14,1
+738,Lara Matias,728090317,930 349 836,"Alameda da Feiteira, 45, 9641-097 Guimarães",1,0,,0,0.034,2023-05-24,1
+739,Xavier Simões,836431678,938 372 305,"Travessa Noa Moreira, 852, 2397-586 Santarém",1,5,12.8,2,0.333,2022-06-17,1
+740,Madalena Cunha,984440889,(351) 912634495,"Rua Ema Maia, 581, 7536-724 Vila Nova de Gaia",1,2,3.0,0,0.145,2023-06-10,1
+741,Fábio Rodrigues,930320756,(351) 240 450 630,"Rua de Branco, 660, 8462-765 Felgueiras",0,3,45.0,1,0.45,2023-11-08,1
+742,Cláudio Rocha,526990152,968 918 186,"Alameda de Monteiro, 84, 9946-281 Évora",1,2,15.0,1,0.424,2023-06-12,1
+743,Eva Jesus,029996633,(351) 925472966,"Avenida Soares, 19, 7137-850 Seixal",0,3,6.0,0,0.049,2023-01-28,1
+744,Ângelo Silva,923565403,(351) 967 989 103,"Praça Kelly Gomes, 67, 1956-913 Sabugal",0,4,12.5,0,0.271,2023-04-23,1
+745,Alexandra Vaz,991540273,914737955,"Av do Dr. Nuno Pinheiro Torres, 417, 5362-674 Pombal",1,4,21.8,1,0.229,2023-02-26,1
+746,Daniela Fernandes-Tavares,012953185,+351925466467,"Rua Hugo Monteiro, 57, 7080-319 Alcácer do Sal",0,2,13.5,0,0.376,2023-05-16,1
+747,Luca Alves,423182068,916024292,"Travessa de Cruz, 26, 3313-496 São Salvador de Lordelo",1,4,13.5,1,0.274,2022-05-31,1
+748,Caetana Gaspar,048109305,(351) 938 879 662,"Avenida Amélia Santos, 588, 5947-137 Maia",1,2,2.5,0,0.231,2022-09-13,1
+749,Lourenço Guerreiro-Martins,473857797,+351250246259,"Avenida de Faria, 34, 3034-780 Agualva-Cacém",1,2,13.0,1,0.546,2024-01-07,1
+750,Mélanie Faria,982455381,+351969797227,"Av de Reis, 9, 7607-253 Vila Franca de Xira",1,3,10.7,0,0.357,2023-12-31,1
+751,Benjamim Alves-Costa,182723826,933060936,"Alameda de Marques de Oliveira, 30, 8439-043 Bragança",1,3,32.0,0,0.395,2023-06-19,1
+752,Luísa Martins,295185255,262 555 753,"Av Grande, 91, 3263-051 Seia",1,4,22.2,1,0.324,2023-05-29,1
+753,Tomé Nunes,688155903,(351) 926 658 130,"Praça Mara Anjos, S/N, 7490-216 Santiago do Cacém",0,5,39.6,0,0.287,2023-02-19,1
+754,Eduarda Leal,819695448,(351) 965310016,"R. de Cunha, 68, 2933-173 Silves",1,2,1.5,0,0.264,2023-09-20,1
+755,Benjamim Ramos,150488491,(351) 922 533 354,"Travessa Costa, 2, 3728-014 Alverca do Ribatejo",1,2,14.0,0,0.196,2022-06-16,1
+756,Luna Faria,508924464,268 596 733,"Rua Isabel Jesus, S/N, 6621-441 Torres Novas",0,1,23.0,1,0.601,2024-08-23,1
+757,Caetana Pinho,507695559,(351) 265078801,"Av Brito, 36, 8970-793 São Salvador de Lordelo",1,2,10.0,0,0.288,2022-11-08,1
+758,Santiago Macedo,355881082,(351) 913120870,"Rua Martins, S/N, 8757-330 Peso da Régua",1,3,6.3,0,0.087,2023-08-24,1
+759,Tomé Torres,775477774,(351) 230840832,"Rua Lopes, 4, 5790-735 Rebordosa",1,3,8.7,0,0.247,2022-06-23,1
+760,Mélanie Pinheiro,254123872,(351) 924 656 935,"Avenida Esteves, 42, 4416-120 Viseu",1,0,,0,0.335,2023-07-16,1
+761,Fábio Anjos,937979007,(351) 926 385 643,"Praça Santos, 58, 3310-828 Tondela",0,1,8.0,0,0.359,2022-08-05,1
+762,Vasco Figueiredo,455948496,(351) 961 640 204,"Rua Azevedo, S/N, 8330-904 Alcobaça",1,1,3.0,0,0.175,2023-12-19,1
+763,Isabela do Monteiro,416623956,(351) 292640864,"Travessa Loureiro, 7, 9266-348 Santiago do Cacém",1,2,51.5,1,0.53,2022-12-11,1
+764,Marcos da Martins,712559350,(351) 925666325,"Travessa Lourenço Marques, 58, 3484-385 Guarda",1,4,9.8,0,0.291,2022-07-28,1
+765,Dinis Tavares,767490641,(351) 939 062 423,"Alameda Íris Nunes, 82, 3668-936 Gafanha da Nazaré",1,2,15.0,0,0.271,2023-09-12,1
+766,Kelly-Mariana Batista,272765314,268420731,"Travessa da Vila Expo, 38, 6008-516 Mirandela",1,2,5.5,0,0.045,2022-09-16,1
+767,Igor Amorim-Oliveira,134170054,(351) 914119961,"Alameda Abreu, S/N, 9747-455 Lourosa",1,0,,0,0.139,2022-10-31,1
+768,Filipa Macedo,583455955,(351) 969 840 870,"Praça Tomé Macedo, 7, 3945-080 Agualva-Cacém",1,4,7.8,1,0.388,2023-03-04,1
+769,Carlota Barros,216833576,+351921089189,"Rua de Baptista, 22, 2083-186 Marco de Canaveses",1,1,5.0,0,0.169,2024-04-17,1
+770,Gonçalo Cunha,089504910,+351962414950,"Av de Gaspar, 521, 8869-530 Viseu",1,2,11.5,0,0.131,2023-04-04,1
+771,Ricardo Jesus-Campos,043171557,922 479 638,"Travessa Flor Pacheco, 89, 3233-700 Braga",1,3,38.7,1,0.208,2024-01-21,1
+772,Paulo Guerreiro-Martins,219793368,938 184 192,"Alameda Edgar Soares, 78, 1464-225 Maia",1,4,5.8,0,0.098,2022-07-30,1
+773,Matias Esteves,093160898,(351) 928304508,"Av do Forno Velho, 18, 2824-182 Esmoriz",1,3,37.3,0,0.192,2023-06-03,1
+774,Simão Neves,850105583,930 815 914,"Travessa de Fonseca, 65, 6793-629 Angra do Heroísmo",1,1,26.0,0,0.389,2024-06-13,1
+775,Renato Vaz,115320264,+351910056436,"Alameda Cunha, 28, 1129-444 Gafanha da Nazaré",0,2,17.0,0,0.27,2022-11-13,1
+776,Jaime Lima,933396379,248 584 197,"Largo de Faria, 678, 7461-039 Almeirim",0,2,27.5,1,0.428,2022-12-21,1
+777,Gil Machado,038878218,216553573,"Travessa de Pio XII, 73, 3325-234 Évora",1,3,19.7,1,0.571,2022-10-28,1
+778,Vasco Costa,384478167,(351) 921949158,"Avenida de Grijó, 96, 3082-567 Funchal",1,2,12.0,0,0.044,2024-02-28,1
+779,Nelson de Matos,342083481,(351) 914667012,"Alameda da Cidade da Praia, 53, 2208-455 Tondela",1,2,19.0,1,0.543,2023-05-16,1
+780,Mafalda Morais,266474264,(351) 918 688 975,"Avenida Figueiredo, 13, 3635-357 Câmara de Lobos",1,2,18.0,0,0.231,2023-03-13,1
+781,Mara Neto-Leite,047832796,(351) 915 986 478,"Largo José Luís Nunes, S/N, 3388-435 Bragança",1,3,6.0,0,0.231,2022-01-18,1
+782,António Martins,795818774,(351) 278 648 120,"Avenida Melissa Leite, 43, 7966-558 Mealhada",1,0,,0,0.116,2023-12-20,1
+783,Vicente Sousa,924687144,+351916700077,"Avenida Brian Torres, S/N, 3587-675 Almada",1,2,45.5,0,0.195,2022-06-12,1
+784,Isabela Reis,939953155,(351) 968458924,"Largo de Figueiredo, 65, 9879-903 Queluz",1,1,28.0,1,0.743,2024-11-12,1
+785,Mélanie Cunha,642394026,921620451,"R. Bárbara Leal, S/N, 5889-724 Torres Vedras",1,2,8.5,0,0.396,2024-06-17,1
+786,Ivan Domingues,908964966,962 779 450,"Av Torres, 72, 8795-492 Ponta Delgada",1,4,7.2,0,0.272,2023-08-18,1
+787,Lucas Henriques,811822923,962538462,"Alameda Campos, 86, 7936-968 Montemor-o-Novo",1,1,17.0,1,0.76,2024-03-15,1
+788,Renato Matias,246872203,962449362,"R. Lisandro Garcia, 90, 1785-808 Portalegre",1,0,,0,0.078,2022-08-17,1
+789,Rui Lourenço,378406138,(351) 914249734,"Av dos Aventureiros, 6, 8408-012 Chaves",1,4,10.0,2,0.416,2022-08-02,1
+790,Mário de Paiva,485783045,(351) 960 970 854,"Alameda Gonçalo Nunes, 59, 6709-398 Santa Maria da Feira",1,2,21.5,1,0.651,2024-07-23,1
+791,Martim Matias,657657868,+351929918556,"Rua de Paiva, 291, 7147-710 Marco de Canaveses",1,4,14.2,1,0.384,2024-04-11,1
+792,Irina do Fonseca,055126764,(351) 924 826 390,"Rua de Melo, 925, 5151-775 Marinha Grande",1,1,20.0,0,0.35,2024-03-05,1
+793,André Figueiredo,943632705,(351) 960227283,"Alameda de Moura, S/N, 5854-960 Seia",1,2,17.0,0,0.373,2022-04-09,1
+794,Júlia Pacheco-Freitas,465344200,939380912,"Avenida do Bessa, S/N, 8566-177 Sintra",1,3,16.7,0,0.341,2022-08-14,1
+795,Edgar Pereira,186747152,+351965319295,"Largo de Santos, 12, 4746-950 Beja",0,2,20.5,0,0.243,2023-06-10,1
+796,Dinis Ribeiro,519198505,966 780 299,"R. de Rocha, 788, 4060-429 Viseu",1,3,3.7,0,0.371,2023-02-26,1
+797,Carlos Garcia,133585081,967 134 470,"Praça de Silva, S/N, 6306-467 Santo Tirso",1,3,60.7,0,0.298,2023-02-20,1
+798,Noa Martins,322987663,(351) 931 016 634,"Travessa de Almeida, 53, 9250-891 Mirandela",1,3,14.0,0,0.219,2023-01-11,1
+799,Erica Araújo,790423381,+351296863613,"Largo Ângela Pinto, 1, 1711-226 Esmoriz",0,3,12.7,0,0.331,2022-10-15,1
+800,Anita Reis,089170052,964 533 184,"Avenida Magalhães, 21, 1690-093 Odivelas",1,3,15.7,1,0.22,2023-08-05,1
