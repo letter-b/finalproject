@@ -1,9 +1,0 @@
-category_id,name,segment,avg_days_to_sale
-1,Televisions,consumer_electronics,210
-2,Drones,consumer_electronics,280
-3,Gaming Consoles,gaming,120
-4,Laptops,computing,190
-5,Cameras & Photography,consumer_electronics,240
-6,Smart Home & Audio,consumer_electronics,160
-7,Keyboards & Peripherals,computing,130
-8,Projectors,consumer_electronics,300

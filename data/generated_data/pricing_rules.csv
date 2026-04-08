@@ -1,0 +1,13 @@
+rule_id,pricing_model,duration_model,experiment_group,base_daily_rate,pct_of_retail_daily,min_rental_days,max_rental_days,late_fee_per_day,security_deposit_pct,insurance_fee_pct,created_at
+1,flat_rate,7_day,A,6.37,0.0137,7,90,6.39,0.19,0.025,2021-01-01
+2,flat_rate,7_day,B,4.4,0.0083,7,90,7.2,0.19,0.041,2021-01-01
+3,flat_rate,30_day,A,3.19,0.0138,30,90,6.99,0.13,0.025,2021-01-01
+4,flat_rate,30_day,B,4.65,0.0098,30,90,5.15,0.16,0.029,2021-01-01
+5,flat_rate,flexible,A,8.51,0.0088,1,90,3.75,0.15,0.034,2021-01-01
+6,flat_rate,flexible,B,10.07,0.0092,1,90,5.09,0.19,0.021,2021-01-01
+7,pct_of_retail,7_day,A,8.47,0.009,7,90,2.39,0.24,0.049,2021-01-01
+8,pct_of_retail,7_day,B,10.28,0.0098,7,90,2.59,0.2,0.033,2021-01-01
+9,pct_of_retail,30_day,A,4.1,0.011,30,90,2.21,0.24,0.028,2021-01-01
+10,pct_of_retail,30_day,B,8.96,0.0099,30,90,5.12,0.18,0.026,2021-01-01
+11,pct_of_retail,flexible,A,11.73,0.0127,1,90,7.64,0.23,0.038,2021-01-01
+12,pct_of_retail,flexible,B,11.3,0.0085,1,90,3.18,0.11,0.03,2021-01-01

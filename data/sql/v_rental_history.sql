@@ -1,0 +1,2 @@
+DROP VIEW IF EXISTS `v_rental_history`;
+CREATE VIEW `v_rental_history` AS SELECT r.rental_id, r.product_id, r.customer_id, r.rental_start_date, r.rental_end_date, r.actual_return_date, r.rental_duration_days, r.total_rental_revenue, r.net_rental_revenue, r.operational_cost, r.is_late, r.is_no_return, r.is_damaged_beyond_repair, p.product_name, p.brand, c.category_name, cu.customer_segment, cu.city, cu.country FROM rentals r JOIN products p  ON r.product_id  = p.product_id JOIN categories c ON p.category_id = c.category_id JOIN customers cu ON r.customer_id  = cu.customer_id;

@@ -1,0 +1,2 @@
+DROP VIEW IF EXISTS `v_revenue_comparison`;
+CREATE VIEW `v_revenue_comparison` AS SELECT rv.product_id, p.product_name, p.brand, c.category_name, c.depreciation_class, rv.months_unsold_at_comparison, rv.discount_pct, rv.hypothetical_discount_price, rv.total_gross_rental_revenue, rv.total_operational_cost, rv.total_net_rental_revenue, rv.rental_vs_discount_ratio, rv.is_rental_more_profitable, rv.n_rentals, rv.months_on_rental FROM rental_revenue_vs_discount rv JOIN products p  ON rv.product_id  = p.product_id JOIN categories c ON p.category_id  = c.category_id;

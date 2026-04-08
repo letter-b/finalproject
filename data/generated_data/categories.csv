@@ -1,0 +1,15 @@
+category_id,category_name,depreciation_class,avg_depreciation_rate,rental_demand_tier
+1,Smartphones,fast,0.22,high
+2,Laptops,fast,0.18,high
+3,Tablets,fast,0.16,medium
+4,Wearables,fast,0.2,medium
+5,Drones,standard,0.14,medium
+6,Audio,standard,0.1,medium
+7,Gaming,standard,0.12,high
+8,Cameras,standard,0.11,medium
+9,TVs,slow,0.07,low
+10,Appliances,slow,0.06,low
+11,Keyboards,slow,0.05,low
+12,Monitors,slow,0.08,low
+13,Networking,standard,0.09,medium
+14,Peripherals,slow,0.05,low
