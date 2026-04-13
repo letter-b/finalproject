@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rental Decision Engine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ── RESET & VARIABLES ───────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --steel:    #6287A6;
+    --teal:     #048A81;
+    --orange:   #E07B54;
+    --dark:     #1A2B3C;
+    --mid:      #2C3E50;
+    --light:    #E0E0E0;
+    --offwhite: #F4F6F8;
+    --white:    #FFFFFF;
+    --success:  #048A81;
+    --danger:   #E07B54;
+    --card-bg:  #FFFFFF;
+    --border:   #DEE5ED;
+    --text:     #1A2B3C;
+    --muted:    #7A90A4;
+    --mono:     'DM Mono', monospace;
+    --sans:     'DM Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--sans);
+    background: var(--offwhite);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── HEADER ──────────────────────────────────────────────────────── */
+  header {
+    background: var(--dark);
+    padding: 0 2rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid var(--teal);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .logo-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--teal);
+    box-shadow: 0 0 8px var(--teal);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.6; transform: scale(0.85); }
+  }
+
+  .logo h1 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--white);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .logo span { color: var(--teal); }
+
+  /* Live stats strip */
+  #stats-strip {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .stat-pill {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .stat-pill .val {
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--teal);
+    line-height: 1;
+  }
+
+  .stat-pill .lbl {
+    font-size: 0.65rem;
+    color: #557;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* ── MAIN LAYOUT ──────────────────────────────────────────────────── */
+  main {
+    flex: 1;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  /* ── CARD ─────────────────────────────────────────────────────────── */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(26,43,60,.06);
+  }
+
+  .card-header {
+    padding: 1rem 1.5rem 0.9rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .card-header .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--steel);
+  }
+
+  .card-header h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--steel);
+  }
+
+  .card-body { padding: 1.5rem; }
+
+  /* ── FORM ELEMENTS ────────────────────────────────────────────────── */
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+
+  label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+  }
+
+  .label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .label-val {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    color: var(--steel);
+    font-weight: 500;
+  }
+
+  select, input[type="number"] {
+    width: 100%;
+    padding: 0.65rem 0.9rem;
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    color: var(--text);
+    background: var(--white);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236287A6' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.9rem center; padding-right: 2.2rem; }
+  select:focus, input:focus { border-color: var(--steel); box-shadow: 0 0 0 3px rgba(98,135,166,.12); }
+
+  /* Product preview chip */
+  #product-meta {
+    margin-top: 0.5rem;
+    padding: 0.6rem 0.8rem;
+    background: var(--offwhite);
+    border-radius: 6px;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.4rem;
+    font-size: 0.76rem;
+  }
+  #product-meta.visible { display: grid; }
+  #product-meta .pm-item { display: flex; flex-direction: column; gap: 2px; }
+  #product-meta .pm-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  #product-meta .pm-val { font-family: var(--mono); font-size: 0.82rem; color: var(--dark); font-weight: 500; }
+
+  /* Sliders */
+  .slider-wrap { position: relative; padding-bottom: 0.25rem; }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--border);
+    outline: none;
+    padding: 0;
+    margin: 0.4rem 0;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: var(--steel);
+    border: 3px solid var(--white);
+    box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  input[type="range"]::-webkit-slider-thumb:hover { background: var(--teal); }
+
+  .slider-ticks {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.65rem;
+    color: var(--muted);
+    margin-top: 2px;
+    font-family: var(--mono);
+  }
+
+  /* Duration grid */
+  .duration-presets {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .preset-btn {
+    padding: 0.4rem;
+    border: 1.5px solid var(--border);
+    border-radius: 5px;
+    background: var(--white);
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.12s;
+  }
+
+  .preset-btn:hover { border-color: var(--steel); color: var(--steel); }
+  .preset-btn.active { border-color: var(--steel); background: var(--steel); color: var(--white); }
+
+  /* Customer filter */
+  .segment-tabs {
+    display: flex;
+    gap: 0.35rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .seg-tab {
+    padding: 0.25rem 0.7rem;
+    border-radius: 20px;
+    border: 1.5px solid var(--border);
+    font-size: 0.72rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--white);
+    color: var(--muted);
+    transition: all 0.12s;
+  }
+  .seg-tab:hover { border-color: var(--steel); color: var(--steel); }
+  .seg-tab.active { background: var(--dark); border-color: var(--dark); color: var(--white); }
+
+  /* Submit button */
+  #btn-submit {
+    width: 100%;
+    padding: 0.9rem;
+    background: var(--dark);
+    color: var(--white);
+    border: none;
+    border-radius: 7px;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  #btn-submit:hover { background: var(--teal); }
+  #btn-submit:active { transform: scale(0.98); }
+  #btn-submit:disabled { background: var(--muted); cursor: not-allowed; }
+
+  /* ── PREVIEW PANEL (right column) ────────────────────────────────── */
+  #preview-panel { position: sticky; top: 80px; }
+
+  .verdict-banner {
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.3s;
+  }
+
+  .verdict-banner.rental  { background: #EBF8F7; }
+  .verdict-banner.markdown { background: #FEF2EE; }
+  .verdict-banner.neutral  { background: var(--offwhite); }
+
+  .verdict-icon { font-size: 1.8rem; }
+
+  .verdict-text .vt-big {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.1;
+  }
+  .verdict-text .vt-big span { color: var(--teal); }
+  .verdict-text .vt-big.lose span { color: var(--orange); }
+
+  .verdict-text .vt-sub {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* Breakdown table */
+  .breakdown { padding: 1.25rem 1.5rem; }
+
+  .breakdown-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid #F0F2F5;
+    font-size: 0.84rem;
+  }
+
+  .breakdown-row:last-child { border-bottom: none; }
+
+  .breakdown-row .br-label { color: var(--muted); }
+  .breakdown-row .br-val { font-family: var(--mono); font-weight: 500; color: var(--text); }
+  .breakdown-row.total .br-label { font-weight: 700; color: var(--text); font-size: 0.9rem; }
+  .breakdown-row.total .br-val { font-size: 1rem; color: var(--teal); }
+  .breakdown-row.compare .br-val.win { color: var(--teal); }
+  .breakdown-row.compare .br-val.lose { color: var(--orange); }
+  .breakdown-row.divider { border-top: 2px solid var(--border); margin-top: 0.25rem; padding-top: 0.7rem; }
+
+  /* ratio badge */
+  .ratio-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 20px;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    font-weight: 500;
+  }
+  .ratio-badge.win  { background: #D1F5F2; color: var(--teal); }
+  .ratio-badge.lose { background: #FDE8DF; color: var(--orange); }
+
+  /* placeholder state */
+  .preview-placeholder {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    color: var(--muted);
+  }
+  .preview-placeholder .ph-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+  .preview-placeholder p { font-size: 0.85rem; line-height: 1.5; }
+
+  /* ── SUCCESS TOAST ────────────────────────────────────────────────── */
+  #toast {
+    position: fixed;
+    bottom: 1.5rem; right: 1.5rem;
+    background: var(--dark);
+    color: var(--white);
+    padding: 0.9rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,.2);
+    transform: translateY(120%);
+    transition: transform 0.3s cubic-bezier(.34,1.56,.64,1);
+    max-width: 340px;
+    z-index: 999;
+    border-left: 3px solid var(--teal);
+  }
+  #toast.show { transform: translateY(0); }
+  #toast .toast-icon { font-size: 1.1rem; flex-shrink: 0; }
+
+  /* ── LOADING SPINNER ──────────────────────────────────────────────── */
+  .spin {
+    display: inline-block;
+    width: 14px; height: 14px;
+    border: 2px solid rgba(255,255,255,.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── DB ERROR NOTICE ──────────────────────────────────────────────── */
+  #db-notice {
+    background: #FEF2EE;
+    border: 1px solid #F5C4B0;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.82rem;
+    color: #8B3A1C;
+    margin-bottom: 1rem;
+    display: none;
+  }
+  #db-notice strong { display: block; margin-bottom: 0.2rem; }
+  #db-notice code { font-family: var(--mono); background: rgba(0,0,0,.06); padding: 0.1em 0.3em; border-radius: 3px; font-size: 0.95em; }
+
+  /* ── FOOTER ───────────────────────────────────────────────────────── */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.72rem;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    main { grid-template-columns: 1fr; }
+    #preview-panel { position: static; }
+    #stats-strip { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-dot"></div>
+    <h1>Rental <span>Decision</span> Engine</h1>
+  </div>
+  <div id="stats-strip">
+    <div class="stat-pill">
+      <span class="val" id="s-rentals">—</span>
+      <span class="lbl">Total Rentals</span>
+    </div>
+    <div class="stat-pill">
+      <span class="val" id="s-win">—</span>
+      <span class="lbl">Win Rate</span>
+    </div>
+    <div class="stat-pill">
+      <span class="val" id="s-ratio">—</span>
+      <span class="lbl">Avg Ratio</span>
+    </div>
+    <div class="stat-pill">
+      <span class="val" id="s-revenue">—</span>
+      <span class="lbl">Avg Revenue</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ── LEFT: FORM ─────────────────────────────────────────────────── -->
+  <div>
+    <div id="db-notice">
+      <strong>⚠ Could not connect to MySQL</strong>
+      Make sure MySQL is running and check your <code>.env</code> file.<br>
+      The form will preview calculations but cannot write to the database.
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="dot"></div>
+        <h2>New Rental Entry</h2>
+      </div>
+      <div class="card-body">
+
+        <!-- PRODUCT -->
+        <div class="form-group">
+          <label>Product</label>
+          <select id="product-select">
+            <option value="">Loading products…</option>
+          </select>
+          <div id="product-meta">
+            <div class="pm-item">
+              <span class="pm-label">Category</span>
+              <span class="pm-val" id="pm-cat">—</span>
+            </div>
+            <div class="pm-item">
+              <span class="pm-label">Retail Price</span>
+              <span class="pm-val" id="pm-price">—</span>
+            </div>
+            <div class="pm-item">
+              <span class="pm-label">Months Unsold</span>
+              <span class="pm-val" id="pm-months">—</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DURATION -->
+        <div class="form-group">
+          <div class="label-row">
+            <label>Rental Duration</label>
+            <span class="label-val" id="duration-display">7 days</span>
+          </div>
+          <div class="duration-presets">
+            <button class="preset-btn active" data-days="7">7d</button>
+            <button class="preset-btn" data-days="14">14d</button>
+            <button class="preset-btn" data-days="30">30d</button>
+            <button class="preset-btn" data-days="60">60d</button>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" id="duration-slider" min="1" max="90" value="7" step="1">
+            <div class="slider-ticks">
+              <span>1d</span><span>30d</span><span>60d</span><span>90d</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- QUANTITY -->
+        <div class="form-group">
+          <div class="label-row">
+            <label>Quantity</label>
+            <span class="label-val" id="qty-display">1 unit</span>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" id="qty-slider" min="1" max="10" value="1" step="1">
+            <div class="slider-ticks">
+              <span>1</span><span>3</span><span>5</span><span>7</span><span>10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CUSTOMER -->
+        <div class="form-group">
+          <label>Customer</label>
+          <div class="segment-tabs">
+            <button class="seg-tab active" data-seg="all">All</button>
+            <button class="seg-tab" data-seg="business">Business</button>
+            <button class="seg-tab" data-seg="professional">Professional</button>
+            <button class="seg-tab" data-seg="student">Student</button>
+            <button class="seg-tab" data-seg="casual">Casual</button>
+          </div>
+          <select id="customer-select">
+            <option value="">Loading customers…</option>
+          </select>
+        </div>
+
+        <button id="btn-submit" disabled>
+          <span id="btn-label">Select a product to continue</span>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── RIGHT: PREVIEW ─────────────────────────────────────────────── -->
+  <div id="preview-panel">
+    <div class="card">
+      <div class="card-header">
+        <div class="dot" style="background:var(--teal)"></div>
+        <h2>Live Preview</h2>
+      </div>
+
+      <div id="preview-content">
+        <div class="preview-placeholder">
+          <div class="ph-icon">🧮</div>
+          <p>Select a product and duration<br>to see the rental vs markdown verdict.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Toast -->
+<div id="toast">
+  <span class="toast-icon">✅</span>
+  <span id="toast-msg">Rental written to MySQL.</span>
+</div>
+
+<footer>
+  Rental Decision Engine · <a href="https://github.com/letter-b/finalproject" style="color:var(--steel)">letter-b/finalproject</a> · MySQL live · Power BI refreshes on demand
+</footer>
+
+<script>
+// ── STATE ───────────────────────────────────────────────────────────────────
+let allProducts  = [];
+let allCustomers = [];
+let activeSegment = "all";
+let selectedProduct = null;
+let currentSummary = null;
+let dbOnline = true;
+
+// ── BOOT ────────────────────────────────────────────────────────────────────
+(async () => {
+  await Promise.all([loadProducts(), loadCustomers(), loadStats()]);
+  // refresh stats every 30s
+  setInterval(loadStats, 30000);
+})();
+
+// ── DATA LOADERS ────────────────────────────────────────────────────────────
+async function loadProducts() {
+  try {
+    const res = await fetch("/api/products");
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error);
+    allProducts = data.products;
+    renderProductSelect(allProducts);
+  } catch(e) {
+    dbOnline = false;
+    document.getElementById("db-notice").style.display = "block";
+    document.getElementById("product-select").innerHTML =
+      '<option value="">⚠ DB offline — preview only</option>';
+    // Load demo products for preview
+    allProducts = getDemoProducts();
+    renderProductSelect(allProducts);
+  }
+}
+
+async function loadCustomers() {
+  try {
+    const res = await fetch("/api/customers");
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error);
+    allCustomers = data.customers;
+    renderCustomerSelect(allCustomers, "all");
+  } catch(e) {
+    allCustomers = getDemoCustomers();
+    renderCustomerSelect(allCustomers, "all");
+  }
+}
+
+async function loadStats() {
+  try {
+    const res = await fetch("/api/stats");
+    const data = await res.json();
+    if (!data.ok) return;
+    document.getElementById("s-rentals").textContent = data.total_rentals.toLocaleString();
+    document.getElementById("s-win").textContent     = data.win_rate.toFixed(1) + "%";
+    document.getElementById("s-ratio").textContent   = data.avg_ratio.toFixed(2) + "×";
+    document.getElementById("s-revenue").textContent = "€" + data.avg_revenue.toFixed(0);
+  } catch(e) {}
+}
+
+// ── RENDER HELPERS ──────────────────────────────────────────────────────────
+function renderProductSelect(products) {
+  const sel = document.getElementById("product-select");
+  const groups = {};
+  products.forEach(p => {
+    if (!groups[p.category]) groups[p.category] = [];
+    groups[p.category].push(p);
+  });
+  sel.innerHTML = '<option value="">Choose a product…</option>';
+  Object.entries(groups).sort().forEach(([cat, prods]) => {
+    const og = document.createElement("optgroup");
+    og.label = cat;
+    prods.forEach(p => {
+      const opt = document.createElement("option");
+      opt.value = p.product_id;
+      opt.textContent = `${p.product_name}  (€${p.retail_price.toFixed(0)})`;
+      opt.dataset.product = JSON.stringify(p);
+      og.appendChild(opt);
+    });
+    sel.appendChild(og);
+  });
+}
+
+function renderCustomerSelect(customers, segment) {
+  const filtered = segment === "all"
+    ? customers
+    : customers.filter(c => c.segment.toLowerCase() === segment);
+  const sel = document.getElementById("customer-select");
+  sel.innerHTML = '<option value="">Choose a customer…</option>';
+  filtered.slice(0, 150).forEach(c => {
+    const opt = document.createElement("option");
+    opt.value = c.id;
+    opt.textContent = `${c.name}  [${c.segment}]`;
+    sel.appendChild(opt);
+  });
+}
+
+// ── PRODUCT SELECTION ───────────────────────────────────────────────────────
+document.getElementById("product-select").addEventListener("change", function() {
+  const opt = this.options[this.selectedIndex];
+  if (!opt.dataset.product) {
+    selectedProduct = null;
+    hideProductMeta();
+    resetPreview();
+    updateSubmitBtn();
+    return;
+  }
+  selectedProduct = JSON.parse(opt.dataset.product);
+  showProductMeta(selectedProduct);
+  triggerPreview();
+  updateSubmitBtn();
+});
+
+function showProductMeta(p) {
+  document.getElementById("pm-cat").textContent    = p.category;
+  document.getElementById("pm-price").textContent  = "€" + p.retail_price.toFixed(2);
+  document.getElementById("pm-months").textContent = p.months_unsold + " mo";
+  document.getElementById("product-meta").classList.add("visible");
+}
+
+function hideProductMeta() {
+  document.getElementById("product-meta").classList.remove("visible");
+}
+
+// ── SLIDERS ─────────────────────────────────────────────────────────────────
+const durationSlider = document.getElementById("duration-slider");
+const qtySlider      = document.getElementById("qty-slider");
+
+durationSlider.addEventListener("input", function() {
+  document.getElementById("duration-display").textContent = this.value + " days";
+  syncPresetBtns(parseInt(this.value));
+  triggerPreview();
+});
+
+qtySlider.addEventListener("input", function() {
+  const v = parseInt(this.value);
+  document.getElementById("qty-display").textContent = v + (v === 1 ? " unit" : " units");
+  triggerPreview();
+});
+
+// Duration presets
+document.querySelectorAll(".preset-btn").forEach(btn => {
+  btn.addEventListener("click", function() {
+    const days = parseInt(this.dataset.days);
+    durationSlider.value = days;
+    document.getElementById("duration-display").textContent = days + " days";
+    syncPresetBtns(days);
+    triggerPreview();
+  });
+});
+
+function syncPresetBtns(days) {
+  document.querySelectorAll(".preset-btn").forEach(b => {
+    b.classList.toggle("active", parseInt(b.dataset.days) === days);
+  });
+}
+
+// ── SEGMENT TABS ────────────────────────────────────────────────────────────
+document.querySelectorAll(".seg-tab").forEach(tab => {
+  tab.addEventListener("click", function() {
+    document.querySelectorAll(".seg-tab").forEach(t => t.classList.remove("active"));
+    this.classList.add("active");
+    activeSegment = this.dataset.seg;
+    renderCustomerSelect(allCustomers, activeSegment);
+  });
+});
+
+// ── LIVE PREVIEW ────────────────────────────────────────────────────────────
+let previewTimer = null;
+
+function triggerPreview() {
+  if (!selectedProduct) return;
+  clearTimeout(previewTimer);
+  previewTimer = setTimeout(runPreview, 180);
+}
+
+async function runPreview() {
+  if (!selectedProduct) return;
+  try {
+    const res = await fetch("/api/preview", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        product_id:    selectedProduct.product_id,
+        duration_days: parseInt(durationSlider.value),
+        quantity:      parseInt(qtySlider.value),
+        months_unsold: selectedProduct.months_unsold,
+      })
+    });
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error);
+    currentSummary = data.summary;
+    renderPreview(data.summary, selectedProduct);
+    updateSubmitBtn();
+  } catch(e) {
+    // Fallback: compute locally
+    currentSummary = localCompute(selectedProduct,
+      parseInt(durationSlider.value), parseInt(qtySlider.value));
+    renderPreview(currentSummary, selectedProduct);
+    updateSubmitBtn();
+  }
+}
+
+function renderPreview(s, p) {
+  const win = s.verdict === "rental";
+  const delta = Math.abs(s.delta);
+  const deltaFmt = "€" + delta.toFixed(2);
+
+  document.getElementById("preview-content").innerHTML = `
+    <div class="verdict-banner ${win ? 'rental' : 'markdown'}">
+      <div class="verdict-icon">${win ? '✅' : '⚠️'}</div>
+      <div class="verdict-text">
+        <div class="vt-big ${win ? '' : 'lose'}">
+          ${win
+            ? `Rental wins by <span>+${deltaFmt}</span>`
+            : `Markdown wins by <span>${deltaFmt}</span>`
+          }
+        </div>
+        <div class="vt-sub">${p.product_name} · ${s.duration_days}d × ${s.quantity} unit${s.quantity>1?'s':''}</div>
+      </div>
+    </div>
+    <div class="breakdown">
+      <div class="breakdown-row">
+        <span class="br-label">Daily rate</span>
+        <span class="br-val">€${s.daily_rate}/day</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="br-label">Base revenue <span style="color:var(--muted);font-size:.75em">(per unit)</span></span>
+        <span class="br-val">€${s.base_revenue.toFixed(2)}</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="br-label">Insurance fee (5%)</span>
+        <span class="br-val">+€${s.insurance_fee.toFixed(2)}</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="br-label">Expected late fee</span>
+        <span class="br-val">+€${s.late_fee_income.toFixed(2)}</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="br-label">Gross revenue <span style="color:var(--muted);font-size:.75em">(per unit)</span></span>
+        <span class="br-val">€${s.gross_revenue.toFixed(2)}</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="br-label">Operational cost (18.5%)</span>
+        <span class="br-val" style="color:var(--orange)">−€${s.ops_cost.toFixed(2)}</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="br-label">Expected damage cost</span>
+        <span class="br-val" style="color:var(--orange)">−€${s.damage_cost.toFixed(2)}</span>
+      </div>
+
+      <div class="breakdown-row total divider">
+        <span class="br-label">Net per unit</span>
+        <span class="br-val">€${s.net_per_unit.toFixed(2)}</span>
+      </div>
+      ${s.quantity > 1 ? `
+      <div class="breakdown-row total">
+        <span class="br-label">Total net (×${s.quantity})</span>
+        <span class="br-val">€${s.total_net.toFixed(2)}</span>
+      </div>` : ''}
+
+      <div class="breakdown-row compare divider">
+        <span class="br-label">vs Markdown (${p.months_unsold.toFixed(0)} mo unsold)</span>
+        <span class="br-val">€${s.markdown_price.toFixed(2)}</span>
+      </div>
+      <div class="breakdown-row compare">
+        <span class="br-label">Revenue ratio</span>
+        <span class="ratio-badge ${win ? 'win' : 'lose'}">${s.ratio.toFixed(2)}×</span>
+      </div>
+      <div class="breakdown-row compare">
+        <span class="br-label">Verdict</span>
+        <span class="br-val ${win ? 'win' : 'lose'}">${win ? '✅ Rental wins' : '❌ Markdown wins'}</span>
+      </div>
+    </div>
+  `;
+}
+
+function resetPreview() {
+  document.getElementById("preview-content").innerHTML = `
+    <div class="preview-placeholder">
+      <div class="ph-icon">🧮</div>
+      <p>Select a product and duration<br>to see the rental vs markdown verdict.</p>
+    </div>`;
+  currentSummary = null;
+}
+
+// ── SUBMIT ───────────────────────────────────────────────────────────────────
+function updateSubmitBtn() {
+  const btn   = document.getElementById("btn-submit");
+  const label = document.getElementById("btn-label");
+  if (!selectedProduct) {
+    btn.disabled = true;
+    label.textContent = "Select a product to continue";
+  } else if (!currentSummary) {
+    btn.disabled = true;
+    label.textContent = "Calculating…";
+  } else {
+    btn.disabled = false;
+    const qty = parseInt(qtySlider.value);
+    label.textContent = `Write ${qty} rental${qty>1?'s':''} to MySQL`;
+  }
+}
+
+document.getElementById("btn-submit").addEventListener("click", async () => {
+  const customerId = document.getElementById("customer-select").value;
+  if (!customerId) {
+    showToast("⚠️ Please select a customer first.", false);
+    return;
+  }
+
+  const btn   = document.getElementById("btn-submit");
+  const label = document.getElementById("btn-label");
+  btn.disabled = true;
+  label.innerHTML = '<span class="spin"></span> Writing to MySQL…';
+
+  try {
+    const res = await fetch("/api/submit", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        product_id:    selectedProduct.product_id,
+        customer_id:   customerId,
+        duration_days: parseInt(durationSlider.value),
+        quantity:      parseInt(qtySlider.value),
+        months_unsold: selectedProduct.months_unsold,
+      })
+    });
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error);
+    showToast(`✅ ${data.message}`);
+    await loadStats();  // refresh header stats
+  } catch(e) {
+    showToast("❌ " + e.message, false);
+  } finally {
+    btn.disabled = false;
+    updateSubmitBtn();
+  }
+});
+
+// ── TOAST ────────────────────────────────────────────────────────────────────
+function showToast(msg, success = true) {
+  const toast = document.getElementById("toast");
+  const toastMsg = document.getElementById("toast-msg");
+  toastMsg.textContent = msg;
+  toast.style.borderLeftColor = success ? "var(--teal)" : "var(--orange)";
+  toast.classList.add("show");
+  setTimeout(() => toast.classList.remove("show"), 4500);
+}
+
+// ── LOCAL FALLBACK COMPUTE (when DB offline) ──────────────────────────────
+function localCompute(p, duration, quantity) {
+  const OPS = 0.185, INS = 0.05, DMG = 0.028, LATE_R = 0.127, LATE_F = 0.15;
+  const monthly = p.monthly_amount || p.retail_price * 0.12;
+  const daily   = Math.round((monthly / 30) * 100) / 100;
+  const base    = daily * duration;
+  const ins     = base * INS;
+  const late    = base * LATE_R * LATE_F;
+  const gross   = base + ins + late;
+  const ops     = gross * OPS;
+  const dmg     = p.retail_price * DMG;
+  const net     = gross - ops - dmg;
+  const md_pct  = p.months_unsold >= 12 ? 0.25 : p.months_unsold >= 9 ? 0.35
+                : p.months_unsold >= 6 ? 0.50  : p.months_unsold >= 3 ? 0.75 : 0.95;
+  const md      = p.retail_price * md_pct;
+  const ratio   = Math.round((net / md) * 100) / 100;
+  return {
+    daily_rate: daily, base_revenue: Math.round(base*100)/100,
+    insurance_fee: Math.round(ins*100)/100, late_fee_income: Math.round(late*100)/100,
+    gross_revenue: Math.round(gross*100)/100, ops_cost: Math.round(ops*100)/100,
+    damage_cost: Math.round(dmg*100)/100, net_per_unit: Math.round(net*100)/100,
+    total_net: Math.round(net*quantity*100)/100, total_gross: Math.round(gross*quantity*100)/100,
+    markdown_price: Math.round(md*100)/100, total_markdown: Math.round(md*quantity*100)/100,
+    ratio, verdict: net > md ? "rental" : "markdown",
+    delta: Math.round((net - md)*quantity*100)/100,
+    quantity, duration_days: duration,
+  };
+}
+
+// ── DEMO DATA (DB offline fallback) ─────────────────────────────────────────
+function getDemoProducts() {
+  return [
+    {product_id:"demo-1", product_name:"Sony 55\" TV",    category:"Electronics",   retail_price:899,  rule_type:"pct_of_retail", monthly_amount:107.88, months_unsold:14, status:"available"},
+    {product_id:"demo-2", product_name:"MacBook Pro 14",  category:"Laptops",       retail_price:1999, rule_type:"pct_of_retail", monthly_amount:239.88, months_unsold:8,  status:"available"},
+    {product_id:"demo-3", product_name:"PS5 Console",     category:"Gaming",        retail_price:499,  rule_type:"flat_rate",     monthly_amount:45,     months_unsold:13, status:"available"},
+    {product_id:"demo-4", product_name:"iPhone 15 Pro",   category:"Smartphones",   retail_price:1299, rule_type:"pct_of_retail", monthly_amount:155.88, months_unsold:10, status:"available"},
+    {product_id:"demo-5", product_name:"Dyson V15",       category:"Appliances",    retail_price:649,  rule_type:"flat_rate",     monthly_amount:55,     months_unsold:18, status:"available"},
+    {product_id:"demo-6", product_name:"Logitech MX Keys", category:"Peripherals",  retail_price:129,  rule_type:"flat_rate",     monthly_amount:12,     months_unsold:22, status:"available"},
+  ];
+}
+
+function getDemoCustomers() {
+  return [
+    {id:"c1", name:"Alice Santos",   segment:"business"},
+    {id:"c2", name:"Bruno Ferreira", segment:"professional"},
+    {id:"c3", name:"Carla Mendes",   segment:"student"},
+    {id:"c4", name:"Diego López",    segment:"casual"},
+    {id:"c5", name:"Eva Rodrigues",  segment:"business"},
+  ];
+}
+</script>
+</body>
+</html>
