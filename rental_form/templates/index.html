@@ -720,6 +720,12 @@ document.getElementById("product-select").addEventListener("change", function() 
   }
   selectedProduct = JSON.parse(opt.dataset.product);
   showProductMeta(selectedProduct);
+  // Set slider to friendly_days default for this category
+  const friendly = selectedProduct.friendly_days || 7;
+  durationSlider.value = friendly;
+  document.getElementById("duration-display").textContent = friendly + " days";
+  syncPresetBtns(friendly);
+  checkMinDuration();
   triggerPreview();
   updateSubmitBtn();
 });
@@ -742,6 +748,7 @@ const qtySlider      = document.getElementById("qty-slider");
 durationSlider.addEventListener("input", function() {
   document.getElementById("duration-display").textContent = this.value + " days";
   syncPresetBtns(parseInt(this.value));
+  checkMinDuration();
   triggerPreview();
 });
 
@@ -778,6 +785,51 @@ document.querySelectorAll(".seg-tab").forEach(tab => {
   });
 });
 
+// ── MINIMUM DURATION WARNING ────────────────────────────────────────────────
+function checkMinDuration() {
+  const days    = parseInt(durationSlider.value);
+  const minDays = selectedProduct ? (selectedProduct.min_days || 1) : 1;
+  const friendly = selectedProduct ? (selectedProduct.friendly_days || 7) : 7;
+  const cat     = selectedProduct ? selectedProduct.category : "";
+
+  // Remove any existing warning
+  const existing = document.getElementById("min-duration-warning");
+  if (existing) existing.remove();
+
+  if (selectedProduct && days < minDays) {
+    const warn = document.createElement("div");
+    warn.id = "min-duration-warning";
+    warn.style.cssText = `
+      background:#FEF2EE; border:1px solid #F5C4B0; border-radius:6px;
+      padding:0.6rem 0.9rem; font-size:0.8rem; color:#8B3A1C;
+      margin-top:0.5rem; display:flex; align-items:center; gap:0.5rem;
+    `;
+    warn.innerHTML = `
+      <span style="font-size:1rem">⚠️</span>
+      <span>
+        Minimum rental for <strong>${cat}</strong> is <strong>${minDays} days</strong>.
+        We recommend <strong>${friendly} days</strong> for the best value.
+        <a href="#" id="warn-apply" style="color:var(--steel);margin-left:0.3rem">Apply ${friendly}d →</a>
+      </span>
+    `;
+    // Insert below the slider
+    const sliderWrap = durationSlider.parentElement;
+    sliderWrap.parentElement.appendChild(warn);
+
+    document.getElementById("warn-apply").addEventListener("click", (e) => {
+      e.preventDefault();
+      durationSlider.value = friendly;
+      document.getElementById("duration-display").textContent = friendly + " days";
+      syncPresetBtns(friendly);
+      checkMinDuration();
+      triggerPreview();
+    });
+
+    return false; // below minimum
+  }
+  return true; // ok
+}
+
 // ── LIVE PREVIEW ────────────────────────────────────────────────────────────
 let previewTimer = null;
 
@@ -789,13 +841,32 @@ function triggerPreview() {
 
 async function runPreview() {
   if (!selectedProduct) return;
+  const days = parseInt(durationSlider.value);
+  const minDays = selectedProduct.min_days || 1;
+
+  // Show warning but still compute (so user sees what changes)
+  checkMinDuration();
+
+  // If below minimum, show a locked preview state instead
+  if (days < minDays) {
+    document.getElementById("preview-content").innerHTML = `
+      <div class="preview-placeholder">
+        <div class="ph-icon">⚠️</div>
+        <p>Duration is below the minimum for <strong>${selectedProduct.category}</strong>.<br>
+        Adjust to at least <strong>${minDays} days</strong> to see the preview.</p>
+      </div>`;
+    currentSummary = null;
+    updateSubmitBtn();
+    return;
+  }
+
   try {
     const res = await fetch("/api/preview", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({
         product_id:    selectedProduct.product_id,
-        duration_days: parseInt(durationSlider.value),
+        duration_days: days,
         quantity:      parseInt(qtySlider.value),
         months_unsold: selectedProduct.months_unsold,
       })
@@ -806,18 +877,28 @@ async function runPreview() {
     renderPreview(data.summary, selectedProduct);
     updateSubmitBtn();
   } catch(e) {
-    // Fallback: compute locally
-    currentSummary = localCompute(selectedProduct,
-      parseInt(durationSlider.value), parseInt(qtySlider.value));
+    currentSummary = localCompute(selectedProduct, days, parseInt(qtySlider.value));
     renderPreview(currentSummary, selectedProduct);
     updateSubmitBtn();
   }
 }
 
 function renderPreview(s, p) {
-  const win = s.verdict === "rental";
-  const delta = Math.abs(s.delta);
+  const win      = s.verdict === "rental";
+  const delta    = Math.abs(s.store.rental_advantage);
   const deltaFmt = "€" + delta.toFixed(2);
+  const c        = s.customer;
+  const st       = s.store;
+  const days     = c.duration_days;
+  const qty      = c.quantity;
+
+  const capNotice = s.cap_applied
+    ? `<div style="background:#EBF8F7;border:1px solid #a8ddd9;border-radius:6px;
+         padding:0.5rem 0.9rem;font-size:0.78rem;color:#045450;margin:0.75rem 1.5rem 0;">
+         💡 <strong>Price cap applied</strong> — rental cost capped at 35% of retail price
+         so the customer always saves vs buying outright.
+       </div>`
+    : "";
 
   document.getElementById("preview-content").innerHTML = `
     <div class="verdict-banner ${win ? 'rental' : 'markdown'}">
@@ -829,61 +910,99 @@ function renderPreview(s, p) {
             : `Markdown wins by <span>${deltaFmt}</span>`
           }
         </div>
-        <div class="vt-sub">${p.product_name} · ${s.duration_days}d × ${s.quantity} unit${s.quantity>1?'s':''}</div>
+        <div class="vt-sub">${p.product_name} · ${days}d × ${qty} unit${qty > 1 ? 's' : ''}</div>
       </div>
     </div>
+    ${capNotice}
+
     <div class="breakdown">
+
+      <!-- ── CUSTOMER SECTION ── -->
+      <div class="breakdown-row" style="padding-top:.75rem">
+        <span class="br-label" style="font-size:.7rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--steel)">
+          👤 What the customer pays
+        </span>
+      </div>
       <div class="breakdown-row">
         <span class="br-label">Daily rate</span>
-        <span class="br-val">€${s.daily_rate}/day</span>
+        <span class="br-val">€${c.daily_rate.toFixed(2)}/day</span>
       </div>
       <div class="breakdown-row">
-        <span class="br-label">Base revenue <span style="color:var(--muted);font-size:.75em">(per unit)</span></span>
-        <span class="br-val">€${s.base_revenue.toFixed(2)}</span>
+        <span class="br-label">Base charge (${days}d)</span>
+        <span class="br-val">€${c.base_charge.toFixed(2)}</span>
       </div>
       <div class="breakdown-row">
-        <span class="br-label">Insurance fee (5%)</span>
-        <span class="br-val">+€${s.insurance_fee.toFixed(2)}</span>
+        <span class="br-label">Insurance fee</span>
+        <span class="br-val">+€${c.insurance_fee.toFixed(2)}</span>
+      </div>
+      <div class="breakdown-row total">
+        <span class="br-label">Total payment${qty > 1 ? ` (×${qty})` : ''}</span>
+        <span class="br-val">€${c.total_payment.toFixed(2)}</span>
+      </div>
+      <div class="breakdown-row compare">
+        <span class="br-label">vs Buying outright</span>
+        <span class="br-val">€${c.retail_price.toFixed(2)}</span>
+      </div>
+      <div class="breakdown-row compare">
+        <span class="br-label">Customer saves</span>
+        <span class="br-val" style="color:${c.saving_vs_buying >= 0 ? 'var(--teal)' : 'var(--danger)'}">
+          ${c.saving_vs_buying < 0 ? '−' : ''}€${Math.abs(c.saving_vs_buying).toFixed(2)} (${c.saving_pct}%)
+        </span>
+      </div>
+
+      <!-- ── STORE SECTION ── -->
+      <div class="breakdown-row divider" style="padding-top:.75rem;margin-top:.5rem">
+        <span class="br-label" style="font-size:.7rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--steel)">
+          🏪 What the store earns
+        </span>
       </div>
       <div class="breakdown-row">
-        <span class="br-label">Expected late fee</span>
-        <span class="br-val">+€${s.late_fee_income.toFixed(2)}</span>
-      </div>
-      <div class="breakdown-row">
-        <span class="br-label">Gross revenue <span style="color:var(--muted);font-size:.75em">(per unit)</span></span>
-        <span class="br-val">€${s.gross_revenue.toFixed(2)}</span>
+        <span class="br-label">Gross received${qty > 1 ? ` (×${qty})` : ''}</span>
+        <span class="br-val">€${st.gross_revenue.toFixed(2)}</span>
       </div>
       <div class="breakdown-row">
         <span class="br-label">Operational cost (18.5%)</span>
-        <span class="br-val" style="color:var(--orange)">−€${s.ops_cost.toFixed(2)}</span>
+        <span class="br-val" style="color:var(--orange)">−€${st.ops_cost.toFixed(2)}</span>
       </div>
       <div class="breakdown-row">
-        <span class="br-label">Expected damage cost</span>
-        <span class="br-val" style="color:var(--orange)">−€${s.damage_cost.toFixed(2)}</span>
+        <span class="br-label">Damage reserve</span>
+        <span class="br-val" style="color:var(--orange)">−€${st.damage_reserve.toFixed(2)}</span>
       </div>
-
-      <div class="breakdown-row total divider">
-        <span class="br-label">Net per unit</span>
-        <span class="br-val">€${s.net_per_unit.toFixed(2)}</span>
-      </div>
-      ${s.quantity > 1 ? `
       <div class="breakdown-row total">
-        <span class="br-label">Total net (×${s.quantity})</span>
-        <span class="br-val">€${s.total_net.toFixed(2)}</span>
-      </div>` : ''}
+        <span class="br-label">Net this cycle${qty > 1 ? ` (×${qty})` : ''}</span>
+        <span class="br-val" style="color:${st.net_this_cycle < 0 ? 'var(--danger)' : 'var(--teal)'}">
+          ${st.net_this_cycle < 0 ? '−' : ''}€${Math.abs(st.net_this_cycle).toFixed(2)}
+        </span>
+      </div>
+      <div class="breakdown-row">
+        <span class="br-label">Expected rental cycles</span>
+        <span class="br-val">${st.expected_rentals}×</span>
+      </div>
+      <div class="breakdown-row total">
+        <span class="br-label">Lifetime net value</span>
+        <span class="br-val">€${st.net_lifetime.toFixed(2)}</span>
+      </div>
 
+      <!-- ── VERDICT ── -->
       <div class="breakdown-row compare divider">
-        <span class="br-label">vs Markdown (${p.months_unsold.toFixed(0)} mo unsold)</span>
-        <span class="br-val">€${s.markdown_price.toFixed(2)}</span>
+        <span class="br-label">Markdown alternative (${st.discount_pct}% off)</span>
+        <span class="br-val">€${st.markdown_price.toFixed(2)}</span>
+      </div>
+      <div class="breakdown-row compare">
+        <span class="br-label">Rental advantage</span>
+        <span class="br-val" style="color:${st.rental_advantage >= 0 ? 'var(--teal)' : 'var(--danger)'}">
+          ${st.rental_advantage >= 0 ? '+' : '−'}€${Math.abs(st.rental_advantage).toFixed(2)}
+        </span>
       </div>
       <div class="breakdown-row compare">
         <span class="br-label">Revenue ratio</span>
-        <span class="ratio-badge ${win ? 'win' : 'lose'}">${s.ratio.toFixed(2)}×</span>
+        <span class="ratio-badge ${win ? 'win' : 'lose'}">${st.ratio.toFixed(2)}×</span>
       </div>
       <div class="breakdown-row compare">
         <span class="br-label">Verdict</span>
-        <span class="br-val ${win ? 'win' : 'lose'}">${win ? '✅ Rental wins' : '❌ Markdown wins'}</span>
+        <span class="br-val">${win ? '✅ Rental wins' : '❌ Markdown wins'}</span>
       </div>
+
     </div>
   `;
 }
@@ -962,30 +1081,50 @@ function showToast(msg, success = true) {
 
 // ── LOCAL FALLBACK COMPUTE (when DB offline) ──────────────────────────────
 function localCompute(p, duration, quantity) {
-  const OPS = 0.185, INS = 0.05, DMG = 0.028, LATE_R = 0.127, LATE_F = 0.15;
-  const monthly = p.monthly_amount || p.retail_price * 0.12;
-  const daily   = Math.round((monthly / 30) * 100) / 100;
+  const OPS = 0.185, INS = 0.05, DMG = 0.028;
+  const daily   = Math.round((p.retail_price * 0.012) * 100) / 100;
   const base    = daily * duration;
   const ins     = base * INS;
-  const late    = base * LATE_R * LATE_F;
-  const gross   = base + ins + late;
+  const gross   = base + ins;
   const ops     = gross * OPS;
   const dmg     = p.retail_price * DMG;
   const net     = gross - ops - dmg;
-  const md_pct  = p.months_unsold >= 12 ? 0.25 : p.months_unsold >= 9 ? 0.35
-                : p.months_unsold >= 6 ? 0.50  : p.months_unsold >= 3 ? 0.75 : 0.95;
-  const md      = p.retail_price * md_pct;
-  const ratio   = Math.round((net / md) * 100) / 100;
+  const months  = p.months_unsold || 12;
+  const disc    = months >= 24 ? 0.70 : months >= 18 ? 0.55 : months >= 12 ? 0.45 : 0.35;
+  const md      = Math.round(p.retail_price * (1 - disc) * 100) / 100;
+  const expRent = months >= 20 ? 2 : months >= 15 ? 3 : 4;
+  const lifetime = net * expRent;
+  const win     = lifetime > md;
+  const ratio   = Math.round((lifetime / md) * 100) / 100;
+  const advantage = Math.round((lifetime - md) * quantity * 100) / 100;
+
   return {
-    daily_rate: daily, base_revenue: Math.round(base*100)/100,
-    insurance_fee: Math.round(ins*100)/100, late_fee_income: Math.round(late*100)/100,
-    gross_revenue: Math.round(gross*100)/100, ops_cost: Math.round(ops*100)/100,
-    damage_cost: Math.round(dmg*100)/100, net_per_unit: Math.round(net*100)/100,
-    total_net: Math.round(net*quantity*100)/100, total_gross: Math.round(gross*quantity*100)/100,
-    markdown_price: Math.round(md*100)/100, total_markdown: Math.round(md*quantity*100)/100,
-    ratio, verdict: net > md ? "rental" : "markdown",
-    delta: Math.round((net - md)*quantity*100)/100,
-    quantity, duration_days: duration,
+    verdict: win ? "rental" : "markdown",
+    ratio,
+    customer: {
+      daily_rate:       daily,
+      base_charge:      Math.round(base * 100) / 100,
+      insurance_fee:    Math.round(ins * 100) / 100,
+      total_payment:    Math.round(gross * quantity * 100) / 100,
+      retail_price:     Math.round(p.retail_price * quantity * 100) / 100,
+      saving_vs_buying: Math.round((p.retail_price - gross) * quantity * 100) / 100,
+      saving_pct:       Math.round((1 - gross / p.retail_price) * 1000) / 10,
+      duration_days:    duration,
+      quantity,
+    },
+    store: {
+      gross_revenue:    Math.round(gross * quantity * 100) / 100,
+      ops_cost:         Math.round(ops * quantity * 100) / 100,
+      damage_reserve:   Math.round(dmg * quantity * 100) / 100,
+      net_this_cycle:   Math.round(net * quantity * 100) / 100,
+      expected_rentals: expRent,
+      net_lifetime:     Math.round(lifetime * quantity * 100) / 100,
+      markdown_price:   Math.round(md * quantity * 100) / 100,
+      discount_pct:     Math.round(disc * 100),
+      rental_advantage: advantage,
+      verdict:          win ? "rental" : "markdown",
+      ratio,
+    },
   };
 }
 

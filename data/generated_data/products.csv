@@ -7,20 +7,20 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 6,1,Xiaomi Smartphone Lite,Xiaomi,425.74,315.7,A,2023-11-28,2024-09-23,Amazon ES,1
 7,1,OnePlus Smartphone SE,OnePlus,330.79,106.83,A,2022-02-28,2022-12-25,Amazon ES,1
 8,1,Apple Smartphone Pro,Apple,622.98,503.87,A,2024-02-27,2024-12-23,FNAC Portugal,1
-9,1,Xiaomi Smartphone Plus,Xiaomi,1130.37,374.06,A,2021-07-06,2022-05-02,Amazon ES,1
-10,1,Apple Smartphone Plus,Apple,507.52,331.59,C,2023-05-13,2024-03-08,FNAC Portugal,1
+9,1,Xiaomi Smartphone Plus,Xiaomi,1130.37,156.78,A,2020-07-05,2021-05-01,Amazon ES,1
+10,1,Apple Smartphone Plus,Apple,507.52,419.26,C,2024-03-06,2024-12-31,FNAC Portugal,1
 11,1,Samsung Smartphone Lite,Samsung,420.35,144.71,A,2022-01-14,2022-11-10,Amazon ES,1
 12,1,OnePlus Smartphone Lite,OnePlus,357.96,259.99,B,2023-12-26,2024-10-21,Amazon ES,1
 13,1,OnePlus Smartphone,OnePlus,591.29,403.59,B,2023-08-19,2024-06-14,FNAC Portugal,1
 14,1,Xiaomi Smartphone Plus,Xiaomi,156.12,101.62,B,2023-09-05,2024-07-01,FNAC Portugal,1
-15,1,Xiaomi Smartphone Lite,Xiaomi,369.75,247.83,C,2023-05-22,2024-03-17,FNAC Portugal,1
+15,1,Xiaomi Smartphone Lite,Xiaomi,369.75,308.48,C,2024-03-10,2025-01-04,FNAC Portugal,1
 16,1,Samsung Smartphone Pro,Samsung,626.89,429.92,A,2023-07-13,2024-05-08,Amazon ES,1
-17,1,OnePlus Smartphone Max,OnePlus,1016.55,395.3,B,2022-05-08,2023-03-04,Amazon ES,1
+17,1,OnePlus Smartphone Max,OnePlus,1016.55,629.55,B,2023-05-08,2024-03-03,Amazon ES,1
 18,1,Xiaomi Smartphone,Xiaomi,174.24,146.63,A,2024-04-19,2025-02-13,Amazon ES,1
 19,1,Apple Smartphone SE,Apple,174.12,129.39,A,2023-09-10,2024-07-06,FNAC Portugal,1
 20,1,Apple Smartphone,Apple,1024.82,863.8,A,2024-04-29,2025-02-23,FNAC Portugal,1
 21,1,Samsung Smartphone X,Samsung,397.6,325.37,B,2024-03-12,2025-01-06,Amazon ES,1
-22,1,Xiaomi Smartphone,Xiaomi,378.1,224.22,B,2023-04-13,2024-02-07,FNAC Portugal,1
+22,1,Xiaomi Smartphone,Xiaomi,378.1,300.91,B,2024-02-20,2024-12-16,FNAC Portugal,1
 23,1,Xiaomi Smartphone SE,Xiaomi,1176.96,955.72,C,2024-03-07,2025-01-01,FNAC Portugal,1
 24,1,Apple Smartphone Plus,Apple,640.45,243.94,C,2022-03-03,2022-12-28,Amazon ES,1
 25,1,Samsung Smartphone Plus,Samsung,338.87,263.1,B,2023-12-28,2024-10-23,Amazon ES,1
@@ -35,19 +35,19 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 34,1,Apple Smartphone Max,Apple,707.2,204.1,C,2022-01-17,2022-11-13,Amazon ES,1
 35,1,Xiaomi Smartphone Plus,Xiaomi,339.13,227.69,B,2023-06-22,2024-04-17,Amazon ES,1
 36,1,Apple Smartphone,Apple,206.19,145.92,B,2023-07-03,2024-04-28,FNAC Portugal,1
-37,1,Samsung Smartphone Ultra,Samsung,246.36,59.28,B,2021-08-02,2022-05-29,FNAC Portugal,1
+37,1,Samsung Smartphone Ultra,Samsung,246.36,24.64,B,2020-08-01,2021-05-28,FNAC Portugal,1
 38,1,Samsung Smartphone Ultra,Samsung,676.59,512.3,A,2023-12-17,2024-10-12,FNAC Portugal,1
 39,1,Samsung Smartphone Plus,Samsung,152.73,43.36,A,2021-09-07,2022-07-04,Amazon ES,1
-40,1,Apple Smartphone,Apple,347.27,247.1,B,2023-08-18,2024-06-13,Amazon ES,1
+40,1,Apple Smartphone,Apple,347.27,296.89,B,2024-04-23,2025-02-17,Amazon ES,1
 41,1,Samsung Smartphone Pro,Samsung,370.98,322.1,B,2024-05-26,2025-03-22,FNAC Portugal,1
 42,1,Apple Smartphone Ultra,Apple,1129.21,815.54,A,2023-10-02,2024-07-28,Amazon ES,1
-43,1,OnePlus Smartphone SE,OnePlus,630.58,329.69,B,2022-11-23,2023-09-19,Amazon ES,1
-44,1,OnePlus Smartphone X,OnePlus,417.28,206.02,B,2022-09-03,2023-06-30,Amazon ES,1
+43,1,OnePlus Smartphone SE,OnePlus,630.58,472.5,B,2023-11-23,2024-09-18,Amazon ES,1
+44,1,OnePlus Smartphone X,OnePlus,417.28,296.74,B,2023-09-03,2024-06-29,Amazon ES,1
 45,1,Xiaomi Smartphone Ultra,Xiaomi,224.16,38.83,A,2021-07-20,2022-05-16,FNAC Portugal,1
-46,1,Apple Smartphone,Apple,1009.11,370.0,A,2022-01-31,2022-11-27,Amazon ES,1
+46,1,Apple Smartphone,Apple,1009.11,150.97,A,2021-01-31,2021-11-27,Amazon ES,1
 47,1,OnePlus Smartphone Pro,OnePlus,740.67,314.24,C,2021-12-27,2022-10-23,Amazon ES,1
 48,1,Samsung Smartphone Lite,Samsung,888.13,338.69,A,2021-10-11,2022-08-07,Amazon ES,1
-49,1,Apple Smartphone Ultra,Apple,223.89,44.84,B,2021-06-21,2022-04-17,Amazon ES,1
+49,1,Apple Smartphone Ultra,Apple,223.89,22.39,B,2020-06-20,2021-04-16,Amazon ES,1
 50,1,Samsung Smartphone Plus,Samsung,414.28,339.23,A,2024-02-10,2024-12-06,Amazon ES,1
 51,1,OnePlus Smartphone Pro,OnePlus,283.67,220.19,B,2023-12-29,2024-10-24,Amazon ES,1
 52,1,OnePlus Smartphone Lite,OnePlus,481.82,342.23,A,2023-08-02,2024-05-28,FNAC Portugal,1
@@ -62,18 +62,18 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 61,2,Dell Laptop Ultra,Dell,1582.44,675.01,A,2022-01-11,2022-11-07,FNAC Portugal,1
 62,2,HP Laptop Ultra,HP,605.18,403.35,C,2023-05-24,2024-03-19,FNAC Portugal,1
 63,2,Asus Laptop Plus,Asus,1191.83,952.14,B,2023-08-16,2024-06-11,FNAC Portugal,1
-64,2,HP Laptop Max,HP,673.89,376.97,B,2022-07-16,2023-05-12,FNAC Portugal,1
+64,2,HP Laptop Max,HP,673.89,497.52,B,2023-07-16,2024-05-11,FNAC Portugal,1
 65,2,HP Laptop Ultra,HP,1005.83,869.77,B,2024-04-03,2025-01-28,FNAC Portugal,1
 66,2,Lenovo Laptop Plus,Lenovo,815.9,592.19,C,2023-07-15,2024-05-10,FNAC Portugal,1
 67,2,HP Laptop Lite,HP,960.79,343.65,A,2021-06-25,2022-04-21,FNAC Portugal,1
 68,2,Dell Laptop SE,Dell,1359.16,1055.96,A,2023-12-26,2024-10-21,FNAC Portugal,1
 69,2,Lenovo Laptop X,Lenovo,1325.68,778.05,C,2022-09-18,2023-07-15,FNAC Portugal,1
-70,2,Apple Laptop Pro,Apple,852.43,543.26,A,2023-03-08,2024-01-02,FNAC Portugal,1
+70,2,Apple Laptop Pro,Apple,852.43,697.38,A,2024-02-02,2024-11-28,FNAC Portugal,1
 71,2,Lenovo Laptop Lite,Lenovo,767.16,584.59,B,2023-09-05,2024-07-01,Amazon ES,1
 72,2,Lenovo Laptop Plus,Lenovo,1082.23,705.0,B,2023-05-04,2024-02-28,FNAC Portugal,1
 73,2,Lenovo Laptop Max,Lenovo,965.17,803.79,A,2024-01-02,2024-10-28,FNAC Portugal,1
 74,2,Asus Laptop SE,Asus,769.03,355.08,C,2021-07-11,2022-05-07,Amazon ES,1
-75,2,Apple Laptop Plus,Apple,1258.7,435.98,B,2021-12-22,2022-10-18,Amazon ES,1
+75,2,Apple Laptop Plus,Apple,1258.7,163.48,B,2020-12-21,2021-10-17,Amazon ES,1
 76,2,HP Laptop SE,HP,1184.75,618.65,B,2022-04-29,2023-02-23,FNAC Portugal,1
 77,2,HP Laptop Ultra,HP,683.19,387.88,A,2022-08-01,2023-05-28,FNAC Portugal,1
 78,2,Dell Laptop SE,Dell,519.01,451.01,A,2024-02-28,2024-12-24,Amazon ES,1
@@ -85,11 +85,11 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 84,2,HP Laptop SE,HP,763.59,619.83,C,2023-09-28,2024-07-24,Amazon ES,1
 85,2,Dell Laptop Pro,Dell,1845.0,921.37,A,2022-03-16,2023-01-10,FNAC Portugal,1
 86,2,Asus Laptop X,Asus,1028.5,694.31,A,2023-07-03,2024-04-28,Amazon ES,1
-87,2,HP Laptop Max,HP,1748.8,1329.44,C,2023-07-18,2024-05-13,Amazon ES,1
+87,2,HP Laptop Max,HP,1748.8,1538.33,C,2024-04-08,2025-02-02,Amazon ES,1
 88,2,Asus Laptop,Asus,1031.0,882.91,B,2024-01-28,2024-11-23,Amazon ES,1
 89,2,Dell Laptop Pro,Dell,761.64,657.58,B,2024-04-12,2025-02-06,Amazon ES,1
 90,2,Apple Laptop Max,Apple,1168.22,1051.31,A,2024-06-16,2025-04-12,FNAC Portugal,1
-91,2,Apple Laptop X,Apple,751.25,365.7,A,2022-04-24,2023-02-18,Amazon ES,1
+91,2,Apple Laptop X,Apple,751.25,509.01,A,2023-04-24,2024-02-18,Amazon ES,1
 92,2,HP Laptop Max,HP,600.05,465.89,A,2023-07-16,2024-05-11,FNAC Portugal,1
 93,2,Lenovo Laptop Max,Lenovo,1616.55,895.4,A,2022-06-15,2023-04-11,FNAC Portugal,1
 94,2,Apple Laptop Lite,Apple,1494.31,766.86,C,2022-03-19,2023-01-13,FNAC Portugal,1
@@ -99,45 +99,45 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 98,2,Lenovo Laptop,Lenovo,1122.0,712.5,B,2023-01-10,2023-11-06,Amazon ES,1
 99,2,Apple Laptop SE,Apple,566.59,342.93,A,2022-09-03,2023-06-30,FNAC Portugal,1
 100,2,Lenovo Laptop SE,Lenovo,716.68,636.56,B,2024-05-30,2025-03-26,FNAC Portugal,1
-101,2,Lenovo Laptop Plus,Lenovo,1248.17,336.7,C,2021-02-01,2021-11-28,Amazon ES,1
+101,2,Lenovo Laptop Plus,Lenovo,1248.17,124.82,C,2020-02-01,2020-11-27,Amazon ES,1
 102,2,Lenovo Laptop SE,Lenovo,929.71,726.41,B,2023-08-04,2024-05-30,FNAC Portugal,1
 103,2,Dell Laptop Max,Dell,1018.06,664.79,A,2022-12-13,2023-10-09,Amazon ES,1
-104,2,Dell Laptop X,Dell,1597.65,476.96,A,2021-04-09,2022-02-03,FNAC Portugal,1
+104,2,Dell Laptop X,Dell,1597.65,175.81,A,2020-04-08,2021-02-02,FNAC Portugal,1
 105,2,Dell Laptop,Dell,1010.85,581.64,A,2022-11-25,2023-09-21,Amazon ES,1
 106,2,Asus Laptop Plus,Asus,1077.09,820.67,A,2023-10-30,2024-08-25,FNAC Portugal,1
 107,2,Apple Laptop Plus,Apple,1166.09,516.83,A,2022-08-20,2023-06-16,Amazon ES,1
 108,2,Asus Laptop SE,Asus,976.94,820.82,B,2024-02-03,2024-11-29,FNAC Portugal,1
 109,2,Asus Laptop,Asus,1606.04,1408.73,A,2024-05-10,2025-03-06,FNAC Portugal,1
 110,2,Asus Laptop Ultra,Asus,1097.54,395.05,A,2021-07-01,2022-04-27,Amazon ES,1
-111,2,HP Laptop Ultra,HP,522.54,390.68,A,2023-06-30,2024-04-25,FNAC Portugal,1
-112,2,HP Laptop Ultra,HP,2005.25,839.79,C,2022-04-25,2023-02-19,Amazon ES,1
+111,2,HP Laptop Ultra,HP,522.54,456.37,A,2024-03-30,2025-01-24,FNAC Portugal,1
+112,2,HP Laptop Ultra,HP,2005.25,406.15,C,2021-04-25,2022-02-19,Amazon ES,1
 113,2,Apple Laptop Lite,Apple,1060.65,434.87,B,2021-12-16,2022-10-12,Amazon ES,1
 114,2,Apple Laptop X,Apple,2903.36,2122.79,B,2023-09-11,2024-07-07,FNAC Portugal,1
 115,2,Apple Laptop Ultra,Apple,1299.68,971.16,C,2023-06-22,2024-04-17,Amazon ES,1
 116,3,Samsung Tablet Ultra,Samsung,789.69,719.29,B,2024-06-01,2025-03-28,FNAC Portugal,1
 117,3,Lenovo Tablet Lite,Lenovo,369.0,218.9,A,2022-01-29,2022-11-25,FNAC Portugal,1
 118,3,Huawei Tablet X,Huawei,537.22,300.43,B,2022-08-17,2023-06-13,FNAC Portugal,1
-119,3,Lenovo Tablet Ultra,Lenovo,280.51,127.7,C,2021-11-16,2022-09-12,FNAC Portugal,1
+119,3,Lenovo Tablet Ultra,Lenovo,280.51,78.68,C,2020-11-15,2021-09-11,FNAC Portugal,1
 120,3,Huawei Tablet SE,Huawei,420.58,327.67,C,2023-08-18,2024-06-13,Amazon ES,1
-121,3,Samsung Tablet Plus,Samsung,426.41,310.73,A,2023-03-29,2024-01-23,FNAC Portugal,1
+121,3,Samsung Tablet Plus,Samsung,426.41,368.48,A,2024-02-13,2024-12-09,FNAC Portugal,1
 122,3,Apple Tablet Pro,Apple,152.68,135.34,B,2024-03-18,2025-01-12,FNAC Portugal,1
 123,3,Apple Tablet Lite,Apple,914.54,238.78,C,2021-06-02,2022-03-29,FNAC Portugal,1
 124,3,Samsung Tablet Ultra,Samsung,859.86,672.17,A,2023-07-07,2024-05-02,FNAC Portugal,1
 125,3,Samsung Tablet Plus,Samsung,266.94,187.85,B,2023-01-22,2023-11-18,FNAC Portugal,1
 126,3,Apple Tablet SE,Apple,689.78,457.57,B,2022-07-15,2023-05-11,FNAC Portugal,1
 127,3,Apple Tablet Ultra,Apple,706.24,451.33,A,2022-11-21,2023-09-17,FNAC Portugal,1
-128,3,Samsung Tablet X,Samsung,377.93,274.47,A,2023-06-30,2024-04-25,Amazon ES,1
+128,3,Samsung Tablet X,Samsung,377.93,326.01,A,2024-03-30,2025-01-24,Amazon ES,1
 129,3,Huawei Tablet,Huawei,277.68,199.94,B,2023-06-25,2024-04-20,Amazon ES,1
 130,3,Apple Tablet Ultra,Apple,281.79,250.1,C,2024-04-29,2025-02-23,Amazon ES,1
-131,3,Lenovo Tablet X,Lenovo,878.99,700.2,C,2023-08-14,2024-06-09,FNAC Portugal,1
-132,3,Lenovo Tablet Plus,Lenovo,651.55,402.07,B,2022-09-29,2023-07-26,Amazon ES,1
+131,3,Lenovo Tablet X,Lenovo,878.99,789.06,C,2024-04-21,2025-02-15,FNAC Portugal,1
+132,3,Lenovo Tablet Plus,Lenovo,651.55,512.58,B,2023-09-29,2024-07-25,Amazon ES,1
 133,3,Lenovo Tablet Plus,Lenovo,301.92,186.42,B,2022-08-14,2023-06-10,FNAC Portugal,1
 134,3,Huawei Tablet Plus,Huawei,332.09,292.64,A,2024-04-07,2025-02-01,Amazon ES,1
 135,3,Apple Tablet SE,Apple,641.0,574.86,A,2024-05-04,2025-02-28,Amazon ES,1
 136,3,Huawei Tablet Lite,Huawei,243.14,127.58,C,2021-11-15,2022-09-11,Amazon ES,1
-137,3,Lenovo Tablet Ultra,Lenovo,263.74,98.62,B,2021-01-09,2021-11-05,FNAC Portugal,1
+137,3,Lenovo Tablet Ultra,Lenovo,263.74,57.0,B,2020-01-09,2020-11-04,FNAC Portugal,1
 138,3,Lenovo Tablet Lite,Lenovo,299.57,244.15,B,2023-06-14,2024-04-09,Amazon ES,1
-139,3,Apple Tablet Lite,Apple,162.36,128.32,A,2023-08-27,2024-06-22,Amazon ES,1
+139,3,Apple Tablet Lite,Apple,162.36,145.27,A,2024-04-28,2025-02-22,Amazon ES,1
 140,3,Huawei Tablet Max,Huawei,382.26,340.49,A,2024-03-15,2025-01-09,FNAC Portugal,1
 141,3,Samsung Tablet Pro,Samsung,247.75,199.83,C,2023-11-12,2024-09-07,Amazon ES,1
 142,3,Huawei Tablet SE,Huawei,553.43,492.52,A,2024-04-23,2025-02-17,Amazon ES,1
@@ -145,51 +145,51 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 144,3,Lenovo Tablet,Lenovo,237.3,161.58,A,2022-10-19,2023-08-15,FNAC Portugal,1
 145,3,Apple Tablet SE,Apple,208.87,156.1,B,2023-08-08,2024-06-03,FNAC Portugal,1
 146,3,Huawei Tablet Lite,Huawei,331.48,239.28,A,2022-12-27,2023-10-23,Amazon ES,1
-147,3,Apple Tablet Max,Apple,467.89,222.98,A,2021-04-30,2022-02-24,FNAC Portugal,1
+147,3,Apple Tablet Max,Apple,467.89,156.13,A,2020-04-29,2021-02-23,FNAC Portugal,1
 148,3,Samsung Tablet Lite,Samsung,339.81,268.12,A,2023-09-09,2024-07-05,FNAC Portugal,1
-149,3,Huawei Tablet,Huawei,245.46,150.57,B,2023-01-12,2023-11-08,Amazon ES,1
+149,3,Huawei Tablet,Huawei,245.46,197.95,B,2024-01-06,2024-11-01,Amazon ES,1
 150,3,Huawei Tablet Max,Huawei,272.22,130.85,B,2021-11-23,2022-09-19,FNAC Portugal,1
-151,3,Lenovo Tablet X,Lenovo,457.92,335.35,B,2023-01-30,2023-11-26,FNAC Portugal,1
+151,3,Lenovo Tablet X,Lenovo,457.92,396.55,B,2024-01-15,2024-11-10,FNAC Portugal,1
 152,3,Apple Tablet Ultra,Apple,515.76,361.21,B,2022-12-30,2023-10-26,FNAC Portugal,1
 153,3,Lenovo Tablet Plus,Lenovo,321.66,102.78,B,2021-04-05,2022-01-30,FNAC Portugal,1
 154,3,Apple Tablet Ultra,Apple,205.66,173.83,B,2024-01-08,2024-11-03,FNAC Portugal,1
 155,3,Lenovo Tablet Plus,Lenovo,446.0,414.57,C,2024-06-12,2025-04-08,FNAC Portugal,1
-156,4,Samsung Wearable SE,Samsung,244.73,158.51,C,2023-02-18,2023-12-15,FNAC Portugal,1
+156,4,Samsung Wearable SE,Samsung,244.73,201.5,C,2024-01-24,2024-11-19,FNAC Portugal,1
 157,4,Samsung Wearable X,Samsung,148.0,94.91,A,2022-11-08,2023-09-04,FNAC Portugal,1
 158,4,Apple Wearable SE,Apple,121.51,58.38,A,2022-05-23,2023-03-19,Amazon ES,1
 159,4,Fitbit Wearable Max,Fitbit,134.14,88.09,A,2022-12-20,2023-10-16,FNAC Portugal,1
 160,4,Fitbit Wearable SE,Fitbit,138.02,90.94,B,2023-04-01,2024-01-26,FNAC Portugal,1
-161,4,Samsung Wearable,Samsung,82.57,57.81,B,2023-08-31,2024-06-26,Amazon ES,1
+161,4,Samsung Wearable,Samsung,82.57,70.14,B,2024-04-30,2025-02-24,Amazon ES,1
 162,4,Fitbit Wearable X,Fitbit,87.83,36.56,C,2022-01-21,2022-11-17,FNAC Portugal,1
 163,4,Garmin Wearable SE,Garmin,111.65,93.92,C,2024-02-27,2024-12-23,Amazon ES,1
 164,4,Fitbit Wearable,Fitbit,146.63,113.34,B,2023-11-13,2024-09-08,FNAC Portugal,1
-165,4,Fitbit Wearable,Fitbit,170.95,56.53,C,2021-04-23,2022-02-17,FNAC Portugal,1
+165,4,Fitbit Wearable,Fitbit,170.95,25.46,C,2020-04-22,2021-02-16,FNAC Portugal,1
 166,4,Garmin Wearable Pro,Garmin,216.56,174.5,B,2024-02-02,2024-11-28,Amazon ES,1
 167,4,Samsung Wearable Pro,Samsung,224.58,176.04,B,2023-11-14,2024-09-09,Amazon ES,1
 168,4,Garmin Wearable Max,Garmin,126.12,91.82,B,2023-08-26,2024-06-21,Amazon ES,1
 169,4,Apple Wearable Ultra,Apple,148.4,113.67,C,2023-11-14,2024-09-09,FNAC Portugal,1
 170,4,Apple Wearable Lite,Apple,126.73,108.63,A,2024-05-17,2025-03-13,Amazon ES,1
-171,4,Apple Wearable Ultra,Apple,118.11,42.36,A,2021-04-29,2022-02-23,FNAC Portugal,1
+171,4,Apple Wearable Ultra,Apple,118.11,21.7,A,2020-04-28,2021-02-22,FNAC Portugal,1
 172,4,Fitbit Wearable,Fitbit,106.13,54.18,B,2022-01-27,2022-11-23,Amazon ES,1
 173,4,Garmin Wearable Pro,Garmin,206.97,177.52,A,2024-04-03,2025-01-28,FNAC Portugal,1
 174,4,Garmin Wearable Max,Garmin,230.04,173.31,B,2023-10-07,2024-08-02,Amazon ES,1
-175,4,Fitbit Wearable Ultra,Fitbit,93.7,32.44,A,2021-08-25,2022-06-21,Amazon ES,1
+175,4,Fitbit Wearable Ultra,Fitbit,93.7,14.13,A,2020-08-24,2021-06-20,Amazon ES,1
 176,4,Samsung Wearable Max,Samsung,87.1,55.51,A,2023-04-04,2024-01-29,Amazon ES,1
 177,4,Apple Wearable Max,Apple,196.7,149.2,A,2023-09-19,2024-07-15,Amazon ES,1
-178,4,Garmin Wearable X,Garmin,116.76,79.57,A,2023-02-09,2023-12-06,Amazon ES,1
+178,4,Garmin Wearable X,Garmin,116.76,98.14,A,2024-01-20,2024-11-15,Amazon ES,1
 179,4,Fitbit Wearable Max,Fitbit,270.9,159.76,B,2023-01-16,2023-11-12,Amazon ES,1
 180,4,Apple Wearable Plus,Apple,94.84,64.28,C,2023-05-31,2024-03-26,FNAC Portugal,1
 181,4,Garmin Wearable Ultra,Garmin,134.64,65.32,B,2022-10-28,2023-08-24,FNAC Portugal,1
-182,4,Fitbit Wearable X,Fitbit,175.2,138.57,A,2023-11-11,2024-09-06,FNAC Portugal,1
+182,4,Fitbit Wearable X,Fitbit,175.2,156.8,A,2024-06-05,2025-04-01,FNAC Portugal,1
 183,4,Garmin Wearable Pro,Garmin,241.06,143.28,C,2023-03-26,2024-01-20,FNAC Portugal,1
 184,4,Apple Wearable Ultra,Apple,210.65,165.64,C,2023-09-19,2024-07-15,FNAC Portugal,1
 185,4,Apple Wearable Lite,Apple,130.7,90.55,A,2023-04-11,2024-02-05,FNAC Portugal,1
 186,4,Garmin Wearable,Garmin,136.02,73.85,B,2022-07-17,2023-05-13,FNAC Portugal,1
 187,4,Garmin Wearable Lite,Garmin,103.31,81.03,A,2023-12-29,2024-10-24,FNAC Portugal,1
 188,4,Apple Wearable Lite,Apple,293.64,131.41,B,2022-09-09,2023-07-06,FNAC Portugal,1
-189,4,Samsung Wearable Max,Samsung,263.42,146.87,C,2022-08-31,2023-06-27,Amazon ES,1
+189,4,Samsung Wearable Max,Samsung,263.42,196.74,C,2023-08-31,2024-06-26,Amazon ES,1
 190,4,Garmin Wearable,Garmin,276.3,210.86,B,2023-08-16,2024-06-11,FNAC Portugal,1
-191,4,Garmin Wearable Pro,Garmin,267.3,173.53,A,2023-01-14,2023-11-10,Amazon ES,1
+191,4,Garmin Wearable Pro,Garmin,267.3,220.35,A,2024-01-07,2024-11-02,Amazon ES,1
 192,4,Samsung Wearable Plus,Samsung,195.83,140.4,B,2023-06-13,2024-04-08,Amazon ES,1
 193,4,Samsung Wearable Plus,Samsung,298.82,247.47,C,2024-02-07,2024-12-03,Amazon ES,1
 194,4,Garmin Wearable Ultra,Garmin,195.7,38.48,B,2021-05-28,2022-03-24,FNAC Portugal,1
@@ -197,7 +197,7 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 196,4,Garmin Wearable SE,Garmin,90.25,56.38,A,2023-01-25,2023-11-21,Amazon ES,1
 197,4,Samsung Wearable Lite,Samsung,294.87,223.97,B,2023-04-24,2024-02-18,FNAC Portugal,1
 198,4,Fitbit Wearable Plus,Fitbit,247.53,97.73,A,2022-01-23,2022-11-19,FNAC Portugal,1
-199,4,Apple Wearable SE,Apple,317.33,256.46,A,2023-12-26,2024-10-21,FNAC Portugal,1
+199,4,Apple Wearable SE,Apple,317.33,286.65,A,2024-06-27,2025-04-23,FNAC Portugal,1
 200,4,Apple Wearable X,Apple,159.34,128.61,B,2023-12-30,2024-10-25,FNAC Portugal,1
 201,5,DJI Drone Ultra,DJI,710.82,528.02,A,2023-02-17,2023-12-14,FNAC Portugal,1
 202,5,Parrot Drone Max,Parrot,1560.25,1311.62,A,2024-01-02,2024-10-28,FNAC Portugal,1
@@ -209,34 +209,34 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 208,5,DJI Drone X,DJI,429.08,215.92,B,2021-01-27,2021-11-23,FNAC Portugal,1
 209,5,Parrot Drone X,Parrot,896.64,835.43,B,2024-06-19,2025-04-15,Amazon ES,1
 210,5,DJI Drone Lite,DJI,356.07,152.54,B,2021-07-07,2022-05-03,FNAC Portugal,1
-211,5,DJI Drone Plus,DJI,1500.62,737.56,A,2021-04-04,2022-01-29,Amazon ES,1
+211,5,DJI Drone Plus,DJI,1500.62,533.25,A,2020-04-03,2021-01-28,Amazon ES,1
 212,5,DJI Drone X,DJI,550.09,407.15,C,2023-02-11,2023-12-08,FNAC Portugal,1
 213,5,Autel Drone Max,Autel,562.66,292.5,A,2021-02-10,2021-12-07,Amazon ES,1
 214,5,Parrot Drone Pro,Parrot,1116.62,665.85,B,2022-03-14,2023-01-08,FNAC Portugal,1
 215,5,DJI Drone Max,DJI,1675.23,1532.06,B,2024-06-15,2025-04-11,Amazon ES,1
 216,5,Autel Drone Pro,Autel,1490.55,1037.33,C,2022-07-18,2023-05-14,FNAC Portugal,1
-217,5,DJI Drone Max,DJI,282.93,235.84,B,2023-10-26,2024-08-21,Amazon ES,1
+217,5,DJI Drone Max,DJI,282.93,259.28,B,2024-05-28,2025-03-24,Amazon ES,1
 218,5,Autel Drone SE,Autel,619.02,529.53,B,2023-09-09,2024-07-05,Amazon ES,1
-219,5,Parrot Drone Plus,Parrot,365.39,179.12,A,2021-04-01,2022-01-26,Amazon ES,1
+219,5,Parrot Drone Plus,Parrot,365.39,129.36,A,2020-03-31,2021-01-25,Amazon ES,1
 220,5,DJI Drone Pro,DJI,746.39,503.44,B,2022-05-10,2023-03-06,FNAC Portugal,1
-221,6,JBL Audio,JBL,124.59,102.71,A,2023-03-15,2024-01-09,FNAC Portugal,1
+221,6,JBL Audio,JBL,124.59,113.63,A,2024-02-06,2024-12-02,FNAC Portugal,1
 222,6,Sennheiser Audio Plus,Sennheiser,499.08,415.05,C,2023-06-13,2024-04-08,Amazon ES,1
-223,6,Sony Audio X,Sony,173.64,149.54,A,2023-01-02,2023-10-29,Amazon ES,1
+223,6,Sony Audio X,Sony,173.64,161.57,A,2024-01-01,2024-10-27,Amazon ES,1
 224,6,JBL Audio SE,JBL,203.5,116.28,B,2021-07-31,2022-05-27,Amazon ES,1
 225,6,Bose Audio,Bose,224.65,183.78,A,2022-10-29,2023-08-25,Amazon ES,1
 226,6,Sennheiser Audio Max,Sennheiser,222.52,187.79,A,2023-06-10,2024-04-05,FNAC Portugal,1
 227,6,Sennheiser Audio SE,Sennheiser,57.65,51.85,B,2023-09-26,2024-07-22,FNAC Portugal,1
 228,6,Sennheiser Audio X,Sennheiser,229.17,184.24,A,2023-07-28,2024-05-23,FNAC Portugal,1
-229,6,Sony Audio Ultra,Sony,42.1,28.38,C,2021-10-31,2022-08-27,FNAC Portugal,1
+229,6,Sony Audio Ultra,Sony,42.1,24.04,C,2020-10-30,2021-08-26,FNAC Portugal,1
 230,6,Sony Audio X,Sony,233.45,219.73,A,2024-02-03,2024-11-29,FNAC Portugal,1
-231,6,Bose Audio Pro,Bose,46.45,37.14,A,2023-07-01,2024-04-26,Amazon ES,1
+231,6,Bose Audio Pro,Bose,46.45,41.77,A,2024-03-30,2025-01-24,Amazon ES,1
 232,6,Bose Audio,Bose,100.11,90.62,A,2023-12-16,2024-10-11,FNAC Portugal,1
 233,6,Bose Audio Pro,Bose,59.76,53.56,B,2024-02-15,2024-12-11,FNAC Portugal,1
 234,6,Sony Audio X,Sony,124.37,92.05,B,2021-11-27,2022-09-23,FNAC Portugal,1
-235,6,JBL Audio X,JBL,111.99,74.12,A,2021-08-31,2022-06-27,FNAC Portugal,1
+235,6,JBL Audio X,JBL,111.99,62.74,A,2020-08-30,2021-06-26,FNAC Portugal,1
 236,6,JBL Audio Lite,JBL,98.47,88.98,A,2024-02-16,2024-12-12,Amazon ES,1
 237,6,JBL Audio Max,JBL,246.36,211.64,B,2023-05-08,2024-03-03,FNAC Portugal,1
-238,6,Bose Audio Pro,Bose,108.81,91.17,B,2023-01-25,2023-11-21,FNAC Portugal,1
+238,6,Bose Audio Pro,Bose,108.81,99.99,B,2024-01-13,2024-11-08,FNAC Portugal,1
 239,6,Bose Audio,Bose,183.01,142.12,A,2022-12-12,2023-10-08,Amazon ES,1
 240,6,Bose Audio Ultra,Bose,128.1,110.03,A,2023-10-22,2024-08-17,Amazon ES,1
 241,6,Sennheiser Audio,Sennheiser,60.69,44.08,C,2022-05-01,2023-02-25,Amazon ES,1
@@ -247,10 +247,10 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 246,6,Sony Audio Lite,Sony,319.23,294.53,A,2024-01-26,2024-11-21,Amazon ES,1
 247,6,Sennheiser Audio Pro,Sennheiser,139.77,120.3,A,2023-08-13,2024-06-08,Amazon ES,1
 248,6,JBL Audio Ultra,JBL,202.51,147.44,A,2022-11-18,2023-09-14,FNAC Portugal,1
-249,6,Sony Audio SE,Sony,188.56,166.77,C,2023-11-21,2024-09-16,Amazon ES,1
+249,6,Sony Audio SE,Sony,188.56,177.61,C,2024-06-10,2025-04-06,Amazon ES,1
 250,6,JBL Audio SE,JBL,212.33,162.38,A,2022-06-21,2023-04-17,FNAC Portugal,1
-251,6,Bose Audio Pro,Bose,227.67,152.48,A,2022-03-05,2022-12-30,FNAC Portugal,1
-252,6,Sennheiser Audio,Sennheiser,76.03,64.64,A,2023-08-26,2024-06-21,Amazon ES,1
+251,6,Bose Audio Pro,Bose,227.67,179.07,A,2023-03-05,2023-12-30,FNAC Portugal,1
+252,6,Sennheiser Audio,Sennheiser,76.03,70.3,A,2024-04-27,2025-02-21,Amazon ES,1
 253,6,Sennheiser Audio,Sennheiser,247.28,211.87,A,2023-02-16,2023-12-13,FNAC Portugal,1
 254,6,JBL Audio Ultra,JBL,306.79,274.02,B,2024-02-20,2024-12-16,FNAC Portugal,1
 255,6,Sennheiser Audio Pro,Sennheiser,57.01,33.76,B,2021-04-21,2022-02-15,Amazon ES,1
@@ -266,11 +266,11 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 265,6,Sony Audio Ultra,Sony,211.34,161.35,B,2022-07-07,2023-05-03,Amazon ES,1
 266,6,Bose Audio Max,Bose,216.67,192.04,A,2023-08-20,2024-06-15,FNAC Portugal,1
 267,6,JBL Audio,JBL,125.93,101.28,A,2022-04-12,2023-02-06,FNAC Portugal,1
-268,6,JBL Audio SE,JBL,120.72,75.8,A,2021-03-21,2022-01-15,FNAC Portugal,1
+268,6,JBL Audio SE,JBL,120.72,63.9,A,2020-03-20,2021-01-14,FNAC Portugal,1
 269,6,Sony Audio Pro,Sony,393.01,328.08,B,2023-04-18,2024-02-12,FNAC Portugal,1
 270,6,JBL Audio Max,JBL,80.59,73.68,C,2024-03-30,2025-01-24,FNAC Portugal,1
 271,7,Razer Gaming X,Razer,278.92,223.37,A,2023-05-31,2024-03-26,Amazon ES,1
-272,7,Nintendo Gaming Max,Nintendo,1110.6,624.21,A,2021-08-21,2022-06-17,FNAC Portugal,1
+272,7,Nintendo Gaming Max,Nintendo,1110.6,479.24,A,2020-08-20,2021-06-16,FNAC Portugal,1
 273,7,Nintendo Gaming Lite,Nintendo,605.98,483.95,A,2022-05-21,2023-03-17,Amazon ES,1
 274,7,Nintendo Gaming X,Nintendo,216.04,191.85,B,2023-12-10,2024-10-05,FNAC Portugal,1
 275,7,Razer Gaming Max,Razer,403.04,342.08,A,2023-11-30,2024-09-25,Amazon ES,1
@@ -302,7 +302,7 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 301,7,Razer Gaming Lite,Razer,214.58,176.26,C,2023-04-18,2024-02-12,FNAC Portugal,1
 302,7,Sony Gaming Max,Sony,860.75,706.1,C,2023-03-24,2024-01-18,Amazon ES,1
 303,7,Microsoft Gaming SE,Microsoft,594.35,519.51,B,2022-11-21,2023-09-17,FNAC Portugal,1
-304,7,Razer Gaming Lite,Razer,472.58,403.72,B,2023-10-28,2024-08-23,FNAC Portugal,1
+304,7,Razer Gaming Lite,Razer,472.58,437.83,B,2024-05-28,2025-03-24,FNAC Portugal,1
 305,7,Microsoft Gaming Lite,Microsoft,355.07,260.73,A,2022-07-01,2023-04-27,Amazon ES,1
 306,7,Razer Gaming Max,Razer,200.03,156.34,B,2023-01-18,2023-11-14,FNAC Portugal,1
 307,7,Sony Gaming Ultra,Sony,701.91,532.41,A,2022-09-28,2023-07-25,Amazon ES,1
@@ -314,24 +314,24 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 313,7,Sony Gaming X,Sony,331.47,281.92,A,2023-11-18,2024-09-13,FNAC Portugal,1
 314,7,Sony Gaming SE,Sony,621.58,477.23,B,2022-08-24,2023-06-20,FNAC Portugal,1
 315,7,Razer Gaming Lite,Razer,843.7,645.7,B,2023-01-22,2023-11-18,FNAC Portugal,1
-316,8,Nikon Camera Ultra,Nikon,802.41,522.58,A,2021-02-15,2021-12-12,FNAC Portugal,1
-317,8,Nikon Camera Pro,Nikon,957.08,583.19,A,2021-06-19,2022-04-15,Amazon ES,1
+316,8,Nikon Camera Ultra,Nikon,802.41,450.2,A,2020-02-15,2020-12-11,FNAC Portugal,1
+317,8,Nikon Camera Pro,Nikon,957.08,477.19,A,2020-06-18,2021-04-14,Amazon ES,1
 318,8,Canon Camera Plus,Canon,1721.3,1525.67,B,2024-01-23,2024-11-18,Amazon ES,1
-319,8,Fujifilm Camera Pro,Fujifilm,379.67,221.99,A,2021-04-18,2022-02-12,FNAC Portugal,1
+319,8,Fujifilm Camera Pro,Fujifilm,379.67,179.34,A,2020-04-17,2021-02-11,FNAC Portugal,1
 320,8,Canon Camera,Canon,493.94,453.49,C,2024-06-02,2025-03-29,Amazon ES,1
 321,8,Sony Camera SE,Sony,1658.0,1354.02,A,2023-04-21,2024-02-15,FNAC Portugal,1
 322,8,Nikon Camera Ultra,Nikon,3896.9,3743.72,C,2024-06-28,2025-04-24,FNAC Portugal,1
 323,8,Canon Camera Ultra,Canon,735.23,450.0,A,2022-02-21,2022-12-18,Amazon ES,1
 324,8,Canon Camera Lite,Canon,832.9,657.07,C,2023-04-05,2024-01-30,FNAC Portugal,1
-325,8,Nikon Camera Pro,Nikon,1134.08,928.84,C,2023-01-23,2023-11-19,FNAC Portugal,1
+325,8,Nikon Camera Pro,Nikon,1134.08,1031.46,C,2024-01-12,2024-11-07,FNAC Portugal,1
 326,8,Nikon Camera Max,Nikon,450.18,318.57,B,2023-01-28,2023-11-24,FNAC Portugal,1
 327,8,Sony Camera SE,Sony,859.69,590.88,B,2021-03-02,2021-12-27,Amazon ES,1
 328,8,Fujifilm Camera SE,Fujifilm,2053.78,1615.02,C,2022-12-17,2023-10-13,Amazon ES,1
 329,8,Sony Camera Max,Sony,1188.69,877.0,B,2023-04-05,2024-01-30,Amazon ES,1
 330,8,Sony Camera Ultra,Sony,537.78,514.01,B,2024-06-19,2025-04-15,Amazon ES,1
 331,8,Sony Camera Pro,Sony,1361.67,1144.49,A,2023-09-20,2024-07-16,Amazon ES,1
-332,8,Canon Camera SE,Canon,1698.9,1128.33,C,2021-01-04,2021-10-31,FNAC Portugal,1
-333,8,Canon Camera Ultra,Canon,733.25,574.4,A,2022-11-06,2023-09-02,FNAC Portugal,1
+332,8,Canon Camera SE,Canon,1698.9,985.0,C,2020-01-04,2020-10-30,FNAC Portugal,1
+333,8,Canon Camera Ultra,Canon,733.25,648.17,A,2023-11-06,2024-09-01,FNAC Portugal,1
 334,8,Sony Camera Plus,Sony,671.1,469.67,C,2022-05-26,2023-03-22,FNAC Portugal,1
 335,8,Nikon Camera X,Nikon,1571.72,1429.34,A,2023-10-03,2024-07-29,Amazon ES,1
 336,8,Canon Camera SE,Canon,993.98,630.34,A,2022-03-11,2023-01-05,FNAC Portugal,1
@@ -339,7 +339,7 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 338,8,Fujifilm Camera Lite,Fujifilm,910.02,813.16,C,2024-02-21,2024-12-17,Amazon ES,1
 339,8,Canon Camera,Canon,1619.45,1519.21,A,2024-03-27,2025-01-21,FNAC Portugal,1
 340,8,Sony Camera Ultra,Sony,1407.08,799.9,B,2021-01-26,2021-11-22,FNAC Portugal,1
-341,8,Sony Camera Plus,Sony,2035.83,1455.34,C,2022-09-11,2023-07-08,FNAC Portugal,1
+341,8,Sony Camera Plus,Sony,2035.83,1706.98,C,2023-09-11,2024-07-07,FNAC Portugal,1
 342,8,Nikon Camera Pro,Nikon,427.57,205.86,A,2021-02-16,2021-12-13,FNAC Portugal,1
 343,8,Sony Camera,Sony,632.78,583.05,A,2024-02-10,2024-12-06,Amazon ES,1
 344,8,Canon Camera X,Canon,2603.73,2314.04,A,2023-09-28,2024-07-24,FNAC Portugal,1
@@ -361,12 +361,12 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 360,9,LG TV SE,LG,1758.62,1605.3,A,2023-09-27,2024-07-23,FNAC Portugal,1
 361,9,LG TV Max,LG,605.71,527.07,C,2022-06-26,2023-04-22,Amazon ES,1
 362,9,LG TV SE,LG,268.9,257.43,B,2024-02-23,2024-12-19,Amazon ES,1
-363,9,Samsung TV,Samsung,606.96,448.09,B,2021-12-19,2022-10-15,FNAC Portugal,1
+363,9,Samsung TV,Samsung,606.96,395.6,B,2020-12-18,2021-10-14,FNAC Portugal,1
 364,9,LG TV Pro,LG,739.07,720.59,A,2024-06-20,2025-04-16,Amazon ES,1
 365,9,Philips TV Pro,Philips,1518.1,1184.85,A,2022-08-03,2023-05-30,Amazon ES,1
 366,9,Samsung TV Max,Samsung,680.1,629.11,A,2024-03-13,2025-01-07,Amazon ES,1
-367,9,Sony TV Pro,Sony,1742.65,1279.5,A,2021-06-08,2022-04-04,FNAC Portugal,1
-368,9,Samsung TV Ultra,Samsung,789.38,620.8,B,2021-08-04,2022-05-31,FNAC Portugal,1
+367,9,Sony TV Pro,Sony,1742.65,1149.31,A,2020-06-07,2021-04-03,FNAC Portugal,1
+368,9,Samsung TV Ultra,Samsung,789.38,571.24,B,2020-08-03,2021-05-30,FNAC Portugal,1
 369,9,Samsung TV Ultra,Samsung,963.97,852.78,A,2022-11-17,2023-09-13,FNAC Portugal,1
 370,9,LG TV Max,LG,793.09,733.88,C,2023-09-03,2024-06-29,Amazon ES,1
 371,9,Samsung TV Lite,Samsung,1476.09,1390.09,B,2024-04-08,2025-02-02,FNAC Portugal,1
@@ -377,8 +377,8 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 376,9,Sony TV Ultra,Sony,267.62,205.78,B,2022-08-31,2023-06-27,Amazon ES,1
 377,9,Samsung TV X,Samsung,322.3,207.95,A,2022-04-02,2023-01-27,Amazon ES,1
 378,9,Philips TV Max,Philips,1115.46,1059.49,A,2024-06-21,2025-04-17,FNAC Portugal,1
-379,9,LG TV Pro,LG,2826.85,2284.9,C,2022-05-24,2023-03-20,Amazon ES,1
-380,9,LG TV Pro,LG,1501.13,1197.07,A,2023-06-10,2024-04-05,Amazon ES,1
+379,9,LG TV Pro,LG,2826.85,2077.11,C,2021-05-24,2022-03-20,Amazon ES,1
+380,9,LG TV Pro,LG,1501.13,1348.57,A,2024-03-20,2025-01-14,Amazon ES,1
 381,9,LG TV Max,LG,423.49,314.12,A,2022-02-12,2022-12-09,FNAC Portugal,1
 382,9,LG TV Lite,LG,291.44,268.72,A,2024-02-13,2024-12-09,FNAC Portugal,1
 383,9,Sony TV Max,Sony,743.1,650.29,C,2022-01-22,2022-11-18,Amazon ES,1
@@ -400,12 +400,12 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 399,10,Tefal Appliance X,Tefal,167.53,163.34,B,2024-04-25,2025-02-19,FNAC Portugal,1
 400,10,Tefal Appliance,Tefal,167.63,159.26,B,2023-10-25,2024-08-20,FNAC Portugal,1
 401,10,Tefal Appliance Max,Tefal,95.92,85.83,B,2023-06-07,2024-04-02,FNAC Portugal,1
-402,10,Tefal Appliance X,Tefal,744.06,697.15,B,2022-11-25,2023-09-21,Amazon ES,1
+402,10,Tefal Appliance X,Tefal,744.06,719.48,B,2023-11-25,2024-09-20,Amazon ES,1
 403,10,Bosch Appliance Ultra,Bosch,86.14,60.85,C,2021-02-04,2021-12-01,FNAC Portugal,1
 404,10,Philips Appliance X,Philips,72.9,57.21,B,2022-01-09,2022-11-05,Amazon ES,1
 405,10,Tefal Appliance SE,Tefal,92.35,72.37,A,2022-01-06,2022-11-02,Amazon ES,1
 406,10,Bosch Appliance Ultra,Bosch,221.41,199.61,B,2023-11-12,2024-09-07,Amazon ES,1
-407,10,Tefal Appliance Ultra,Tefal,199.61,177.1,C,2023-05-23,2024-03-18,FNAC Portugal,1
+407,10,Tefal Appliance Ultra,Tefal,199.61,188.32,C,2024-03-11,2025-01-05,FNAC Portugal,1
 408,10,Tefal Appliance Max,Tefal,158.09,155.48,B,2024-06-26,2025-04-22,Amazon ES,1
 409,10,Philips Appliance Ultra,Philips,129.6,122.93,A,2023-09-04,2024-06-30,FNAC Portugal,1
 410,10,Philips Appliance Pro,Philips,245.48,207.5,B,2023-04-11,2024-02-05,Amazon ES,1
@@ -416,20 +416,20 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 415,10,Philips Appliance Ultra,Philips,743.05,612.05,A,2022-09-27,2023-07-24,Amazon ES,1
 416,10,Bosch Appliance Max,Bosch,295.21,279.08,A,2023-11-06,2024-09-01,FNAC Portugal,1
 417,10,Bosch Appliance Lite,Bosch,708.49,687.23,A,2024-06-18,2025-04-14,FNAC Portugal,1
-418,10,Dyson Appliance SE,Dyson,168.34,146.85,C,2022-03-03,2022-12-28,Amazon ES,1
+418,10,Dyson Appliance SE,Dyson,168.34,139.26,C,2021-03-03,2021-12-28,Amazon ES,1
 419,10,Bosch Appliance,Bosch,519.87,478.72,A,2022-10-19,2023-08-15,FNAC Portugal,1
 420,10,Bosch Appliance SE,Bosch,241.32,205.49,A,2021-03-18,2022-01-12,FNAC Portugal,1
 421,10,Tefal Appliance Max,Tefal,377.46,282.57,A,2021-06-26,2022-04-22,Amazon ES,1
 422,10,Bosch Appliance Lite,Bosch,145.93,138.36,A,2023-04-10,2024-02-04,FNAC Portugal,1
 423,10,Tefal Appliance Plus,Tefal,105.79,69.86,B,2021-06-02,2022-03-29,Amazon ES,1
 424,10,Dyson Appliance,Dyson,456.94,428.5,C,2023-11-03,2024-08-29,FNAC Portugal,1
-425,10,Philips Appliance Pro,Philips,79.15,69.0,C,2023-06-29,2024-04-24,FNAC Portugal,1
+425,10,Philips Appliance Pro,Philips,79.15,74.07,C,2024-03-30,2025-01-24,FNAC Portugal,1
 426,11,Logitech Keyboard X,Logitech,33.62,32.08,C,2024-01-23,2024-11-18,FNAC Portugal,1
 427,11,Logitech Keyboard X,Logitech,90.55,83.68,B,2023-08-24,2024-06-19,FNAC Portugal,1
 428,11,Logitech Keyboard Max,Logitech,62.97,57.71,B,2022-03-21,2023-01-15,FNAC Portugal,1
 429,11,Razer Keyboard,Razer,246.09,212.1,A,2023-02-22,2023-12-19,Amazon ES,1
 430,11,Logitech Keyboard Lite,Logitech,105.71,95.93,A,2022-09-03,2023-06-30,Amazon ES,1
-431,11,Logitech Keyboard Pro,Logitech,27.9,22.6,A,2021-11-14,2022-09-10,FNAC Portugal,1
+431,11,Logitech Keyboard Pro,Logitech,27.9,20.9,A,2020-11-13,2021-09-09,FNAC Portugal,1
 432,11,Logitech Keyboard Lite,Logitech,22.81,20.97,A,2023-12-03,2024-09-28,FNAC Portugal,1
 433,11,Corsair Keyboard Max,Corsair,47.25,44.51,A,2023-06-20,2024-04-15,Amazon ES,1
 434,11,Logitech Keyboard Ultra,Logitech,220.03,204.77,A,2023-10-30,2024-08-25,FNAC Portugal,1
@@ -439,16 +439,16 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 438,11,Logitech Keyboard,Logitech,43.18,40.17,C,2022-09-05,2023-07-02,FNAC Portugal,1
 439,11,Razer Keyboard,Razer,20.57,20.03,A,2024-04-04,2025-01-29,Amazon ES,1
 440,11,Razer Keyboard,Razer,115.32,97.44,A,2022-08-12,2023-06-08,Amazon ES,1
-441,11,Corsair Keyboard Ultra,Corsair,235.03,207.68,A,2023-04-12,2024-02-06,FNAC Portugal,1
+441,11,Corsair Keyboard Ultra,Corsair,235.03,221.33,A,2024-02-20,2024-12-16,FNAC Portugal,1
 442,11,Microsoft Keyboard Pro,Microsoft,33.28,26.25,C,2022-05-06,2023-03-02,FNAC Portugal,1
 443,11,Microsoft Keyboard Lite,Microsoft,47.86,37.29,C,2021-02-03,2021-11-30,FNAC Portugal,1
 444,11,Corsair Keyboard SE,Corsair,67.27,64.57,B,2023-08-30,2024-06-25,Amazon ES,1
 445,11,Corsair Keyboard Lite,Corsair,226.26,219.43,C,2024-01-11,2024-11-06,Amazon ES,1
-446,11,Logitech Keyboard Plus,Logitech,160.8,137.19,A,2023-04-10,2024-02-04,FNAC Portugal,1
+446,11,Logitech Keyboard Plus,Logitech,160.8,148.97,A,2024-02-19,2024-12-15,FNAC Portugal,1
 447,11,Razer Keyboard Plus,Razer,44.93,41.88,A,2022-09-26,2023-07-23,Amazon ES,1
 448,11,Logitech Keyboard Ultra,Logitech,24.93,21.54,A,2022-07-19,2023-05-15,Amazon ES,1
 449,11,Corsair Keyboard Plus,Corsair,115.21,109.84,A,2024-04-12,2025-02-06,FNAC Portugal,1
-450,11,Razer Keyboard X,Razer,106.07,91.73,A,2022-07-30,2023-05-26,Amazon ES,1
+450,11,Razer Keyboard X,Razer,106.07,85.81,A,2021-07-30,2022-05-26,Amazon ES,1
 451,11,Microsoft Keyboard SE,Microsoft,22.02,20.59,A,2023-09-27,2024-07-23,FNAC Portugal,1
 452,11,Corsair Keyboard Max,Corsair,70.75,68.83,A,2024-05-28,2025-03-24,Amazon ES,1
 453,11,Microsoft Keyboard X,Microsoft,30.43,25.42,B,2021-01-20,2021-11-16,FNAC Portugal,1
@@ -460,7 +460,7 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 459,11,Microsoft Keyboard,Microsoft,55.38,49.5,B,2023-07-20,2024-05-15,FNAC Portugal,1
 460,11,Corsair Keyboard,Corsair,23.18,21.59,B,2023-05-31,2024-03-26,FNAC Portugal,1
 461,11,Microsoft Keyboard,Microsoft,25.45,22.79,C,2022-10-29,2023-08-25,Amazon ES,1
-462,11,Logitech Keyboard Plus,Logitech,35.07,33.63,C,2023-12-16,2024-10-11,Amazon ES,1
+462,11,Logitech Keyboard Plus,Logitech,35.07,34.34,C,2024-06-22,2025-04-18,Amazon ES,1
 463,11,Logitech Keyboard X,Logitech,202.6,185.11,A,2023-05-28,2024-03-23,Amazon ES,1
 464,11,Corsair Keyboard X,Corsair,60.25,56.59,A,2024-04-07,2025-02-01,FNAC Portugal,1
 465,11,Microsoft Keyboard Max,Microsoft,152.65,149.16,A,2024-03-28,2025-01-22,FNAC Portugal,1
@@ -468,7 +468,7 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 467,11,Razer Keyboard Plus,Razer,106.38,103.32,A,2024-03-13,2025-01-07,Amazon ES,1
 468,11,Razer Keyboard Plus,Razer,98.16,84.57,B,2022-12-09,2023-10-05,FNAC Portugal,1
 469,11,Logitech Keyboard Plus,Logitech,36.39,33.44,C,2023-02-28,2023-12-25,FNAC Portugal,1
-470,11,Microsoft Keyboard,Microsoft,23.01,20.7,A,2021-08-30,2022-06-26,FNAC Portugal,1
+470,11,Microsoft Keyboard,Microsoft,23.01,20.01,A,2020-08-29,2021-06-25,FNAC Portugal,1
 471,11,Microsoft Keyboard Pro,Microsoft,45.05,42.53,A,2024-01-25,2024-11-20,FNAC Portugal,1
 472,11,Corsair Keyboard,Corsair,37.22,34.07,A,2023-01-11,2023-11-07,Amazon ES,1
 473,11,Razer Keyboard Ultra,Razer,21.21,19.48,B,2023-05-26,2024-03-21,FNAC Portugal,1
@@ -483,13 +483,13 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 482,11,Logitech Keyboard,Logitech,78.78,67.38,C,2023-05-01,2024-02-25,FNAC Portugal,1
 483,11,Corsair Keyboard Lite,Corsair,209.58,204.87,A,2024-04-10,2025-02-04,Amazon ES,1
 484,11,Logitech Keyboard Ultra,Logitech,23.78,23.2,A,2024-05-01,2025-02-25,Amazon ES,1
-485,11,Logitech Keyboard,Logitech,92.22,88.28,A,2023-07-30,2024-05-25,Amazon ES,1
-486,11,Logitech Keyboard Max,Logitech,38.76,36.03,A,2023-03-21,2024-01-15,Amazon ES,1
-487,11,Microsoft Keyboard Pro,Microsoft,53.15,47.36,A,2023-05-05,2024-02-29,FNAC Portugal,1
-488,11,Logitech Keyboard Ultra,Logitech,27.76,23.16,B,2021-08-19,2022-06-15,FNAC Portugal,1
+485,11,Logitech Keyboard,Logitech,92.22,90.24,A,2024-04-14,2025-02-08,Amazon ES,1
+486,11,Logitech Keyboard Max,Logitech,38.76,37.39,A,2024-02-09,2024-12-05,Amazon ES,1
+487,11,Microsoft Keyboard Pro,Microsoft,53.15,50.25,A,2024-03-02,2024-12-27,FNAC Portugal,1
+488,11,Logitech Keyboard Ultra,Logitech,27.76,21.79,B,2020-08-18,2021-06-14,FNAC Portugal,1
 489,11,Logitech Keyboard Lite,Logitech,39.91,37.82,B,2024-01-10,2024-11-05,FNAC Portugal,1
-490,11,Microsoft Keyboard Max,Microsoft,38.03,32.58,A,2022-12-01,2023-09-27,Amazon ES,1
-491,12,AOC Monitor SE,AOC,188.31,169.07,C,2023-11-25,2024-09-20,FNAC Portugal,1
+490,11,Microsoft Keyboard Max,Microsoft,38.03,35.19,A,2023-12-01,2024-09-26,Amazon ES,1
+491,12,AOC Monitor SE,AOC,188.31,178.59,C,2024-06-11,2025-04-07,FNAC Portugal,1
 492,12,AOC Monitor Ultra,AOC,155.35,118.58,B,2022-08-30,2023-06-26,FNAC Portugal,1
 493,12,AOC Monitor Pro,AOC,314.71,286.34,B,2023-07-23,2024-05-18,Amazon ES,1
 494,12,Benq Monitor Max,Benq,270.69,245.76,A,2023-09-24,2024-07-20,FNAC Portugal,1
@@ -501,19 +501,19 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 500,12,LG Monitor SE,LG,373.83,261.24,A,2022-01-10,2022-11-06,Amazon ES,1
 501,12,Benq Monitor X,Benq,538.31,451.71,B,2022-12-18,2023-10-14,FNAC Portugal,1
 502,12,LG Monitor Ultra,LG,133.71,121.95,B,2023-07-18,2024-05-13,Amazon ES,1
-503,12,Dell Monitor Ultra,Dell,184.76,153.02,B,2023-04-03,2024-01-28,Amazon ES,1
+503,12,Dell Monitor Ultra,Dell,184.76,168.84,B,2024-02-15,2024-12-11,Amazon ES,1
 504,12,Dell Monitor SE,Dell,322.96,298.64,B,2023-06-20,2024-04-15,Amazon ES,1
-505,12,LG Monitor SE,LG,432.27,337.54,A,2021-04-26,2022-02-20,Amazon ES,1
+505,12,LG Monitor SE,LG,432.27,311.76,A,2020-04-25,2021-02-19,Amazon ES,1
 506,12,Benq Monitor Plus,Benq,332.46,301.97,B,2024-02-15,2024-12-11,Amazon ES,1
-507,12,Dell Monitor Ultra,Dell,262.41,204.01,A,2022-07-04,2023-04-30,FNAC Portugal,1
+507,12,Dell Monitor Ultra,Dell,262.41,227.41,A,2023-07-04,2024-04-29,FNAC Portugal,1
 508,12,LG Monitor Ultra,LG,273.03,259.93,B,2024-03-16,2025-01-10,FNAC Portugal,1
 509,12,Dell Monitor Plus,Dell,262.29,249.96,A,2024-06-19,2025-04-15,Amazon ES,1
-510,12,Dell Monitor SE,Dell,330.29,251.86,A,2022-02-16,2022-12-13,Amazon ES,1
+510,12,Dell Monitor SE,Dell,330.29,279.15,A,2023-02-16,2023-12-13,Amazon ES,1
 511,12,Dell Monitor,Dell,127.61,112.5,B,2023-08-06,2024-06-01,FNAC Portugal,1
 512,12,AOC Monitor X,AOC,193.56,177.88,A,2024-03-12,2025-01-06,FNAC Portugal,1
 513,12,AOC Monitor Max,AOC,369.14,267.25,A,2021-12-09,2022-10-05,FNAC Portugal,1
 514,12,Benq Monitor X,Benq,415.73,376.34,A,2024-02-20,2024-12-16,Amazon ES,1
-515,12,Benq Monitor Max,Benq,529.72,437.53,C,2023-01-15,2023-11-11,Amazon ES,1
+515,12,Benq Monitor Max,Benq,529.72,483.62,C,2024-01-08,2024-11-03,Amazon ES,1
 516,12,Dell Monitor Max,Dell,411.94,399.68,A,2024-01-04,2024-10-30,Amazon ES,1
 517,12,Benq Monitor Lite,Benq,137.18,124.34,C,2023-08-24,2024-06-19,FNAC Portugal,1
 518,12,AOC Monitor Ultra,AOC,177.54,134.02,B,2021-10-27,2022-08-23,FNAC Portugal,1
@@ -524,7 +524,7 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 523,12,AOC Monitor Pro,AOC,185.74,102.56,B,2021-01-26,2021-11-22,Amazon ES,1
 524,12,AOC Monitor Pro,AOC,132.74,72.99,B,2021-03-09,2022-01-03,FNAC Portugal,1
 525,12,LG Monitor Max,LG,828.97,639.53,B,2022-01-29,2022-11-25,FNAC Portugal,1
-526,12,LG Monitor Max,LG,447.9,410.96,A,2023-12-13,2024-10-08,Amazon ES,1
+526,12,LG Monitor Max,LG,447.9,429.24,A,2024-06-20,2025-04-16,Amazon ES,1
 527,12,AOC Monitor,AOC,120.54,108.43,A,2023-08-23,2024-06-18,FNAC Portugal,1
 528,12,AOC Monitor,AOC,132.8,129.99,A,2024-04-18,2025-02-12,FNAC Portugal,1
 529,12,LG Monitor Lite,LG,132.61,106.25,C,2022-10-19,2023-08-15,FNAC Portugal,1
@@ -535,14 +535,14 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 534,12,Benq Monitor Ultra,Benq,858.17,771.35,B,2024-02-07,2024-12-03,FNAC Portugal,1
 535,12,Benq Monitor Ultra,Benq,321.56,285.86,B,2023-07-30,2024-05-25,FNAC Portugal,1
 536,12,AOC Monitor Ultra,AOC,255.04,237.83,A,2023-10-12,2024-08-07,Amazon ES,1
-537,12,Dell Monitor Max,Dell,409.25,376.35,A,2023-08-11,2024-06-06,Amazon ES,1
-538,12,Dell Monitor X,Dell,307.64,222.17,B,2021-07-01,2022-04-27,FNAC Portugal,1
+537,12,Dell Monitor Max,Dell,409.25,392.73,A,2024-04-20,2025-02-14,Amazon ES,1
+538,12,Dell Monitor X,Dell,307.64,197.71,B,2020-06-30,2021-04-26,FNAC Portugal,1
 539,12,Dell Monitor SE,Dell,438.29,344.46,A,2022-06-22,2023-04-18,FNAC Portugal,1
-540,12,Benq Monitor Plus,Benq,538.33,428.7,C,2021-11-11,2022-09-07,Amazon ES,1
-541,12,LG Monitor,LG,643.35,605.14,A,2023-11-30,2024-09-25,FNAC Portugal,1
+540,12,Benq Monitor Plus,Benq,538.33,393.68,C,2020-11-10,2021-09-06,Amazon ES,1
+541,12,LG Monitor,LG,643.35,624.1,A,2024-06-14,2025-04-10,FNAC Portugal,1
 542,12,AOC Monitor Pro,AOC,361.03,312.27,A,2023-06-05,2024-03-31,FNAC Portugal,1
 543,12,Benq Monitor SE,Benq,187.35,133.99,B,2022-04-14,2023-02-08,Amazon ES,1
-544,12,AOC Monitor X,AOC,869.74,628.61,A,2021-02-26,2021-12-23,Amazon ES,1
+544,12,AOC Monitor X,AOC,869.74,565.75,A,2020-02-26,2020-12-22,Amazon ES,1
 545,12,AOC Monitor Ultra,AOC,385.81,373.97,A,2024-06-29,2025-04-25,FNAC Portugal,1
 546,13,TP-Link Networking SE,TP-Link,223.55,153.06,B,2022-02-20,2022-12-17,Amazon ES,1
 547,13,Cisco Networking,Cisco,66.69,63.13,B,2024-02-26,2024-12-22,Amazon ES,1
@@ -567,7 +567,7 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 566,13,Asus Networking X,Asus,75.33,71.19,A,2024-05-14,2025-03-10,FNAC Portugal,1
 567,13,Asus Networking Ultra,Asus,172.88,157.76,B,2023-02-13,2023-12-10,Amazon ES,1
 568,13,Asus Networking Plus,Asus,26.96,24.73,A,2024-02-12,2024-12-08,FNAC Portugal,1
-569,13,Asus Networking Plus,Asus,160.24,122.53,C,2022-06-12,2023-04-08,FNAC Portugal,1
+569,13,Asus Networking Plus,Asus,160.24,137.28,C,2023-06-12,2024-04-07,FNAC Portugal,1
 570,13,Netgear Networking Lite,Netgear,126.07,113.51,B,2024-03-28,2025-01-22,FNAC Portugal,1
 571,13,Asus Networking Lite,Asus,179.21,167.17,A,2024-01-18,2024-11-13,FNAC Portugal,1
 572,13,TP-Link Networking Max,TP-Link,237.35,209.8,A,2024-01-01,2024-10-27,FNAC Portugal,1
@@ -585,9 +585,9 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 584,13,TP-Link Networking,TP-Link,41.49,35.82,A,2023-08-08,2024-06-03,Amazon ES,1
 585,13,Netgear Networking,Netgear,50.8,45.43,B,2024-02-02,2024-11-28,FNAC Portugal,1
 586,13,TP-Link Networking,TP-Link,58.54,48.16,A,2022-05-22,2023-03-18,FNAC Portugal,1
-587,13,TP-Link Networking Pro,TP-Link,75.1,53.29,A,2021-06-26,2022-04-22,Amazon ES,1
+587,13,TP-Link Networking Pro,TP-Link,75.1,47.07,A,2020-06-25,2021-04-21,Amazon ES,1
 588,13,Cisco Networking Plus,Cisco,65.79,60.24,B,2023-11-19,2024-09-14,FNAC Portugal,1
-589,13,Netgear Networking Ultra,Netgear,75.41,60.49,B,2022-05-16,2023-03-12,Amazon ES,1
+589,13,Netgear Networking Ultra,Netgear,75.41,66.16,B,2023-05-16,2024-03-11,Amazon ES,1
 590,13,TP-Link Networking Lite,TP-Link,188.43,134.01,B,2022-06-19,2023-04-15,Amazon ES,1
 591,14,Microsoft Peripheral Ultra,Microsoft,47.11,46.01,B,2024-03-21,2025-01-15,Amazon ES,1
 592,14,Anker Peripheral,Anker,47.09,44.55,B,2023-11-06,2024-09-01,Amazon ES,1
@@ -600,7 +600,7 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 599,14,Belkin Peripheral Ultra,Belkin,16.56,16.12,A,2024-04-18,2025-02-12,Amazon ES,1
 600,14,Belkin Peripheral Ultra,Belkin,25.54,24.84,A,2024-02-02,2024-11-28,Amazon ES,1
 601,14,Anker Peripheral Max,Anker,61.77,53.48,C,2022-03-19,2023-01-13,Amazon ES,1
-602,14,Belkin Peripheral Lite,Belkin,77.66,73.9,A,2023-12-06,2024-10-01,FNAC Portugal,1
+602,14,Belkin Peripheral Lite,Belkin,77.66,75.77,A,2024-06-17,2025-04-13,FNAC Portugal,1
 603,14,Logitech Peripheral Plus,Logitech,36.07,28.03,A,2022-07-14,2023-05-10,Amazon ES,1
 604,14,Microsoft Peripheral Max,Microsoft,130.93,124.73,A,2024-05-17,2025-03-13,Amazon ES,1
 605,14,Microsoft Peripheral X,Microsoft,60.12,55.26,B,2023-07-12,2024-05-07,FNAC Portugal,1
@@ -610,10 +610,10 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 609,14,Anker Peripheral Plus,Anker,51.46,43.39,B,2021-02-08,2021-12-05,Amazon ES,1
 610,14,Belkin Peripheral,Belkin,21.54,17.54,B,2022-01-14,2022-11-10,FNAC Portugal,1
 611,14,Anker Peripheral Ultra,Anker,18.76,18.11,B,2024-02-17,2024-12-13,Amazon ES,1
-612,14,Microsoft Peripheral Lite,Microsoft,16.31,14.24,B,2022-05-14,2023-03-10,Amazon ES,1
+612,14,Microsoft Peripheral Lite,Microsoft,16.31,13.45,B,2021-05-14,2022-03-10,Amazon ES,1
 613,14,Logitech Peripheral Max,Logitech,140.55,128.25,A,2023-09-13,2024-07-09,Amazon ES,1
 614,14,Belkin Peripheral Plus,Belkin,16.36,15.88,C,2024-01-11,2024-11-06,Amazon ES,1
-615,14,Belkin Peripheral Plus,Belkin,42.49,36.64,A,2022-11-07,2023-09-03,Amazon ES,1
+615,14,Belkin Peripheral Plus,Belkin,42.49,39.36,A,2023-11-07,2024-09-02,Amazon ES,1
 616,14,Microsoft Peripheral Plus,Microsoft,22.06,14.28,B,2021-09-07,2022-07-04,FNAC Portugal,1
 617,14,Logitech Peripheral Pro,Logitech,68.32,63.34,A,2023-11-18,2024-09-13,FNAC Portugal,1
 618,14,Anker Peripheral Lite,Anker,28.18,27.14,A,2024-05-02,2025-02-26,Amazon ES,1
@@ -626,7 +626,7 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 625,14,Belkin Peripheral X,Belkin,51.73,48.29,B,2024-02-02,2024-11-28,FNAC Portugal,1
 626,14,Microsoft Peripheral Pro,Microsoft,41.42,36.14,A,2021-04-20,2022-02-14,FNAC Portugal,1
 627,14,Microsoft Peripheral Lite,Microsoft,11.15,10.45,A,2023-11-19,2024-09-14,Amazon ES,1
-628,14,Anker Peripheral Max,Anker,55.23,49.75,A,2021-09-10,2022-07-07,FNAC Portugal,1
+628,14,Anker Peripheral Max,Anker,55.23,48.08,A,2020-09-09,2021-07-06,FNAC Portugal,1
 629,14,Anker Peripheral X,Anker,109.45,102.01,C,2023-11-29,2024-09-24,FNAC Portugal,1
 630,14,Microsoft Peripheral Plus,Microsoft,49.3,46.63,C,2024-05-06,2025-03-02,FNAC Portugal,1
 631,14,Logitech Peripheral SE,Logitech,20.99,19.56,A,2023-11-17,2024-09-12,Amazon ES,1
@@ -634,7 +634,7 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 633,14,Microsoft Peripheral Plus,Microsoft,25.6,23.77,A,2023-03-25,2024-01-19,Amazon ES,1
 634,14,Microsoft Peripheral Ultra,Microsoft,38.96,38.04,C,2024-03-24,2025-01-18,FNAC Portugal,1
 635,14,Anker Peripheral SE,Anker,24.41,21.63,B,2022-03-09,2023-01-03,FNAC Portugal,1
-636,14,Logitech Peripheral Max,Logitech,25.67,20.92,A,2021-10-06,2022-08-02,FNAC Portugal,1
+636,14,Logitech Peripheral Max,Logitech,25.67,19.44,A,2020-10-05,2021-08-01,FNAC Portugal,1
 637,14,Anker Peripheral,Anker,49.46,47.47,C,2024-06-10,2025-04-06,FNAC Portugal,1
 638,14,Microsoft Peripheral Lite,Microsoft,43.93,42.7,A,2024-01-26,2024-11-21,FNAC Portugal,1
 639,14,Anker Peripheral SE,Anker,79.94,63.56,A,2021-07-31,2022-05-27,FNAC Portugal,1
@@ -644,7 +644,7 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 643,14,Anker Peripheral,Anker,29.55,28.88,B,2024-03-31,2025-01-25,FNAC Portugal,1
 644,14,Anker Peripheral Lite,Anker,122.79,113.67,A,2023-10-09,2024-08-04,FNAC Portugal,1
 645,14,Belkin Peripheral SE,Belkin,69.09,66.59,A,2023-10-17,2024-08-12,FNAC Portugal,1
-646,14,Belkin Peripheral Max,Belkin,43.04,33.25,A,2021-08-25,2022-06-21,Amazon ES,1
+646,14,Belkin Peripheral Max,Belkin,43.04,30.32,A,2020-08-24,2021-06-20,Amazon ES,1
 647,14,Microsoft Peripheral Plus,Microsoft,73.17,63.44,A,2022-07-27,2023-05-23,FNAC Portugal,1
 648,14,Anker Peripheral Ultra,Anker,49.72,46.63,C,2024-02-14,2024-12-10,FNAC Portugal,1
 649,14,Microsoft Peripheral Lite,Microsoft,27.91,26.69,A,2024-03-21,2025-01-15,Amazon ES,1
@@ -653,9 +653,39 @@ product_id,category_id,product_name,brand,original_retail_price,current_deprecia
 652,14,Microsoft Peripheral Plus,Microsoft,60.37,54.35,B,2021-09-05,2022-07-02,Amazon ES,1
 653,14,Microsoft Peripheral Max,Microsoft,26.83,24.29,C,2021-11-04,2022-08-31,FNAC Portugal,1
 654,14,Belkin Peripheral Plus,Belkin,16.96,15.83,A,2023-07-18,2024-05-13,FNAC Portugal,1
-655,14,Belkin Peripheral,Belkin,18.22,17.25,C,2023-03-21,2024-01-15,Amazon ES,1
+655,14,Belkin Peripheral,Belkin,18.22,17.73,C,2024-02-09,2024-12-05,Amazon ES,1
 656,14,Belkin Peripheral Pro,Belkin,11.36,10.43,B,2022-04-08,2023-02-02,Amazon ES,1
-657,14,Logitech Peripheral X,Logitech,47.98,43.68,A,2023-04-25,2024-02-19,FNAC Portugal,1
+657,14,Logitech Peripheral X,Logitech,47.98,45.82,A,2024-02-26,2024-12-22,FNAC Portugal,1
 658,14,Anker Peripheral SE,Anker,68.31,61.84,A,2022-10-24,2023-08-20,Amazon ES,1
 659,14,Logitech Peripheral Pro,Logitech,79.37,67.28,B,2022-08-30,2023-06-26,Amazon ES,1
-660,14,Anker Peripheral X,Anker,19.49,16.94,B,2022-07-31,2023-05-27,Amazon ES,1
+660,14,Anker Peripheral X,Anker,19.49,17.99,B,2023-07-31,2024-05-26,Amazon ES,1
+661,15,Gibson Musical Instrument Pro,Gibson,267.91,246.94,A,2022-06-29,2023-04-25,FNAC Portugal,1
+662,15,Roland Musical Instrument Max,Roland,354.28,329.02,B,2023-03-01,2023-12-26,Amazon ES,1
+663,15,Fender Musical Instrument Lite,Fender,702.57,631.08,A,2023-11-01,2024-08-27,Amazon ES,1
+664,15,Fender Musical Instrument Ultra,Fender,227.25,200.28,B,2023-04-19,2024-02-13,Amazon ES,1
+665,15,Roland Musical Instrument X,Roland,97.73,91.5,B,2022-11-17,2023-09-13,Amazon ES,1
+666,15,Roland Musical Instrument Plus,Roland,1163.45,752.56,A,2021-02-11,2021-12-08,FNAC Portugal,1
+667,15,Roland Musical Instrument Pro,Roland,145.46,139.33,C,2024-04-20,2025-02-14,Amazon ES,1
+668,15,Casio Musical Instrument SE,Casio,154.25,141.85,B,2023-10-16,2024-08-11,Amazon ES,1
+669,15,Roland Musical Instrument Ultra,Roland,117.91,105.22,B,2023-05-07,2024-03-02,Amazon ES,1
+670,15,Fender Musical Instrument Max,Fender,995.22,788.18,B,2021-05-13,2022-03-09,FNAC Portugal,1
+671,15,Casio Musical Instrument Pro,Casio,152.57,147.65,A,2023-12-05,2024-09-30,Amazon ES,1
+672,15,Fender Musical Instrument Max,Fender,2492.72,2381.48,A,2024-05-15,2025-03-11,FNAC Portugal,1
+673,15,Casio Musical Instrument,Casio,483.43,370.46,C,2021-01-05,2021-11-01,FNAC Portugal,1
+674,15,Yamaha Musical Instrument Ultra,Yamaha,1263.14,1198.83,A,2023-07-29,2024-05-24,FNAC Portugal,1
+675,15,Fender Musical Instrument Pro,Fender,366.87,280.55,B,2022-08-19,2023-06-15,Amazon ES,1
+676,15,Casio Musical Instrument Max,Casio,513.59,497.04,A,2024-06-06,2025-04-02,Amazon ES,1
+677,15,Roland Musical Instrument,Roland,293.7,277.02,C,2023-02-09,2023-12-06,FNAC Portugal,1
+678,15,Fender Musical Instrument Lite,Fender,222.53,214.18,B,2024-05-04,2025-02-28,FNAC Portugal,1
+679,15,Yamaha Musical Instrument Max,Yamaha,357.03,344.53,A,2024-04-22,2025-02-16,Amazon ES,1
+680,15,Fender Musical Instrument SE,Fender,521.91,463.3,B,2021-08-30,2022-06-26,FNAC Portugal,1
+681,15,Roland Musical Instrument,Roland,1949.91,1391.58,A,2020-06-06,2021-04-02,FNAC Portugal,1
+682,15,Gibson Musical Instrument SE,Gibson,790.54,724.4,C,2022-10-05,2023-08-01,FNAC Portugal,1
+683,15,Roland Musical Instrument SE,Roland,331.51,270.55,A,2022-09-07,2023-07-04,FNAC Portugal,1
+684,15,Roland Musical Instrument Lite,Roland,1938.37,1626.54,C,2022-05-10,2023-03-06,FNAC Portugal,1
+685,15,Gibson Musical Instrument X,Gibson,693.13,645.28,A,2023-11-28,2024-09-23,FNAC Portugal,1
+686,15,Fender Musical Instrument Ultra,Fender,282.56,242.78,B,2022-02-08,2022-12-05,FNAC Portugal,1
+687,15,Yamaha Musical Instrument Plus,Yamaha,189.38,167.25,B,2022-02-05,2022-12-02,Amazon ES,1
+688,15,Casio Musical Instrument Pro,Casio,470.06,370.54,C,2022-01-15,2022-11-11,Amazon ES,1
+689,15,Roland Musical Instrument Pro,Roland,1492.46,1268.93,B,2022-09-10,2023-07-07,Amazon ES,1
+690,15,Roland Musical Instrument X,Roland,470.72,443.29,B,2023-06-09,2024-04-04,Amazon ES,1
