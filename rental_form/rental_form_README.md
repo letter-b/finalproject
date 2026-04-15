@@ -1,6 +1,12 @@
-# Rental Decision Engine — Flask Web App
+# The Rental Form
 
-A data entry form that lets you create a new rental, computes the **rental vs markdown verdict** in real time, writes to MySQL, and Power BI updates on refresh.
+The write side of the system.
+
+The dashboard shows what happened. This is where you make something happen. Fill in a product, a customer, a duration — the form computes the rental vs markdown verdict in real time, writes directly to MySQL, and Power BI updates on the next refresh.
+
+This is the moment in the demo that makes the architecture click: input → database → insight, live, in front of you.
+
+---
 
 ## Setup
 
@@ -21,6 +27,8 @@ python app.py
 ```
 http://localhost:5050
 ```
+
+---
 
 ## What it does
 
@@ -43,22 +51,22 @@ http://localhost:5050
 
 7. **Live stats strip** (header) — shows current Total Rentals, Win Rate, Avg Ratio, Avg Revenue from the live database. Refreshes every 30 seconds.
 
+---
+
 ## If MySQL is offline
 
 The app works in preview-only mode using demo products and local calculations. You'll see a warning banner at the top. All calculations are the same — you just can't write to the DB.
+
+---
 
 ## How it fits the pipeline
 
 ```
 You fill in the form
-    ↓
-Flask computes verdict (same logic as 01_data_generation.ipynb)
-    ↓
-Writes to MySQL rentals + inventory_events tables
-    ↓
-Power BI → click Refresh
-    ↓
-Total Rentals ticks up, Win Rate recalculates, charts update
+  → Flask computes verdict (same logic as 01_data_generation.ipynb)
+    → Writes to MySQL rentals + inventory_events tables
+      → Power BI → click Refresh
+        → Total Rentals ticks up, Win Rate recalculates, charts update
 ```
 
-The downstream stack doesn't change at all — this is just a friendlier front door than running a notebook.
+The downstream stack doesn't change at all — this is just a friendlier front door than running a notebook. The same database. The same views. The same dashboard. One system, two ways in.

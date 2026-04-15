@@ -1,2 +1,2 @@
 DROP VIEW IF EXISTS `v_rental_eligible`;
-CREATE VIEW `v_rental_eligible` AS SELECT p.product_id, p.product_name, p.brand, p.original_retail_price, p.current_depreciated_value, p.listed_date, p.rental_eligible_date, p.condition_grade, c.category_name, c.depreciation_class, c.rental_demand_tier FROM products p JOIN categories c ON p.category_id = c.category_id WHERE p.rental_eligible_date <= CURDATE();
+CREATE VIEW `v_rental_eligible` AS SELECT p.product_id, p.product_name, p.brand, p.original_retail_price, p.current_depreciated_value, p.listed_date, p.rental_eligible_date, p.condition_grade, c.category_name, c.depreciation_class, c.rental_demand_tier FROM products p JOIN categories c ON p.category_id = c.category_id WHERE p.rental_eligible_date <= '2024-12-31';

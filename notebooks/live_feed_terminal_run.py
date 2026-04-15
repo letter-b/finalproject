@@ -7,7 +7,6 @@ Auto-stops after 3 minutes. Go to Power BI → click Atualizar to see numbers ch
 import time
 import random
 import datetime
-import pandas as pd
 from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
 import os
@@ -33,7 +32,8 @@ engine = create_engine(
 with engine.connect() as conn:
     count      = conn.execute(text("SELECT COUNT(*) FROM rentals")).scalar()
     n_products = conn.execute(text(
-        "SELECT COUNT(*) FROM products WHERE rental_eligible_date <= CURDATE()"
+        # CURDATE() is intentional here — forward-looking live feed, not historical replay
+    "SELECT COUNT(*) FROM products WHERE rental_eligible_date <= CURDATE()"
     )).scalar()
     n_customers = conn.execute(text("SELECT COUNT(*) FROM customers")).scalar()
     n_rules     = conn.execute(text("SELECT COUNT(*) FROM pricing_rules")).scalar()
@@ -51,7 +51,7 @@ print(f"Feed will start from rental #{count + 1}")
 def get_eligible_products(conn):
     result = conn.execute(text(
         "SELECT product_id, original_retail_price FROM products "
-        "WHERE rental_eligible_date <= CURDATE()"
+        "WHERE rental_eligible_date <= CURDATE()"  # intentional: forward-looking
     ))
     return result.fetchall()
 
@@ -93,8 +93,8 @@ def generate_batch(conn, start_id, batch_size, n_customers):
         total         = round(base_rev + late_fee + ins_fee, 2)
         op_cost       = round(base_rev * random.uniform(0.15, 0.25), 2)
         no_ret        = random.random() < 0.055
-        dbr           = no_ret and random.random() < 0.50
-        net_rev       = 0.0 if no_ret or dbr else round(total - op_cost, 2)
+        dbr           = no_ret and random.random() < 0.50  # DBR only occurs on no_ret
+        net_rev       = 0.0 if no_ret else round(total - op_cost, 2)  # same result; cleaner
         exp_ret       = end_date + datetime.timedelta(days=late_d)
         act_ret       = exp_ret if not no_ret else None
         batch.append({
