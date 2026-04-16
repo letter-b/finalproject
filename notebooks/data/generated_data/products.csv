@@ -1,0 +1,526 @@
+product_id,category_id,product_name,brand,original_retail_price,current_depreciated_value,condition_grade,listed_date,rental_eligible_date,retailer,is_active
+1,1,Isabella Oliver Bodycon Dress Slate Grey,Isabella Oliver,222.33,189.29,B,2023-01-24,2024-01-24,ASOS PT,1
+2,1,Isabella Oliver Tiered Dress,Isabella Oliver,67.1,63.43,A,2024-04-11,2025-04-11,ASOS PT,1
+3,1,Baukjen Tiered Dress Floral Print,Baukjen,39.86,27.64,A,2021-08-21,2022-08-21,Zara Online,1
+4,1,Baukjen Linen Dress Sage Green,Baukjen,86.16,69.97,B,2022-02-28,2023-02-28,Zara Online,1
+5,1,Seraphine Linen Dress,Seraphine,75.17,67.42,A,2023-10-22,2024-10-21,Zara Online,1
+6,1,Seraphine Shirt Dress Burgundy,Seraphine,160.7,135.74,A,2023-06-02,2024-06-01,ASOS ES,1
+7,1,H&M Mama Wrap Dress Stripe,H&M Mama,121.5,112.53,A,2024-03-06,2025-03-06,El Corte Inglés ES,1
+8,1,Seraphine Midi Dress Sage Green,Seraphine,84.12,71.81,A,2022-11-28,2023-11-28,ASOS ES,1
+9,1,ASOS Maternity Ruched Dress Slate Grey,ASOS Maternity,133.77,124.28,A,2024-02-13,2025-02-12,Seraphine PT,1
+10,1,ASOS Maternity Smock Dress Blush,ASOS Maternity,192.08,131.43,B,2022-01-15,2023-01-15,Zara Online,1
+11,1,ASOS Maternity Linen Dress Camel,ASOS Maternity,87.69,80.27,A,2024-03-12,2025-03-12,El Corte Inglés ES,1
+12,1,ASOS Maternity Wrap Dress Black,ASOS Maternity,182.86,149.34,C,2022-12-25,2023-12-25,ASOS ES,1
+13,1,Mamalicious Ruched Dress Stripe,Mamalicious,150.61,109.68,B,2022-04-12,2023-04-12,Zara Online,1
+14,1,H&M Mama Linen Dress Blush,H&M Mama,354.24,306.06,C,2023-07-31,2024-07-30,ASOS PT,1
+15,1,H&M Mama Bodycon Dress Floral Print,H&M Mama,118.85,109.98,B,2023-12-29,2024-12-28,ASOS PT,1
+16,1,ASOS Maternity Ruched Dress Blush,ASOS Maternity,120.71,101.75,B,2023-04-02,2024-04-01,El Corte Inglés ES,1
+17,1,H&M Mama Shirt Dress Navy,H&M Mama,210.26,179.31,A,2023-06-29,2024-06-28,ASOS ES,1
+18,1,Baukjen Wrap Dress Sage Green,Baukjen,102.36,97.22,A,2024-05-15,2025-05-15,ASOS ES,1
+19,1,H&M Mama Ruched Dress Burgundy,H&M Mama,48.76,40.47,C,2022-04-08,2023-04-08,Seraphine PT,1
+20,1,H&M Mama Wrap Dress Stripe,H&M Mama,133.69,113.41,B,2023-04-03,2024-04-02,El Corte Inglés ES,1
+21,1,Isabella Oliver Wrap Dress Stripe,Isabella Oliver,103.49,97.52,B,2024-05-26,2025-05-26,Zara Online,1
+22,1,ASOS Maternity Ruched Dress Blush,ASOS Maternity,193.8,143.46,A,2023-02-04,2024-02-04,El Corte Inglés ES,1
+23,1,Seraphine Wrap Dress Stripe,Seraphine,127.27,84.72,B,2021-01-14,2022-01-14,Seraphine PT,1
+24,1,ASOS Maternity Tiered Dress Stripe,ASOS Maternity,86.83,55.76,B,2021-07-13,2022-07-13,ASOS ES,1
+25,1,Seraphine Jersey Dress Floral Print,Seraphine,105.84,98.46,A,2024-02-19,2025-02-18,El Corte Inglés ES,1
+26,1,Seraphine Linen Dress Stripe,Seraphine,76.18,64.29,C,2023-03-29,2024-03-28,El Corte Inglés ES,1
+27,1,Seraphine Ruched Dress Camel,Seraphine,132.57,117.23,A,2023-09-24,2024-09-23,Seraphine PT,1
+28,1,Seraphine Jersey Dress Floral Print,Seraphine,49.01,45.29,A,2024-02-01,2025-01-31,ASOS PT,1
+29,1,ASOS Maternity Smock Dress Stripe,ASOS Maternity,83.84,79.6,C,2024-06-09,2025-06-09,ASOS ES,1
+30,1,ASOS Maternity Wrap Dress Navy,ASOS Maternity,223.64,208.89,B,2024-05-02,2025-05-02,Zara Online,1
+31,1,H&M Mama Shirt Dress Black,H&M Mama,145.63,124.88,B,2023-03-17,2024-03-16,Seraphine PT,1
+32,1,H&M Mama Smock Dress Burgundy,H&M Mama,147.59,109.21,B,2021-10-25,2022-10-25,El Corte Inglés ES,1
+33,1,Mamalicious Wrap Dress Blush,Mamalicious,233.51,214.1,A,2024-02-21,2025-02-20,ASOS PT,1
+34,1,H&M Mama Tiered Dress Camel,H&M Mama,194.08,184.98,A,2024-06-04,2025-06-04,ASOS PT,1
+35,1,ASOS Maternity Smock Dress Blush,ASOS Maternity,119.72,100.4,A,2023-04-19,2024-04-18,Seraphine PT,1
+36,1,Baukjen Linen Dress Floral Print,Baukjen,62.11,52.28,A,2023-03-19,2024-03-18,ASOS PT,1
+37,1,Seraphine Wrap Dress Slate Grey,Seraphine,59.73,54.41,A,2023-11-21,2024-11-20,El Corte Inglés ES,1
+38,1,Seraphine Shirt Dress Stripe,Seraphine,71.98,66.02,A,2024-01-15,2025-01-14,ASOS PT,1
+39,1,Isabella Oliver Ruched Dress Floral Print,Isabella Oliver,254.72,241.71,A,2024-05-16,2025-05-16,ASOS ES,1
+40,1,Seraphine Bodycon Dress Camel,Seraphine,57.17,34.5,B,2020-06-20,2021-06-20,El Corte Inglés ES,1
+41,1,Mamalicious Jersey Dress Slate Grey,Mamalicious,112.02,99.3,C,2023-01-31,2024-01-31,ASOS ES,1
+42,1,Seraphine Wrap Dress Sage Green,Seraphine,135.63,81.68,B,2021-03-02,2022-03-02,ASOS PT,1
+43,1,H&M Mama Smock Dress Burgundy,H&M Mama,251.53,232.08,A,2024-01-11,2025-01-10,Seraphine PT,1
+44,1,Seraphine Linen Dress Navy,Seraphine,108.83,84.66,A,2022-06-15,2023-06-15,El Corte Inglés ES,1
+45,1,Baukjen Bodycon Dress Black,Baukjen,90.65,60.07,A,2021-12-10,2022-12-10,Seraphine PT,1
+46,1,H&M Mama Linen Dress Slate Grey,H&M Mama,142.21,132.2,B,2023-12-26,2024-12-25,El Corte Inglés ES,1
+47,1,ASOS Maternity Jersey Dress Slate Grey,ASOS Maternity,36.66,26.51,B,2022-01-05,2023-01-05,El Corte Inglés ES,1
+48,1,Seraphine Wrap Dress Blush,Seraphine,235.71,200.75,A,2023-03-29,2024-03-28,Seraphine PT,1
+49,1,H&M Mama Shirt Dress,H&M Mama,235.7,156.56,A,2021-04-09,2022-04-09,Zara Online,1
+50,1,H&M Mama Tiered Dress Sage Green,H&M Mama,270.61,254.31,B,2024-04-16,2025-04-16,El Corte Inglés ES,1
+51,1,H&M Mama Midi Dress Ivory,H&M Mama,90.91,61.61,A,2020-05-07,2021-05-07,ASOS PT,1
+52,1,Isabella Oliver Bodycon Dress Navy,Isabella Oliver,189.8,163.23,A,2023-09-12,2024-09-11,Seraphine PT,1
+53,1,Seraphine Linen Dress Floral Print,Seraphine,158.4,138.69,A,2023-04-30,2024-04-29,Seraphine PT,1
+54,1,Mamalicious Shirt Dress,Mamalicious,63.84,47.22,B,2022-05-07,2023-05-07,Seraphine PT,1
+55,1,Seraphine Midi Dress Navy,Seraphine,36.84,27.94,A,2022-04-12,2023-04-12,El Corte Inglés ES,1
+56,1,Mamalicious Wrap Dress Burgundy,Mamalicious,70.97,60.4,B,2023-01-30,2024-01-30,Seraphine PT,1
+57,1,ASOS Maternity Midi Dress Burgundy,ASOS Maternity,158.9,141.92,A,2023-12-04,2024-12-03,Seraphine PT,1
+58,1,Seraphine Ruched Dress Blush,Seraphine,249.52,219.97,A,2023-07-14,2024-07-13,Seraphine PT,1
+59,1,Seraphine Smock Dress Camel,Seraphine,178.23,159.41,B,2023-11-03,2024-11-02,Zara Online,1
+60,1,Isabella Oliver Wrap Dress Blush,Isabella Oliver,86.95,77.18,A,2023-08-03,2024-08-02,ASOS PT,1
+61,1,Seraphine Jersey Dress Slate Grey,Seraphine,220.76,167.71,A,2022-07-01,2023-07-01,ASOS PT,1
+62,1,Mamalicious Shirt Dress Blush,Mamalicious,168.79,154.4,A,2024-01-11,2025-01-10,El Corte Inglés ES,1
+63,1,Mamalicious Midi Dress,Mamalicious,367.59,323.11,A,2023-12-01,2024-11-30,Seraphine PT,1
+64,1,ASOS Maternity Wrap Dress Navy,ASOS Maternity,178.7,153.62,A,2023-06-05,2024-06-04,ASOS PT,1
+65,1,Seraphine Tiered Dress Burgundy,Seraphine,92.35,80.39,C,2023-07-14,2024-07-13,ASOS PT,1
+66,1,ASOS Maternity Bodycon Dress Slate Grey,ASOS Maternity,185.46,175.6,A,2024-05-17,2025-05-17,ASOS PT,1
+67,1,Seraphine Shirt Dress Navy,Seraphine,243.06,222.04,B,2024-01-23,2025-01-22,El Corte Inglés ES,1
+68,1,Seraphine Jersey Dress Sage Green,Seraphine,173.98,159.7,B,2024-02-06,2025-02-05,El Corte Inglés ES,1
+69,1,H&M Mama Shirt Dress Slate Grey,H&M Mama,108.71,101.09,A,2024-03-12,2025-03-12,ASOS PT,1
+70,1,Seraphine Bodycon Dress Blush,Seraphine,108.43,91.61,A,2023-07-14,2024-07-13,ASOS PT,1
+71,1,Isabella Oliver Smock Dress Slate Grey,Isabella Oliver,138.44,127.02,B,2024-01-31,2025-01-30,El Corte Inglés ES,1
+72,1,H&M Mama Wrap Dress Slate Grey,H&M Mama,174.31,133.38,B,2022-09-18,2023-09-18,Seraphine PT,1
+73,1,Isabella Oliver Midi Dress,Isabella Oliver,172.75,155.12,B,2023-10-19,2024-10-18,El Corte Inglés ES,1
+74,1,Baukjen Ruched Dress Slate Grey,Baukjen,100.14,84.95,A,2023-03-08,2024-03-07,ASOS PT,1
+75,1,Mamalicious Smock Dress Ivory,Mamalicious,278.4,241.93,B,2023-07-04,2024-07-03,Seraphine PT,1
+76,1,Seraphine Bodycon Dress Camel,Seraphine,237.12,195.64,C,2023-01-26,2024-01-26,ASOS PT,1
+77,1,H&M Mama Linen Dress Sage Green,H&M Mama,79.32,70.34,A,2024-01-23,2025-01-22,Zara Online,1
+78,1,Baukjen Midi Dress Floral Print,Baukjen,50.01,42.97,A,2023-07-16,2024-07-15,Zara Online,1
+79,1,H&M Mama Bodycon Dress Navy,H&M Mama,97.97,81.58,A,2023-02-21,2024-02-21,El Corte Inglés ES,1
+80,1,Baukjen Wrap Dress Ivory,Baukjen,81.05,70.08,A,2023-03-06,2024-03-05,Seraphine PT,1
+81,2,Seraphine Button-Down Blouse Navy,Seraphine,200.18,165.1,A,2023-01-25,2024-01-25,ASOS PT,1
+82,2,Mamalicious Broderie Top Navy,Mamalicious,47.96,43.94,A,2024-03-23,2025-03-23,El Corte Inglés ES,1
+83,2,Mamalicious Broderie Top Navy,Mamalicious,22.91,21.9,A,2024-06-20,2025-06-20,Seraphine PT,1
+84,2,H&M Mama Wrap Top Stripe,H&M Mama,74.65,49.08,A,2021-03-23,2022-03-23,Zara Online,1
+85,2,Seraphine Wrap Top Ivory,Seraphine,35.62,24.28,C,2022-02-06,2023-02-06,Seraphine PT,1
+86,2,Boob Design Linen Blouse Blush,Boob Design,59.58,41.78,A,2021-08-20,2022-08-20,Zara Online,1
+87,2,ASOS Maternity Longline Tee Ivory,ASOS Maternity,76.68,70.75,B,2024-04-23,2025-04-23,ASOS PT,1
+88,2,Boob Design Button-Down Blouse Navy,Boob Design,64.63,52.18,B,2022-12-13,2023-12-13,ASOS PT,1
+89,2,Mamalicious Longline Tee Camel,Mamalicious,145.99,116.05,A,2023-01-09,2024-01-09,Zara Online,1
+90,2,H&M Mama Nursing Blouse Sage Green,H&M Mama,202.06,158.24,B,2022-04-10,2023-04-10,ASOS PT,1
+91,2,Boob Design Nursing Blouse Camel,Boob Design,28.94,25.63,A,2023-09-20,2024-09-19,El Corte Inglés ES,1
+92,2,ASOS Maternity Smock Top,ASOS Maternity,118.31,109.96,A,2024-03-17,2025-03-17,Seraphine PT,1
+93,2,Mamalicious Smock Top Black,Mamalicious,94.78,87.15,A,2024-03-20,2025-03-20,ASOS ES,1
+94,2,H&M Mama Broderie Top,H&M Mama,31.06,23.02,B,2022-07-17,2023-07-17,ASOS ES,1
+95,2,Boob Design Button-Down Blouse Burgundy,Boob Design,34.83,29.78,A,2023-05-06,2024-05-05,Seraphine PT,1
+96,2,H&M Mama Linen Blouse,H&M Mama,18.06,16.64,B,2024-01-01,2024-12-31,Seraphine PT,1
+97,2,Boob Design Longline Tee Sage Green,Boob Design,195.68,145.34,B,2022-07-17,2023-07-17,Zara Online,1
+98,2,Mama de Luxe Longline Tee Burgundy,Mama de Luxe,31.21,24.46,A,2022-12-27,2023-12-27,ASOS ES,1
+99,2,H&M Mama Wrap Top Floral Print,H&M Mama,66.29,49.06,B,2022-02-13,2023-02-13,Zara Online,1
+100,2,Mamalicious Button-Down Blouse Blush,Mamalicious,30.29,25.88,A,2023-08-24,2024-08-23,ASOS PT,1
+101,2,Mamalicious Smock Top Camel,Mamalicious,127.12,103.57,B,2023-05-28,2024-05-27,El Corte Inglés ES,1
+102,2,Mama de Luxe Wrap Top Floral Print,Mama de Luxe,84.45,70.95,A,2023-06-18,2024-06-17,ASOS PT,1
+103,2,H&M Mama Ruched Top Burgundy,H&M Mama,94.9,33.27,A,2020-01-20,2021-01-19,ASOS PT,1
+104,2,H&M Mama Nursing Blouse Ivory,H&M Mama,77.95,45.34,B,2020-06-19,2021-06-19,El Corte Inglés ES,1
+105,2,Mama de Luxe Linen Blouse Sage Green,Mama de Luxe,42.58,27.9,A,2021-02-09,2022-02-09,ASOS PT,1
+106,2,H&M Mama Broderie Top Ivory,H&M Mama,156.13,135.16,A,2023-08-12,2024-08-11,ASOS ES,1
+107,2,H&M Mama Wrap Top Stripe,H&M Mama,72.35,60.34,A,2023-03-26,2024-03-25,Seraphine PT,1
+108,2,H&M Mama Nursing Blouse Blush,H&M Mama,230.7,219.85,B,2024-06-29,2025-06-29,El Corte Inglés ES,1
+109,2,Mamalicious Nursing Blouse,Mamalicious,40.03,25.76,B,2022-03-23,2023-03-23,Seraphine PT,1
+110,2,Boob Design Button-Down Blouse Camel,Boob Design,42.0,39.32,A,2024-06-05,2025-06-05,Seraphine PT,1
+111,2,H&M Mama Linen Blouse Sage Green,H&M Mama,61.77,49.13,C,2022-09-22,2023-09-22,Seraphine PT,1
+112,2,Mamalicious Button-Down Blouse,Mamalicious,126.13,117.09,B,2024-04-13,2025-04-13,Zara Online,1
+113,2,H&M Mama Linen Blouse Burgundy,H&M Mama,84.07,61.49,A,2022-02-27,2023-02-27,El Corte Inglés ES,1
+114,2,Seraphine Nursing Blouse Burgundy,Seraphine,41.8,38.95,B,2024-03-25,2025-03-25,Seraphine PT,1
+115,2,H&M Mama Wrap Top Navy,H&M Mama,90.08,79.93,A,2023-10-04,2024-10-03,Seraphine PT,1
+116,2,H&M Mama Longline Tee Burgundy,H&M Mama,45.41,41.47,A,2024-01-24,2025-01-23,Zara Online,1
+117,2,Mama de Luxe Button-Down Blouse Navy,Mama de Luxe,53.08,49.64,B,2024-05-22,2025-05-22,El Corte Inglés ES,1
+118,2,Mama de Luxe Longline Tee Ivory,Mama de Luxe,47.61,33.75,B,2021-11-08,2022-11-08,El Corte Inglés ES,1
+119,2,H&M Mama Nursing Blouse Black,H&M Mama,47.95,44.3,C,2024-03-08,2025-03-08,ASOS PT,1
+120,2,H&M Mama Nursing Blouse Ivory,H&M Mama,52.36,48.62,B,2024-05-05,2025-05-05,Seraphine PT,1
+121,2,ASOS Maternity Ruched Top Sage Green,ASOS Maternity,172.08,149.85,C,2023-12-11,2024-12-10,ASOS PT,1
+122,2,Mamalicious Broderie Top Black,Mamalicious,106.1,78.64,B,2022-01-12,2023-01-12,ASOS PT,1
+123,2,Boob Design Wrap Top Sage Green,Boob Design,174.84,163.33,B,2024-05-20,2025-05-20,ASOS ES,1
+124,2,Mamalicious Broderie Top Ivory,Mamalicious,30.48,16.33,A,2020-08-06,2021-08-06,Seraphine PT,1
+125,2,H&M Mama Linen Blouse Black,H&M Mama,35.59,30.39,B,2023-08-04,2024-08-03,ASOS PT,1
+126,2,Mama de Luxe Ruched Top Stripe,Mama de Luxe,217.75,190.8,B,2023-10-04,2024-10-03,Zara Online,1
+127,2,ASOS Maternity Button-Down Blouse Black,ASOS Maternity,20.78,17.39,A,2023-01-07,2024-01-07,ASOS PT,1
+128,2,ASOS Maternity Nursing Blouse Slate Grey,ASOS Maternity,27.47,16.81,A,2021-01-29,2022-01-29,El Corte Inglés ES,1
+129,2,H&M Mama Smock Top Camel,H&M Mama,104.01,68.83,A,2022-02-08,2023-02-08,El Corte Inglés ES,1
+130,2,ASOS Maternity Wrap Top Floral Print,ASOS Maternity,84.19,78.55,B,2024-05-25,2025-05-25,El Corte Inglés ES,1
+131,2,Boob Design Broderie Top Floral Print,Boob Design,80.27,64.94,B,2023-01-15,2024-01-15,ASOS PT,1
+132,2,Seraphine Linen Blouse Floral Print,Seraphine,59.81,53.38,A,2023-09-29,2024-09-28,Seraphine PT,1
+133,2,ASOS Maternity Linen Blouse Slate Grey,ASOS Maternity,35.64,30.97,A,2023-07-18,2024-07-17,Seraphine PT,1
+134,2,ASOS Maternity Broderie Top Ivory,ASOS Maternity,84.07,78.76,A,2024-05-14,2025-05-14,El Corte Inglés ES,1
+135,2,Boob Design Longline Tee Burgundy,Boob Design,71.46,41.03,C,2021-05-25,2022-05-25,ASOS PT,1
+136,2,H&M Mama Nursing Blouse Stripe,H&M Mama,62.27,53.59,A,2023-11-02,2024-11-01,El Corte Inglés ES,1
+137,2,H&M Mama Linen Blouse Stripe,H&M Mama,61.78,52.09,A,2023-05-31,2024-05-30,El Corte Inglés ES,1
+138,2,Seraphine Linen Blouse Navy,Seraphine,35.61,27.16,B,2022-05-26,2023-05-26,Seraphine PT,1
+139,2,ASOS Maternity Smock Top Camel,ASOS Maternity,196.3,138.28,A,2022-01-27,2023-01-27,Seraphine PT,1
+140,2,H&M Mama Linen Blouse Sage Green,H&M Mama,76.8,58.39,A,2022-03-03,2023-03-03,Zara Online,1
+141,2,Mama de Luxe Ruched Top Sage Green,Mama de Luxe,65.09,60.67,C,2024-04-11,2025-04-11,Seraphine PT,1
+142,2,ASOS Maternity Smock Top Burgundy,ASOS Maternity,30.21,27.65,A,2024-02-27,2025-02-26,ASOS PT,1
+143,2,Mamalicious Longline Tee Slate Grey,Mamalicious,45.78,41.95,A,2023-12-22,2024-12-21,Seraphine PT,1
+144,2,Mama de Luxe Ruched Top Floral Print,Mama de Luxe,76.71,57.77,B,2022-09-03,2023-09-03,ASOS PT,1
+145,2,ASOS Maternity Ruched Top Burgundy,ASOS Maternity,102.4,96.29,B,2024-05-31,2025-05-31,El Corte Inglés ES,1
+146,2,H&M Mama Button-Down Blouse Sage Green,H&M Mama,43.14,40.14,B,2024-05-02,2025-05-02,El Corte Inglés ES,1
+147,2,H&M Mama Wrap Top Ivory,H&M Mama,52.17,43.75,B,2023-04-27,2024-04-26,Zara Online,1
+148,2,ASOS Maternity Linen Blouse,ASOS Maternity,120.67,113.66,A,2024-06-07,2025-06-07,ASOS PT,1
+149,2,Mamalicious Ruched Top Navy,Mamalicious,59.78,53.48,A,2023-08-11,2024-08-10,ASOS PT,1
+150,2,Boob Design Ruched Top Blush,Boob Design,33.85,24.84,A,2022-08-23,2023-08-23,ASOS ES,1
+151,2,H&M Mama Broderie Top,H&M Mama,154.0,139.24,B,2024-01-20,2025-01-19,Zara Online,1
+152,2,H&M Mama Longline Tee Sage Green,H&M Mama,88.0,51.69,B,2020-03-12,2021-03-12,Seraphine PT,1
+153,2,H&M Mama Broderie Top,H&M Mama,94.22,86.46,C,2024-03-04,2025-03-04,El Corte Inglés ES,1
+154,2,Mama de Luxe Nursing Blouse Camel,Mama de Luxe,49.03,45.54,A,2024-03-13,2025-03-13,Seraphine PT,1
+155,2,Seraphine Broderie Top Ivory,Seraphine,145.98,109.15,A,2022-04-18,2023-04-18,Zara Online,1
+156,3,H&M Mama Slim Jeans Slate Grey,H&M Mama,101.59,75.28,A,2022-01-01,2023-01-01,Zara Online,1
+157,3,ASOS Maternity Wide-Leg Trousers Black,ASOS Maternity,80.49,73.1,B,2023-11-27,2024-11-26,Zara Online,1
+158,3,Seraphine Slim Jeans Navy,Seraphine,202.86,184.43,B,2024-01-28,2025-01-27,Zara Online,1
+159,3,ASOS Maternity Legging Jeans Camel,ASOS Maternity,75.74,52.45,A,2021-08-23,2022-08-23,ASOS ES,1
+160,3,Isabella Oliver Over-Bump Jeans,Isabella Oliver,57.81,48.13,C,2023-06-06,2024-06-05,Seraphine PT,1
+161,3,Seraphine Wide-Leg Trousers Navy,Seraphine,58.97,52.17,B,2023-04-11,2024-04-10,El Corte Inglés ES,1
+162,3,H&M Mama Wide-Leg Trousers Burgundy,H&M Mama,55.61,46.04,A,2022-08-05,2023-08-05,El Corte Inglés ES,1
+163,3,H&M Mama Wide-Leg Trousers Sage Green,H&M Mama,286.18,260.15,A,2023-09-24,2024-09-23,El Corte Inglés ES,1
+164,3,Isabella Oliver Over-Bump Jeans Stripe,Isabella Oliver,102.15,73.38,B,2021-06-14,2022-06-14,ASOS ES,1
+165,3,Isabella Oliver Slim Jeans Ivory,Isabella Oliver,93.96,78.7,B,2022-12-29,2023-12-29,Seraphine PT,1
+166,3,Isabella Oliver Legging Jeans Ivory,Isabella Oliver,141.49,133.73,A,2024-05-21,2025-05-21,Seraphine PT,1
+167,3,Seraphine Wide-Leg Trousers Black,Seraphine,75.26,71.44,A,2024-04-10,2025-04-10,ASOS ES,1
+168,3,Mamalicious Under-Bump Jeans Slate Grey,Mamalicious,129.53,122.45,B,2024-02-07,2025-02-06,ASOS PT,1
+169,3,Seraphine Under-Bump Jeans,Seraphine,208.13,198.73,B,2024-05-22,2025-05-22,ASOS PT,1
+170,3,Mamalicious Wide-Leg Trousers Navy,Mamalicious,284.1,263.56,A,2024-01-24,2025-01-23,Zara Online,1
+171,3,ASOS Maternity Over-Bump Jeans Ivory,ASOS Maternity,50.1,43.35,A,2023-02-23,2024-02-23,Zara Online,1
+172,3,ASOS Maternity Linen Trousers Slate Grey,ASOS Maternity,53.77,51.4,A,2024-06-07,2025-06-07,Seraphine PT,1
+173,3,Seraphine Under-Bump Jeans Stripe,Seraphine,91.89,82.23,A,2023-07-26,2024-07-25,ASOS PT,1
+174,3,ASOS Maternity Tailored Trousers Navy,ASOS Maternity,32.99,30.9,A,2024-02-18,2025-02-17,ASOS ES,1
+175,3,ASOS Maternity Wide-Leg Trousers Blush,ASOS Maternity,185.37,163.61,A,2022-08-16,2023-08-16,ASOS PT,1
+176,3,Seraphine Straight-Leg Trousers Sage Green,Seraphine,196.03,178.2,A,2024-01-02,2025-01-01,Seraphine PT,1
+177,3,ASOS Maternity Wide-Leg Trousers,ASOS Maternity,142.34,122.05,A,2023-03-20,2024-03-19,Zara Online,1
+178,3,Isabella Oliver Tailored Trousers Blush,Isabella Oliver,49.53,38.0,A,2022-04-29,2023-04-29,ASOS PT,1
+179,3,H&M Mama Wide-Leg Trousers Navy,H&M Mama,117.1,112.64,B,2024-06-21,2025-06-21,Seraphine PT,1
+180,3,Mamalicious Tailored Trousers Navy,Mamalicious,171.53,150.23,A,2023-08-29,2024-08-28,Seraphine PT,1
+181,3,ASOS Maternity Straight-Leg Trousers Navy,ASOS Maternity,79.01,74.44,A,2024-04-02,2025-04-02,Seraphine PT,1
+182,3,Seraphine Straight-Leg Trousers Ivory,Seraphine,68.26,63.68,B,2024-03-04,2025-03-04,El Corte Inglés ES,1
+183,3,ASOS Maternity Tailored Trousers Navy,ASOS Maternity,36.96,28.24,A,2021-08-30,2022-08-30,Zara Online,1
+184,3,H&M Mama Legging Jeans Camel,H&M Mama,92.92,68.69,B,2022-02-14,2023-02-14,El Corte Inglés ES,1
+185,3,H&M Mama Linen Trousers Black,H&M Mama,68.74,64.0,A,2024-02-23,2025-02-22,ASOS PT,1
+186,3,Seraphine Over-Bump Jeans Black,Seraphine,150.22,130.59,C,2023-06-07,2024-06-06,Seraphine PT,1
+187,3,Mamalicious Over-Bump Jeans Camel,Mamalicious,37.9,35.56,A,2024-04-26,2025-04-26,El Corte Inglés ES,1
+188,3,ASOS Maternity Tailored Trousers,ASOS Maternity,128.7,121.88,A,2024-04-10,2025-04-10,Zara Online,1
+189,3,Mama de Luxe Linen Trousers Blush,Mama de Luxe,102.37,95.31,A,2024-01-20,2025-01-19,ASOS PT,1
+190,3,ASOS Maternity Linen Trousers Floral Print,ASOS Maternity,115.49,108.77,A,2024-04-20,2025-04-20,Zara Online,1
+191,3,ASOS Maternity Straight-Leg Trousers Burgundy,ASOS Maternity,79.65,71.46,B,2023-10-24,2024-10-23,ASOS PT,1
+192,3,Seraphine Over-Bump Jeans Ivory,Seraphine,203.36,180.92,A,2023-09-09,2024-09-08,Zara Online,1
+193,3,Isabella Oliver Linen Trousers Floral Print,Isabella Oliver,204.94,127.08,A,2020-09-30,2021-09-30,ASOS PT,1
+194,3,ASOS Maternity Under-Bump Jeans Sage Green,ASOS Maternity,45.42,40.23,B,2023-10-12,2024-10-11,Seraphine PT,1
+195,3,Mamalicious Slim Jeans Blush,Mamalicious,31.16,25.66,A,2022-03-08,2023-03-08,El Corte Inglés ES,1
+196,3,Isabella Oliver Linen Trousers Blush,Isabella Oliver,103.64,95.39,A,2023-09-04,2024-09-03,Seraphine PT,1
+197,3,Seraphine Wide-Leg Trousers Floral Print,Seraphine,43.37,41.09,B,2024-05-08,2025-05-08,Seraphine PT,1
+198,3,Isabella Oliver Legging Jeans Navy,Isabella Oliver,73.75,69.27,A,2024-05-18,2025-05-18,El Corte Inglés ES,1
+199,3,H&M Mama Over-Bump Jeans Ivory,H&M Mama,140.65,125.23,A,2023-11-03,2024-11-02,ASOS PT,1
+200,3,H&M Mama Slim Jeans Blush,H&M Mama,30.97,29.45,C,2024-02-19,2025-02-18,Seraphine PT,1
+201,3,Seraphine Legging Jeans Burgundy,Seraphine,122.36,113.71,A,2024-02-03,2025-02-02,Zara Online,1
+202,3,ASOS Maternity Wide-Leg Trousers Camel,ASOS Maternity,96.21,90.42,B,2024-05-18,2025-05-18,El Corte Inglés ES,1
+203,3,Mamalicious Tailored Trousers Burgundy,Mamalicious,226.9,168.26,A,2021-04-13,2022-04-13,Zara Online,1
+204,3,ASOS Maternity Wide-Leg Trousers Black,ASOS Maternity,116.6,87.88,B,2021-06-27,2022-06-27,Seraphine PT,1
+205,3,Mamalicious Under-Bump Jeans Burgundy,Mamalicious,94.67,86.24,A,2023-11-25,2024-11-24,Seraphine PT,1
+206,3,ASOS Maternity Tailored Trousers Navy,ASOS Maternity,218.32,174.14,A,2022-08-27,2023-08-27,ASOS ES,1
+207,3,Mamalicious Linen Trousers Navy,Mamalicious,90.97,72.52,A,2022-02-25,2023-02-25,Seraphine PT,1
+208,3,H&M Mama Legging Jeans Slate Grey,H&M Mama,195.05,149.91,B,2021-09-16,2022-09-16,ASOS PT,1
+209,3,Isabella Oliver Wide-Leg Trousers Stripe,Isabella Oliver,56.57,43.67,B,2022-02-05,2023-02-05,Seraphine PT,1
+210,3,Seraphine Slim Jeans Ivory,Seraphine,128.68,119.62,A,2024-03-31,2025-03-31,Zara Online,1
+211,3,Mamalicious Tailored Trousers Burgundy,Mamalicious,131.62,108.8,B,2022-08-29,2023-08-29,El Corte Inglés ES,1
+212,3,Seraphine Straight-Leg Trousers Slate Grey,Seraphine,75.65,66.33,A,2023-04-14,2024-04-13,ASOS PT,1
+213,3,ASOS Maternity Tailored Trousers Floral Print,ASOS Maternity,75.6,62.6,B,2023-03-13,2024-03-12,Seraphine PT,1
+214,3,ASOS Maternity Tailored Trousers Blush,ASOS Maternity,176.82,158.56,A,2023-07-23,2024-07-22,ASOS ES,1
+215,3,Isabella Oliver Slim Jeans Ivory,Isabella Oliver,50.28,40.76,B,2023-01-13,2024-01-13,ASOS ES,1
+216,4,Seraphine Gym Set Floral Print,Seraphine,118.24,106.22,A,2024-02-27,2025-02-26,Zara Online,1
+217,4,Baukjen Sports Bra Camel,Baukjen,109.85,99.84,B,2024-04-28,2025-04-28,Seraphine PT,1
+218,4,Seraphine Running Shorts Blush,Seraphine,108.67,86.31,B,2023-04-19,2024-04-18,ASOS ES,1
+219,4,Boob Design Sweat Set Sage Green,Boob Design,155.62,99.34,A,2022-04-03,2023-04-03,Seraphine PT,1
+220,4,Baukjen Active Top Camel,Baukjen,81.01,74.25,A,2024-05-13,2025-05-13,El Corte Inglés ES,1
+221,4,Baukjen Pilates Pants Floral Print,Baukjen,100.31,89.21,A,2024-02-15,2025-02-14,El Corte Inglés ES,1
+222,4,H&M Mama Pilates Pants Slate Grey,H&M Mama,185.81,102.91,A,2021-05-05,2022-05-05,Seraphine PT,1
+223,4,Baukjen Pilates Pants Black,Baukjen,138.58,127.98,B,2024-06-12,2025-06-12,Zara Online,1
+224,4,Baukjen Gym Set Stripe,Baukjen,30.92,24.76,A,2023-05-19,2024-05-18,ASOS PT,1
+225,4,Seraphine Active Top Burgundy,Seraphine,143.53,54.94,B,2020-06-02,2021-06-02,Zara Online,1
+226,4,ASOS Maternity Active Top Ivory,ASOS Maternity,229.71,191.36,A,2023-08-18,2024-08-17,El Corte Inglés ES,1
+227,4,ASOS Maternity Active Top Camel,ASOS Maternity,64.83,44.02,A,2022-01-05,2023-01-05,Zara Online,1
+228,4,ASOS Maternity Yoga Leggings Stripe,ASOS Maternity,56.6,51.8,A,2024-04-30,2025-04-30,Seraphine PT,1
+229,4,H&M Mama Active Top Navy,H&M Mama,52.81,30.93,B,2021-08-01,2022-08-01,El Corte Inglés ES,1
+230,4,Baukjen Pilates Pants Stripe,Baukjen,55.4,33.39,A,2021-12-15,2022-12-15,ASOS PT,1
+231,4,ASOS Maternity Gym Set Blush,ASOS Maternity,152.13,134.39,A,2024-03-21,2025-03-21,ASOS PT,1
+232,4,Seraphine Support Leggings,Seraphine,38.46,30.9,B,2023-08-27,2024-08-26,ASOS PT,1
+233,4,Baukjen Sports Bra Burgundy,Baukjen,63.55,42.98,C,2022-05-13,2023-05-13,ASOS PT,1
+234,4,Baukjen Gym Set Slate Grey,Baukjen,69.8,54.24,B,2023-04-13,2024-04-12,Seraphine PT,1
+235,4,Boob Design Running Shorts Camel,Boob Design,169.07,120.72,A,2022-06-18,2023-06-18,Seraphine PT,1
+236,4,H&M Mama Gym Set,H&M Mama,65.69,53.31,A,2023-07-05,2024-07-04,ASOS PT,1
+237,4,Baukjen Gym Set Navy,Baukjen,121.56,100.83,B,2023-09-24,2024-09-23,ASOS ES,1
+238,4,Baukjen Pilates Pants Navy,Baukjen,110.11,80.21,A,2023-01-19,2024-01-19,El Corte Inglés ES,1
+239,4,H&M Mama Yoga Leggings Burgundy,H&M Mama,38.43,30.43,A,2023-05-15,2024-05-14,Zara Online,1
+240,4,ASOS Maternity Running Shorts Black,ASOS Maternity,92.3,80.17,A,2023-11-21,2024-11-20,Seraphine PT,1
+241,4,Seraphine Support Leggings Navy,Seraphine,31.01,25.33,B,2023-09-28,2024-09-27,El Corte Inglés ES,1
+242,4,H&M Mama Pilates Pants Camel,H&M Mama,64.22,55.02,B,2023-11-29,2024-11-28,El Corte Inglés ES,1
+243,4,H&M Mama Sports Bra Black,H&M Mama,158.47,133.48,A,2023-09-03,2024-09-02,ASOS PT,1
+244,4,Baukjen Active Top Camel,Baukjen,97.97,62.34,A,2021-11-21,2022-11-21,ASOS PT,1
+245,4,Boob Design Support Leggings Blush,Boob Design,85.58,59.74,A,2022-08-24,2023-08-24,Seraphine PT,1
+246,4,Boob Design Sports Bra Stripe,Boob Design,75.56,61.32,C,2023-08-10,2024-08-09,ASOS PT,1
+247,4,Boob Design Active Top Slate Grey,Boob Design,67.03,48.97,C,2023-01-11,2024-01-11,ASOS PT,1
+248,4,Baukjen Support Leggings Sage Green,Baukjen,75.66,50.93,C,2022-06-28,2023-06-28,ASOS PT,1
+249,4,Boob Design Sports Bra Sage Green,Boob Design,152.21,143.51,A,2024-06-27,2025-06-27,El Corte Inglés ES,1
+250,4,Boob Design Sweat Set Blush,Boob Design,98.1,89.48,A,2024-03-20,2025-03-20,ASOS PT,1
+251,4,Seraphine Gym Set Black,Seraphine,71.75,64.74,A,2024-04-08,2025-04-08,ASOS PT,1
+252,4,ASOS Maternity Gym Set Floral Print,ASOS Maternity,250.43,208.88,A,2023-07-27,2024-07-26,Seraphine PT,1
+253,4,ASOS Maternity Sports Bra Slate Grey,ASOS Maternity,87.15,63.52,A,2022-12-18,2023-12-18,Zara Online,1
+254,4,Seraphine Yoga Leggings Blush,Seraphine,52.8,37.6,A,2022-11-17,2023-11-17,ASOS ES,1
+255,4,H&M Mama Pilates Pants,H&M Mama,103.18,83.18,A,2023-05-17,2024-05-16,ASOS PT,1
+256,4,H&M Mama Pilates Pants Ivory,H&M Mama,103.28,93.19,B,2024-03-14,2025-03-14,ASOS PT,1
+257,4,Boob Design Active Top,Boob Design,184.76,89.83,A,2020-08-21,2021-08-21,ASOS ES,1
+258,4,Baukjen Active Top Slate Grey,Baukjen,50.69,47.39,A,2024-06-17,2025-06-17,El Corte Inglés ES,1
+259,4,Seraphine Support Leggings Stripe,Seraphine,100.99,82.11,C,2023-09-25,2024-09-24,Seraphine PT,1
+260,4,Baukjen Gym Set Stripe,Baukjen,26.55,21.77,C,2023-08-20,2024-08-19,Zara Online,1
+261,5,Boob Design Nursing Jumpsuit Slate Grey,Boob Design,153.07,132.92,A,2024-01-19,2025-01-18,El Corte Inglés ES,1
+262,5,Boob Design Wrap Nursing Top Black,Boob Design,80.97,71.95,A,2024-01-02,2025-01-01,ASOS PT,1
+263,5,Boob Design Postpartum Support Shorts Blush,Boob Design,142.43,86.08,B,2021-01-27,2022-01-27,ASOS ES,1
+264,5,Boob Design Nursing Dress Sage Green,Boob Design,95.77,79.57,A,2023-06-23,2024-06-22,Seraphine PT,1
+265,5,ASOS Maternity Wrap Nursing Top Ivory,ASOS Maternity,89.18,65.09,B,2022-09-20,2023-09-20,El Corte Inglés ES,1
+266,5,Seraphine Nursing Jumpsuit,Seraphine,65.56,41.9,B,2022-04-16,2023-04-16,Seraphine PT,1
+267,5,Boob Design Wrap Nursing Top Navy,Boob Design,67.79,49.7,A,2022-08-18,2023-08-18,Zara Online,1
+268,5,Boob Design Nursing Dress,Boob Design,28.64,25.74,A,2024-02-27,2025-02-26,Zara Online,1
+269,5,JoJo Maman Bébé Lounge Set Navy,JoJo Maman Bébé,90.5,82.15,B,2024-03-19,2025-03-19,ASOS PT,1
+270,5,Boob Design Lounge Set,Boob Design,83.47,72.7,B,2024-01-01,2024-12-31,ASOS ES,1
+271,5,H&M Mama Nursing Top Navy,H&M Mama,157.05,140.61,A,2024-02-23,2025-02-22,ASOS ES,1
+272,5,Boob Design Nursing Jumpsuit Camel,Boob Design,74.47,58.91,A,2023-03-18,2024-03-17,Zara Online,1
+273,5,ASOS Maternity Nursing Dress Ivory,ASOS Maternity,92.0,82.48,B,2024-02-08,2025-02-07,El Corte Inglés ES,1
+274,5,Boob Design Nursing Jumpsuit Sage Green,Boob Design,24.78,20.23,B,2023-09-27,2024-09-26,ASOS PT,1
+275,5,Seraphine Postpartum Support Shorts Sage Green,Seraphine,58.84,34.09,B,2021-09-01,2022-09-01,Seraphine PT,1
+276,5,Boob Design Postpartum Leggings Slate Grey,Boob Design,150.3,140.15,A,2024-06-20,2025-06-20,El Corte Inglés ES,1
+277,5,ASOS Maternity Postpartum Support Shorts Navy,ASOS Maternity,36.24,33.38,A,2024-04-03,2025-04-03,ASOS ES,1
+278,5,Boob Design Wrap Nursing Top Floral Print,Boob Design,20.59,18.94,A,2024-05-26,2025-05-26,ASOS PT,1
+279,5,ASOS Maternity Nursing Dress,ASOS Maternity,131.08,105.02,B,2023-05-16,2024-05-15,El Corte Inglés ES,1
+280,5,H&M Mama Lounge Set Black,H&M Mama,27.25,20.34,A,2022-11-25,2023-11-25,ASOS PT,1
+281,5,H&M Mama Postpartum Leggings Slate Grey,H&M Mama,43.51,38.13,A,2023-12-28,2024-12-27,Seraphine PT,1
+282,5,Seraphine Postpartum Leggings Sage Green,Seraphine,24.93,21.86,A,2023-10-13,2024-10-12,ASOS ES,1
+283,5,Seraphine Postpartum Support Shorts Camel,Seraphine,42.5,39.45,B,2024-06-20,2025-06-20,El Corte Inglés ES,1
+284,5,Seraphine Wrap Nursing Top,Seraphine,129.84,87.92,B,2022-01-17,2023-01-17,ASOS PT,1
+285,5,Boob Design Postpartum Support Shorts Blush,Boob Design,157.74,136.84,A,2023-12-05,2024-12-04,ASOS PT,1
+286,5,ASOS Maternity Postpartum Leggings Slate Grey,ASOS Maternity,21.75,20.19,A,2024-06-26,2025-06-26,El Corte Inglés ES,1
+287,5,JoJo Maman Bébé Postpartum Support Shorts Floral Print,JoJo Maman Bébé,73.3,66.91,A,2024-04-04,2025-04-04,Seraphine PT,1
+288,5,H&M Mama Postpartum Leggings Sage Green,H&M Mama,49.03,44.9,C,2024-03-05,2025-03-05,ASOS ES,1
+289,5,ASOS Maternity Nursing Jumpsuit Stripe,ASOS Maternity,93.44,84.18,B,2024-02-26,2025-02-25,Zara Online,1
+290,5,Seraphine Postpartum Support Shorts,Seraphine,92.59,84.95,A,2024-03-09,2025-03-09,Zara Online,1
+291,5,ASOS Maternity Lounge Set Burgundy,ASOS Maternity,38.01,34.23,B,2024-02-15,2025-02-14,Seraphine PT,1
+292,5,Seraphine Postpartum Leggings Ivory,Seraphine,236.39,200.34,A,2023-07-07,2024-07-06,Seraphine PT,1
+293,5,ASOS Maternity Nursing Dress Burgundy,ASOS Maternity,35.55,27.27,B,2022-08-16,2023-08-16,ASOS ES,1
+294,5,JoJo Maman Bébé Wrap Nursing Top Black,JoJo Maman Bébé,49.39,43.28,B,2024-02-11,2025-02-10,Seraphine PT,1
+295,5,Boob Design Postpartum Support Shorts Floral Print,Boob Design,87.36,69.35,C,2023-06-06,2024-06-05,ASOS ES,1
+296,5,Boob Design Lounge Set Stripe,Boob Design,90.12,74.62,A,2023-07-01,2024-06-30,ASOS PT,1
+297,5,Seraphine Postpartum Leggings Stripe,Seraphine,112.42,59.32,A,2021-01-26,2022-01-26,Zara Online,1
+298,5,Seraphine Lounge Set Stripe,Seraphine,121.16,109.56,A,2024-04-03,2025-04-03,ASOS ES,1
+299,5,H&M Mama Postpartum Support Shorts Floral Print,H&M Mama,79.6,66.36,A,2023-08-04,2024-08-03,ASOS PT,1
+300,5,Boob Design Postpartum Support Shorts Ivory,Boob Design,20.05,18.86,B,2024-06-23,2025-06-23,Zara Online,1
+301,5,Boob Design Postpartum Leggings Slate Grey,Boob Design,68.63,58.52,A,2023-09-18,2024-09-17,Seraphine PT,1
+302,5,Seraphine Nursing Top Burgundy,Seraphine,132.55,88.92,A,2022-05-19,2023-05-19,Seraphine PT,1
+303,5,H&M Mama Postpartum Leggings Sage Green,H&M Mama,67.1,54.27,A,2023-06-25,2024-06-24,Zara Online,1
+304,5,Boob Design Postpartum Support Shorts Floral Print,Boob Design,62.74,56.97,A,2024-03-22,2025-03-22,ASOS ES,1
+305,5,Boob Design Wrap Nursing Top Ivory,Boob Design,87.8,79.17,C,2024-02-19,2025-02-18,Zara Online,1
+306,5,Seraphine Postpartum Leggings Burgundy,Seraphine,87.72,76.02,A,2023-12-12,2024-12-11,Zara Online,1
+307,5,Boob Design Postpartum Leggings Blush,Boob Design,72.3,45.03,B,2021-11-03,2022-11-03,El Corte Inglés ES,1
+308,5,Boob Design Wrap Nursing Top Blush,Boob Design,74.33,50.85,C,2022-06-26,2023-06-26,Seraphine PT,1
+309,5,Seraphine Postpartum Support Shorts Stripe,Seraphine,148.53,121.64,C,2023-08-17,2024-08-16,Zara Online,1
+310,5,Boob Design Nursing Jumpsuit Sage Green,Boob Design,210.24,142.65,A,2022-03-01,2023-03-01,ASOS PT,1
+311,5,H&M Mama Lounge Set,H&M Mama,70.03,63.67,A,2024-03-14,2025-03-14,ASOS PT,1
+312,5,Boob Design Postpartum Leggings Slate Grey,Boob Design,138.5,119.62,A,2023-08-19,2024-08-18,ASOS ES,1
+313,5,Boob Design Nursing Top Sage Green,Boob Design,97.36,85.27,C,2024-01-03,2025-01-02,El Corte Inglés ES,1
+314,5,Boob Design Postpartum Leggings Burgundy,Boob Design,40.38,28.4,A,2022-07-09,2023-07-09,Zara Online,1
+315,5,JoJo Maman Bébé Nursing Jumpsuit,JoJo Maman Bébé,79.73,71.9,A,2024-01-27,2025-01-26,El Corte Inglés ES,1
+316,6,Isabella Oliver Cocktail Dress,Isabella Oliver,169.21,156.76,B,2023-08-23,2024-08-22,El Corte Inglés ES,1
+317,6,Isabella Oliver Wedding Guest Dress Camel,Isabella Oliver,285.03,252.55,A,2022-08-07,2023-08-07,El Corte Inglés ES,1
+318,6,Tiffany Rose Bridesmaid Dress Burgundy,Tiffany Rose,253.63,239.25,B,2023-12-09,2024-12-08,Seraphine PT,1
+319,6,ASOS Maternity Floral Gown Camel,ASOS Maternity,299.84,286.21,A,2024-02-29,2025-02-28,ASOS ES,1
+320,6,Tiffany Rose Lace Occasion Dress Navy,Tiffany Rose,214.69,199.72,B,2023-09-13,2024-09-12,Seraphine PT,1
+321,6,Tiffany Rose Bridesmaid Dress,Tiffany Rose,342.36,316.3,A,2023-01-06,2024-01-06,ASOS PT,1
+322,6,Tiffany Rose Satin Slip Dress Blush,Tiffany Rose,248.5,237.27,A,2023-06-30,2024-06-29,Zara Online,1
+323,6,Seraphine Bridesmaid Dress Navy,Seraphine,301.72,244.93,B,2021-05-16,2022-05-16,El Corte Inglés ES,1
+324,6,Isabella Oliver Wedding Guest Dress Stripe,Isabella Oliver,296.35,265.59,A,2023-04-01,2024-03-31,El Corte Inglés ES,1
+325,6,Seraphine Satin Slip Dress Floral Print,Seraphine,345.12,331.7,A,2024-02-22,2025-02-21,ASOS PT,1
+326,6,Isabella Oliver Bridesmaid Dress Slate Grey,Isabella Oliver,348.43,334.69,A,2024-03-15,2025-03-15,Seraphine PT,1
+327,6,Tiffany Rose Evening Gown Navy,Tiffany Rose,94.85,88.81,A,2023-11-18,2024-11-17,Seraphine PT,1
+328,6,ASOS Maternity Bridesmaid Dress Floral Print,ASOS Maternity,213.56,191.89,A,2023-05-10,2024-05-09,Zara Online,1
+329,6,ASOS Maternity Cocktail Dress Blush,ASOS Maternity,310.58,288.49,B,2023-04-10,2024-04-09,ASOS PT,1
+330,6,Seraphine Cocktail Dress Camel,Seraphine,239.45,232.12,A,2024-03-03,2025-03-03,ASOS PT,1
+331,6,Isabella Oliver Evening Gown Black,Isabella Oliver,201.11,196.22,A,2024-03-10,2025-03-10,Zara Online,1
+332,6,Isabella Oliver Floral Gown Burgundy,Isabella Oliver,214.14,198.85,A,2023-06-01,2024-05-31,Seraphine PT,1
+333,6,Tiffany Rose Lace Occasion Dress Stripe,Tiffany Rose,211.92,193.96,A,2023-03-31,2024-03-30,El Corte Inglés ES,1
+334,6,Isabella Oliver Bridesmaid Dress Black,Isabella Oliver,202.89,191.54,A,2023-09-12,2024-09-11,El Corte Inglés ES,1
+335,6,Seraphine Satin Slip Dress Burgundy,Seraphine,261.77,251.64,A,2024-05-06,2025-05-06,Seraphine PT,1
+336,6,Isabella Oliver Cocktail Dress Navy,Isabella Oliver,314.31,306.02,B,2024-06-21,2025-06-21,El Corte Inglés ES,1
+337,6,Isabella Oliver Satin Slip Dress Navy,Isabella Oliver,248.56,217.74,A,2022-09-18,2023-09-18,Zara Online,1
+338,6,Seraphine Floral Gown Black,Seraphine,172.74,148.47,A,2022-07-14,2023-07-14,ASOS PT,1
+339,6,Tiffany Rose Cocktail Dress Camel,Tiffany Rose,112.78,103.99,B,2023-01-06,2024-01-06,Zara Online,1
+340,6,Baukjen Wrap Occasion Dress,Baukjen,258.17,242.07,A,2023-07-07,2024-07-06,ASOS PT,1
+341,6,Tiffany Rose Lace Occasion Dress,Tiffany Rose,138.34,132.5,C,2023-09-15,2024-09-14,ASOS PT,1
+342,6,Tiffany Rose Satin Slip Dress Camel,Tiffany Rose,327.39,312.49,A,2023-08-19,2024-08-18,ASOS PT,1
+343,6,Seraphine Wrap Occasion Dress Camel,Seraphine,212.11,195.82,A,2023-09-05,2024-09-04,ASOS PT,1
+344,6,Isabella Oliver Wedding Guest Dress Sage Green,Isabella Oliver,185.82,174.47,A,2023-06-08,2024-06-07,Zara Online,1
+345,6,Isabella Oliver Wedding Guest Dress Burgundy,Isabella Oliver,201.5,195.79,A,2024-03-10,2025-03-10,Seraphine PT,1
+346,6,Isabella Oliver Satin Slip Dress Navy,Isabella Oliver,135.69,127.0,A,2023-10-27,2024-10-26,El Corte Inglés ES,1
+347,6,Isabella Oliver Evening Gown,Isabella Oliver,253.91,236.8,A,2023-04-29,2024-04-28,Seraphine PT,1
+348,6,Tiffany Rose Wrap Occasion Dress Burgundy,Tiffany Rose,325.2,316.53,B,2024-05-17,2025-05-17,ASOS PT,1
+349,6,Seraphine Satin Slip Dress Black,Seraphine,163.11,140.84,B,2022-01-13,2023-01-13,ASOS PT,1
+350,6,Isabella Oliver Wedding Guest Dress Black,Isabella Oliver,211.42,202.13,B,2024-03-19,2025-03-19,Zara Online,1
+351,6,Seraphine Evening Gown Navy,Seraphine,337.38,322.56,C,2024-06-12,2025-06-12,ASOS ES,1
+352,6,Seraphine Cocktail Dress Slate Grey,Seraphine,292.48,240.81,A,2020-01-30,2021-01-29,ASOS ES,1
+353,6,Seraphine Wrap Occasion Dress Blush,Seraphine,284.72,263.45,A,2022-07-06,2023-07-06,El Corte Inglés ES,1
+354,6,Baukjen Lace Occasion Dress Sage Green,Baukjen,182.89,176.67,B,2023-12-05,2024-12-04,ASOS PT,1
+355,6,Baukjen Evening Gown Black,Baukjen,209.41,201.31,A,2024-03-24,2025-03-24,Zara Online,1
+356,6,Isabella Oliver Bridesmaid Dress Camel,Isabella Oliver,154.0,136.43,A,2023-01-20,2024-01-20,El Corte Inglés ES,1
+357,6,Seraphine Cocktail Dress Black,Seraphine,324.82,294.98,A,2023-03-16,2024-03-15,Zara Online,1
+358,6,Baukjen Floral Gown Stripe,Baukjen,315.97,307.67,C,2024-05-25,2025-05-25,ASOS ES,1
+359,6,Isabella Oliver Wrap Occasion Dress Stripe,Isabella Oliver,326.7,298.44,A,2023-01-29,2024-01-29,Seraphine PT,1
+360,6,Isabella Oliver Satin Slip Dress,Isabella Oliver,389.31,341.67,B,2022-09-10,2023-09-10,Seraphine PT,1
+361,6,Seraphine Lace Occasion Dress Sage Green,Seraphine,282.92,275.25,A,2024-06-29,2025-06-29,ASOS PT,1
+362,6,Baukjen Floral Gown,Baukjen,158.03,153.38,B,2024-06-03,2025-06-03,ASOS PT,1
+363,6,Seraphine Evening Gown Camel,Seraphine,207.5,176.6,C,2021-12-10,2022-12-10,ASOS PT,1
+364,6,Tiffany Rose Wrap Occasion Dress Burgundy,Tiffany Rose,239.83,223.2,A,2023-04-20,2024-04-19,ASOS PT,1
+365,6,ASOS Maternity Lace Occasion Dress Stripe,ASOS Maternity,265.01,238.85,A,2022-10-23,2023-10-23,ASOS PT,1
+366,7,JoJo Maman Bébé Belted Coat Stripe,JoJo Maman Bébé,236.34,229.72,B,2024-01-25,2025-01-24,Seraphine PT,1
+367,7,JoJo Maman Bébé Puffer Jacket Blush,JoJo Maman Bébé,188.23,178.65,C,2023-04-22,2024-04-21,El Corte Inglés ES,1
+368,7,JoJo Maman Bébé Wool Blend Coat Burgundy,JoJo Maman Bébé,184.5,171.0,A,2022-07-25,2023-07-25,ASOS PT,1
+369,7,Seraphine Waterproof Jacket Floral Print,Seraphine,319.41,300.29,A,2023-11-02,2024-11-01,Zara Online,1
+370,7,Seraphine Maternity Coat Burgundy,Seraphine,107.68,104.17,B,2024-02-01,2025-01-31,ASOS PT,1
+371,7,Seraphine Belted Coat Black,Seraphine,434.59,418.54,B,2024-02-20,2025-02-19,El Corte Inglés ES,1
+372,7,Isabella Oliver Puffer Jacket Blush,Isabella Oliver,324.7,309.94,B,2023-10-14,2024-10-13,ASOS PT,1
+373,7,JoJo Maman Bébé Wool Blend Coat Burgundy,JoJo Maman Bébé,325.86,302.82,B,2023-12-27,2024-12-26,El Corte Inglés ES,1
+374,7,Isabella Oliver Puffer Jacket Stripe,Isabella Oliver,292.16,259.78,C,2023-05-09,2024-05-08,Seraphine PT,1
+375,7,JoJo Maman Bébé Waterproof Jacket Black,JoJo Maman Bébé,200.75,188.14,B,2022-11-28,2023-11-28,ASOS PT,1
+376,7,Seraphine Trench Coat Sage Green,Seraphine,354.81,341.05,B,2023-09-16,2024-09-15,Seraphine PT,1
+377,7,JoJo Maman Bébé Belted Coat Navy,JoJo Maman Bébé,298.14,282.22,B,2023-06-20,2024-06-19,ASOS ES,1
+378,7,Seraphine Wool Blend Coat Navy,Seraphine,423.68,407.12,B,2024-02-09,2025-02-08,ASOS ES,1
+379,7,Isabella Oliver Puffer Jacket Sage Green,Isabella Oliver,272.24,260.27,A,2024-04-20,2025-04-20,ASOS ES,1
+380,7,Seraphine Maternity Coat Navy,Seraphine,186.62,147.35,A,2020-10-28,2021-10-28,ASOS PT,1
+381,7,JoJo Maman Bébé Belted Coat Black,JoJo Maman Bébé,176.53,167.41,A,2023-12-07,2024-12-06,El Corte Inglés ES,1
+382,7,Seraphine Puffer Jacket Navy,Seraphine,215.04,209.67,B,2024-03-02,2025-03-02,El Corte Inglés ES,1
+383,7,Seraphine Maternity Coat Stripe,Seraphine,384.95,362.74,C,2023-01-29,2024-01-29,ASOS PT,1
+384,7,Isabella Oliver Waterproof Jacket Camel,Isabella Oliver,196.49,180.61,B,2022-09-17,2023-09-17,Seraphine PT,1
+385,7,Isabella Oliver Trench Coat Burgundy,Isabella Oliver,95.41,93.44,C,2024-04-27,2025-04-27,Zara Online,1
+386,7,Baukjen Puffer Jacket Ivory,Baukjen,266.5,246.23,B,2022-09-19,2023-09-19,ASOS PT,1
+387,7,Baukjen Wool Blend Coat Slate Grey,Baukjen,190.71,180.59,A,2023-09-24,2024-09-23,ASOS PT,1
+388,7,JoJo Maman Bébé Maternity Coat Sage Green,JoJo Maman Bébé,151.39,144.69,A,2024-01-25,2025-01-24,ASOS PT,1
+389,7,Baukjen Waterproof Jacket Blush,Baukjen,184.52,167.99,A,2022-01-06,2023-01-06,El Corte Inglés ES,1
+390,7,Isabella Oliver Padded Jacket Floral Print,Isabella Oliver,366.62,332.19,A,2022-10-12,2023-10-12,Seraphine PT,1
+391,7,Baukjen Wool Blend Coat Floral Print,Baukjen,298.1,288.83,A,2024-05-21,2025-05-21,El Corte Inglés ES,1
+392,7,Isabella Oliver Waterproof Jacket Burgundy,Isabella Oliver,273.83,265.67,A,2024-06-27,2025-06-27,ASOS PT,1
+393,7,Isabella Oliver Waterproof Jacket Burgundy,Isabella Oliver,94.75,91.32,A,2024-03-23,2025-03-23,Zara Online,1
+394,7,Baukjen Maternity Coat Slate Grey,Baukjen,318.19,302.55,A,2023-05-13,2024-05-12,Seraphine PT,1
+395,7,Baukjen Trench Coat Navy,Baukjen,228.21,217.16,A,2024-02-10,2025-02-09,Seraphine PT,1
+396,7,JoJo Maman Bébé Waterproof Jacket Sage Green,JoJo Maman Bébé,151.13,132.49,A,2021-06-03,2022-06-03,Seraphine PT,1
+397,7,Isabella Oliver Waterproof Jacket Blush,Isabella Oliver,329.54,317.25,B,2023-12-05,2024-12-04,Seraphine PT,1
+398,7,H&M Mama Wool Blend Coat Stripe,H&M Mama,331.86,295.98,A,2022-09-06,2023-09-06,ASOS PT,1
+399,7,Isabella Oliver Waterproof Jacket Ivory,Isabella Oliver,436.98,399.78,A,2023-10-01,2024-09-30,Seraphine PT,1
+400,7,JoJo Maman Bébé Trench Coat Slate Grey,JoJo Maman Bébé,372.5,313.82,A,2022-07-09,2023-07-09,ASOS ES,1
+401,7,Isabella Oliver Trench Coat Burgundy,Isabella Oliver,211.31,205.13,A,2024-01-10,2025-01-09,Seraphine PT,1
+402,7,JoJo Maman Bébé Belted Coat Slate Grey,JoJo Maman Bébé,311.86,300.8,C,2023-11-23,2024-11-22,Seraphine PT,1
+403,7,Isabella Oliver Puffer Jacket Ivory,Isabella Oliver,159.13,148.24,A,2023-06-08,2024-06-07,ASOS ES,1
+404,7,Seraphine Maternity Coat Camel,Seraphine,346.28,339.48,A,2024-05-06,2025-05-06,Zara Online,1
+405,7,Baukjen Maternity Coat Floral Print,Baukjen,315.25,290.48,A,2022-05-20,2023-05-20,ASOS PT,1
+406,8,Seraphine Sleep Bra Floral Print,Seraphine,16.56,7.47,A,2021-11-20,2022-11-20,Seraphine PT,1
+407,8,H&M Mama Nursing Bra Camel,H&M Mama,21.62,19.84,B,2024-06-11,2025-06-11,El Corte Inglés ES,1
+408,8,Boob Design Support Band Navy,Boob Design,17.38,9.62,A,2021-11-01,2022-11-01,Zara Online,1
+409,8,H&M Mama Maternity Brief Slate Grey,H&M Mama,90.98,45.17,B,2021-01-15,2022-01-15,ASOS PT,1
+410,8,H&M Mama Maternity Brief,H&M Mama,28.05,21.37,A,2023-07-26,2024-07-25,El Corte Inglés ES,1
+411,8,H&M Mama Support Band Navy,H&M Mama,39.62,29.03,A,2023-03-12,2024-03-11,Zara Online,1
+412,8,Boob Design Maternity Brief Floral Print,Boob Design,74.77,57.36,A,2023-05-04,2024-05-03,Zara Online,1
+413,8,H&M Mama Maternity Brief Sage Green,H&M Mama,23.33,17.19,B,2023-05-03,2024-05-02,Zara Online,1
+414,8,Seraphine Sleep Bra Black,Seraphine,15.43,10.48,A,2022-05-12,2023-05-12,Seraphine PT,1
+415,8,Boob Design Sleep Bra Camel,Boob Design,28.03,17.7,A,2022-08-23,2023-08-23,ASOS PT,1
+416,8,Boob Design Maternity Brief Sage Green,Boob Design,27.46,24.78,A,2024-05-01,2025-05-01,Zara Online,1
+417,8,Seraphine Nursing Bra Blush,Seraphine,27.44,14.84,C,2022-01-30,2023-01-30,Zara Online,1
+418,8,Seraphine Sleep Bra Floral Print,Seraphine,50.63,39.57,C,2023-08-31,2024-08-30,El Corte Inglés ES,1
+419,8,ASOS Maternity Maternity Brief Burgundy,ASOS Maternity,97.81,84.33,B,2024-01-03,2025-01-02,Seraphine PT,1
+420,8,H&M Mama Maternity Brief,H&M Mama,34.52,28.87,A,2023-11-06,2024-11-05,El Corte Inglés ES,1
+421,8,ASOS Maternity Sleep Bra Navy,ASOS Maternity,55.14,41.7,B,2023-04-11,2024-04-10,Zara Online,1
+422,8,Boob Design Support Band,Boob Design,13.38,8.3,B,2022-08-10,2023-08-10,ASOS PT,1
+423,8,Seraphine Sleep Bra Slate Grey,Seraphine,67.51,53.28,A,2023-06-19,2024-06-18,El Corte Inglés ES,1
+424,8,Seraphine Sleep Bra Sage Green,Seraphine,123.03,107.82,A,2024-04-14,2025-04-14,Seraphine PT,1
+425,8,H&M Mama Maternity Brief Ivory,H&M Mama,46.93,41.1,A,2024-03-14,2025-03-14,ASOS PT,1
+426,8,ASOS Maternity Sleep Bra,ASOS Maternity,100.72,75.86,C,2023-04-03,2024-04-02,ASOS PT,1
+427,8,H&M Mama Support Band Ivory,H&M Mama,22.17,11.21,B,2021-09-07,2022-09-07,ASOS PT,1
+428,8,Seraphine Maternity Brief Slate Grey,Seraphine,32.5,15.5,A,2020-04-27,2021-04-27,Zara Online,1
+429,8,ASOS Maternity Nursing Bra,ASOS Maternity,111.18,99.5,A,2024-04-10,2025-04-10,Seraphine PT,1
+430,8,Seraphine Nursing Bra Slate Grey,Seraphine,14.22,9.51,B,2022-12-27,2023-12-27,ASOS ES,1
+431,8,ASOS Maternity Nursing Bra Blush,ASOS Maternity,63.44,45.14,A,2023-04-22,2024-04-21,Zara Online,1
+432,8,Boob Design Support Band Slate Grey,Boob Design,39.18,29.7,C,2023-04-04,2024-04-03,Seraphine PT,1
+433,8,H&M Mama Sleep Bra Ivory,H&M Mama,58.58,50.25,A,2024-02-25,2025-02-24,El Corte Inglés ES,1
+434,8,ASOS Maternity Sleep Bra Floral Print,ASOS Maternity,18.86,12.57,C,2022-10-09,2023-10-09,ASOS PT,1
+435,8,Seraphine Sleep Bra Slate Grey,Seraphine,13.11,9.61,B,2022-12-07,2023-12-07,Seraphine PT,1
+436,8,H&M Mama Support Band Ivory,H&M Mama,152.69,103.75,A,2022-11-23,2023-11-23,El Corte Inglés ES,1
+437,8,ASOS Maternity Maternity Brief Slate Grey,ASOS Maternity,47.55,40.69,A,2024-01-04,2025-01-03,El Corte Inglés ES,1
+438,8,Boob Design Support Band Floral Print,Boob Design,29.39,22.47,A,2023-05-31,2024-05-30,El Corte Inglés ES,1
+439,8,H&M Mama Sleep Bra Stripe,H&M Mama,30.76,22.58,C,2023-01-29,2024-01-29,Seraphine PT,1
+440,8,Seraphine Nursing Bra Burgundy,Seraphine,56.57,42.95,B,2023-05-25,2024-05-24,Seraphine PT,1
+441,9,ASOS Maternity Maternity Bikini Ivory,ASOS Maternity,25.42,17.24,A,2022-07-11,2023-07-11,Seraphine PT,1
+442,9,H&M Mama Tankini Set Ivory,H&M Mama,79.76,72.12,A,2024-04-14,2025-04-14,Seraphine PT,1
+443,9,H&M Mama Maternity Bikini Navy,H&M Mama,95.4,72.78,A,2023-04-19,2024-04-18,ASOS PT,1
+444,9,ASOS Maternity Maternity Swimsuit Ivory,ASOS Maternity,75.12,47.04,B,2022-04-25,2023-04-25,Seraphine PT,1
+445,9,Seraphine Maternity Swimsuit Blush,Seraphine,107.46,99.25,A,2024-06-24,2025-06-24,El Corte Inglés ES,1
+446,9,JoJo Maman Bébé Tankini Set Floral Print,JoJo Maman Bébé,140.34,118.56,C,2023-10-23,2024-10-22,Seraphine PT,1
+447,9,Seraphine Tankini Set Floral Print,Seraphine,116.82,79.47,B,2022-06-10,2023-06-10,ASOS PT,1
+448,9,ASOS Maternity Maternity Swimsuit Ivory,ASOS Maternity,33.28,16.52,A,2021-10-27,2022-10-27,Zara Online,1
+449,9,JoJo Maman Bébé Maternity Swimsuit Floral Print,JoJo Maman Bébé,91.3,77.78,A,2023-10-14,2024-10-13,Seraphine PT,1
+450,9,ASOS Maternity Maternity Swimsuit Sage Green,ASOS Maternity,78.58,41.36,A,2022-01-22,2023-01-22,Seraphine PT,1
+451,9,H&M Mama Maternity Swimsuit Slate Grey,H&M Mama,54.01,40.73,A,2023-03-01,2024-02-29,ASOS PT,1
+452,9,Seraphine Maternity Bikini Stripe,Seraphine,91.96,61.34,A,2022-07-04,2023-07-04,El Corte Inglés ES,1
+453,9,ASOS Maternity Maternity Bikini Burgundy,ASOS Maternity,133.47,114.92,C,2024-01-09,2025-01-08,Zara Online,1
+454,9,Seraphine Maternity Swimsuit Camel,Seraphine,22.32,14.37,A,2022-02-16,2023-02-16,Seraphine PT,1
+455,9,ASOS Maternity Tankini Set Camel,ASOS Maternity,86.44,50.08,A,2021-12-05,2022-12-05,ASOS PT,1
+456,9,Seraphine Maternity Bikini Black,Seraphine,70.68,57.21,A,2023-07-31,2024-07-30,ASOS ES,1
+457,9,H&M Mama Maternity Bikini Black,H&M Mama,98.16,67.37,A,2022-06-28,2023-06-28,Zara Online,1
+458,9,H&M Mama Maternity Swimsuit Slate Grey,H&M Mama,81.39,67.61,B,2023-11-04,2024-11-03,ASOS PT,1
+459,9,Seraphine Tankini Set Navy,Seraphine,86.98,61.73,B,2023-01-07,2024-01-07,Zara Online,1
+460,9,H&M Mama Maternity Swimsuit Floral Print,H&M Mama,103.58,90.68,A,2024-01-26,2025-01-25,Seraphine PT,1
+461,9,H&M Mama Maternity Bikini Camel,H&M Mama,88.45,75.6,A,2024-01-03,2025-01-02,ASOS PT,1
+462,9,JoJo Maman Bébé Maternity Swimsuit Floral Print,JoJo Maman Bébé,41.93,37.18,A,2024-04-16,2025-04-16,El Corte Inglés ES,1
+463,9,H&M Mama Tankini Set Slate Grey,H&M Mama,29.45,17.92,A,2022-01-26,2023-01-26,Zara Online,1
+464,9,H&M Mama Maternity Bikini Slate Grey,H&M Mama,59.79,43.17,A,2023-02-17,2024-02-17,El Corte Inglés ES,1
+465,9,Seraphine Maternity Swimsuit Black,Seraphine,64.41,20.31,C,2020-06-30,2021-06-30,Seraphine PT,1
+466,10,JoJo Maman Bébé Baby Onesie Blush,JoJo Maman Bébé,27.29,21.78,B,2023-07-20,2024-07-19,Seraphine PT,1
+467,10,JoJo Maman Bébé Baby Grow Slate Grey,JoJo Maman Bébé,22.65,18.5,B,2023-11-22,2024-11-21,El Corte Inglés ES,1
+468,10,H&M Mama Baby Onesie Slate Grey,H&M Mama,12.57,7.22,A,2022-04-01,2023-04-01,Seraphine PT,1
+469,10,H&M Mama Baby Onesie Camel,H&M Mama,57.09,51.53,A,2024-05-19,2025-05-19,ASOS PT,1
+470,10,H&M Mama Baby Onesie Ivory,H&M Mama,62.35,33.38,B,2022-04-08,2023-04-08,El Corte Inglés ES,1
+471,10,H&M Mama Sleep Suit Camel,H&M Mama,85.44,73.58,A,2024-01-04,2025-01-03,Seraphine PT,1
+472,10,H&M Mama Baby Grow Stripe,H&M Mama,50.98,30.14,A,2022-06-01,2023-06-01,ASOS PT,1
+473,10,H&M Mama Baby Onesie Floral Print,H&M Mama,48.29,39.76,A,2023-10-21,2024-10-20,Seraphine PT,1
+474,10,JoJo Maman Bébé Baby Grow Burgundy,JoJo Maman Bébé,8.93,6.36,B,2022-12-19,2023-12-19,ASOS PT,1
+475,10,ASOS Maternity Baby Onesie Ivory,ASOS Maternity,11.51,7.16,B,2022-08-21,2023-08-21,ASOS PT,1
+476,10,H&M Mama Baby Onesie Camel,H&M Mama,28.58,22.73,B,2023-08-23,2024-08-22,Seraphine PT,1
+477,10,ASOS Maternity Newborn Set Black,ASOS Maternity,53.3,40.43,A,2023-06-27,2024-06-26,ASOS ES,1
+478,10,JoJo Maman Bébé Sleep Suit Burgundy,JoJo Maman Bébé,22.51,15.89,A,2023-01-20,2024-01-20,ASOS PT,1
+479,10,H&M Mama Sleep Suit Stripe,H&M Mama,11.01,3.33,B,2020-06-11,2021-06-11,ASOS PT,1
+480,10,H&M Mama Newborn Set Ivory,H&M Mama,45.08,40.54,B,2024-04-18,2025-04-18,El Corte Inglés ES,1
+481,10,JoJo Maman Bébé Sleep Suit Ivory,JoJo Maman Bébé,22.61,19.45,A,2024-02-09,2025-02-08,ASOS PT,1
+482,10,Mama de Luxe Sleep Suit Ivory,Mama de Luxe,44.83,40.92,A,2024-06-17,2025-06-17,El Corte Inglés ES,1
+483,10,H&M Mama Sleep Suit Slate Grey,H&M Mama,55.68,34.74,A,2022-02-20,2023-02-20,Zara Online,1
+484,10,H&M Mama Baby Grow Ivory,H&M Mama,19.82,16.2,A,2023-11-12,2024-11-11,ASOS ES,1
+485,10,JoJo Maman Bébé Baby Onesie Camel,JoJo Maman Bébé,14.07,10.69,A,2023-07-09,2024-07-08,ASOS ES,1
+486,10,JoJo Maman Bébé Baby Onesie Sage Green,JoJo Maman Bébé,9.25,7.32,B,2023-08-06,2024-08-05,ASOS ES,1
+487,10,H&M Mama Baby Onesie Sage Green,H&M Mama,76.94,42.44,A,2022-04-12,2023-04-12,Seraphine PT,1
+488,10,H&M Mama Sleep Suit Ivory,H&M Mama,17.7,14.48,A,2023-11-11,2024-11-10,ASOS PT,1
+489,10,ASOS Maternity Baby Grow Ivory,ASOS Maternity,80.11,73.8,A,2024-06-07,2025-06-07,Seraphine PT,1
+490,10,Mama de Luxe Newborn Set Black,Mama de Luxe,42.78,27.44,A,2022-10-01,2023-10-01,Seraphine PT,1
+491,10,JoJo Maman Bébé Sleep Suit Black,JoJo Maman Bébé,14.66,12.55,B,2024-03-02,2025-03-02,Seraphine PT,1
+492,10,Mama de Luxe Baby Grow Slate Grey,Mama de Luxe,36.52,32.55,A,2024-03-28,2025-03-28,El Corte Inglés ES,1
+493,10,ASOS Maternity Baby Grow Ivory,ASOS Maternity,132.88,74.66,B,2021-09-15,2022-09-15,Seraphine PT,1
+494,10,H&M Mama Sleep Suit Camel,H&M Mama,12.1,6.99,A,2022-01-25,2023-01-25,ASOS PT,1
+495,10,Mama de Luxe Baby Grow Black,Mama de Luxe,22.89,20.44,A,2024-03-30,2025-03-30,ASOS PT,1
+496,11,ASOS Maternity Nursing Scarf Camel,ASOS Maternity,13.29,12.09,A,2024-01-23,2025-01-22,ASOS ES,1
+497,11,Mama de Luxe Maternity Belt Burgundy,Mama de Luxe,26.43,21.47,A,2023-01-29,2024-01-29,Zara Online,1
+498,11,Seraphine Nursing Scarf Black,Seraphine,115.01,108.38,A,2024-06-09,2025-06-09,ASOS PT,1
+499,11,ASOS Maternity Maternity Belt Camel,ASOS Maternity,35.6,32.32,B,2024-01-31,2025-01-30,Seraphine PT,1
+500,11,Seraphine Maternity Bag Floral Print,Seraphine,33.06,29.05,A,2023-05-31,2024-05-30,ASOS ES,1
+501,11,ASOS Maternity Maternity Belt Floral Print,ASOS Maternity,54.49,49.32,B,2024-01-21,2025-01-20,ASOS PT,1
+502,11,H&M Mama Belly Support Band Floral Print,H&M Mama,56.88,47.35,B,2023-08-20,2024-08-19,Zara Online,1
+503,11,ASOS Maternity Maternity Bag Black,ASOS Maternity,62.34,57.54,B,2024-04-11,2025-04-11,El Corte Inglés ES,1
+504,11,H&M Mama Maternity Belt Stripe,H&M Mama,18.52,17.24,A,2024-04-29,2025-04-29,El Corte Inglés ES,1
+505,11,H&M Mama Belly Support Band Camel,H&M Mama,54.94,44.88,B,2022-06-22,2023-06-22,Seraphine PT,1
+506,11,Seraphine Maternity Bag Camel,Seraphine,41.06,28.0,A,2021-08-11,2022-08-11,Seraphine PT,1
+507,11,H&M Mama Belly Support Band Navy,H&M Mama,11.8,10.77,A,2024-01-02,2025-01-01,ASOS ES,1
+508,11,H&M Mama Belly Support Band Navy,H&M Mama,24.83,22.07,A,2023-11-19,2024-11-18,Seraphine PT,1
+509,11,ASOS Maternity Maternity Belt,ASOS Maternity,83.03,72.25,A,2023-10-05,2024-10-04,ASOS PT,1
+510,11,H&M Mama Maternity Bag Burgundy,H&M Mama,37.58,34.04,A,2024-01-16,2025-01-15,El Corte Inglés ES,1
+511,11,H&M Mama Nursing Scarf,H&M Mama,75.47,70.39,B,2024-04-10,2025-04-10,Zara Online,1
+512,11,H&M Mama Maternity Belt Slate Grey,H&M Mama,183.3,159.22,A,2023-05-04,2024-05-03,Seraphine PT,1
+513,11,Seraphine Belly Support Band,Seraphine,53.58,45.8,A,2023-10-01,2024-09-30,El Corte Inglés ES,1
+514,11,H&M Mama Maternity Bag,H&M Mama,30.94,26.06,A,2023-02-08,2024-02-08,Zara Online,1
+515,11,H&M Mama Maternity Belt Ivory,H&M Mama,29.24,24.64,A,2023-08-14,2024-08-13,Seraphine PT,1
+516,11,ASOS Maternity Maternity Belt,ASOS Maternity,16.67,13.1,C,2023-02-20,2024-02-20,ASOS PT,1
+517,11,H&M Mama Maternity Belt Slate Grey,H&M Mama,59.94,49.76,A,2023-04-23,2024-04-22,Zara Online,1
+518,11,H&M Mama Maternity Belt,H&M Mama,41.4,30.38,B,2022-07-22,2023-07-22,Seraphine PT,1
+519,11,Seraphine Nursing Scarf Slate Grey,Seraphine,23.61,17.97,A,2022-10-30,2023-10-30,Seraphine PT,1
+520,11,H&M Mama Maternity Bag Floral Print,H&M Mama,21.19,19.65,B,2024-04-30,2025-04-30,ASOS ES,1
+521,11,H&M Mama Maternity Belt Floral Print,H&M Mama,39.06,26.84,A,2021-09-23,2022-09-23,Seraphine PT,1
+522,11,Mama de Luxe Belly Support Band Burgundy,Mama de Luxe,22.34,21.03,A,2024-05-11,2025-05-11,Seraphine PT,1
+523,11,H&M Mama Maternity Bag Sage Green,H&M Mama,51.82,45.92,B,2023-06-28,2024-06-27,Seraphine PT,1
+524,11,Seraphine Belly Support Band Black,Seraphine,18.72,15.67,A,2023-06-09,2024-06-08,ASOS ES,1
+525,11,Mama de Luxe Maternity Bag Burgundy,Mama de Luxe,15.76,14.88,A,2024-05-31,2025-05-31,El Corte Inglés ES,1

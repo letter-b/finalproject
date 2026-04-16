@@ -1,0 +1,12 @@
+category_id,category_name,depreciation_class,avg_depreciation_rate,rental_demand_tier,rental_programme
+1,Maternity Dresses,standard,0.09,high,True
+2,Maternity Tops & Blouses,standard,0.1,high,True
+3,Maternity Jeans & Trousers,standard,0.08,high,True
+4,Maternity Activewear,fast,0.13,medium,True
+5,Nursing & Postpartum Wear,fast,0.12,high,True
+6,Maternity Occasion Wear,slow,0.05,high,True
+7,Maternity Outerwear,slow,0.04,high,True
+8,Maternity Underwear & Intimates,fast,0.15,low,False
+9,Maternity Swimwear,fast,0.14,low,False
+10,Newborn & Baby Clothing,fast,0.15,low,False
+11,Maternity Accessories,standard,0.1,low,False

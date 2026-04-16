@@ -4,6 +4,16 @@
 
 ---
 
+## 🔗 Links
+
+| | |
+|---|---|
+| 📊 **Notion — full project documentation** | [Process notes, decisions, architecture](https://www.notion.so/3439bd6f230f81128773f0275d237325) |
+| 🎤 **Presentation slides** | *(add link once uploaded)* |
+| 💻 **GitHub repo** | [github.com/letter-b/finalproject](https://github.com/letter-b/finalproject) |
+
+---
+
 ## The Problem (and Why I Actually Care)
 
 There's a production loop that doesn't make sense when you look at it directly. Brands manufacture at scale. Retailers stock at scale. Consumers buy, use a few times, and move on. Whatever doesn't sell gets discounted into the ground and eventually thrown away.
@@ -24,15 +34,15 @@ Companies win. Customers win. The world produces a little less. This project bui
 
 ---
 
-## What the Data Shows
+## Key Results
 
-The electronics vertical is the core of the project. Items unsold for 12+ months were enrolled in a simulated rental programme and compared against a graduated clearance markdown — the realistic alternative a retailer would actually reach for. The dataset is fully synthetic, but every assumption — depreciation curves, operational costs, no-return rates, damage write-offs — was calibrated against real industry data and documented throughout the notebooks.
-
-The headline: rental beats markdown in roughly 60% of cases under base assumptions. Under full stress testing — 10,000 Monte Carlo simulations varying every uncertain input simultaneously — rental won in 100% of runs, with a median revenue ratio of 1.93× against the markdown alternative.
-
-The electronics vertical isn't the strongest case. That's maternity — where every customer already knows she only needs items for a few months, and the markdown alternative is genuinely weak. Or gardening, where Leroy Merlin Portugal already runs the programme today through 35+ stores. Each vertical has its own numbers, its own character, and its own reason why rental makes structural sense.
-
-The through-line is the same: the longer a product can generate revenue in circulation, the less it needs to be discounted, and the less of it needs to be produced.
+| Metric | Value |
+|---|---|
+| Rental win rate | 62.7% of eligible products |
+| Median revenue ratio | 1.54× vs clearance markdown |
+| Monte Carlo (10,000 simulations) | Rental won in 100% of runs |
+| Stress-tested median ratio | 1.93× (67.8%–74.7% win rate range) |
+| Operational cost modelled | 15–28% (real-world: 35–50%) |
 
 ---
 
@@ -67,89 +77,78 @@ finalproject/
 
 ---
 
-## The Full Stack
+## The Database
 
-This isn't just a notebook. The full pipeline is:
+8 tables, 4 analytical views. `rentals` is the central hub — it carries three foreign keys simultaneously (`product_id`, `customer_id`, `pricing_rule_id`) and stores all the business logic: revenue, costs, fees, flags, return dates.
+
+```
+categories ──────────< products >──────────────── rentals >──── customers
+                           │                          │
+                           │                          ├──< pricing_rules
+                           ├──< inventory_events      └── return_conditions
+                           └── rental_revenue_vs_discount
+```
+
+`rental_revenue_vs_discount` is the thesis table — one row per eligible product, rental revenue earned vs hypothetical markdown price, pre-computed and stored. This is where the win rate comes from.
+
+> 📖 Full schema, relationship breakdown, and data modelling decisions → [Notion: Data Modelling](https://www.notion.so/3419bd6f230f812db92bea10eb6126e8)
+
+---
+
+## The Full Stack
 
 ```
 Python generates data
   → pandas DataFrames
     → SQLAlchemy + pymysql
-      → MySQL tables (written automatically)
-        → Views created on top of tables
-          → Power BI reads views live
+      → MySQL tables
+        → Views
+          → Power BI reads live
 ```
-
-And there's a write side too:
 
 ```
 Staff fills rental form (browser)
-  → Flask receives the POST request
+  → Flask POST
     → SQLAlchemy writes to MySQL
-      → Views update automatically
+      → Views update
         → Power BI reads the change live
 ```
 
-Running `01_data_generation.ipynb` top to bottom rebuilds the entire database in under a minute. No Workbench. No manual imports. One line writes a full table:
+Running `01_data_generation.ipynb` top to bottom rebuilds the entire database in under a minute. One line writes a full table:
 
 ```python
 df.to_sql("products", con=engine, if_exists="replace", index=False)
 ```
 
-This is a standard ETL pipeline (Extract, Transform, Load) — the same architecture used in production data engineering, just at a smaller scale.
+The Tableau flat files in `data/tableau/` were built differently — a chain of `.merge()` calls that joins all tables in Python before writing to CSV, producing one denormalised row per rental (1,093 rows, 43 columns). When the project moved to Power BI, the CSVs were replaced by a live MySQL connection — the better architecture.
+
+> 📖 Full pipeline explanation, ETL framing, live feed architecture → [Notion: How the Data Pipeline Works](https://www.notion.so/3419bd6f230f810ca1eed866e196316f)
 
 ---
 
 ## The Notebooks
 
 ### 01 · Data Generation
-
-Generates 690 products, 2,000+ customers, and ~1,600 rental transactions. Exports everything to MySQL and CSV simultaneously. Run this once. Don't touch it unless you're regenerating.
-
-Key decisions baked in:
-- 12-month eligibility threshold — one full retail sales cycle
-- Markdown depreciation tiers calibrated against SellCell and EverTrade IT asset data
-- 10 product categories in the rental programme — 5 excluded (Wearables, Keyboards, Monitors, Networking, Peripherals) with documented rationale per category
-- Musical Instruments added as category 15: strong real-world rental tradition, slow depreciation, wide price bands
+690 products, 2,000+ customers, ~1,600 rental transactions. Exports to MySQL and CSV simultaneously. Key decisions: 12-month eligibility threshold, markdown tiers from SellCell/EverTrade data, 10 categories in programme (5 excluded with rationale), Musical Instruments as category 15.
 
 ### 01B · Vertical Generators
+Four additional markets — Furniture, Maternity (~78.7% win rate), Gardening (already live in Portugal via Leroy Merlin/Andaluga), and Luxury (inverted depreciation, near-retail markdown baseline). All use identical output schema — the analysis notebooks run unchanged on any vertical.
 
-The same system tested across four other markets:
-
-- **Furniture** — IKEA-style. Seasonal spikes, Feather/Furlenco ops cost benchmarks. The rental case is built on high ticket values and natural temporary use — expats, short-term renters, people furnishing a place they know they'll leave.
-
-- **Maternity** — strongest rental case in the project. Every customer already knows she only needs items for a few months. The resale pool is narrow and buyers assume heavy wear. The markdown alternative is genuinely weak. The model doesn't need to work hard here — the customer's situation does most of the arguing.
-
-- **Gardening** — built from scratch after finding that Leroy Merlin Portugal already runs a live garden tool rental service through 35+ stores via an Andaluga partnership. This isn't a hypothetical market. It exists. Rental durations are 1–3 days, no-return rate is the lowest in the project, and the seasonal patterns are clean.
-
-- **Luxury** — most analytically interesting, and the one that inverts everything. A Hermès Birkin or a Rolex Submariner doesn't lose value sitting on a shelf — it often gains it. So the markdown baseline is near-retail (5% off at 12 months), not 60% off. Rental has to beat a strong target, not a weak one — which is why the win rate is lower. But when it wins, it wins much larger, because the rental rate on a €10,000 watch is substantial. And a meaningful share of customers here will never buy regardless of price — they're not choosing between buying and renting. Renting is the only realistic access. That's a structurally captive market.
-
-All four use identical output schema so `02_eda.ipynb`, `03_ab_testing.ipynb`, and `04_machine_learning.ipynb` work unchanged with any vertical's data.
+> 📖 Full vertical breakdowns, market research, and design decisions → [Notion: Portfolio Page](https://www.notion.so/3439bd6f230f81128773f0275d237325)
 
 ### 02 · EDA
-
-12 sections. The one finding I keep coming back to: 30% of customers are repeat renters but drive 50% of revenue. Classic loyalty pattern — and it validates why the programme gets better over time, not worse.
+12 sections. Key finding: 30% of customers are repeat renters but drive 50% of revenue. The programme gets better over time, not worse.
 
 ### 03 · A/B Testing
+Three tests. The core one: Welch's t-test comparing rental vs markdown revenue. Groups are unequal by design (~960 vs ~644) because pricing model assignment reflects a realistic tiered rollout — expensive items skew toward `pct_of_retail`, cheap items toward `flat_rate`. Welch's is correct here precisely because the groups have unequal variance.
 
-Three formal tests. The important one is Section 3: a Welch's t-test comparing rental revenue vs markdown revenue. The result is statistically significant, but the test group sizes are unequal by design (~960 vs ~644) — because the pricing rule assignment reflects a realistic tiered rollout, not a clean 50/50 split.
+> 📖 Full A/B mechanics, the restaurant menu analogy, and how to defend it → [Notion: How the A/B Test Works](https://www.notion.so/3449bd6f230f812ba964ff49105c7574)
 
 ### 04 · Machine Learning
-
-Three models:
-
-- **Random Forest** — predicts whether a product will be more profitable via rental *before* it enters the programme. Features are carefully chosen to avoid data leakage: `months_unsold_at_comparison` (available at programme entry), not `months_on_rental` (available only after).
-- **Linear Regression** — projects monthly rental revenue forward 6 months. Caveat: linear trend on seasonal data has obvious limits; Prophet would be the production alternative.
-- **Logistic Regression** — predicts customer churn risk. Churn is defined as >20% late returns OR any no-return on record. The chart shows predicted churn probability by segment, not raw coefficients — same model, clearer story.
-
-Then two sections of stress testing:
-
-- **Sensitivity Analysis** — three fixed scenarios (optimistic/realistic/pessimistic cost assumptions). The rental case holds in all three.
-- **Monte Carlo** — 10,000 simulations varying all uncertain inputs simultaneously using triangular distributions. Scoped to programme categories only — the simulation tests what the programme actually covers, not the full product catalogue. Result: rental won in 100% of runs, with a median revenue ratio of 1.93× and a win rate range of 67.8%–74.7% across the 5th–95th percentile. That's the stress-tested floor, and it still holds comfortably.
+Three models: Random Forest (rental profitability classifier — data leakage fixed: uses `months_unsold_at_comparison`, not `months_on_rental`), Linear Regression (6-month revenue forecast), Logistic Regression (customer churn by segment). Plus Sensitivity Analysis across three cost scenarios and Monte Carlo (10,000 simulations, triangular distributions, scoped to programme categories only).
 
 ### live_feed
-
-Inserts 15 rental records per batch into MySQL, every 30 seconds, for 3 minutes, then auto-stops. Used for the live demo. Run it, switch to Power BI, click refresh, watch Total Rentals tick up.
+Inserts 15 rental records per batch into MySQL every 30 seconds for 3 minutes, then auto-stops. Run it, switch to Power BI, click refresh, watch Total Rentals tick up.
 
 ```bash
 python notebooks/live_feed_terminal_run.py
@@ -159,9 +158,7 @@ python notebooks/live_feed_terminal_run.py
 
 ## The Rental Form
 
-A Flask web app that serves as the operational layer — the write side of the system. Staff can log a new rental through a browser form. On submit, it writes directly to MySQL. Because Power BI is connected live, the dashboard updates on the next refresh.
-
-This is the moment in the demo that makes the architecture click. The dashboard isn't just showing historical data — it's connected to a system that accepts new data in real time.
+A Flask web app — the write side of the system. Staff log a rental through a browser form; on submit it writes directly to MySQL. Because Power BI is connected live, the dashboard updates on the next refresh. This is the moment in the demo that makes the architecture click.
 
 ---
 
@@ -170,20 +167,17 @@ This is the moment in the demo that makes the architecture click. The dashboard 
 **Requirements:** Python 3.11+, MySQL (local), Jupyter, Power BI Desktop
 
 ```bash
-# Clone
 git clone https://github.com/letter-b/finalproject
 cd finalproject
 
-# Virtual environment (using uv)
 uv venv
 source .venv/bin/activate        # Mac/Linux
 .venv\Scripts\activate           # Windows
 
-# Install dependencies
 pip install -r requirements.txt
 ```
 
-Create a `.env` file in the root:
+`.env` file in root:
 
 ```
 DB_HOST=localhost
@@ -196,19 +190,14 @@ DB_NAME=rental_final_project
 **Run order:**
 
 ```bash
-# 1. Generate the database
 jupyter notebook notebooks/01_data_generation.ipynb
-
-# 2. Analysis (in order)
 jupyter notebook notebooks/02_eda.ipynb
 jupyter notebook notebooks/03_ab_testing.ipynb
 jupyter notebook notebooks/04_machine_learning.ipynb
 
-# 3. Open the dashboard
-# Power BI: open src/PowerBI/rental_final_project_analytics.pbix
-# Hit refresh — it reads from MySQL live
+# Dashboard: open src/PowerBI/rental_final_project_analytics.pbix → hit refresh
 
-# 4. Optional: run the live feed for the full demo experience
+# Live demo:
 python notebooks/live_feed_terminal_run.py
 ```
 
@@ -216,18 +205,16 @@ python notebooks/live_feed_terminal_run.py
 
 ## Assumptions and Honest Limitations
 
-The dataset is synthetic, but the rules behind it aren't. Every datapoint and vertical was built around documented market behaviour, because synthetic data is only as good as the rules it's built on. This means depreciation curves were calibrated against real resale market data, operational costs were benchmarked against companies already running rental programmes, seasonal patterns modelled on actual retail behaviour and the most crucial part: different rental rules were applied for different markets. The rules make sure the obvious is obvious: a luxury watch, a garden strimmer and a maternity pillow do not behave the same way, and pretending they do would break the model.
+The dataset is synthetic, but the rules behind it aren't. Depreciation curves calibrated against real resale data. Ops costs benchmarked against live rental companies. Seasonal patterns modelled on actual retail behaviour. Different rules for different markets — a luxury watch, a garden strimmer, and a maternity pillow do not behave the same way.
 
-The system holds together precisely because each vertical was built with the most realistic knowledge of how that market works for each industry. Which also means it can be pointed at any new industry: research the rules, feed them in, and the architecture underneath doesn't change.
+The headline numbers are optimistic by design and documented as such:
 
-That said, the headline numbers are optimistic by design and documented as such throughout the notebooks:
+- Ops costs modelled at 15–28%. Real operations run 35–50% all-in.
+- No storage cost between rentals. In reality, downtime gaps generate cost.
+- The markdown comparison uses the deepest realistic discount — the ceiling, not the average.
+- 40–55% win rate is more realistic for real-world implementation.
 
-- Operational costs are modelled at 15–28%. Real electronics rental operations run 35–50% all-in when storage, refurbishment, logistics, and customer acquisition are included.
-- No storage or warehousing cost between rentals. In reality, downtime gaps generate cost.
-- The markdown comparison uses the deepest realistic discount as the baseline — the ceiling, not the average.
-- A 40–55% win rate is more realistic for real-world implementation. This model tests the upper bound under clean conditions.
-
-The stress testing in Section 4b is where those assumptions get challenged. Under 10,000 Monte Carlo simulations varying every uncertain input simultaneously, rental won in 100% of runs. The floor is what matters — and it holds.
+Under 10,000 Monte Carlo simulations varying every uncertain input simultaneously, rental won in 100% of runs. The floor is what matters — and it holds.
 
 ---
 
