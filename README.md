@@ -9,7 +9,6 @@
 | | |
 |---|---|
 | 📊 **Notion — full project documentation** | [Process notes, decisions, architecture](https://www.notion.so/3439bd6f230f81128773f0275d237325) |
-| 🎤 **Presentation slides** | *(add link once uploaded)* |
 | 💻 **GitHub repo** | [github.com/letter-b/finalproject](https://github.com/letter-b/finalproject) |
 
 ---
